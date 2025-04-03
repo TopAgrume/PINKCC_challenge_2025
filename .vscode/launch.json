@@ -1,0 +1,9 @@
+{
+    "name": "Python Debug",
+    "type": "python",
+    "request": "launch",
+    "program": "${file}",
+    "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+    }
+}
