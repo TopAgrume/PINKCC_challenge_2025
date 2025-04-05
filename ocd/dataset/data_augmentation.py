@@ -38,26 +38,16 @@ class DataAugmentation:
     """
     return A.Compose(
       [  # TODO: find good values
-        # A.RandomSizedCrop(
-        #    p=p
-        # ),
-        A.HorizontalFlip(p=h_flip_prob),
         A.VerticalFlip(p=v_flip_prob),
-        A.RandomRotate90(p=rotate_prob),
-        # A.MultiplicativeNoise(
-        #    p=p
-        # ),
-        # A.GaussianBlur(
-        #    p=p
-        # ),
-        # A.ElasticTransform(
-        #    p=p
-        # ),
-        # A.RandomBrightnessContrast(
-        #    p=p
-        # ),
-        # A.RandomGamma(
-        #    p=p
-        # )
+        A.MultiplicativeNoise(p=p),
+        A.GaussianBlur(p=p),
+        A.ElasticTransform(p=p),
+        A.RandomBrightnessContrast(p=p),
+        A.RandomGamma(p=p),
+        # the ones I added (only DualTransforms)
+        A.GridDistortion(p=p),
+        A.OpticalDistortion(p=p),
+        A.Perspective(p=p),
+        A.ThinPlateSpline(p=p),
       ]
     )  # , additional_targets={'mask': 'image'})
