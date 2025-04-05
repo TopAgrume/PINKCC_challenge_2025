@@ -3,8 +3,9 @@ import nibabel as nib
 import ipywidgets as widgets
 from IPython.display import display, clear_output
 
-from project.dataset import Dataset
-from project.visualizer import JupyterVisualizer
+from ocd.dataset.dataset import SampleUtils
+from ocd.jupyter.visualizer import JupyterVisualizer
+
 
 class JupyterExplorer:
 
@@ -54,13 +55,14 @@ class JupyterExplorer:
                 clear_output()
                 if file_dropdown.value:
                     print(f"Selected file: {file_dropdown.value}")
-                    img, data = Dataset.load_from_path(file_dropdown.value)
+                    img, data = SampleUtils.load_from_path(file_dropdown.value)
                     JupyterVisualizer.interactive_slice_viewer(data, title_prefix=f"{os.path.basename(file_dropdown.value)}: ")
 
         load_button.on_click(on_button_click)
 
         # Display widgets
         display(widgets.VBox([dataset_dropdown, file_dropdown, load_button, output]))
+
 
     @classmethod
     def paired_file_selector(self, ct_dict, seg_dict):
