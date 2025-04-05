@@ -1,0 +1,39 @@
+[project]
+name = "pinkcc"
+version = "0.1.0"
+description = "Ovarian Cancer Destroyer's repo"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "albumentations>=2.0.5",
+    "ipykernel>=6.29.5",
+    "ipython>=9.0.2",
+    "ipywidgets>=8.1.5",
+    "matplotlib>=3.10.1",
+    "nibabel>=5.3.2",
+    "scikit-learn>=1.6.1",
+]
+
+[tool.pyright]
+include = ["src"]
+venvPath = "."
+venv = ".venv"
+
+[tool.pydocstyle]
+convention = "numpy"
+add-ignore = ["D1"]
+
+[tool.ruff]
+line-length = 88
+indent-width = 2
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["I", "E", "F", "UP", "B", "SIM"]
+fixable = ["ALL"]
+
+[tool.ruff.format]
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
