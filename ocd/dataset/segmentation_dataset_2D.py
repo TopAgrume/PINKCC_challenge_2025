@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import nibabel as nib
 import numpy as np
 import torch
+from matplotlib.figure import Figure
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset as TorchDataset
 
@@ -80,7 +81,7 @@ class CancerSegmentationDataset(TorchDataset):
     with_mask: bool = True,
     alpha: float = 0.5,
     figsize: tuple[int, int] = (12, 5),
-  ):
+  ) -> Figure:
     """Visualize a sample with optional overlay of segmentation mask"""
     ct_path, seg_path = self.paired_data[idx]
     _, ct_data = SampleUtils.load_from_path(ct_path)
@@ -115,7 +116,7 @@ class CancerSegmentationDataset(TorchDataset):
     plt.show()
     return fig
 
-  def _preload_data(self):
+  def _preload_data(self) -> None:
     """Preload all volumes into memory"""
     print("Preloading data into memory...")
     for idx, (ct_path, seg_path) in enumerate(self.paired_data):
@@ -131,7 +132,7 @@ class CancerSegmentationDataset(TorchDataset):
       # slice mapping for this volume
       self._add_volume_to_slice_map(idx, ct_data.shape[self.slice_axis])
 
-  def _build_slice_map(self):
+  def _build_slice_map(self) -> None:
     """Build mapping from flat index to (volume_idx, slice_idx)"""
     for vol_idx, (ct_path, _) in enumerate(self.paired_data):
       img = nib.load(ct_path)  # pyright: ignore
@@ -140,16 +141,16 @@ class CancerSegmentationDataset(TorchDataset):
       # Add slices from this volume to the slice map
       self._add_volume_to_slice_map(vol_idx, n_slices)
 
-  def _add_volume_to_slice_map(self, vol_idx, n_slices):
+  def _add_volume_to_slice_map(self, vol_idx: int, n_slices: int) -> None:
     """Add volume slices to the slice map"""
     for slice_idx in range(n_slices):
       self.slice_map.append((vol_idx, slice_idx))
 
-  def __len__(self):
+  def __len__(self) -> int:
     """Return the total number of slices across all volumes"""
     return len(self.slice_map)
 
-  def __getitem__(self, idx):
+  def __getitem__(self, idx: int) -> tuple[torch.Tensor, torch.Tensor]:
     """Get a single slice pair (image, mask)"""
     vol_idx, slice_idx = self.slice_map[idx]
 
@@ -186,8 +187,12 @@ class CancerSegmentationDataset(TorchDataset):
 
     return ct_tensor, seg_tensor
 
+  # TODO: implement __getitems__
+
   @staticmethod
-  def get_dataloader(dataset, batch_size=16, num_workers=4, shuffle=True):
+  def get_dataloader(
+    dataset: "CancerSegmentationDataset", batch_size=16, num_workers=4, shuffle=True
+  ) -> DataLoader:
     """
     Create a PyTorch DataLoader from the dataset
 

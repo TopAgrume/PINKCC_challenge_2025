@@ -30,7 +30,7 @@ class SampleUtils:
   @classmethod
   def display_slice(
     cls,
-    data,
+    data: np.ndarray,
     slice_idx=None,
     axis=2,
     figsize=(20, 16),
@@ -38,7 +38,7 @@ class SampleUtils:
     vmin=None,
     vmax=None,
     title=None,
-  ):
+  ) -> None:
     """
     Display a single slice from a 3D volume
 
