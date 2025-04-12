@@ -1,0 +1,85 @@
+347580 -> moyenne métastase milieu [PAS DE PRIMAIRE]
+347582 -> grosse métastase avant [PAS DE PRIMAIRE]
+347584 -> 2 giga primaires milieu, métastase moyenne droite
+347585 -> petite métastase gauche [PAS DE PRIMAIRE]
+347586 -> moyenne primaire milieu, grosse métastase avant
+347588 -> 2 grosses primaires milieu, grosse métastase droite
+347589 -> 2 moyennes primaires milieu/avant [PAS DE METASTASE]
+374142 [I] -> 2 petites primaires milieu, grosse métastase avant
+374143 [I] -> 2 petites primaires milieu, petite métastase gauche
+374149 [I] -> mini primaire [PAS DE METASTASE]
+374177 [I] -> moyenne et petite primaires milieu, moyenne métastase avant [LAMPE JAMBE]
+374196 [I] -> grosse primaire milieu, petite métastase avant
+380926 -> 2 minis primaires milieu, moyenne métastase droite
+407886 -> giga primaire milieu, moyenne métastase étendue avant [LAMPE JAMBE]
+407887 -> 2 moyennes primaires milieu, petite métastase avant
+407888 -> grosse primaire milieu, quelques minis métastases droite
+407890 -> grosse primaire mileu/avant, plein de métastases
+407891 -> 2 moyennes primaires milieu/arrière, moyenne et petite métastases avant et droite
+407892 -> moyenne primaire milieu, moyenne métastase droite
+407893 -> 2 moyennes primaires milieu, plein de métastases
+407894 -> grosse primaire milieu, plein de métastases
+407896 -> grosse primaire milieu, plein de métastases
+407897 -> moyenne et grosse primaires milieu, plein de métastases
+407899 -> grosse primaire avant, 2 petites métastases milieu arrière
+407901 -> 3 petites primaires milieu, 2 minis métastases bordure péritoine
+407902 -> DESTROY
+407903 -> 2 minis primaires milieu, quelques métastases surtout avant et droite
+407904 -> 2 minis primaires milieu, plein de métastases de partout dont une grosse avant
+407905 -> moyenne métastase sur la droite [PAS DE PRIMAIRE]
+407906 -> 2 petites primaires milieu, métastase bien étendue avant et côtés
+407907 -> DESTROY
+407908 -> une petite et moyenne primaire milieu avant, quelques minis métastases un peu de partout
+407909 -> grosse primaire au milieu, mini métastases avant et une big à droite
+407910 -> grosse primaire milieu avant, plein de métastases
+
+TCGA-09-0364 -> giga primaire milieu [PAS DE METASTASE] (Housfield scale haute, pas beaucoup de layers)
+TCGA-09-0367 -> 2 grosses primaires avant, plein de métastases dont arrière
+TCGA-09-1669 -> grosse primaire milieu avant [PAS DE METASTASE]
+TCGA-09-1674 -> giga primaire milieu, plein de métastases
+TCGA-09-2045 -> grosse primaire milieu, quelques métastases
+TCGA-09-2051 -> grosse primaire milieu, plein de métastases
+TCGA-09-2053 -> moyenne primaire milieu, petite métastase droite
+TCGA-09-2054 -> [PAS DE LABEL + RESPIRATION SUPER MARQUEE]
+TCGA-13-0724 -> moyenne métastase avant [PAS DE PRIMAIRE]
+TCGA-13-0761 -> grosse primaire milieu, plein de métastases dont milieu/arrière
+TCGA-13-0762 -> MAUVAISE SEGMENTATION (PROBLEME D'ORIGINE ET D'ORIENTATION)
+TCGA-13-0768 -> 2 petites primaires milieu, plein de métastases
+TCGA-13-0793 -> moyenne et grosse primaires milieu, plein de métastases
+TCGA-13-0794 -> giga primaire milieu/avant, plein de métastases
+TCGA-13-0799 [I] -> 2 grosses primaires milieu
+TCGA-13-0883 -> grosse primaire avant, 2 petites métastases avant
+TCGA-13-0904 [I] -> 2 petites primaires milieu, métastase avant étendue
+TCGA-13-0911 -> moyenne primaire milieu/avant, petite métastase gauche (Housfield scale haute, sorte de parasite sur le scan)
+TCGA-13-0920 -> giga primaire, plein de métastases
+TCGA-13-0924 -> 2 petites primaires, plein de métastases
+TCGA-13-1405 [I] -> 2 petites primaires, grosse métastase étendue avant
+TCGA-13-1408 -> grosse métastase gauche [PAS DE PRIMAIRE]
+TCGA-13-1411 -> giga primaire milieu, grosse métastase étendue avant/droite [LAMPE JAMBE]
+TCGA-13-1412 -> 2 moyennes primaires milieu/avant, quelques métastases gauche
+TCGA-13-1488 [I] -> petite et grosse primaires milieu, mini métastase droite
+TCGA-13-1499 [I] -> petite métastase avant
+TCGA-13-1507 [I] -> 2 petites primaires milieu, moyenne et grosse métastases avant
+TCGA-13-1509 -> petite et moyenne primaires milieu, moyenne métastase étendue droite [LAMPE JAMBE]
+TCGA-13-1511 [I] -> 2 moyennes primaires milieu, grosse métastase étendue gauche
+TCGA-13-2060 -> petite et moyenne primaires milieu/avant, petites métastases avant et gauche
+TCGA-24-1418 -> 2 petites primaires milieu, plein de métastases intéressantes
+TCGA-24-1423 -> petite et grosse primaires milieu/avant, plein de métastases
+TCGA-24-1427 -> 2 petites primaires milieu, plein de métastases
+TCGA-24-1614 [I] -> 2 petites métastases droite et gauche [11 slices]
+TCGA-24-1616 -> 2 petites primaires milieu, plein de métastases
+TCGA-24-2254 -> giga primaire avant, plein de métastases
+TCGA-25-1313 -> petite et mini primaires milieu, plein de métastases (Housfield scale haute)
+TCGA-25-1623 -> petite et mini primaires milieu, quelques métastases
+TCGA-25-1631 -> grosse primaire milieu [PAS DE METASTASE] (Housfield scale haute)
+TCGA-25-1635 -> grosse et moyenne primaires milieu, plein de métastases
+TCGA-30-1891 -> 2 petites primaires milieu, plein de métastases
+TCGA-61-1900 -> grosse primaire milieu, petite métastase droite
+TCGA-61-1906 [I] -> DESTROY
+TCGA-61-1910 -> moyenne primaire milieu [PAS DE METASTASE]
+TCGA-61-1911 -> grosse primaire avant [PAS DE METASTASE]
+TCGA-61-2003 -> 2 moyennes primaires milieu, plein de métastases (une sorte de lumière au dessus du scan)
+TCGA-61-2009 -> grosse et petite primaire milieu, plein de métastases
+TCGA-61-2016 [I] -> 2 petites primaires milieu, plein de métastases intéressantes
+TCGA-61-2018 -> grosse et petite primaires milieu [PAS DE METASTASE]
+TCGA-61-2087 -> grosse et petite primaires milieu, plein de métastases
