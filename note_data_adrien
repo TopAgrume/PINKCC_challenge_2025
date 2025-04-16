@@ -1,0 +1,90 @@
+Emplacement en quadrants:
+    - Q1: Anterieur Gauche
+    - Q2: Anterieur Droit
+    - Q3: Posterieur Droit
+    - Q4: Posterieur Gauche
+
+
+337192 -> Une tumeur moyenne Q3 et une petite tumeur Q4, une grosse metastase etendue / bicorne Q1-Q2 en haut
+337193 -> Une moyenne-grosse tumeur etendue en bas Q3, une petite metastase en Q2 au meme niveau et une autre petite metastase en Q1 un peu plus haut
+337197 -> Une petite tumeur a la gauche hauteur milieu, [PAS DE METASTASES]
+337198 -> Une petite tumeur en bas Q2, une grosse metastase en haut Q2
+337199 -> Une moyenne-grosse tumeur Q3 haut, 1 grosse metastase etendue Q1-Q2 bifurquant vers le haut
+337202 -> Deux tumeurs moyennes Q3 et Q4, deux grosses metastases Q1 vraiment haut
+337203 -> Une petite tumeur Q1, une grosse metastases etendue Q1-Q2
+337204 -> Deux petites tumeurs Q3 et Q4, une grosse metastase etendue Q2 et une metastase moyenne Q1-Q4
+337205 -> Une tumeur moyenne Q1/centre, 3 petites metastases Q2 avant et une metastase moyenne Q1
+347439 -> Deux tumeurs moyenne-petites Q2-Q3 et Q1-Q4 resp., une metastase moyenne Q2
+347440 -> Une tumeur moyenne-grosse Q4, une metastase moyenne alongee Q1
+347441 -> Une tumeur moyenne-grosse Q4 arriere, une petite metastase Q1 devant
+347443 -> Deux tumeurs moyenne Q1-Q4 et Q2-Q3 resp, une metastase moyenne-grosse Q1
+347444 -> [PAS DE PRIMAIRES], une grosse metastase Q1
+347446 -> Grosse tumeur Q3 posterieur et une moyenne-grosse Q1-Q4, une petite metastase Q2 vraiment devant
+347447 -> Une tumeur Godzilla Q2-Q3-Q4 et un peu Q1, une grosse metastase Q1 devant
+347448 -> Une grosse tumeur Q2 et une tumeur moyenne Q1, une metastase moyenne Q1 devant
+347451 -> Une tumeur Godzilla Q1 et centre de l'anterieur au posterieur, [PAS DE METASTASES]
+347452 -> Une grosse tumeur Q3, [PAS DE METASTASES] -- Trucs filandreux autours du corps peut-etre des habits ?
+347455 -> Une tumeur moyenne Q1-Q4 bas du corps, [PAS DE METASTASES]
+347456 -> Deux tumeurs moyennes Q3 et Q4, une grosse metastase Q2 et une grosse etendue en Q1 -- Artefacts lumineux autour du corps
+346458 -> Une tumeur moyenne au centre, une grosse metastase etendue en Q1 devant-droit et une moyenne en Q1-Q4
+347463 -> [PAS DE PRIMAIRES], une grosse metastase Q2 -- os de jambes tres lumineux
+347467 -> Une tumeur Godzilla en Q3-Q4, une metastase mini-Godzilla en Q1
+347469 -> Une grosse tumeur Q2 et une moyenne en Q1, une metastase mini-Godzilla en Q1-Q2
+347470 -> Une tumeur Godzilla++ partout, une metastase petite-moyenne Q1 avant
+347471 -> Deux tumeurs moyennes Q1 et Q2, une metastase moyenne en Q2
+347473 -> Une tres grosse tumeur au centre, une petite metastase en Q1 avant -- lumieure autour corps haut de l'image
+347483 -> Une tumeur Godzilla++ partout, une metastase moyenne-petite en Q1-Q4
+347485 -> Une grosse tumeur en Q1-Q4, [PAS DE METASTASES]
+347490 -> Une grosse tumeur centre-Q2-Q3 et une tumeur moyenne centre-Q1-Q4, une metastase moyenne en Q1 avant -- lumiere autour corps au niveau de la metastase
+347492 -> Deux grosses tumeurs en Q3 et Q1 resp., une tres grosse metastase etendue en Q2
+347495 -> Deux grosses tumeurs en Q3 et Q4 resp., [PAS DE METASTASES]
+347499 -> [PAS DE PRIMAIRES], une metastase moyenne en Q1 gauche
+347500 -> Deux tumeurs moyennes en Q2-Q3 et Q1-Q4 resp. deux metastases moyennes en Q1 gauche
+347501 -> Une petite tumeur en Q4, [PAS DE METASTASES]
+347503 -> [PAS DE PRIMAIRES], metastase moyenne-grosse Q1
+347504 -> Deux tumeurs moyennes Q1 et Q2, une grosse metastase etendue Q1-Q2
+347505 -> [PAS DE PRIMAIRES], une grosse metastase etendue Q1 avant
+347506 -> Deux grosses tumeurs Q3 et Q4, pleins de metastases dont une grosse etendue Q1-Q2 bas et une giga etendue Q1-Q2 en haut
+347507 -> [PAS DE PRIMAIRES], une metastase moyenne Q1 avant
+347509 -> une tumeur mini-Godzilla plein centre, plein de metastase dont une giga etendue Q1, les autres tailles moyenne
+347510 -> une tumeur moyenne Q3 et une grosse tumeur etendue Q4, pleins de petites metastase Q3-Q4, une grosse metastase etendue Q2, une metastase moyenne etendue Q1
+347511 -> une tumeur mini-Godzilla plein centre, une metastase mini-Godzilla etendue avant Q1-Q2 et une grosse metastase Q1 avant
+347512 -> deux tumeurs moyennes Q1 et Q3, une grosse metastase Q3-Q4 et une giga metastase etendue Q1-Q2 et une mince etendue Q2-Q3 et pleins de petites
+347514 -> une tumeur Godzilla++ toutes sections, une metastase moyenne Q1 avant et une petite Q1
+347515 -> deux moyennes tumeurs Q3 et Q4, une metastase moyenne Q2 avant -- artefact de lumiere
+347516 -> deux tumeurs moyennes Q3 et Q4, une metastase moyenne Q3-Q4 et une grosse metastase etendue Q1-Q2
+347519 -> UNE PETITE METASTASE SITUEE EN DEHORS DU CORPS -- deux tumeurs moyennes Q3 et Q4, une metastase moyenne Q3-Q4, trois metastases Q2 (2 petites, 1 moyenne) et une metastase Godzilla etendue Q2-Q1 avant et une grosse metastase etendue Q2-Q3
+347521 -> une tumeur Godzilla toutes sections, trois metastases Q2 (1 grosse, 1 moyenne, 1 petite) et une moyenne Q1 -- artefacts lumineux et filaments autours du corps
+347523 -> une tumeur moyenne Q3, une grosse metastase etendue Q1-Q2 -- artefacts lumineux et filaments autour du corps
+347524 -> [PAS DE PRIMAIRES], une grosse metastase Q1-Q2
+347525 -> une grosse tumeur Q4, une metastase moyenne avant Q1-Q2
+347528 -> une tumeur moyenne Q4, une grosse metastase Q2
+347529 -> une tumeur moyenne-petite Q2, une moyenne-grosse metastase etendue Q2
+347532 -> [PAS DE PRIMAIRES], une metastase grosse etendue Q1
+347534 -> une petite tumeur Q3 et une tumeur moyenne Q4, une grosse metastase Q1
+347538 -> [PAS DE PRIMAIRES], une metastase mini-Godzilla etendue Q1
+347539 -> une petite tumeur Q4, une grosse metastase Q1-Q2
+347543 -> deux tumeurs moyennes Q3 et Q4, une metastase mini-Godzilla etendue Q1-Q2
+347544 -> une tres grosse tumeur Q4 et une moyenne Q3, une metastase Godzilla Q1-Q4 etendue
+347546 -> une grosse tumeur Q4, une metastase Godzilla Q1-Q2 etendue
+347547 -> [PAS DE PRIMAIRES], une grosse metastase etendue Q2
+347549 -> deux tumeurs moyennes au centre, [PAS DE METASTASES]
+347550 -> [PAS DE PRIMAIRES], une grosse metastase etendue Q2 -- filaments autour corps
+347551 -> une petite tumeur Q4, une metastase moyenne-grosse etendue Q1
+347552 -> une tumeur mini-Godzilla Q1-Q2, deux metastases moyennes Q1 et Q2 -- Artefact de lumiere
+347553 -> une tumeur Godzilla centre-Q1-Q2, une grosse metastase etendue Q1-Q2
+347555 -> une tumeur mini-Godzilla Q1-Q4 et une grosse tumeur Q2-Q3, une grosse metastase Q2
+347556 -> une tumeur mini-Godzilla Q4, une tres grosse metastase etendue Q1-Q2 avant
+347558 -> une grosse tumeur Q3, [PAS DE METASTASES]
+347559 -> une tumeur mini-Godzilla centre-Q4, trois petites metastases Q2 Q2 Q1 -- Artefacts lumineux
+347560 -> [PAS DE PRIMAIRES], une grosse metastase etendue Q1-Q2 -- artefacts lumineux
+347564 -> une tumeur moyenne-petite Q3, une petite metastase Q2 avant et une metastase moyenne Q1 avant
+347565 -> [PAS DE PRIMAIRES], une grosse metastase etendue Q1 -- petits artefacts lumineux
+347566 -> [PAS DE PRIMAIRES], une petite metastase Q1 et une moyenne-petite etendue Q1 avant
+347567 -> une tumeur moyenne Q3, une metastase mini-Godzilla etendue Q2 et une metastase moyenne Q1
+347569 -> [PAS DE PRIMAIRES], une metastase moyenne Q2 et une metastase moyenne Q1 et une petite avant centre
+347570 -> [PAS DE PRIMAIRES], une grosse metastase Q1-Q2
+347571 -> [PAS DE PRIMAIRES], deux metastase moyennes Q1 et Q2
+347574 -> une grosse tumeur Q2, [PAS DE METASTASES]
+347578 -> [PAS DE PRIMAIRES], deux metastases moyennes Q2 droite et Q1-Q2 avant
+347579 -> [PAS DE PRIMAIRES], une metastase mini-Godzilla Q1-Q2 et une grosse Q1
