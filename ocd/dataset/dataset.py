@@ -1,9 +1,18 @@
 import os
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import nibabel as nib
 import numpy as np
 from nibabel.filebasedimages import FileBasedImage
+from nibabel.orientations import (
+  aff2axcodes,
+  apply_orientation,
+  axcodes2ornt,
+  inv_ornt_aff,
+  ornt_transform,
+)
+from PIL import Image
 from sklearn.model_selection import train_test_split
 
 
@@ -13,7 +22,7 @@ class SampleUtils:
   """
 
   @classmethod
-  def load_from_path(cls, file_path: str) -> tuple[FileBasedImage, np.ndarray]:
+  def load_from_path(cls, file_path: str | Path) -> tuple[FileBasedImage, np.ndarray]:
     """
     Load NIFTI file content
 
@@ -114,7 +123,7 @@ class Dataset:
   Dataset for CT and segmentation data
   """
 
-  def __init__(self, base_dir: str = "DatasetChallenge"):
+  def __init__(self, base_dir: Path = Path("DatasetChallenge")):
     """
     Initialize the dataset path
 
@@ -122,6 +131,7 @@ class Dataset:
         base_dir: Base directory containing the dataset
     """
     self.base_dir = base_dir
+    self.datasets = ["MSKCC", "TCGA"]
     self.data = self._loading_dataset_paths()
 
     # === MSKCC ===
@@ -142,6 +152,73 @@ class Dataset:
     self.val_pairs = MSKCC_val + TCGA_val
     self.test_pairs = MSKCC_test + TCGA_test
 
+  def convert_CT_scans_to_images(
+    self, output_dir: Path, with_determined_folds: bool = True
+  ):
+    """
+    Convert the 3D CT scans from datasets to 2D images.
+    Depending on the argument `with_determined_folds`, the output structure is the
+    following:
+    - `with_determined_folds` == True:
+      - 5 x output_dir/{fold_id}/scan/{CT_scan_name}_{slice_index}.jpg
+      - 5 x output_dir/{fold_id}/segmentation/{CT_scan_name}_{slice_index}.jpg
+    - `with_determined_folds` == False:
+      - output_dir/scan/{CT_scan_name}_{slice_index}.jpg
+      - output_dir/segmentation/{CT_scan_name}_{slice_index}.jpg
+
+    Args:
+        `output_dir`: path of the output directory
+        `with_determined_folds`: structure output directory in 5 predetermined folds
+        (determined to have a "uniform" repartition of specific cases)
+
+    Returns:
+      None
+    """
+    skip_scan = "TCGA-13-0762"
+
+    scan_paths = []
+    seg_paths = []
+    for dataset in self.datasets:
+      scan_paths.extend(self.data[f"CT_{dataset}"])
+      seg_paths.extend(self.data[f"Segmentation_{dataset}"])
+
+    os.mkdir(output_dir)
+    if not with_determined_folds:
+      os.mkdir(output_dir / "scan")
+      os.mkdir(output_dir / "segmentation")
+    else:
+      for fold in range(5):
+        os.mkdir(output_dir / f"fold_{fold}" / "scan")
+        os.mkdir(output_dir / f"fold_{fold}" / "segmentation")
+
+    dir_w_paths: list[tuple[str, list[Path]]] = [
+      ("scan", scan_paths),
+      ("segmentation", seg_paths),
+    ]
+    for dir_name, paths in dir_w_paths:
+      for path in paths:
+        if skip_scan in str(path):
+          continue
+
+        file, data = SampleUtils.load_from_path(path)
+        affine = file.affine  # pyright: ignore
+        axcodes = aff2axcodes(affine)
+        if axcodes != ("L", "P", "S"):
+          current_ornt = axcodes2ornt(axcodes)
+          target_ornt = axcodes2ornt(("L", "P", "S"))
+
+          transform = ornt_transform(current_ornt, target_ornt)
+          reoriented_data = apply_orientation(data, transform)
+          new_affine = affine @ inv_ornt_aff(transform, data.shape)
+
+          data = nib.nifti1.Nifti1Image(reoriented_data, new_affine).get_fdata()
+
+        assert data.shape[:2] == [512, 512]
+        for i in range(data.shape[3]):
+          image = data[:, :, i]
+          if not with_determined_folds:
+            Image.fromarray(image).save(output_dir / dir_name / f"{path.name}_{i}.jpg")
+
   def _loading_dataset_paths(self, verify: bool = True) -> dict:
     """
     Explore NIFTI files in the DatasetChallenge directory structure
@@ -158,8 +235,7 @@ class Dataset:
     segmentation_length = []
 
     # CT data
-    ct_datasets = ["MSKCC", "TCGA"]
-    for dataset in ct_datasets:
+    for dataset in self.datasets:
       path = os.path.join(self.base_dir, "CT", dataset)
       if os.path.exists(path):
         datasets[f"CT_{dataset}"] = [os.path.join(path, f) for f in os.listdir(path)]
