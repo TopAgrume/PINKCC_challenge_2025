@@ -1,4 +1,5 @@
 import random
+from collections.abc import Iterator
 from pathlib import Path
 
 import numpy as np
@@ -9,17 +10,17 @@ from torch.utils.data import Dataset, Sampler
 from ocd.dataset.dataset import SampleUtils
 
 
-class BalancedBatchSampler(Sampler):
+class BalancedBatchSampler(Sampler[list[int]]):
   def __init__(
     self,
     folds_dataframe: pd.DataFrame,
     folds: list[int],
     batch_size: int,
-    ratio: float = 0.25,
+    ratio: float = 0.25,  # default value calculated based on the dataset
   ):
     self.batch_size = batch_size
 
-    df: pd.DataFrame = folds_dataframe[folds_dataframe["fold_id"].isin(folds)]  # pyright: ignore
+    df = folds_dataframe[folds_dataframe["fold_id"].isin(folds)].reset_index()
     # with_labels, without_labels = (
     #  df["has_labels"].value_counts()[True].item(),
     #  df["has_labels"].value_counts()[False].item(),
@@ -37,7 +38,7 @@ class BalancedBatchSampler(Sampler):
       len(self.without_labels_indices) // self.n_without_labels,
     )
 
-  def __iter__(self):
+  def __iter__(self) -> Iterator[list[int]]:
     random.shuffle(self.with_labels_indices)
     random.shuffle(self.without_labels_indices)
 
@@ -53,19 +54,24 @@ class BalancedBatchSampler(Sampler):
       random.shuffle(batch_indices)
       yield batch_indices
 
-  def __len__(self):
+  def __len__(self) -> int:
     return self.num_batches
 
 
-class TwoDimDataset(Dataset):
+class Dataset2D(Dataset):
   def __init__(
-    self, folds_dataframe: pd.DataFrame, dataset_path: Path, folds: list[int]
+    self,
+    folds_dataframe: pd.DataFrame,
+    dataset_path: Path,
+    folds: list[int],
+    n_class: int = 3,
   ) -> None:
     super().__init__()
 
     # schema is (path, fold_id, has_labels)
-    self.file_paths: pd.DataFrame = folds_dataframe[folds_dataframe["fold"].isin(folds)]  # pyright:ignore
+    self.file_paths = folds_dataframe[folds_dataframe["fold"].isin(folds)].reset_index()
     self.dataset_path = dataset_path
+    self.n_class = n_class
 
   def __len__(self) -> int:
     return len(self.file_paths)
@@ -77,8 +83,10 @@ class TwoDimDataset(Dataset):
       scan = np.load(self.dataset_path / "scan" / f"{row['path']}.npy")  # pyright: ignore
       scan = SampleUtils.normalize_ct(ct_data=scan, output_range=(0, 1))
 
+      # TODO: maybe implement label smoothing ?
       seg = np.load(self.dataset_path / "seg" / f"{row['path']}.npy")  # pyright: ignore
-      # convert seg to a one hot tensor
-      batch.append(torch.from_numpy(scan))
+      seg = np.eye(self.n_class)[seg.astype(np.int8)]
+
+      batch.append((torch.from_numpy(scan), torch.from_numpy(seg)))
 
     return batch
