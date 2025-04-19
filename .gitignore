@@ -2,6 +2,7 @@
 DatasetChallenge/
 DatasetChallenge.zip
 .vscode
+2D_CT_SCANS
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

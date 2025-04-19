@@ -181,3 +181,46 @@ new_affine = affine @ inv_ornt_aff(transform, data.shape)
 
 new_img = nib.Nifti1Image(reoriented_data, new_affine)
 nib.save(new_img, "reoriented_seg.nii.gz")
+# %%
+PATH = Path("..") / "DatasetChallenge" / "CT" / "MSKCC" / "347589.nii.gz"
+img = nib.loadsave.load(PATH)
+data = img.get_fdata()
+affine = img.affine
+print(affine)
+print(aff2axcodes(affine))
+
+img = data[:, :, 0]
+
+dir1 = affine[:3, :3]
+print(dir1)
+norm1 = dir1 / np.linalg.norm(dir1, axis=0)
+
+plt.imshow(img)
+plt.plot()
+
+# %%
+PATH = Path("..") / "DatasetChallenge" / "CT" / "MSKCC" / "374142.nii.gz"
+img = nib.loadsave.load(PATH)
+data = img.get_fdata()
+affine = img.affine
+print(affine)
+print(aff2axcodes(affine))
+
+img = data[:, :, 0]
+
+dir2 = affine[:3, :3]
+print(dir2)
+norm2 = dir2 / np.linalg.norm(dir2, axis=0)
+
+plt.imshow(img)
+plt.plot()
+
+# %%
+alignment = np.sign(np.sum(norm1 * norm2, axis=0))
+print("Axis-wise alignment:", alignment)
+
+
+# %%
+Dataset(base_dir=Path("..") / "DatasetChallenge").convert_CT_scans_to_images(
+  output_dir=Path("..") / "2D_CT_SCANS"
+)

@@ -4,6 +4,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import nibabel as nib
 import numpy as np
+import pandas as pd
 from nibabel.filebasedimages import FileBasedImage
 from nibabel.orientations import (
   aff2axcodes,
@@ -12,8 +13,10 @@ from nibabel.orientations import (
   inv_ornt_aff,
   ornt_transform,
 )
-from PIL import Image
 from sklearn.model_selection import train_test_split
+from tqdm import tqdm
+
+from ocd.utils import create_folds_dataframe
 
 
 class SampleUtils:
@@ -153,28 +156,23 @@ class Dataset:
     self.test_pairs = MSKCC_test + TCGA_test
 
   def convert_CT_scans_to_images(
-    self, output_dir: Path, with_determined_folds: bool = True
+    self, output_dir: Path, n_folds: int = 5, seed: int = 42
   ):
     """
     Convert the 3D CT scans from datasets to 2D images.
-    Depending on the argument `with_determined_folds`, the output structure is the
-    following:
-    - `with_determined_folds` == True:
-      - 5 x output_dir/{fold_id}/scan/{CT_scan_name}_{slice_index}.jpg
-      - 5 x output_dir/{fold_id}/segmentation/{CT_scan_name}_{slice_index}.jpg
-    - `with_determined_folds` == False:
+    The output structure is the following:
       - output_dir/scan/{CT_scan_name}_{slice_index}.jpg
       - output_dir/segmentation/{CT_scan_name}_{slice_index}.jpg
 
     Args:
         `output_dir`: path of the output directory
-        `with_determined_folds`: structure output directory in 5 predetermined folds
-        (determined to have a "uniform" repartition of specific cases)
 
     Returns:
       None
     """
-    skip_scan = "TCGA-13-0762"
+    TO_EXCLUDE = ["TCGA-13-0762"]  # only need to exclude this one for 2D
+
+    ct_to_fold_df = create_folds_dataframe(TO_EXCLUDE, n_folds, seed)
 
     scan_paths = []
     seg_paths = []
@@ -182,24 +180,18 @@ class Dataset:
       scan_paths.extend(self.data[f"CT_{dataset}"])
       seg_paths.extend(self.data[f"Segmentation_{dataset}"])
 
+    all_paths = zip(sorted(scan_paths), sorted(seg_paths), strict=False)
+
     os.mkdir(output_dir)
-    if not with_determined_folds:
-      os.mkdir(output_dir / "scan")
-      os.mkdir(output_dir / "segmentation")
-    else:
-      for fold in range(5):
-        os.mkdir(output_dir / f"fold_{fold}" / "scan")
-        os.mkdir(output_dir / f"fold_{fold}" / "segmentation")
+    os.mkdir(output_dir / "scan")
+    os.mkdir(output_dir / "seg")
 
-    dir_w_paths: list[tuple[str, list[Path]]] = [
-      ("scan", scan_paths),
-      ("segmentation", seg_paths),
-    ]
-    for dir_name, paths in dir_w_paths:
-      for path in paths:
-        if skip_scan in str(path):
-          continue
+    rows = []
+    for scan_path, seg_path in tqdm(all_paths):
+      if any(exclude in str(scan_path) for exclude in TO_EXCLUDE):
+        continue
 
+      for path, dir_name in [(scan_path, "scan"), (seg_path, "seg")]:
         file, data = SampleUtils.load_from_path(path)
         affine = file.affine  # pyright: ignore
         axcodes = aff2axcodes(affine)
@@ -213,11 +205,29 @@ class Dataset:
 
           data = nib.nifti1.Nifti1Image(reoriented_data, new_affine).get_fdata()
 
-        assert data.shape[:2] == [512, 512]
-        for i in range(data.shape[3]):
+        file_name = path.name.split(".")[0]
+        assert data.shape[:2] == (512, 512)
+        for i in range(data.shape[2]):
           image = data[:, :, i]
-          if not with_determined_folds:
-            Image.fromarray(image).save(output_dir / dir_name / f"{path.name}_{i}.jpg")
+          np.save(
+            output_dir / dir_name / f"{file_name}_{i}",
+            image.astype(np.float16),
+          )
+          if dir_name == "seg":
+            fold_id = ct_to_fold_df[ct_to_fold_df["path"].str.contains(file_name)][
+              "fold"
+            ].item()
+            rows.append(
+              (
+                f"{file_name}_{i}",
+                fold_id,
+                len(np.unique(image)) != 1,
+              )
+            )
+
+    pd.DataFrame(rows, columns=["path", "fold_id", "has_labels"]).to_csv(
+      output_dir / "metadata.csv"
+    )
 
   def _loading_dataset_paths(self, verify: bool = True) -> dict:
     """
@@ -238,7 +248,9 @@ class Dataset:
     for dataset in self.datasets:
       path = os.path.join(self.base_dir, "CT", dataset)
       if os.path.exists(path):
-        datasets[f"CT_{dataset}"] = [os.path.join(path, f) for f in os.listdir(path)]
+        datasets[f"CT_{dataset}"] = [
+          Path(os.path.join(path, f)) for f in os.listdir(path)
+        ]
       CT_length.append(len(datasets[f"CT_{dataset}"]))
       print(f"CT_{dataset}: {CT_length[-1]} files")
       print(f"  Sample file: {os.path.basename(datasets[f'CT_{dataset}'][0])}")
@@ -249,7 +261,7 @@ class Dataset:
       path = os.path.join(self.base_dir, "Segmentation", dataset)
       if os.path.exists(path):
         datasets[f"Segmentation_{dataset}"] = [
-          os.path.join(path, f) for f in os.listdir(path)
+          Path(os.path.join(path, f)) for f in os.listdir(path)
         ]
       segmentation_length.append(len(datasets[f"Segmentation_{dataset}"]))
       print(f"Segmentation_{dataset}: {segmentation_length[-1]} files")

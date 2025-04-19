@@ -1,0 +1,84 @@
+import random
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import torch
+from torch.utils.data import Dataset, Sampler
+
+from ocd.dataset.dataset import SampleUtils
+
+
+class BalancedBatchSampler(Sampler):
+  def __init__(
+    self,
+    folds_dataframe: pd.DataFrame,
+    folds: list[int],
+    batch_size: int,
+    ratio: float = 0.25,
+  ):
+    self.batch_size = batch_size
+
+    df: pd.DataFrame = folds_dataframe[folds_dataframe["fold_id"].isin(folds)]  # pyright: ignore
+    # with_labels, without_labels = (
+    #  df["has_labels"].value_counts()[True].item(),
+    #  df["has_labels"].value_counts()[False].item(),
+    # )
+    # ratio: float = with_labels / (with_labels + without_labels)  # pyright: ignore
+
+    self.with_labels_indices: list[int] = df[df["has_labels"]].index.tolist()  # pyright: ignore
+    self.without_labels_indices: list[int] = df[~df["has_labels"]].index.tolist()  # pyright: ignore
+
+    self.n_with_labels = int(batch_size * ratio)
+    self.n_without_labels = batch_size - self.n_with_labels
+
+    self.num_batches = min(
+      len(self.with_labels_indices) // self.n_with_labels,
+      len(self.without_labels_indices) // self.n_without_labels,
+    )
+
+  def __iter__(self):
+    random.shuffle(self.with_labels_indices)
+    random.shuffle(self.without_labels_indices)
+
+    iter1 = iter(self.with_labels_indices)
+    iter2 = iter(self.without_labels_indices)
+
+    for _ in range(self.num_batches):
+      batch_indices = []
+
+      batch_indices.extend([next(iter1) for _ in range(self.n_with_labels)])
+      batch_indices.extend([next(iter2) for _ in range(self.n_without_labels)])
+
+      random.shuffle(batch_indices)
+      yield batch_indices
+
+  def __len__(self):
+    return self.num_batches
+
+
+class TwoDimDataset(Dataset):
+  def __init__(
+    self, folds_dataframe: pd.DataFrame, dataset_path: Path, folds: list[int]
+  ) -> None:
+    super().__init__()
+
+    # schema is (path, fold_id, has_labels)
+    self.file_paths: pd.DataFrame = folds_dataframe[folds_dataframe["fold"].isin(folds)]  # pyright:ignore
+    self.dataset_path = dataset_path
+
+  def __len__(self) -> int:
+    return len(self.file_paths)
+
+  def __getitems__(self, indices: list[int]) -> list[tuple[torch.Tensor, torch.Tensor]]:
+    rows: pd.DataFrame = self.file_paths.iloc[indices]
+    batch = []
+    for row in rows.iterrows():
+      scan = np.load(self.dataset_path / "scan" / f"{row['path']}.npy")  # pyright: ignore
+      scan = SampleUtils.normalize_ct(ct_data=scan, output_range=(0, 1))
+
+      seg = np.load(self.dataset_path / "seg" / f"{row['path']}.npy")  # pyright: ignore
+      # convert seg to a one hot tensor
+      batch.append(torch.from_numpy(scan))
+
+    return batch
