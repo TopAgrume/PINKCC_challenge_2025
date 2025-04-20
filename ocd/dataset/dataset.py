@@ -126,28 +126,30 @@ class Dataset:
   Dataset for CT and segmentation data
   """
 
-  def __init__(self, base_dir: Path = Path("DatasetChallenge")):
+  def __init__(self, base_dir: Path = Path("DatasetChallenge"), random_state: int = 42):
     """
     Initialize the dataset path
 
     Args:
         base_dir: Base directory containing the dataset
+        random_state: Dataset split random seed
     """
     self.base_dir = base_dir
     self.datasets = ["MSKCC", "TCGA"]
     self.data = self._loading_dataset_paths()
+    print(f"Random seed: {random_state}")
 
     # === MSKCC ===
     MSKCC_pairs = self._create_paired_dataset(datasets=self.data, dataset_name="MSKCC")
     MSKCC_train, MSKCC_val, MSKCC_test = self._split_dataset(
-      MSKCC_pairs, dataset_name="MSKCC"
+      MSKCC_pairs, dataset_name="MSKCC", random_state=random_state
     )
 
     # === MSKCC ===
     TCGA_pairs = self._create_paired_dataset(datasets=self.data, dataset_name="TCGA")
 
     TCGA_train, TCGA_val, TCGA_test = self._split_dataset(
-      TCGA_pairs, dataset_name="TCGA"
+      TCGA_pairs, dataset_name="TCGA", random_state=random_state
     )
 
     self.num_samples = len(MSKCC_pairs) + len(TCGA_pairs)
@@ -348,7 +350,7 @@ class Dataset:
     )
 
     print(
-      f"Dataset split {dataset_name}: Train={len(train_pairs)},"
+      f"Dataset split {dataset_name}: Train={len(train_pairs)}, "
       f"Val={len(val_pairs)}, Test={len(test_pairs)}"
     )
     return train_pairs, val_pairs, test_pairs
