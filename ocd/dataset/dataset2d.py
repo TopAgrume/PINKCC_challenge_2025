@@ -79,7 +79,10 @@ class Dataset2D(Dataset):
     return len(self.file_paths)
 
   def __getitems__(self, indices: list[int]) -> list[tuple[torch.Tensor, torch.Tensor]]:
-    rows: pd.DataFrame = self.file_paths.iloc[indices[0]]
+    if len(indices) == 1:  # with sampler
+      rows: pd.DataFrame = self.file_paths.iloc[indices[0]]
+    else:
+      rows: pd.DataFrame = self.file_paths.iloc[indices]
     batch = []
     for row in rows.iterrows():
       scan = np.load(self.dataset_path / "scan" / f"{row[1]['path']}.npy")
