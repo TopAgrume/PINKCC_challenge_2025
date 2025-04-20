@@ -1,5 +1,7 @@
 import pandas as pd
+import torch
 from torch.utils.data import DataLoader
+from tqdm import tqdm
 
 from ocd.config import TrainConfig2D
 from ocd.dataset.dataset import Dataset
@@ -17,6 +19,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
 
   for fold in folds:
     train_folds = folds[0:fold] + folds[fold + 1 : len(folds)]
+    print(f"Using folds {train_folds} for training, fold {fold} for validation.")
     sampler = BalancedBatchSampler(
       folds_dataframe=folds_dataframe,
       folds=train_folds,
@@ -35,13 +38,9 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
     )
 
     train_dataloader = DataLoader(
-      dataset=train_dataset,
-      sampler=sampler,
-      shuffle=True,
-      batch_size=config.batch_size,
-      pin_memory=True,
+      dataset=train_dataset, sampler=sampler, pin_memory=True, num_workers=4
     )
-    train_dataloader = DataLoader(
+    val_dataloader = DataLoader(
       dataset=val_dataset,
       shuffle=True,
       batch_size=config.batch_size,
@@ -51,10 +50,13 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
     model = config.model
     optimizer = config.optimizer
     criterion = config.criterion
+    scheduler = config.scheduler
 
-    train_loss = []
-    for epoch in range(config.epochs):
-      for images, labels in train_dataloader:
+    train_loss_arr = []
+    for epoch in range(1, config.epochs + 1):
+      train_loss = 0
+      model.train()
+      for images, labels in tqdm(train_dataloader):
         images, labels = images.to(config.device), labels.to(config.device)
 
         output = model(images)
@@ -66,4 +68,32 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
 
         optimizer.step()
 
-      train_loss.append(loss)
+        train_loss += loss.detach().item()
+
+      train_loss_arr.append(train_loss / len(train_dataloader))
+
+      print(
+        f"Epoch {epoch} - train loss : {train_loss / len(train_dataloader)} -"
+        f" learning rate : {scheduler.get_last_lr()[0]}"
+      )
+
+      if epoch % 5 == 0:
+        print("Evaluating model...")
+        model.eval()
+
+        val_loss = 0
+        with torch.no_grad():
+          for images, labels in tqdm(val_dataloader):
+            images, labels = images.to(config.device), labels.to(config.device)
+
+            output = model(images)
+            loss = criterion(output, labels)
+
+            val_loss += loss.item()
+
+          print(
+            f"Epoch {epoch} - val loss : {val_loss / len(val_dataloader)} -"
+            f" learning rate : {scheduler.get_last_lr()[0]}"
+          )
+
+      scheduler.step()

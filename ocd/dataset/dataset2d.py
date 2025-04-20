@@ -69,7 +69,9 @@ class Dataset2D(Dataset):
     super().__init__()
 
     # schema is (path, fold_id, has_labels)
-    self.file_paths = folds_dataframe[folds_dataframe["fold"].isin(folds)].reset_index()
+    self.file_paths = folds_dataframe[
+      folds_dataframe["fold_id"].isin(folds)
+    ].reset_index()
     self.dataset_path = dataset_path
     self.n_class = n_class
 
@@ -77,16 +79,18 @@ class Dataset2D(Dataset):
     return len(self.file_paths)
 
   def __getitems__(self, indices: list[int]) -> list[tuple[torch.Tensor, torch.Tensor]]:
-    rows: pd.DataFrame = self.file_paths.iloc[indices]
+    rows: pd.DataFrame = self.file_paths.iloc[indices[0]]
     batch = []
     for row in rows.iterrows():
-      scan = np.load(self.dataset_path / "scan" / f"{row['path']}.npy")  # pyright: ignore
-      scan = SampleUtils.normalize_ct(ct_data=scan, output_range=(0, 1))
+      scan = np.load(self.dataset_path / "scan" / f"{row[1]['path']}.npy")
+      scan = SampleUtils.normalize_ct(ct_data=scan, output_range=(0, 1)).astype(
+        np.float32
+      )
 
       # TODO: maybe implement label smoothing ?
-      seg = np.load(self.dataset_path / "seg" / f"{row['path']}.npy")  # pyright: ignore
-      seg = np.eye(self.n_class)[seg.astype(np.int8)]
+      seg = np.load(self.dataset_path / "seg" / f"{row[1]['path']}.npy")
+      seg = seg.astype(np.int16)
 
-      batch.append((torch.from_numpy(scan), torch.from_numpy(seg)))
+      batch.append((torch.from_numpy(scan).unsqueeze(0), torch.from_numpy(seg)))
 
     return batch
