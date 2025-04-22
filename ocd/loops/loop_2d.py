@@ -38,7 +38,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
     )
 
     train_dataloader = DataLoader(
-      dataset=train_dataset, sampler=sampler, pin_memory=True, num_workers=4
+      dataset=train_dataset, sampler=sampler, pin_memory=True, num_workers=2
     )
     val_dataloader = DataLoader(
       dataset=val_dataset,

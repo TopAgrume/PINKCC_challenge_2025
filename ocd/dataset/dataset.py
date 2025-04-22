@@ -16,7 +16,7 @@ from nibabel.orientations import (
 from sklearn.model_selection import train_test_split
 from tqdm import tqdm
 
-from ocd.utils import create_folds_dataframe
+from ocd.utils import INVERSED, create_folds_dataframe
 
 
 class SampleUtils:
@@ -157,6 +157,11 @@ class Dataset:
     self.val_pairs = MSKCC_val + TCGA_val
     self.test_pairs = MSKCC_test + TCGA_test
 
+  def get_last_slice(self, data: np.ndarray, delete_last_n: int = 15) -> int:
+    # TODO: implement
+
+    return 0
+
   def convert_CT_scans_to_images(
     self, output_dir: Path, n_folds: int = 5, seed: int = 42
   ):
@@ -209,7 +214,10 @@ class Dataset:
 
         file_name = path.name.split(".")[0]
         assert data.shape[:2] == (512, 512)
-        for i in range(data.shape[2]):
+        if file_name in INVERSED:
+          data = data[:, :, ::-1]
+        limit = self.get_last_slice(data)
+        for i in range(limit):
           image = data[:, :, i]
           np.save(
             output_dir / dir_name / f"{file_name}_{i}",

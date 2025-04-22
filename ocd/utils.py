@@ -2,6 +2,35 @@ import random
 
 import pandas as pd
 
+INVERSED = [
+  "330684",
+  "330697",
+  "330699",
+  "330718",
+  "333015",
+  "333017",
+  "333020",
+  "333021",
+  "333022",
+  "333036",
+  "374142",
+  "374143",
+  "374149",
+  "374177",
+  "374196",
+  "TCGA-13-0799",
+  "TCGA-13-0904",
+  "TCGA-13-1405",
+  "TCGA-13-1488",
+  "TCGA-13-1499",
+  "TCGA-13-1507",
+  "TCGA-13-1511",
+  "TCGA-24-1614",
+  "TCGA-61-1906",
+  "TCGA-61-2016",
+  "TCGA-13-0724",
+]
+
 annotations = {
   "330680": "Grosse tumeur avant/droite, très petite métastase avant/droite",
   "330681": "Moyenne tumeur primaire centrale [PAS DE METASTASE]",
