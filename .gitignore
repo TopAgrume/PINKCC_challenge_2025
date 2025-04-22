@@ -3,6 +3,10 @@ DatasetChallenge/
 DatasetChallenge.zip
 .vscode
 2D_CT_SCANS
+slurm-*.out
+nnUNet_raw_data/
+nnUNet_preprocessed/
+nnUNet_results/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

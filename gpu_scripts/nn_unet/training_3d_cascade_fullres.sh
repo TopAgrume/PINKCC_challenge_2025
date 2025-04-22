@@ -1,9 +1,9 @@
 #!/bin/sh
-#BATCH --job-name="first-nnUNet-gpu"
+#BATCH --job-name="first-nnUNet-gpu-cascade"
 #SBATCH --partition=ird_gpu
 #SBATCH --gres=gpu:a100:1
 #SBATCH --ntasks=1
-#SBATCH --time=5:59:00
+#SBATCH --time=5:59:59
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=16G
 #SBATCH --mail-user=alexandre.devauxriviere@gmail.com
@@ -29,4 +29,4 @@ export nnUNet_results="${nnUNet_data_base}/nnUNet_results"
 source /home/user-data_challenge-22/scratch/miniconda3/etc/profile.d/conda.sh
 conda activate /home/user-data_challenge-22/scratch/miniconda3/envs/.venv/
 
-/home/user-data_challenge-22/scratch/miniconda3/envs/.venv/bin/nnUNetv2_train 1 2d 0
+/home/user-data_challenge-22/scratch/miniconda3/envs/.venv/bin/nnUNetv2_train 1 3d_cascade_fullres 0
