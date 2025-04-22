@@ -158,9 +158,11 @@ class Dataset:
     self.test_pairs = MSKCC_test + TCGA_test
 
   def get_last_slice(self, data: np.ndarray, delete_last_n: int = 15) -> int:
-    # TODO: implement
-
-    return 0
+    has_labels: np.ndarray = np.any(data != 0, axis=(1, 2))
+    last_index = min(
+      data.shape[2] - 1 - has_labels[::-1].argmax() + 3, data.shape[2] - 1
+    )  # add 3 slice on top of last one as a margin
+    return max(last_index, data.shape[2] - delete_last_n - 1)
 
   def convert_CT_scans_to_images(
     self, output_dir: Path, n_folds: int = 5, seed: int = 42
@@ -196,10 +198,14 @@ class Dataset:
     rows = []
     for scan_path, seg_path in tqdm(all_paths):
       if any(exclude in str(scan_path) for exclude in TO_EXCLUDE):
+        print(f"Skipped {scan_path}...")
         continue
 
-      for path, dir_name in [(scan_path, "scan"), (seg_path, "seg")]:
+      for path, dir_name in [(seg_path, "seg"), (scan_path, "scan")]:
         file, data = SampleUtils.load_from_path(path)
+
+        if dir_name == "seg":
+          limit = self.get_last_slice(data)
         affine = file.affine  # pyright: ignore
         axcodes = aff2axcodes(affine)
         if axcodes != ("L", "P", "S"):
@@ -216,8 +222,7 @@ class Dataset:
         assert data.shape[:2] == (512, 512)
         if file_name in INVERSED:
           data = data[:, :, ::-1]
-        limit = self.get_last_slice(data)
-        for i in range(limit):
+        for i in range(limit):  # pyright: ignore
           image = data[:, :, i]
           np.save(
             output_dir / dir_name / f"{file_name}_{i}",
@@ -235,7 +240,7 @@ class Dataset:
               )
             )
 
-    pd.DataFrame(rows, columns=["path", "fold_id", "has_labels"]).to_csv(
+    pd.DataFrame(rows, columns=["path", "fold_id", "has_labels"]).to_csv(  # pyright:ignore
       output_dir / "metadata.csv"
     )
 
