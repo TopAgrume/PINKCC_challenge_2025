@@ -292,8 +292,11 @@ def create_folds_dataframe(
 
   total_scans = len(all_scan_ids)
 
-  base_fold_size = total_scans // n_folds
-  remainder = total_scans % n_folds
+  n_scan_for_test = int(total_scans * 0.2)
+  n_scan_for_fold = total_scans - n_scan_for_test
+
+  base_fold_size = n_scan_for_fold // n_folds
+  remainder = n_scan_for_fold % n_folds
 
   fold_sizes = [
     base_fold_size + 1 if i < remainder else base_fold_size for i in range(n_folds)
@@ -303,12 +306,18 @@ def create_folds_dataframe(
   random.shuffle(all_scan_ids)
 
   data = []
-  start_index = 0
+  start_index, end_index = 0, 0
   for i in range(n_folds):
     fold_size = fold_sizes[i]
     end_index = start_index + fold_size
     current_fold = all_scan_ids[start_index:end_index]
     data.extend(list(zip(current_fold, [i] * len(current_fold), strict=False)))
     start_index = end_index
+
+  data.extend(
+    list(
+      zip(all_scan_ids[end_index:], [-1] * len(all_scan_ids[end_index:]), strict=False)
+    )
+  )
 
   return pd.DataFrame(data=data, columns=["path", "fold"])
