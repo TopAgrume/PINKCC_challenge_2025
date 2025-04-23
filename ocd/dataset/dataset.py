@@ -1,11 +1,10 @@
 import os
-from pathlib import Path
-
-import matplotlib.pyplot as plt
 import nibabel as nib
 import numpy as np
 import pandas as pd
-from nibabel.filebasedimages import FileBasedImage
+
+from tqdm import tqdm
+from pathlib import Path
 from nibabel.orientations import (
   aff2axcodes,
   apply_orientation,
@@ -14,112 +13,9 @@ from nibabel.orientations import (
   ornt_transform,
 )
 from sklearn.model_selection import train_test_split
-from tqdm import tqdm
+from ocd.dataset.sample_utils import SampleUtils
 
 from ocd.utils import INVERSED, create_folds_dataframe
-
-
-class SampleUtils:
-  """
-  Usefull operation on CT and segmentation data
-  """
-
-  @classmethod
-  def load_from_path(cls, file_path: str | Path) -> tuple[FileBasedImage, np.ndarray]:
-    """
-    Load NIFTI file content
-
-    Args:
-        file_path: Path to the NIFTI file
-
-    Returns:
-        Tuple of (nib.Nifti1Image, numpy.ndarray)
-    """
-    img = nib.loadsave.load(file_path)
-    data = img.get_fdata()  # pyright: ignore
-    return img, data
-
-  @classmethod
-  def display_slice(
-    cls,
-    data: np.ndarray,
-    slice_idx=None,
-    axis=2,
-    figsize=(20, 16),
-    cmap="gray",
-    vmin=None,
-    vmax=None,
-    title=None,
-  ) -> None:
-    """
-    Display a single slice from a 3D volume
-
-    Args:
-        data: 3D numpy array
-        slice_idx: Index of the slice to display, defaults to middle slice
-        axis: Axis along which to take the slice (0, 1, or 2)
-        figsize: Figure size as (width, height)
-        cmap: Colormap for the display
-        vmin, vmax: Min and max values for color scaling
-        title: Title for the plot
-    """
-    if slice_idx is None:
-      slice_idx = data.shape[axis] // 2
-
-    if axis == 0:
-      slice_data = data[slice_idx, :, :]
-    elif axis == 1:
-      slice_data = data[:, slice_idx, :]
-    else:
-      slice_data = data[:, :, slice_idx]
-
-    plt.figure(figsize=figsize)
-    plt.imshow(slice_data, cmap=cmap, vmin=vmin, vmax=vmax)
-    plt.colorbar()
-
-    if title:
-      plt.title(title)
-    else:
-      plt.title(f"Slice {slice_idx} along axis {axis}")
-
-    plt.axis("on")
-    plt.tight_layout()
-    plt.show()
-
-  @classmethod
-  def normalize_ct(
-    cls,
-    ct_data: np.ndarray,
-    window_center: int = 40,
-    window_width: int = 400,
-    output_range: tuple[float, float] = (-1, 1),
-  ) -> np.ndarray:
-    """
-    Apply windowing and normalization to CT data
-
-    Args:
-        ct_data: Raw CT data in Hounsfield units
-        window_center: Center of the windowing operation (typically 40 for soft tissue)
-        window_width: Width of the window (typically 400 for soft tissue)
-        output_range: Desired output range for normalization
-
-    Returns:
-        Normalized CT data
-    """
-    # windowing
-    min_val = window_center - window_width / 2
-    max_val = window_center + window_width / 2
-
-    windowed_data = np.clip(ct_data, min_val, max_val)
-
-    # normalize
-    out_min, out_max = output_range
-    normalized = out_min + (windowed_data - min_val) * (out_max - out_min) / (
-      max_val - min_val
-    )
-
-    return normalized
-
 
 class Dataset:
   """
@@ -199,7 +95,7 @@ class Dataset:
         continue
 
       for path, dir_name in [(scan_path, "scan"), (seg_path, "seg")]:
-        file, data = SampleUtils.load_from_path(path)
+        file, data = SampleUtils.load_from_path_nib(path)
         affine = file.affine  # pyright: ignore
         axcodes = aff2axcodes(affine)
         if axcodes != ("L", "P", "S"):
