@@ -16,7 +16,7 @@ class BalancedBatchSampler(Sampler[list[int]]):
     folds_dataframe: pd.DataFrame,
     folds: list[int],
     batch_size: int,
-    ratio: float = 0.25,  # default value calculated based on the dataset
+    ratio: float = 0.28,  # default value calculated based on the dataset
   ):
     self.batch_size = batch_size
 
@@ -65,6 +65,7 @@ class Dataset2D(Dataset):
     dataset_path: Path,
     folds: list[int],
     n_class: int = 3,
+    with_path: bool = False,
   ) -> None:
     super().__init__()
 
@@ -74,11 +75,17 @@ class Dataset2D(Dataset):
     ].reset_index()
     self.dataset_path = dataset_path
     self.n_class = n_class
+    self.with_path = with_path
 
   def __len__(self) -> int:
     return len(self.file_paths)
 
-  def __getitems__(self, indices: list[int]) -> list[tuple[torch.Tensor, torch.Tensor]]:
+  def __getitems__(
+    self, indices: list[int]
+  ) -> (
+    list[tuple[torch.Tensor, torch.Tensor]]
+    | list[tuple[torch.Tensor, torch.Tensor, str]]
+  ):
     if len(indices) == 1:  # with sampler
       rows: pd.DataFrame = self.file_paths.iloc[indices[0]]
     else:
@@ -94,6 +101,11 @@ class Dataset2D(Dataset):
       seg = np.load(self.dataset_path / "seg" / f"{row[1]['path']}.npy")
       seg = seg.astype(np.int16)
 
-      batch.append((torch.from_numpy(scan).unsqueeze(0), torch.from_numpy(seg)))
+      if not self.with_path:
+        batch.append((torch.from_numpy(scan).unsqueeze(0), torch.from_numpy(seg)))
+      else:
+        batch.append(
+          (torch.from_numpy(scan).unsqueeze(0), torch.from_numpy(seg), row[1]["path"])
+        )
 
     return batch

@@ -8,6 +8,7 @@ nnUNet_raw_data/
 nnUNet_preprocessed/
 nnUNet_results/
 ct-sam3d/
+outputs_*/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
