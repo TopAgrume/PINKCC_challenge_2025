@@ -7,8 +7,8 @@ slurm-*.out
 nnUNet_raw_data/
 nnUNet_preprocessed/
 nnUNet_results/
-ct_sam3d/
 tests/
+ckpt_1000/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
