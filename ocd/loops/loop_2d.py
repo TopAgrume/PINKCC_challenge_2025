@@ -168,6 +168,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
         train_loss += loss_value
 
         train_loss_arr.append(loss_value)
+      	scheduler.step()
 
       train_loss_arr.append(train_loss / len(train_dataloader))
 
@@ -190,8 +191,6 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
         )
         logger.info("------------------------------")
 
-      scheduler.step()
-
     logger.info("------------------------------")
     logger.info("Last eval before testing...")
     best_val_loss = eval_model(
@@ -204,7 +203,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
       scheduler=scheduler,
     )
     logger.info("------------------------------")
-    np.save(OUTPUT_DIR / "train_loss_fold_{fold}.npy", np.array(train_loss_arr))
+    np.save(OUTPUT_DIR / f"train_loss_fold_{fold}.npy", np.array(train_loss_arr))
 
   model = config.model
   criterion = config.criterion

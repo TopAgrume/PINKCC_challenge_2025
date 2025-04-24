@@ -20,7 +20,7 @@ if __name__ == "__main__":
   device = "cuda" if torch.cuda.is_available() else "cpu"
   model = NNUnet2D(in_channels=1).to(device)
   optimizer = AdamW(params=model.parameters(), lr=3e-4)
-  scheduler = StepLR(optimizer=optimizer, step_size=2, gamma=0.99)
+  scheduler = StepLR(optimizer=optimizer, step_size=50, gamma=0.99)
 
   config = TrainConfig2D(
     dataset_path=Path("DatasetChallenge"),
@@ -30,8 +30,8 @@ if __name__ == "__main__":
     scheduler=scheduler,
     criterion=WeightedSegmentationLoss(),
     device=device,
-    batch_size=32,
-    epochs=50,
+    batch_size=10,
+    epochs=5,
   )
   config.save_config()
 
