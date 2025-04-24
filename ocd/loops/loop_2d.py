@@ -168,7 +168,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
         train_loss += loss_value
 
         train_loss_arr.append(loss_value)
-      	scheduler.step()
+	schedule.step()
 
       train_loss_arr.append(train_loss / len(train_dataloader))
 
