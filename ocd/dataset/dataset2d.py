@@ -21,16 +21,11 @@ class BalancedBatchSampler(Sampler[list[int]]):
     self.batch_size = batch_size
 
     df = folds_dataframe[folds_dataframe["fold_id"].isin(folds)].reset_index()
-    # with_labels, without_labels = (
-    #  df["has_labels"].value_counts()[True].item(),
-    #  df["has_labels"].value_counts()[False].item(),
-    # )
-    # ratio: float = with_labels / (with_labels + without_labels)  # pyright: ignore
 
     self.with_labels_indices: list[int] = df[df["has_labels"]].index.tolist()  # pyright: ignore
     self.without_labels_indices: list[int] = df[~df["has_labels"]].index.tolist()  # pyright: ignore
 
-    self.n_with_labels = int(batch_size * ratio)
+    self.n_with_labels = round(batch_size * ratio)
     self.n_without_labels = batch_size - self.n_with_labels
 
     self.num_batches = min(
