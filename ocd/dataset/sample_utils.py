@@ -36,7 +36,7 @@ class SampleUtils:
     return img, data
 
   @classmethod
-  def load_from_path_nib_sitk(cls, file_path: Union[str, Path]) -> Tuple[sitk.Image, np.ndarray]:
+  def load_from_path_sitk(cls, file_path: Union[str, Path]) -> Tuple[sitk.Image, np.ndarray]:
     """
     Load NIFTI file content using SimpleITK
 
@@ -63,25 +63,25 @@ class SampleUtils:
         Reoriented SimpleITK image in RAI orientation
     """
     if isinstance(image, sitk.Image):
-        reorient_filter = sitk.DICOMOrientImageFilter()
-        reorient_filter.SetDesiredCoordinateOrientation("RAI")
-        return reorient_filter.Execute(image)
+      reorient_filter = sitk.DICOMOrientImageFilter()
+      reorient_filter.SetDesiredCoordinateOrientation("RAI")
+      return reorient_filter.Execute(image)
     else:
-        affine = image.affine  # pyright: ignore
+      affine = image.affine  # pyright: ignore
 
-        axcodes = aff2axcodes(affine)
-        if axcodes != ("R", "A", "I"):
-            current_ornt = axcodes2ornt(axcodes)
-            target_ornt = axcodes2ornt(("R", "A", "I"))
+      axcodes = aff2axcodes(affine)
+      if axcodes != ("R", "A", "I"):
+        current_ornt = axcodes2ornt(axcodes)
+        target_ornt = axcodes2ornt(("R", "A", "I"))
 
-            transform = ornt_transform(current_ornt, target_ornt)
-            data = image.get_fdata()  # pyright: ignore
-            reoriented_data = apply_orientation(data, transform)
-            new_affine = affine @ inv_ornt_aff(transform, data.shape)
+        transform = ornt_transform(current_ornt, target_ornt)
+        data = image.get_fdata()  # pyright: ignore
+        reoriented_data = apply_orientation(data, transform)
+        new_affine = affine @ inv_ornt_aff(transform, data.shape)
 
-            return nib.nifti1.Nifti1Image(reoriented_data, new_affine)
-        else:
-            return image
+        return nib.nifti1.Nifti1Image(reoriented_data, new_affine)
+      else:
+          return image
 
   @classmethod
   def display_slice(
