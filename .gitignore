@@ -9,6 +9,7 @@ nnUNet_preprocessed/
 nnUNet_results/
 tests/
 ckpt_1000/
+experiment_output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

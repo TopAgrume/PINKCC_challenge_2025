@@ -62,7 +62,9 @@ DATASET_BASE_DIR = Path("DatasetChallenge")
 # nnUNet lib configuration
 NNUNET_DATASET_ID = 1
 NNUNET_CONFIGURATION = "2d" # "3d_fullres" "3d_lowres" "3d_cascade_fullres"
-NNUNET_FOLD = None  # 0 1 2 3 4
+NNUNET_FOLD = 0  # 0 1 2 3 4 all
+NNUNET_VERBOSE = False
+NNUNET_VERBOSE_PREPROCESSING = False
 
 # ctsqm3d lib configuration
 CTSAMD3D_CHECKPOINT = Path("ckpt_1000/params.pth")
@@ -127,9 +129,10 @@ def main(run_stage: str):
             dataset_id_or_name=NNUNET_DATASET_ID,
             configuration=NNUNET_CONFIGURATION,
             fold=NNUNET_FOLD,
-            model_path=None,
             save_probabilities=True,
-            overwrite=True
+            overwrite=True,
+            verbose=NNUNET_VERBOSE,
+            verbose_preprocessing=NNUNET_VERBOSE_PREPROCESSING
         )
 
         if results:
