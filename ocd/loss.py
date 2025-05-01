@@ -48,7 +48,7 @@ class WeightedSegmentationLoss(nn.Module):
   def __init__(
     self,
     ce_label_smoothing: float,
-    weight_dice: float = 1,
+    weight_dice: float = 0.5,
     weight_ce: float = 0.5,
     num_classes: int = 3,
     ignore_index: int = 0,
@@ -67,12 +67,10 @@ class WeightedSegmentationLoss(nn.Module):
           "channel's number in prediction is different than number of classes"
         )
 
-      return (
-        self.weight_dice * dice_score(preds, targets, self.num_classes, mode="loss")
-        + self.weight_ce
-        + nn.CrossEntropyLoss(
-          ignore_index=self.ignore_index, label_smoothing=self.ce_label_smoothing
-        )(preds, targets.long())
+      return self.weight_dice * dice_score(
+        preds, targets, self.num_classes, mode="loss", ignore_index=self.ignore_index
+      ) + self.weight_ce * nn.CrossEntropyLoss(label_smoothing=self.ce_label_smoothing)(
+        preds, targets.long()
       )
     else:
       raise NotImplementedError("Not implemented yet")

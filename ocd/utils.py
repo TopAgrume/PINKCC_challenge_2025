@@ -292,7 +292,7 @@ def create_folds_dataframe(
 
   total_scans = len(all_scan_ids)
 
-  n_scan_for_test = int(total_scans * 0.2)
+  n_scan_for_test = int(total_scans * 0.1)
   n_scan_for_fold = total_scans - n_scan_for_test
 
   base_fold_size = n_scan_for_fold // n_folds

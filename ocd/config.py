@@ -1,5 +1,6 @@
 from pathlib import Path
-from pprint import pprint  # Import standard pprint
+from pprint import pprint
+from typing import Any  # Import standard pprint
 
 import torch.nn as nn
 import torch.optim
@@ -13,10 +14,10 @@ class TrainConfig2D:
     self,
     dataset_path: Path,
     image_dataset_path: Path,
-    model: nn.Module,
-    optimizer: torch.optim.Optimizer,
-    scheduler: torch.optim.lr_scheduler.LRScheduler,
-    criterion: nn.Module,
+    model: tuple[type[nn.Module], dict[str, Any]],
+    optimizer: tuple[type[torch.optim.Optimizer], dict[str, Any]],
+    scheduler: tuple[type[torch.optim.lr_scheduler.LRScheduler], dict[str, Any]],
+    criterion: tuple[type[nn.Module], dict[str, Any]],
     augmentations: Compose,
     device: str,
     seed: int = 42,
@@ -41,20 +42,26 @@ class TrainConfig2D:
     self.device = device
     self.augmentations = augmentations
 
+  def get_model_optimizer_scheduler(
+    self,
+  ) -> tuple[
+    nn.Module, torch.optim.Optimizer, torch.optim.lr_scheduler.LRScheduler, nn.Module
+  ]:
+    model = self.model[0](**self.model[1]).to(self.device)
+    optimizer = self.optimizer[0](params=model.parameters(), **self.optimizer[1])
+    scheduler = self.scheduler[0](optimizer=optimizer, **self.scheduler[1])
+    criterion = self.criterion[0](**self.criterion[1])
+    return model, optimizer, scheduler, criterion
+
   def save_config(self):
     with open(OUTPUT_DIR / "config", "w") as f:
       config_dict = vars(self).copy()
-      config_dict["model"] = repr(self.model)
-      config_dict["optimizer"] = (
-        f"{type(self.optimizer).__name__}"
-        f"(lr={self.optimizer.defaults.get('lr', 'N/A')})"
-      )
+      config_dict["model"] = repr(self.model[0](**self.model[1]))
+      config_dict["optimizer"] = f"{self.optimizer[0].__name__}"
       config_dict["scheduler"] = (
-        f"{type(self.scheduler).__name__}"
-        f"(step_size={getattr(self.scheduler, 'step_size', 'N/A')},"
-        f" gamma={getattr(self.scheduler, 'gamma', 'N/A')})"
+        f"{self.scheduler[0].__name__} with {self.scheduler[1]}"
       )
-      config_dict["criterion"] = repr(self.criterion)
+      config_dict["criterion"] = repr(self.criterion[0](**self.criterion[1]))
       config_dict["scan_dataset_path"] = str(self.scan_dataset_path)
       config_dict["image_dataset_path"] = str(self.image_dataset_path)
       transform_names = [type(t).__name__ for t in self.augmentations.transforms]

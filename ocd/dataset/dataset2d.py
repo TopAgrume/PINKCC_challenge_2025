@@ -6,6 +6,13 @@ import numpy as np
 import pandas as pd
 import torch
 from monai.transforms.compose import Compose
+from monai.transforms.intensity.dictionary import ScaleIntensityRanged
+
+# Import your modified augmentations
+from monai.transforms.utility.dictionary import (
+  EnsureTyped,
+  ToTensorD,
+)
 from torch.utils.data import Dataset, Sampler
 
 
@@ -73,6 +80,21 @@ class Dataset2D(Dataset):
     self.n_class = n_class
     self.with_path = with_path
 
+    self.normalize_transforms = Compose(
+      [
+        ScaleIntensityRanged(
+          keys=["image"],
+          a_min=-3000,
+          a_max=3000,
+          b_min=0.0,
+          b_max=1.0,
+          clip=True,
+        ),
+        EnsureTyped(keys=["mask"], dtype=torch.int64),
+      ]
+    )
+    self.to_tensor = ToTensorD(keys=["image", "mask"])
+
   def __len__(self) -> int:
     return len(self.file_paths)
 
@@ -89,25 +111,19 @@ class Dataset2D(Dataset):
     batch = []
     for row in rows.iterrows():
       scan = np.load(self.dataset_path / "scan" / f"{row[1]['path']}.npy")
-      # scan = SampleUtils.normalize_ct(ct_data=scan, output_range=(0, 1)).astype(
-      #   np.float32
-      # ) in nn unet they clip then normalize
-
       seg = np.load(self.dataset_path / "seg" / f"{row[1]['path']}.npy")
-      seg = seg.astype(np.int16)
 
       data = {"image": scan[None, :, :], "mask": seg[None, :, :]}
+      data = self.normalize_transforms(data)
+
       if self.augmentations:
         data = self.augmentations(data)
-        scan = data["image"]  # pyright: ignore
-        seg = data["mask"][0]  # pyright: ignore
-      else:
-        scan = torch.from_numpy(scan).unsqueeze(0).float()
-        seg = torch.from_numpy(seg).float()
+
+      data = self.to_tensor(data)  # pyright: ignore
 
       if not self.with_path:
-        batch.append((scan, seg))
+        batch.append((data["image"], data["mask"][0]))
       else:
-        batch.append((scan, seg, row[1]["path"]))
+        batch.append((data["image"], data["mask"][0], row[1]["path"]))
 
     return batch

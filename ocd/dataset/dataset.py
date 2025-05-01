@@ -1,4 +1,5 @@
 import os
+import shutil
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -166,7 +167,7 @@ class Dataset:
     return first_index, last_index  # pyright: ignore
 
   def convert_CT_scans_to_images(
-    self, output_dir: Path, n_folds: int = 5, seed: int = 42
+    self, output_dir: Path, n_folds: int = 5, seed: int = 69
   ):
     """
     Convert the 3D CT scans from datasets to 2D images.
@@ -191,6 +192,9 @@ class Dataset:
       seg_paths.extend(self.data[f"Segmentation_{dataset}"])
 
     all_paths = zip(sorted(scan_paths), sorted(seg_paths), strict=False)
+
+    if output_dir.exists():
+      shutil.rmtree(output_dir)
 
     os.mkdir(output_dir)
     os.mkdir(output_dir / "scan")

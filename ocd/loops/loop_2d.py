@@ -142,7 +142,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
     test_dataset, batch_size=config.batch_size, pin_memory=True
   )
 
-  for fold in folds:
+  for fold in folds[:5]:
     train_folds = folds[0:fold] + folds[fold + 1 : len(folds)]
     logger.info(f"Using folds {train_folds} for training, fold {fold} for validation.")
     sampler = BalancedBatchSampler(
@@ -175,10 +175,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
       pin_memory=True,
     )
 
-    model = config.model
-    optimizer = config.optimizer
-    criterion = config.criterion
-    scheduler = config.scheduler
+    model, optimizer, scheduler, criterion = config.get_model_optimizer_scheduler()
 
     train_loss_arr = []
     best_val_loss = sys.maxsize
@@ -226,8 +223,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
 
     np.save(OUTPUT_DIR / f"train_loss_fold_{fold}.npy", np.array(train_loss_arr))
 
-  model = config.model
-  criterion = config.criterion
+  model, _, _, criterion = config.get_model_optimizer_scheduler()
   model.load_state_dict(torch.load(OUTPUT_DIR / "model.pth", weights_only=True))
   test_model(
     dataloader=test_dataloader, model=model, config=config, criterion=criterion
