@@ -142,7 +142,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
     test_dataset, batch_size=config.batch_size, pin_memory=True
   )
 
-  for fold in folds[:1]:
+  for fold in folds:
     train_folds = folds[0:fold] + folds[fold + 1 : len(folds)]
     logger.info(f"Using folds {train_folds} for training, fold {fold} for validation.")
     sampler = BalancedBatchSampler(
@@ -210,7 +210,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
         f" learning rate : {scheduler.get_last_lr()[0]}"
       )
 
-      if epoch % 1 == 0:
+      if epoch % 3 == 0:
         logger.info("------------------------------")
         logger.info("Evaluating model...")
         best_val_loss = eval_model(
