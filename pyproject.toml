@@ -3,7 +3,7 @@ name = "pinkcc"
 version = "0.1.0"
 description = "Ovarian Cancer Destroyer's repo"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.11"
 dependencies = [
   "ipdb>=0.13.13",
   "loguru>=0.7.3",
