@@ -142,7 +142,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
     test_dataset, batch_size=config.batch_size, pin_memory=True
   )
 
-  for fold in folds[:5]:
+  for fold in folds[:1]:
     train_folds = folds[0:fold] + folds[fold + 1 : len(folds)]
     logger.info(f"Using folds {train_folds} for training, fold {fold} for validation.")
     sampler = BalancedBatchSampler(
