@@ -82,6 +82,12 @@ def test_model(
         label = labels[i]
         pred = torch.argmax(outputs[i], dim=0)
         path = paths[i]
+        score = dice_score(
+          outputs[i].unsqueeze(0),
+          label.unsqueeze(0),
+          config.num_classes,
+          mode="score",
+        ).item()
 
         plt.figure(figsize=(20, 12))
         plt.subplot(1, 2, 1)
@@ -103,16 +109,8 @@ def test_model(
           interpolation="none",
           alpha=0.25,
         )
-        plt.title(
-          f"our pred DSC={
-            dice_score(
-              outputs[i].unsqueeze(0),
-              label.unsqueeze(0),
-              config.num_classes,
-              mode='score',
-            ).item()
-          }"
-        )
+
+        plt.title(f"our pred DSC={score}")
         plt.savefig(OUTPUT_DIR / "test_figs" / f"{path}.png")
 
         plt.close()

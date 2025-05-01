@@ -13,8 +13,8 @@ from monai.transforms.spatial.dictionary import (
 
 TRANSFORMS = Compose(
   [
-    RandGaussianNoised(keys=["image"], prob=0.4, mean=0.0, std=0.05),  #
-    RandAdjustContrastd(keys=["image"], prob=0.3, gamma=(0.8, 1.5)),  #
+    RandGaussianNoised(keys=["image"], prob=0.5, mean=0.0, std=0.1),
+    RandAdjustContrastd(keys=["image"], prob=0.5, gamma=(1, 1.8)),
     RandRotated(
       keys=["image", "mask"],
       range_x=(-np.pi / 12, np.pi / 12),
@@ -34,17 +34,17 @@ TRANSFORMS = Compose(
     ),
     RandZoomd(
       keys=["image", "mask"],
-      min_zoom=0.9,
-      max_zoom=1.1,
-      prob=0.25,
+      min_zoom=0.85,
+      max_zoom=1.15,
+      prob=0.5,
       mode=["bilinear", "nearest"],
       padding_mode="edge",
     ),
     Rand2DElasticd(
       keys=["image", "mask"],
-      spacing=(20, 20),
+      spacing=(25, 25),
       magnitude_range=(1, 2),
-      prob=0.3,
+      prob=0.5,
       mode=["bilinear", "nearest"],
       padding_mode="zeros",
     ),

@@ -26,16 +26,20 @@ def dice_score(
     if class_idx == ignore_index:
       continue
 
-    probs_class = predictions[:, class_idx, :, :]
+    preds_class = predictions[:, class_idx, :, :]
     targets_class = targets_one_hot[:, class_idx, :, :]
 
-    intersection = torch.sum(probs_class * targets_class, dim=(1, 2))
+    intersection = torch.sum(preds_class * targets_class, dim=(1, 2))
 
-    pred_sum = torch.sum(probs_class, dim=(1, 2))
+    pred_sum = torch.sum(preds_class, dim=(1, 2))
 
     target_sum = torch.sum(targets_class, dim=(1, 2))
 
-    score = (2 * intersection + eps) / (pred_sum + target_sum + eps)
+    score = (
+      intersection
+      if torch.all(intersection == 0)
+      else (2 * intersection + eps) / (pred_sum + target_sum + eps)
+    )
     if mode == "score":
       dice_losses.append(score)
     else:
@@ -48,8 +52,8 @@ class WeightedSegmentationLoss(nn.Module):
   def __init__(
     self,
     ce_label_smoothing: float,
-    weight_dice: float = 0.7,
-    weight_ce: float = 0.3,
+    weight_dice: float = 3,
+    weight_ce: float = 1,
     num_classes: int = 3,
     ignore_index: int = 0,
   ):
