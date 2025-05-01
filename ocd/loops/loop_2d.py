@@ -1,6 +1,7 @@
 import os
 import sys
 
+import matplotlib.colors
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -14,6 +15,7 @@ from ocd import OUTPUT_DIR
 from ocd.config import TrainConfig2D
 from ocd.dataset.dataset import Dataset
 from ocd.dataset.dataset2d import BalancedBatchSampler, Dataset2D
+from ocd.loss import dice_score
 
 
 def eval_model(
@@ -55,6 +57,10 @@ def test_model(
   config: TrainConfig2D,
   criterion: nn.Module,
 ):
+  cmap = matplotlib.colors.ListedColormap(["red", "green"])
+  bounds = [0.5, 1.5, 2.5]
+  norm = matplotlib.colors.BoundaryNorm(bounds, cmap.N)
+
   os.mkdir(OUTPUT_DIR / "test_figs")
   model.eval()
   test_loss = 0
@@ -74,19 +80,42 @@ def test_model(
 
         image = images[i][0]
         label = labels[i]
-        pred = outputs[i].argmax(dim=0)
+        pred = torch.argmax(outputs[i], dim=0)
         path = paths[i]
 
         plt.figure(figsize=(20, 12))
         plt.subplot(1, 2, 1)
         plt.imshow(image, "gray", interpolation="none")
-        plt.imshow(label, "jet", interpolation="none", alpha=0.2)
+        plt.imshow(
+          np.ma.masked_where(label == 0, label),
+          cmap=cmap,
+          norm=norm,
+          interpolation="none",
+          alpha=0.25,
+        )
         plt.title("real label")
         plt.subplot(1, 2, 2)
         plt.imshow(image, "gray", interpolation="none")
-        plt.imshow(pred, "jet", interpolation="none", alpha=0.2)
-        plt.title("our pred")
+        plt.imshow(
+          np.ma.masked_where(pred == 0, pred),
+          cmap=cmap,
+          norm=norm,
+          interpolation="none",
+          alpha=0.25,
+        )
+        plt.title(
+          f"our pred DSC={
+            dice_score(
+              outputs[i].unsqueeze(0),
+              label.unsqueeze(0),
+              config.num_classes,
+              mode='score',
+            ).item()
+          }"
+        )
         plt.savefig(OUTPUT_DIR / "test_figs" / f"{path}.png")
+
+        plt.close()
 
     test_loss /= len(dataloader)
 
@@ -107,29 +136,33 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
     dataset_path=config.image_dataset_path,
     folds=[-1],
     with_path=True,
+    augmentations=None,
   )
   test_dataloader = DataLoader(
     test_dataset, batch_size=config.batch_size, pin_memory=True
   )
 
-  for fold in folds:
+  for fold in folds[:1]:
     train_folds = folds[0:fold] + folds[fold + 1 : len(folds)]
     logger.info(f"Using folds {train_folds} for training, fold {fold} for validation.")
     sampler = BalancedBatchSampler(
       folds_dataframe=folds_dataframe,
       folds=train_folds,
       batch_size=config.batch_size,
+      ratio=0.5,
     )
 
     train_dataset = Dataset2D(
       folds_dataframe=folds_dataframe,
       dataset_path=config.image_dataset_path,
       folds=train_folds,
+      augmentations=config.augmentations,
     )
     val_dataset = Dataset2D(
       folds_dataframe=folds_dataframe,
       dataset_path=config.image_dataset_path,
       folds=[fold],
+      augmentations=None,
     )
 
     train_dataloader = DataLoader(
@@ -177,7 +210,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
         f" learning rate : {scheduler.get_last_lr()[0]}"
       )
 
-      if epoch % 3 == 0:
+      if epoch % 1 == 0:
         logger.info("------------------------------")
         logger.info("Evaluating model...")
         best_val_loss = eval_model(
@@ -191,18 +224,6 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
         )
         logger.info("------------------------------")
 
-    logger.info("------------------------------")
-    logger.info("Last eval before testing...")
-    best_val_loss = eval_model(
-      model=model,
-      dataloader=val_dataloader,
-      config=config,
-      criterion=criterion,
-      best_val_loss=best_val_loss,
-      epoch=-1,
-      scheduler=scheduler,
-    )
-    logger.info("------------------------------")
     np.save(OUTPUT_DIR / f"train_loss_fold_{fold}.npy", np.array(train_loss_arr))
 
   model = config.model

@@ -5,9 +5,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import torch
+from monai.transforms.compose import Compose
 from torch.utils.data import Dataset, Sampler
-
-from ocd.dataset.dataset import SampleUtils
 
 
 class BalancedBatchSampler(Sampler[list[int]]):
@@ -16,7 +15,7 @@ class BalancedBatchSampler(Sampler[list[int]]):
     folds_dataframe: pd.DataFrame,
     folds: list[int],
     batch_size: int,
-    ratio: float = 0.28,  # default value calculated based on the dataset
+    ratio: float,
   ):
     self.batch_size = batch_size
 
@@ -59,6 +58,7 @@ class Dataset2D(Dataset):
     folds_dataframe: pd.DataFrame,
     dataset_path: Path,
     folds: list[int],
+    augmentations: Compose | None,
     n_class: int = 3,
     with_path: bool = False,
   ) -> None:
@@ -69,6 +69,7 @@ class Dataset2D(Dataset):
       folds_dataframe["fold_id"].isin(folds)
     ].reset_index()
     self.dataset_path = dataset_path
+    self.augmentations = augmentations
     self.n_class = n_class
     self.with_path = with_path
 
@@ -88,19 +89,25 @@ class Dataset2D(Dataset):
     batch = []
     for row in rows.iterrows():
       scan = np.load(self.dataset_path / "scan" / f"{row[1]['path']}.npy")
-      scan = SampleUtils.normalize_ct(ct_data=scan, output_range=(0, 1)).astype(
-        np.float32
-      )
+      # scan = SampleUtils.normalize_ct(ct_data=scan, output_range=(0, 1)).astype(
+      #   np.float32
+      # ) in nn unet they clip then normalize
 
-      # TODO: maybe implement label smoothing ?
       seg = np.load(self.dataset_path / "seg" / f"{row[1]['path']}.npy")
       seg = seg.astype(np.int16)
 
-      if not self.with_path:
-        batch.append((torch.from_numpy(scan).unsqueeze(0), torch.from_numpy(seg)))
+      data = {"image": scan[None, :, :], "mask": seg[None, :, :]}
+      if self.augmentations:
+        data = self.augmentations(data)
+        scan = data["image"]  # pyright: ignore
+        seg = data["mask"][0]  # pyright: ignore
       else:
-        batch.append(
-          (torch.from_numpy(scan).unsqueeze(0), torch.from_numpy(seg), row[1]["path"])
-        )
+        scan = torch.from_numpy(scan).unsqueeze(0).float()
+        seg = torch.from_numpy(seg).float()
+
+      if not self.with_path:
+        batch.append((scan, seg))
+      else:
+        batch.append((scan, seg, row[1]["path"]))
 
     return batch

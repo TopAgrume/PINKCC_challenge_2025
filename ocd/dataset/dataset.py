@@ -157,12 +157,13 @@ class Dataset:
     self.val_pairs = MSKCC_val + TCGA_val
     self.test_pairs = MSKCC_test + TCGA_test
 
-  def get_last_slice(self, data: np.ndarray, delete_last_n: int = 15) -> int:
-    has_labels: np.ndarray = np.any(data != 0, axis=(1, 2))
+  def get_last_slice(self, data: np.ndarray, margin: int = 8) -> tuple[int, int]:
+    has_labels: np.ndarray = np.any(data != 0, axis=(0, 1))
     last_index = min(
-      data.shape[2] - 1 - has_labels[::-1].argmax() + 3, data.shape[2] - 1
-    )  # add 3 slice on top of last one as a margin
-    return max(last_index, data.shape[2] - delete_last_n - 1)
+      data.shape[2] - 1 - has_labels[::-1].argmax() + margin, data.shape[2] - 1
+    )
+    first_index = max(has_labels.argmax() - margin, 0)
+    return first_index, last_index  # pyright: ignore
 
   def convert_CT_scans_to_images(
     self, output_dir: Path, n_folds: int = 5, seed: int = 42
@@ -198,14 +199,14 @@ class Dataset:
     rows = []
     for scan_path, seg_path in tqdm(all_paths):
       if any(exclude in str(scan_path) for exclude in TO_EXCLUDE):
-        print(f"Skipped {scan_path}...")
+        print(f"\nSkipped {scan_path}...")
         continue
 
       for path, dir_name in [(seg_path, "seg"), (scan_path, "scan")]:
         file, data = SampleUtils.load_from_path(path)
 
         if dir_name == "seg":
-          limit = self.get_last_slice(data)
+          limit_inf, limit_sup = self.get_last_slice(data)
         affine = file.affine  # pyright: ignore
         axcodes = aff2axcodes(affine)
         if axcodes != ("L", "P", "S"):
@@ -222,7 +223,7 @@ class Dataset:
         assert data.shape[:2] == (512, 512)
         if file_name in INVERSED:
           data = data[:, :, ::-1]
-        for i in range(limit):  # pyright: ignore
+        for i in range(limit_inf, limit_sup + 1):  # pyright: ignore
           image = data[:, :, i]
           np.save(
             output_dir / dir_name / f"{file_name}_{i}",

@@ -8,6 +8,7 @@ from torch.optim.lr_scheduler import StepLR
 
 from ocd import OUTPUT_DIR
 from ocd.config import TrainConfig2D
+from ocd.dataset.data_augmentation import TRANSFORMS
 from ocd.loops.loop_2d import training_loop_2d
 from ocd.loss import WeightedSegmentationLoss
 from ocd.models.nn_unet_2d import NNUnet2D
@@ -18,9 +19,10 @@ if __name__ == "__main__":
   logger.add(OUTPUT_DIR / "training_loop_2d.log")
 
   device = "cuda" if torch.cuda.is_available() else "cpu"
-  model = NNUnet2D(in_channels=1).to(device)
+  model = NNUnet2D(in_channels=1, num_pool=5, base_num_features=16).to(device)
   optimizer = AdamW(params=model.parameters(), lr=3e-4)
   scheduler = StepLR(optimizer=optimizer, step_size=50, gamma=0.99)
+  ce_label_smoothing = 0.05
 
   config = TrainConfig2D(
     dataset_path=Path("DatasetChallenge"),
@@ -28,11 +30,13 @@ if __name__ == "__main__":
     model=model,
     optimizer=optimizer,
     scheduler=scheduler,
-    criterion=WeightedSegmentationLoss(),
+    criterion=WeightedSegmentationLoss(ce_label_smoothing=ce_label_smoothing),
+    augmentations=TRANSFORMS,
     device=device,
-    batch_size=10,
-    epochs=5,
+    batch_size=12,
+    epochs=1,
+    ce_label_smoothing=ce_label_smoothing,
   )
   config.save_config()
 
-  training_loop_2d(config=config, create_2d_dataset=False)
+  training_loop_2d(config=config, create_2d_dataset=True)
