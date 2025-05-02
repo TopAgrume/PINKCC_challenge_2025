@@ -84,8 +84,8 @@ class Dataset2D(Dataset):
       [
         ScaleIntensityRanged(
           keys=["image"],
-          a_min=-3000,
-          a_max=3000,
+          a_min=-360,
+          a_max=440,
           b_min=0.0,
           b_max=1.0,
           clip=True,

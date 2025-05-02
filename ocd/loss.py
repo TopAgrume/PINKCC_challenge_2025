@@ -48,8 +48,8 @@ class WeightedSegmentationLoss(nn.Module):
   def __init__(
     self,
     ce_label_smoothing: float,
-    weight_dice: float = 2,
-    weight_ce: float = 1,
+    weight_dice: float = 0.8,
+    weight_ce: float = 0.2,
     num_classes: int = 3,
     ignore_index: int = 0,
   ):

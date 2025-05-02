@@ -60,7 +60,7 @@ class Encoder(nn.Module):
     current_channels = in_channels
 
     for i in range(num_pool):
-      out_channels = base_num_features * (2**i)
+      out_channels = min(base_num_features * (2**i), 512)
       self.layers.append(ConvBlock(current_channels, out_channels))
       self.layers.append(nn.MaxPool2d(kernel_size=2, stride=2))
       current_channels = out_channels
@@ -89,7 +89,7 @@ class Decoder(nn.Module):
     current_channels = base_num_features * (2**num_pool)
 
     for i in range(num_pool - 1, -1, -1):
-      out_channels = base_num_features * (2**i)
+      out_channels = min(base_num_features * (2**i), 512)
       # Upsampling layer
       self.layers.append(
         nn.Upsample(scale_factor=2, mode="bilinear", align_corners=True)
