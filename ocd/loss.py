@@ -35,11 +35,7 @@ def dice_score(
 
     target_sum = torch.sum(targets_class, dim=(1, 2))
 
-    score = (
-      intersection
-      if torch.all(intersection == 0)
-      else (2 * intersection + eps) / (pred_sum + target_sum + eps)
-    )
+    score = (2 * intersection + eps) / (pred_sum + target_sum + eps)
     if mode == "score":
       dice_losses.append(score)
     else:
