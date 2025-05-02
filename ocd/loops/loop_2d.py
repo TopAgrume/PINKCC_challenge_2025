@@ -153,7 +153,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
     train_dataset = Dataset2D(
       folds_dataframe=folds_dataframe,
       dataset_path=config.image_dataset_path,
-      folds=train_folds,
+      folds=folds,  # change back to train_folds
       augmentations=config.augmentations,
     )
     val_dataset = Dataset2D(
@@ -205,7 +205,7 @@ def training_loop_2d(config: TrainConfig2D, create_2d_dataset: bool = False):
         f" learning rate : {scheduler.get_last_lr()[0]}"
       )
 
-      if epoch % 3 == 0:
+      if epoch % 1000 == 0:  # change back to 3
         logger.info("------------------------------")
         logger.info("Evaluating model...")
         best_val_loss = eval_model(

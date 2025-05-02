@@ -34,9 +34,10 @@ if __name__ == "__main__":
     augmentations=TRANSFORMS,
     device=device,
     batch_size=12,
-    epochs=12,
+    epochs=15,
     ce_label_smoothing=ce_label_smoothing,
+    seed=31,
   )
   config.save_config()
 
-  training_loop_2d(config=config, create_2d_dataset=False)
+  training_loop_2d(config=config, create_2d_dataset=True)
