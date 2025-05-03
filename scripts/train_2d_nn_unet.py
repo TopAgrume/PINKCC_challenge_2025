@@ -19,12 +19,12 @@ if __name__ == "__main__":
   logger.add(OUTPUT_DIR / "training_loop_2d.log")
 
   device = "cuda" if torch.cuda.is_available() else "cpu"
-  ce_label_smoothing = 0
+  ce_label_smoothing = 0.02
 
   config = TrainConfig2D(
     dataset_path=Path("DatasetChallenge"),
     image_dataset_path=Path("2D_CT_SCANS"),
-    model=(NNUnet2D, dict(in_channels=1, num_pool=6, base_num_features=32)),
+    model=(NNUnet2D, dict(in_channels=1, num_pool=5, base_num_features=32)),
     optimizer=(Adam, dict(lr=3e-4)),
     scheduler=(StepLR, dict(step_size=50, gamma=0.995)),
     criterion=(
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     augmentations=TRANSFORMS,
     device=device,
     batch_size=12,
-    epochs=15,
+    epochs=50,
     ce_label_smoothing=ce_label_smoothing,
     seed=31,
   )

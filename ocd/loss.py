@@ -48,8 +48,8 @@ class WeightedSegmentationLoss(nn.Module):
   def __init__(
     self,
     ce_label_smoothing: float,
-    weight_dice: float = 0.8,
-    weight_ce: float = 0.2,
+    weight_dice: float = 0.5,
+    weight_ce: float = 0.5,
     num_classes: int = 3,
     ignore_index: int = 0,
   ):
@@ -67,10 +67,14 @@ class WeightedSegmentationLoss(nn.Module):
           "channel's number in prediction is different than number of classes"
         )
 
-      return self.weight_dice * dice_score(
+      factor_dice, factor_ce = 1, 1
+      if not torch.all(targets == 0):
+        factor_dice, factor_ce = 3, 2
+
+      return factor_dice * self.weight_dice * dice_score(
         preds, targets, self.num_classes, mode="loss", ignore_index=self.ignore_index
-      ) + self.weight_ce * nn.CrossEntropyLoss(label_smoothing=self.ce_label_smoothing)(
-        preds, targets.long()
-      )
+      ) + self.weight_ce * factor_ce * nn.CrossEntropyLoss(
+        label_smoothing=self.ce_label_smoothing
+      )(preds, targets.long())
     else:
       raise NotImplementedError("Not implemented yet")
