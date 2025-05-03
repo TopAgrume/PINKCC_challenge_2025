@@ -62,6 +62,7 @@ def test_model(
   norm = matplotlib.colors.BoundaryNorm(bounds, cmap.N)
 
   os.mkdir(OUTPUT_DIR / "test_figs")
+  os.mkdir(OUTPUT_DIR / "pred_tensors")
   model.eval()
   test_loss = 0
   with torch.no_grad():
@@ -112,6 +113,7 @@ def test_model(
 
         plt.title(f"our pred DSC={score}")
         plt.savefig(OUTPUT_DIR / "test_figs" / f"{path}.png")
+        torch.save(pred, OUTPUT_DIR / "pred_tensors" / f"{path}.pt")
 
         plt.close()
 
