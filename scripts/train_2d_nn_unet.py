@@ -24,20 +24,20 @@ if __name__ == "__main__":
   config = TrainConfig2D(
     dataset_path=Path("DatasetChallenge"),
     image_dataset_path=Path("2D_CT_SCANS"),
-    model=(NNUnet2D, dict(in_channels=1, num_pool=5, base_num_features=32)),
+    model=(NNUnet2D, dict(in_channels=1, num_pool=7, base_num_features=32)),
     optimizer=(Adam, dict(lr=3e-4)),
     scheduler=(StepLR, dict(step_size=50, gamma=0.995)),
     criterion=(
       WeightedSegmentationLoss,
-      dict(ce_label_smoothing=ce_label_smoothing),
+      dict(mode="dilated", ce_label_smoothing=ce_label_smoothing),
     ),
     augmentations=TRANSFORMS,
     device=device,
-    batch_size=12,
-    epochs=50,
+    batch_size=13,
+    epochs=30,
     ce_label_smoothing=ce_label_smoothing,
-    seed=31,
+    seed=69,
   )
   config.save_config()
 
-  training_loop_2d(config=config, create_2d_dataset=True)
+  training_loop_2d(config=config, create_2d_dataset=False)

@@ -15,22 +15,18 @@ class ConvBlock(nn.Module):
   ):
     super().__init__()
     self.use_residual = use_residual
-    self.conv1 = nn.Conv2d(
-      in_channels, out_channels, kernel_size, stride, padding, bias=False
-    )
-    self.instnorm1 = nn.InstanceNorm2d(out_channels)
-    self.lrelu1 = nn.LeakyReLU(negative_slope=0.01)
+    self.conv1 = nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding)
+    self.instnorm1 = nn.InstanceNorm2d(out_channels, affine=True)
+    self.lrelu1 = nn.LeakyReLU()
 
-    self.conv2 = nn.Conv2d(
-      out_channels, out_channels, kernel_size, stride, padding, bias=False
-    )
-    self.instnorm2 = nn.InstanceNorm2d(out_channels)
-    self.lrelu2 = nn.LeakyReLU(negative_slope=0.01)
+    self.conv2 = nn.Conv2d(out_channels, out_channels, kernel_size, stride, padding)
+    self.instnorm2 = nn.InstanceNorm2d(out_channels, affine=True)
+    self.lrelu2 = nn.LeakyReLU()
 
     # Residual connection: 1x1 convolution to match dimensions if needed
     if use_residual and in_channels != out_channels:
       self.residual_conv = nn.Conv2d(
-        in_channels, out_channels, kernel_size=1, stride=stride, padding=0, bias=False
+        in_channels, out_channels, kernel_size=1, stride=stride, padding=0
       )
     else:
       self.residual_conv = None

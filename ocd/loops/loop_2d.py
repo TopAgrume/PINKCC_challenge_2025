@@ -15,7 +15,7 @@ from ocd import OUTPUT_DIR
 from ocd.config import TrainConfig2D
 from ocd.dataset.dataset import Dataset
 from ocd.dataset.dataset2d import BalancedBatchSampler, Dataset2D
-from ocd.loss import dice_score
+from ocd.loss import dilated_dice_score
 
 
 def eval_model(
@@ -83,7 +83,7 @@ def test_model(
         label = labels[i]
         pred = torch.argmax(outputs[i], dim=0)
         path = paths[i]
-        score = dice_score(
+        score = dilated_dice_score(
           outputs[i].unsqueeze(0),
           label.unsqueeze(0),
           config.num_classes,
@@ -111,7 +111,7 @@ def test_model(
           alpha=0.25,
         )
 
-        plt.title(f"our pred DSC={score}")
+        plt.title(f"our pred dilated-DSC={score}")
         plt.savefig(OUTPUT_DIR / "test_figs" / f"{path}.png")
         torch.save(pred, OUTPUT_DIR / "pred_tensors" / f"{path}.pt")
 

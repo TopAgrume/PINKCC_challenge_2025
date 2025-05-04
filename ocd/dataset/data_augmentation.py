@@ -3,6 +3,9 @@ from monai.transforms.compose import Compose
 from monai.transforms.intensity.dictionary import (
   RandAdjustContrastd,
   RandGaussianNoised,
+  RandGaussianSmoothd,
+  RandScaleIntensityd,
+  RandShiftIntensityd,
 )
 from monai.transforms.spatial.dictionary import (
   Rand2DElasticd,
@@ -39,6 +42,11 @@ TRANSFORMS = Compose(
       prob=0.5,
       mode=["bilinear", "nearest"],
       padding_mode="edge",
+    ),
+    RandScaleIntensityd(keys=["image"], factors=0.1, prob=0.5),
+    RandShiftIntensityd(keys=["image"], offsets=0.1, prob=0.5),
+    RandGaussianSmoothd(
+      keys=["image"], sigma_x=(0.5, 1.15), sigma_y=(0.5, 1.15), prob=0.5
     ),
     Rand2DElasticd(
       keys=["image", "mask"],
