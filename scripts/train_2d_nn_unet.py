@@ -40,4 +40,4 @@ if __name__ == "__main__":
   )
   config.save_config()
 
-  training_loop_2d(config=config, create_2d_dataset=False)
+  training_loop_2d(config=config, create_2d_dataset=True)
