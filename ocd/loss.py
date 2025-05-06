@@ -175,7 +175,7 @@ class WeightedSegmentationLoss(nn.Module):
     ce_label_smoothing: float,
     mode: Literal["normal", "dilated"],
     weight_dice: float = 1.7,
-    weight_ce: float = 1.0,
+    weight_ce: float = 0.9,
     num_classes: int = 3,
     ignore_index: int = 0,
   ):
@@ -196,7 +196,7 @@ class WeightedSegmentationLoss(nn.Module):
       )
     else:
       return self.weight_dice * dilated_dice_score(
-        preds, targets, self.num_classes, mode="loss"
-      ) + self.weight_ce * DBCECriterion(ce_label_smoothing=self.ce_label_smoothing)(
+        preds, targets, self.num_classes, mode="loss", kernel_size_dilation=5
+      ) + self.weight_ce * nn.CrossEntropyLoss(label_smoothing=self.ce_label_smoothing)(
         preds, targets.long()
       )

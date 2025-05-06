@@ -1,0 +1,3026 @@
+330680.nii.gz
+  1 PRIMARIES mean 48.62 std 27.14 min 48.62 max 48.62
+   -> 0 - mean 48.62 std 27.14 n_pixels 215889
+  1 METASTASES mean 54.42 std 25.22 min 54.42 max 54.42
+   -> 0 - mean 54.42 std 25.22 n_pixels 378
+330681.nii.gz
+  1 PRIMARIES mean 62.43 std 15.79 min 62.43 max 62.43
+   -> 0 - mean 62.43 std 15.79 n_pixels 46400
+330682.nii.gz
+  1 PRIMARIES mean 41.25 std 22.28 min 41.25 max 41.25
+   -> 0 - mean 41.25 std 22.28 n_pixels 156144
+  1 METASTASES mean 38.15 std 22.22 min 38.15 max 38.15
+   -> 0 - mean 38.15 std 22.22 n_pixels 16713
+330683.nii.gz
+  1 PRIMARIES mean 55.21 std 21.45 min 55.21 max 55.21
+   -> 0 - mean 55.21 std 21.45 n_pixels 80370
+  1 METASTASES mean 72.09 std 27.53 min 72.09 max 72.09
+   -> 0 - mean 72.09 std 27.53 n_pixels 13379
+330684.nii.gz
+  1 PRIMARIES mean 51.23 std 26.52 min 51.23 max 51.23
+   -> 0 - mean 51.23 std 26.52 n_pixels 1664
+330685.nii.gz
+  2 PRIMARIES mean 74.81 std 26.67 min 73.39 max 76.24
+   -> 0 - mean 73.39 std 28.71 n_pixels 3596
+   -> 1 - mean 76.24 std 24.62 n_pixels 430
+330686.nii.gz
+  1 METASTASES mean 35.70 std 25.17 min 35.70 max 35.70
+   -> 0 - mean 35.70 std 25.17 n_pixels 30144
+330687.nii.gz
+  2 METASTASES mean 64.22 std 21.21 min 53.62 max 74.81
+   -> 0 - mean 74.81 std 18.52 n_pixels 14155
+   -> 1 - mean 53.62 std 23.90 n_pixels 4561
+330688.nii.gz
+  1 PRIMARIES mean 51.06 std 28.07 min 51.06 max 51.06
+   -> 0 - mean 51.06 std 28.07 n_pixels 112633
+  2 METASTASES mean 52.48 std 30.35 min 42.61 max 62.36
+   -> 0 - mean 62.36 std 25.06 n_pixels 619
+   -> 1 - mean 42.61 std 35.63 n_pixels 7028
+330689.nii.gz
+  1 PRIMARIES mean 53.62 std 19.77 min 53.62 max 53.62
+   -> 0 - mean 53.62 std 19.77 n_pixels 248414
+  2 METASTASES mean 57.07 std 18.41 min 50.45 max 63.69
+   -> 0 - mean 63.69 std 17.63 n_pixels 1769
+   -> 1 - mean 50.45 std 19.20 n_pixels 13683
+330690.nii.gz
+  1 PRIMARIES mean 71.53 std 19.86 min 71.53 max 71.53
+   -> 0 - mean 71.53 std 19.86 n_pixels 81048
+  2 METASTASES mean 47.44 std 19.88 min 40.37 max 54.51
+   -> 0 - mean 40.37 std 16.38 n_pixels 134
+   -> 1 - mean 54.51 std 23.38 n_pixels 669
+330693.nii.gz
+  2 PRIMARIES mean 50.21 std 17.35 min 41.89 max 58.53
+   -> 0 - mean 58.53 std 19.17 n_pixels 1090
+   -> 1 - mean 41.89 std 15.52 n_pixels 654
+  2 METASTASES mean 40.94 std 28.70 min 15.99 max 65.88
+   -> 0 - mean 65.88 std 22.90 n_pixels 8742
+   -> 1 - mean 15.99 std 34.50 n_pixels 14171
+330696.nii.gz
+  2 PRIMARIES mean 64.16 std 22.65 min 64.06 max 64.26
+   -> 0 - mean 64.06 std 22.76 n_pixels 10576
+   -> 1 - mean 64.26 std 22.54 n_pixels 9097
+  3 METASTASES mean 40.90 std 20.86 min 38.33 max 42.89
+   -> 0 - mean 42.89 std 22.14 n_pixels 31813
+   -> 1 - mean 38.33 std 19.56 n_pixels 1491
+   -> 2 - mean 41.49 std 20.87 n_pixels 1399
+330697.nii.gz
+  2 PRIMARIES mean 71.96 std 27.32 min 67.22 max 76.69
+   -> 0 - mean 76.69 std 27.03 n_pixels 5684
+   -> 1 - mean 67.22 std 27.61 n_pixels 24664
+  1 METASTASES mean 75.76 std 22.72 min 75.76 max 75.76
+   -> 0 - mean 75.76 std 22.72 n_pixels 62075
+330698.nii.gz
+  2 PRIMARIES mean 46.82 std 15.47 min 33.91 max 59.72
+   -> 0 - mean 59.72 std 14.36 n_pixels 16845
+   -> 1 - mean 33.91 std 16.58 n_pixels 20979
+  1 METASTASES mean 67.45 std 23.86 min 67.45 max 67.45
+   -> 0 - mean 67.45 std 23.86 n_pixels 7299
+330699.nii.gz
+  2 PRIMARIES mean 96.22 std 20.21 min 95.42 max 97.02
+   -> 0 - mean 95.42 std 21.09 n_pixels 5326
+   -> 1 - mean 97.02 std 19.32 n_pixels 6047
+  1 METASTASES mean 100.14 std 23.44 min 100.14 max 100.14
+   -> 0 - mean 100.14 std 23.44 n_pixels 23141
+330700.nii.gz
+  2 PRIMARIES mean 34.77 std 23.33 min 29.13 max 40.42
+   -> 0 - mean 29.13 std 20.67 n_pixels 32923
+   -> 1 - mean 40.42 std 25.98 n_pixels 4998
+  1 METASTASES mean 59.55 std 24.60 min 59.55 max 59.55
+   -> 0 - mean 59.55 std 24.60 n_pixels 34799
+330701.nii.gz
+  1 PRIMARIES mean 40.75 std 18.51 min 40.75 max 40.75
+   -> 0 - mean 40.75 std 18.51 n_pixels 189421
+330702.nii.gz
+  1 PRIMARIES mean 67.53 std 30.07 min 67.53 max 67.53
+   -> 0 - mean 67.53 std 30.07 n_pixels 13090
+  1 METASTASES mean 13.29 std 29.51 min 13.29 max 13.29
+   -> 0 - mean 13.29 std 29.51 n_pixels 6804
+330704.nii.gz
+  2 PRIMARIES mean 64.15 std 19.57 min 63.24 max 65.06
+   -> 0 - mean 65.06 std 19.53 n_pixels 18768
+   -> 1 - mean 63.24 std 19.62 n_pixels 7041
+  1 METASTASES mean 4.61 std 28.16 min 4.61 max 4.61
+   -> 0 - mean 4.61 std 28.16 n_pixels 14218
+330705.nii.gz
+  1 PRIMARIES mean 70.92 std 29.16 min 70.92 max 70.92
+   -> 0 - mean 70.92 std 29.16 n_pixels 58339
+330707.nii.gz
+  2 PRIMARIES mean 35.89 std 26.37 min 32.79 max 39.00
+   -> 0 - mean 32.79 std 24.44 n_pixels 44555
+   -> 1 - mean 39.00 std 28.30 n_pixels 14129
+  1 METASTASES mean 37.98 std 29.77 min 37.98 max 37.98
+   -> 0 - mean 37.98 std 29.77 n_pixels 5914
+330708.nii.gz
+  2 PRIMARIES mean 86.16 std 23.61 min 83.58 max 88.74
+   -> 0 - mean 83.58 std 21.27 n_pixels 12752
+   -> 1 - mean 88.74 std 25.95 n_pixels 5897
+  2 METASTASES mean 69.00 std 17.28 min 65.08 max 72.91
+   -> 0 - mean 65.08 std 19.09 n_pixels 13483
+   -> 1 - mean 72.91 std 15.47 n_pixels 766
+330710.nii.gz
+  2 PRIMARIES mean 52.32 std 23.60 min 52.16 max 52.48
+   -> 0 - mean 52.48 std 23.27 n_pixels 9474
+   -> 1 - mean 52.16 std 23.92 n_pixels 89157
+  4 METASTASES mean 44.29 std 22.85 min 35.97 max 48.50
+   -> 0 - mean 35.97 std 24.45 n_pixels 436
+   -> 1 - mean 48.50 std 24.10 n_pixels 1241
+   -> 2 - mean 45.68 std 23.85 n_pixels 1214
+   -> 3 - mean 47.02 std 19.01 n_pixels 446
+330711.nii.gz
+  2 PRIMARIES mean 55.32 std 30.00 min 49.80 max 60.83
+   -> 0 - mean 60.83 std 25.64 n_pixels 12111
+   -> 1 - mean 49.80 std 34.35 n_pixels 5954
+  1 METASTASES mean -37.65 std 35.20 min -37.65 max -37.65
+   -> 0 - mean -37.65 std 35.20 n_pixels 20894
+330713.nii.gz
+  2 PRIMARIES mean 68.97 std 20.80 min 63.88 max 74.06
+   -> 0 - mean 74.06 std 19.35 n_pixels 2334
+   -> 1 - mean 63.88 std 22.26 n_pixels 31427
+  2 METASTASES mean 69.46 std 17.13 min 67.63 max 71.29
+   -> 0 - mean 67.63 std 17.76 n_pixels 1116
+   -> 1 - mean 71.29 std 16.49 n_pixels 273
+330717.nii.gz
+  1 PRIMARIES mean 36.08 std 22.50 min 36.08 max 36.08
+   -> 0 - mean 36.08 std 22.50 n_pixels 99036
+330718.nii.gz
+  1 PRIMARIES mean 69.26 std 24.57 min 69.26 max 69.26
+   -> 0 - mean 69.26 std 24.57 n_pixels 142371
+  2 METASTASES mean 45.50 std 21.28 min 33.92 max 57.09
+   -> 0 - mean 33.92 std 22.66 n_pixels 205
+   -> 1 - mean 57.09 std 19.90 n_pixels 207
+330719.nii.gz
+  2 PRIMARIES mean 59.19 std 26.33 min 54.61 max 63.77
+   -> 0 - mean 54.61 std 25.95 n_pixels 10196
+   -> 1 - mean 63.77 std 26.71 n_pixels 3405
+  4 METASTASES mean 65.90 std 25.78 min 58.62 max 84.36
+   -> 0 - mean 84.36 std 26.36 n_pixels 567
+   -> 1 - mean 58.62 std 28.86 n_pixels 1002
+   -> 2 - mean 59.27 std 27.59 n_pixels 3135
+   -> 3 - mean 61.36 std 20.30 n_pixels 100
+333005.nii.gz
+  1 PRIMARIES mean 71.07 std 29.84 min 71.07 max 71.07
+   -> 0 - mean 71.07 std 29.84 n_pixels 67583
+  1 METASTASES mean 25.63 std 37.95 min 25.63 max 25.63
+   -> 0 - mean 25.63 std 37.95 n_pixels 15203
+333007.nii.gz
+  1 PRIMARIES mean 75.47 std 18.21 min 75.47 max 75.47
+   -> 0 - mean 75.47 std 18.21 n_pixels 230459
+  1 METASTASES mean 72.42 std 18.03 min 72.42 max 72.42
+   -> 0 - mean 72.42 std 18.03 n_pixels 34043
+333008.nii.gz
+  1 PRIMARIES mean 43.55 std 18.74 min 43.55 max 43.55
+   -> 0 - mean 43.55 std 18.74 n_pixels 175529
+  1 METASTASES mean 15.28 std 34.29 min 15.28 max 15.28
+   -> 0 - mean 15.28 std 34.29 n_pixels 40421
+333009.nii.gz
+  2 PRIMARIES mean 66.01 std 23.06 min 65.42 max 66.61
+   -> 0 - mean 65.42 std 22.97 n_pixels 28038
+   -> 1 - mean 66.61 std 23.14 n_pixels 9783
+  3 METASTASES mean 58.52 std 19.76 min 57.51 max 60.20
+   -> 0 - mean 57.51 std 18.67 n_pixels 1129
+   -> 1 - mean 60.20 std 22.12 n_pixels 5174
+   -> 2 - mean 57.83 std 18.48 n_pixels 2380
+333010.nii.gz
+  1 PRIMARIES mean 84.68 std 23.65 min 84.68 max 84.68
+   -> 0 - mean 84.68 std 23.65 n_pixels 2621
+333011.nii.gz
+  1 METASTASES mean -26.72 std 25.00 min -26.72 max -26.72
+   -> 0 - mean -26.72 std 25.00 n_pixels 2865
+333012.nii.gz
+  1 METASTASES mean 44.10 std 28.71 min 44.10 max 44.10
+   -> 0 - mean 44.10 std 28.71 n_pixels 22648
+333013.nii.gz
+  2 PRIMARIES mean 75.70 std 24.10 min 71.20 max 80.20
+   -> 0 - mean 71.20 std 27.59 n_pixels 27935
+   -> 1 - mean 80.20 std 20.60 n_pixels 10745
+  1 METASTASES mean 85.66 std 16.92 min 85.66 max 85.66
+   -> 0 - mean 85.66 std 16.92 n_pixels 24158
+333015.nii.gz
+  1 PRIMARIES mean 50.90 std 25.40 min 50.90 max 50.90
+   -> 0 - mean 50.90 std 25.40 n_pixels 2820
+333017.nii.gz
+  2 PRIMARIES mean 46.30 std 24.81 min 33.96 max 58.64
+   -> 0 - mean 58.64 std 20.32 n_pixels 1750
+   -> 1 - mean 33.96 std 29.29 n_pixels 25421
+  1 METASTASES mean 38.68 std 31.76 min 38.68 max 38.68
+   -> 0 - mean 38.68 std 31.76 n_pixels 1240
+333020.nii.gz
+  1 METASTASES mean 86.24 std 21.56 min 86.24 max 86.24
+   -> 0 - mean 86.24 std 21.56 n_pixels 132932
+333021.nii.gz
+  1 PRIMARIES mean 66.96 std 23.69 min 66.96 max 66.96
+   -> 0 - mean 66.96 std 23.69 n_pixels 34196
+  3 METASTASES mean 50.74 std 16.12 min 37.00 max 65.69
+   -> 0 - mean 65.69 std 18.60 n_pixels 7726
+   -> 1 - mean 37.00 std 0.00 n_pixels 1
+   -> 2 - mean 49.52 std 29.77 n_pixels 11354
+333022.nii.gz
+  2 PRIMARIES mean 49.24 std 23.92 min 31.83 max 66.65
+   -> 0 - mean 31.83 std 20.44 n_pixels 128301
+   -> 1 - mean 66.65 std 27.40 n_pixels 6128
+333026.nii.gz
+  2 PRIMARIES mean 45.91 std 18.73 min 28.78 max 63.04
+   -> 0 - mean 28.78 std 19.49 n_pixels 105933
+   -> 1 - mean 63.04 std 17.98 n_pixels 1614
+  1 METASTASES mean 52.98 std 22.19 min 52.98 max 52.98
+   -> 0 - mean 52.98 std 22.19 n_pixels 43864
+333027.nii.gz
+  2 PRIMARIES mean 29.42 std 14.93 min 9.50 max 49.33
+   -> 0 - mean 49.33 std 22.37 n_pixels 57767
+   -> 1 - mean 9.50 std 7.50 n_pixels 2
+  1 METASTASES mean 65.45 std 17.97 min 65.45 max 65.45
+   -> 0 - mean 65.45 std 17.97 n_pixels 22532
+333028.nii.gz
+  1 METASTASES mean 17.13 std 30.92 min 17.13 max 17.13
+   -> 0 - mean 17.13 std 30.92 n_pixels 13401
+333031.nii.gz
+  3 PRIMARIES mean 51.11 std 16.76 min 34.20 max 72.00
+   -> 0 - mean 34.20 std 27.49 n_pixels 44799
+   -> 1 - mean 47.13 std 22.78 n_pixels 9646
+   -> 2 - mean 72.00 std 0.00 n_pixels 1
+  1 METASTASES mean 41.58 std 20.12 min 41.58 max 41.58
+   -> 0 - mean 41.58 std 20.12 n_pixels 3168
+333033.nii.gz
+  2 PRIMARIES mean 47.81 std 20.06 min 45.97 max 49.66
+   -> 0 - mean 49.66 std 25.68 n_pixels 8019
+   -> 1 - mean 45.97 std 14.43 n_pixels 2648
+  1 METASTASES mean 52.71 std 18.89 min 52.71 max 52.71
+   -> 0 - mean 52.71 std 18.89 n_pixels 10591
+333035.nii.gz
+  2 PRIMARIES mean 48.18 std 26.30 min 40.36 max 56.00
+   -> 0 - mean 40.36 std 26.01 n_pixels 5156
+   -> 1 - mean 56.00 std 26.59 n_pixels 39480
+333036.nii.gz
+  2 METASTASES mean 7.77 std 33.48 min -12.70 max 28.24
+   -> 0 - mean 28.24 std 31.40 n_pixels 2387
+   -> 1 - mean -12.70 std 35.56 n_pixels 3222
+333037.nii.gz
+  2 PRIMARIES mean 48.12 std 20.27 min 39.83 max 56.41
+   -> 0 - mean 56.41 std 18.48 n_pixels 4646
+   -> 1 - mean 39.83 std 22.05 n_pixels 3259
+  2 METASTASES mean 46.57 std 19.17 min 44.61 max 48.53
+   -> 0 - mean 48.53 std 18.88 n_pixels 10768
+   -> 1 - mean 44.61 std 19.47 n_pixels 28807
+333039.nii.gz
+  1 METASTASES mean 83.98 std 26.74 min 83.98 max 83.98
+   -> 0 - mean 83.98 std 26.74 n_pixels 10251
+333041.nii.gz
+  1 PRIMARIES mean 27.30 std 27.12 min 27.30 max 27.30
+   -> 0 - mean 27.30 std 27.12 n_pixels 96559
+  1 METASTASES mean 19.82 std 27.72 min 19.82 max 19.82
+   -> 0 - mean 19.82 std 27.72 n_pixels 546
+333042.nii.gz
+  2 PRIMARIES mean 41.80 std 24.62 min 38.91 max 44.70
+   -> 0 - mean 44.70 std 24.56 n_pixels 12362
+   -> 1 - mean 38.91 std 24.68 n_pixels 52382
+  1 METASTASES mean -13.10 std 25.62 min -13.10 max -13.10
+   -> 0 - mean -13.10 std 25.62 n_pixels 86
+333043.nii.gz
+  1 METASTASES mean 64.49 std 49.99 min 64.49 max 64.49
+   -> 0 - mean 64.49 std 49.99 n_pixels 19364
+333044.nii.gz
+  3 PRIMARIES mean 44.21 std 13.26 min 23.00 max 61.29
+   -> 0 - mean 61.29 std 17.53 n_pixels 15628
+   -> 1 - mean 48.35 std 22.24 n_pixels 23575
+   -> 2 - mean 23.00 std 0.00 n_pixels 1
+  1 METASTASES mean 42.30 std 13.74 min 42.30 max 42.30
+   -> 0 - mean 42.30 std 13.74 n_pixels 20114
+333046.nii.gz
+  2 METASTASES mean 42.47 std 9.93 min 36.94 max 48.00
+   -> 0 - mean 36.94 std 19.86 n_pixels 882
+   -> 1 - mean 48.00 std 0.00 n_pixels 1
+333047.nii.gz
+  1 PRIMARIES mean 37.41 std 20.00 min 37.41 max 37.41
+   -> 0 - mean 37.41 std 20.00 n_pixels 641381
+  1 METASTASES mean 46.84 std 15.51 min 46.84 max 46.84
+   -> 0 - mean 46.84 std 15.51 n_pixels 8755
+333051.nii.gz
+  1 PRIMARIES mean 67.81 std 23.70 min 67.81 max 67.81
+   -> 0 - mean 67.81 std 23.70 n_pixels 6625
+  1 METASTASES mean 54.91 std 30.18 min 54.91 max 54.91
+   -> 0 - mean 54.91 std 30.18 n_pixels 9915
+333056.nii.gz
+  1 PRIMARIES mean 43.85 std 24.83 min 43.85 max 43.85
+   -> 0 - mean 43.85 std 24.83 n_pixels 3311
+  1 METASTASES mean 56.15 std 17.34 min 56.15 max 56.15
+   -> 0 - mean 56.15 std 17.34 n_pixels 9293
+333057.nii.gz
+  1 PRIMARIES mean 24.03 std 24.24 min 24.03 max 24.03
+   -> 0 - mean 24.03 std 24.24 n_pixels 164148
+  1 METASTASES mean 44.65 std 27.30 min 44.65 max 44.65
+   -> 0 - mean 44.65 std 27.30 n_pixels 26843
+333058.nii.gz
+  1 PRIMARIES mean 42.72 std 23.87 min 42.72 max 42.72
+   -> 0 - mean 42.72 std 23.87 n_pixels 4035
+  1 METASTASES mean 22.08 std 26.67 min 22.08 max 22.08
+   -> 0 - mean 22.08 std 26.67 n_pixels 17433
+333060.nii.gz
+  1 PRIMARIES mean 69.07 std 15.72 min 69.07 max 69.07
+   -> 0 - mean 69.07 std 15.72 n_pixels 302
+  1 METASTASES mean 40.85 std 24.70 min 40.85 max 40.85
+   -> 0 - mean 40.85 std 24.70 n_pixels 31740
+333063.nii.gz
+  2 PRIMARIES mean 53.99 std 24.23 min 50.91 max 57.07
+   -> 0 - mean 57.07 std 23.93 n_pixels 10735
+   -> 1 - mean 50.91 std 24.53 n_pixels 17356
+  1 METASTASES mean 57.62 std 19.94 min 57.62 max 57.62
+   -> 0 - mean 57.62 std 19.94 n_pixels 691
+333064.nii.gz
+  1 PRIMARIES mean 97.16 std 26.41 min 97.16 max 97.16
+   -> 0 - mean 97.16 std 26.41 n_pixels 1777
+333065.nii.gz
+  1 METASTASES mean 32.26 std 25.96 min 32.26 max 32.26
+   -> 0 - mean 32.26 std 25.96 n_pixels 26766
+333067.nii.gz
+  1 METASTASES mean 9.69 std 30.71 min 9.69 max 9.69
+   -> 0 - mean 9.69 std 30.71 n_pixels 6523
+333068.nii.gz
+  1 PRIMARIES mean 82.77 std 18.93 min 82.77 max 82.77
+   -> 0 - mean 82.77 std 18.93 n_pixels 28586
+  2 METASTASES mean 53.67 std 17.12 min 49.37 max 57.98
+   -> 0 - mean 57.98 std 15.50 n_pixels 19490
+   -> 1 - mean 49.37 std 18.73 n_pixels 41574
+333069.nii.gz
+  1 PRIMARIES mean 33.19 std 20.25 min 33.19 max 33.19
+   -> 0 - mean 33.19 std 20.25 n_pixels 50592
+  3 METASTASES mean 15.47 std 22.38 min 9.53 max 21.41
+   -> 0 - mean 9.53 std 23.73 n_pixels 118
+   -> 1 - mean 15.47 std 23.34 n_pixels 293
+   -> 2 - mean 21.41 std 20.05 n_pixels 85
+333070.nii.gz
+  2 PRIMARIES mean 47.33 std 17.81 min 40.66 max 54.00
+   -> 0 - mean 40.66 std 23.63 n_pixels 345865
+   -> 1 - mean 54.00 std 12.00 n_pixels 2
+  2 METASTASES mean 54.78 std 16.90 min 54.18 max 55.37
+   -> 0 - mean 55.37 std 16.93 n_pixels 58404
+   -> 1 - mean 54.18 std 16.86 n_pixels 22021
+333073.nii.gz
+  2 PRIMARIES mean 40.55 std 22.06 min 38.20 max 42.90
+   -> 0 - mean 42.90 std 26.27 n_pixels 8630
+   -> 1 - mean 38.20 std 17.85 n_pixels 10311
+  3 METASTASES mean 42.01 std 32.52 min 39.13 max 43.90
+   -> 0 - mean 39.13 std 34.24 n_pixels 30091
+   -> 1 - mean 43.01 std 28.60 n_pixels 6263
+   -> 2 - mean 43.90 std 34.71 n_pixels 6422
+333075.nii.gz
+  2 PRIMARIES mean 81.69 std 20.54 min 73.55 max 89.84
+   -> 0 - mean 89.84 std 20.47 n_pixels 6146
+   -> 1 - mean 73.55 std 20.61 n_pixels 5397
+333077.nii.gz
+  2 PRIMARIES mean 81.26 std 19.77 min 78.38 max 84.13
+   -> 0 - mean 84.13 std 19.18 n_pixels 5991
+   -> 1 - mean 78.38 std 20.37 n_pixels 14184
+333081.nii.gz
+  2 PRIMARIES mean 72.47 std 20.81 min 66.62 max 78.31
+   -> 0 - mean 78.31 std 19.80 n_pixels 5242
+   -> 1 - mean 66.62 std 21.82 n_pixels 5445
+  1 METASTASES mean 69.20 std 19.38 min 69.20 max 69.20
+   -> 0 - mean 69.20 std 19.38 n_pixels 19379
+333083.nii.gz
+  1 PRIMARIES mean 59.88 std 14.68 min 59.88 max 59.88
+   -> 0 - mean 59.88 std 14.68 n_pixels 35666
+  1 METASTASES mean 45.21 std 25.79 min 45.21 max 45.21
+   -> 0 - mean 45.21 std 25.79 n_pixels 1483
+333084.nii.gz
+  1 METASTASES mean 64.88 std 21.05 min 64.88 max 64.88
+   -> 0 - mean 64.88 std 21.05 n_pixels 28544
+333087.nii.gz
+  1 PRIMARIES mean 27.98 std 23.22 min 27.98 max 27.98
+   -> 0 - mean 27.98 std 23.22 n_pixels 2756
+  1 METASTASES mean 61.65 std 18.08 min 61.65 max 61.65
+   -> 0 - mean 61.65 std 18.08 n_pixels 41559
+333482.nii.gz
+  3 METASTASES mean -30.27 std 32.43 min -42.09 max -18.87
+   -> 0 - mean -18.87 std 35.37 n_pixels 3347
+   -> 1 - mean -42.09 std 33.14 n_pixels 2924
+   -> 2 - mean -29.85 std 28.80 n_pixels 4865
+333483.nii.gz
+  2 PRIMARIES mean 33.96 std 21.25 min 32.98 max 34.95
+   -> 0 - mean 32.98 std 23.01 n_pixels 13764
+   -> 1 - mean 34.95 std 19.49 n_pixels 10699
+  1 METASTASES mean 22.81 std 25.01 min 22.81 max 22.81
+   -> 0 - mean 22.81 std 25.01 n_pixels 9590
+334149.nii.gz
+  1 METASTASES mean 54.28 std 27.97 min 54.28 max 54.28
+   -> 0 - mean 54.28 std 27.97 n_pixels 1182
+334150.nii.gz
+  2 METASTASES mean 66.54 std 13.52 min 54.08 max 79.00
+   -> 0 - mean 54.08 std 27.05 n_pixels 29548
+   -> 1 - mean 79.00 std 0.00 n_pixels 1
+334940.nii.gz
+  1 PRIMARIES mean 77.36 std 20.54 min 77.36 max 77.36
+   -> 0 - mean 77.36 std 20.54 n_pixels 7518
+  2 METASTASES mean 75.87 std 29.08 min 71.26 max 80.48
+   -> 0 - mean 80.48 std 24.72 n_pixels 61034
+   -> 1 - mean 71.26 std 33.43 n_pixels 27283
+337189.nii.gz
+  2 METASTASES mean 25.90 std 34.21 min 20.58 max 31.22
+   -> 0 - mean 31.22 std 34.06 n_pixels 9645
+   -> 1 - mean 20.58 std 34.36 n_pixels 2302
+337192.nii.gz
+  2 PRIMARIES mean 40.75 std 20.72 min 28.98 max 52.52
+   -> 0 - mean 28.98 std 21.22 n_pixels 18688
+   -> 1 - mean 52.52 std 20.21 n_pixels 2413
+  1 METASTASES mean 28.73 std 25.96 min 28.73 max 28.73
+   -> 0 - mean 28.73 std 25.96 n_pixels 20402
+337193.nii.gz
+  1 PRIMARIES mean 36.72 std 19.82 min 36.72 max 36.72
+   -> 0 - mean 36.72 std 19.82 n_pixels 28361
+  2 METASTASES mean 39.65 std 28.80 min 24.03 max 55.27
+   -> 0 - mean 55.27 std 22.19 n_pixels 507
+   -> 1 - mean 24.03 std 35.40 n_pixels 474
+337197.nii.gz
+  1 PRIMARIES mean 70.83 std 28.91 min 70.83 max 70.83
+   -> 0 - mean 70.83 std 28.91 n_pixels 5354
+337198.nii.gz
+  1 PRIMARIES mean 73.55 std 18.71 min 73.55 max 73.55
+   -> 0 - mean 73.55 std 18.71 n_pixels 2841
+  1 METASTASES mean 59.60 std 23.75 min 59.60 max 59.60
+   -> 0 - mean 59.60 std 23.75 n_pixels 30158
+337199.nii.gz
+  1 PRIMARIES mean 28.50 std 23.14 min 28.50 max 28.50
+   -> 0 - mean 28.50 std 23.14 n_pixels 19263
+  1 METASTASES mean 20.47 std 36.23 min 20.47 max 20.47
+   -> 0 - mean 20.47 std 36.23 n_pixels 34557
+337202.nii.gz
+  2 PRIMARIES mean 72.73 std 27.49 min 65.29 max 80.17
+   -> 0 - mean 80.17 std 25.41 n_pixels 2283
+   -> 1 - mean 65.29 std 29.56 n_pixels 4407
+  2 METASTASES mean 70.03 std 24.75 min 68.07 max 72.00
+   -> 0 - mean 68.07 std 23.96 n_pixels 12800
+   -> 1 - mean 72.00 std 25.53 n_pixels 11220
+337203.nii.gz
+  1 PRIMARIES mean 40.67 std 21.90 min 40.67 max 40.67
+   -> 0 - mean 40.67 std 21.90 n_pixels 4778
+  2 METASTASES mean 76.25 std 17.22 min 67.76 max 84.74
+   -> 0 - mean 67.76 std 17.46 n_pixels 44705
+   -> 1 - mean 84.74 std 16.99 n_pixels 5256
+337204.nii.gz
+  2 PRIMARIES mean 69.67 std 26.88 min 62.69 max 76.64
+   -> 0 - mean 76.64 std 25.53 n_pixels 4026
+   -> 1 - mean 62.69 std 28.23 n_pixels 9263
+  2 METASTASES mean 71.67 std 21.29 min 65.96 max 77.38
+   -> 0 - mean 77.38 std 18.58 n_pixels 22300
+   -> 1 - mean 65.96 std 23.99 n_pixels 8281
+337205.nii.gz
+  1 PRIMARIES mean 63.91 std 34.37 min 63.91 max 63.91
+   -> 0 - mean 63.91 std 34.37 n_pixels 2964
+  4 METASTASES mean 9.33 std 33.58 min -0.65 max 25.57
+   -> 0 - mean -0.65 std 39.92 n_pixels 544
+   -> 1 - mean 25.57 std 32.31 n_pixels 764
+   -> 2 - mean 7.78 std 30.81 n_pixels 768
+   -> 3 - mean 4.61 std 31.28 n_pixels 1404
+347439.nii.gz
+  2 PRIMARIES mean 68.07 std 21.41 min 56.95 max 79.19
+   -> 0 - mean 79.19 std 21.97 n_pixels 1301
+   -> 1 - mean 56.95 std 20.86 n_pixels 1505
+  10 METASTASES mean -45.46 std 3.95 min -73.00 max 3.92
+   -> 0 - mean 3.92 std 33.03 n_pixels 6099
+   -> 1 - mean -51.00 std 0.00 n_pixels 1
+   -> 2 - mean -73.00 std 0.00 n_pixels 1
+   -> 3 - mean -50.00 std 0.00 n_pixels 1
+   -> 4 - mean -17.00 std 0.00 n_pixels 1
+   -> 5 - mean -47.50 std 0.50 n_pixels 2
+   -> 6 - mean -59.00 std 0.00 n_pixels 1
+   -> 7 - mean -56.00 std 6.00 n_pixels 2
+   -> 8 - mean -53.00 std 0.00 n_pixels 1
+   -> 9 - mean -52.00 std 0.00 n_pixels 1
+347440.nii.gz
+  1 PRIMARIES mean 69.48 std 20.28 min 69.48 max 69.48
+   -> 0 - mean 69.48 std 20.28 n_pixels 6427
+  1 METASTASES mean 41.20 std 21.51 min 41.20 max 41.20
+   -> 0 - mean 41.20 std 21.51 n_pixels 2197
+347441.nii.gz
+  1 PRIMARIES mean 69.28 std 20.05 min 69.28 max 69.28
+   -> 0 - mean 69.28 std 20.05 n_pixels 7776
+  1 METASTASES mean 39.51 std 22.61 min 39.51 max 39.51
+   -> 0 - mean 39.51 std 22.61 n_pixels 677
+347443.nii.gz
+  2 PRIMARIES mean 51.17 std 20.81 min 50.21 max 52.13
+   -> 0 - mean 52.13 std 20.15 n_pixels 1789
+   -> 1 - mean 50.21 std 21.48 n_pixels 3046
+  1 METASTASES mean 40.57 std 20.75 min 40.57 max 40.57
+   -> 0 - mean 40.57 std 20.75 n_pixels 4703
+347444.nii.gz
+  1 METASTASES mean 19.69 std 20.99 min 19.69 max 19.69
+   -> 0 - mean 19.69 std 20.99 n_pixels 9789
+347446.nii.gz
+  2 PRIMARIES mean 69.12 std 30.67 min 67.97 max 70.27
+   -> 0 - mean 70.27 std 32.12 n_pixels 22325
+   -> 1 - mean 67.97 std 29.21 n_pixels 9263
+  1 METASTASES mean 52.72 std 30.51 min 52.72 max 52.72
+   -> 0 - mean 52.72 std 30.51 n_pixels 984
+347447.nii.gz
+  2 PRIMARIES mean 25.09 std 13.89 min 10.00 max 40.17
+   -> 0 - mean 40.17 std 24.78 n_pixels 210490
+   -> 1 - mean 10.00 std 3.00 n_pixels 2
+  1 METASTASES mean 16.71 std 24.50 min 16.71 max 16.71
+   -> 0 - mean 16.71 std 24.50 n_pixels 8056
+347448.nii.gz
+  2 PRIMARIES mean 59.58 std 26.57 min 58.74 max 60.42
+   -> 0 - mean 60.42 std 21.94 n_pixels 36128
+   -> 1 - mean 58.74 std 31.20 n_pixels 4964
+  1 METASTASES mean 36.41 std 27.64 min 36.41 max 36.41
+   -> 0 - mean 36.41 std 27.64 n_pixels 3710
+347451.nii.gz
+  1 PRIMARIES mean 30.87 std 22.70 min 30.87 max 30.87
+   -> 0 - mean 30.87 std 22.70 n_pixels 215755
+347452.nii.gz
+  2 PRIMARIES mean -16.34 std 11.66 min -61.00 max 28.33
+   -> 0 - mean 28.33 std 23.33 n_pixels 14563
+   -> 1 - mean -61.00 std 0.00 n_pixels 1
+347455.nii.gz
+  1 PRIMARIES mean 53.61 std 22.57 min 53.61 max 53.61
+   -> 0 - mean 53.61 std 22.57 n_pixels 2988
+347456.nii.gz
+  2 PRIMARIES mean 33.98 std 25.44 min 31.50 max 36.45
+   -> 0 - mean 36.45 std 25.11 n_pixels 3978
+   -> 1 - mean 31.50 std 25.77 n_pixels 6222
+  2 METASTASES mean 25.47 std 26.18 min 11.51 max 39.43
+   -> 0 - mean 39.43 std 25.32 n_pixels 5904
+   -> 1 - mean 11.51 std 27.04 n_pixels 10101
+347458.nii.gz
+  1 PRIMARIES mean 88.21 std 19.09 min 88.21 max 88.21
+   -> 0 - mean 88.21 std 19.09 n_pixels 2515
+  2 METASTASES mean 71.81 std 30.41 min 60.12 max 83.51
+   -> 0 - mean 83.51 std 23.16 n_pixels 36640
+   -> 1 - mean 60.12 std 37.66 n_pixels 2120
+347463.nii.gz
+  1 METASTASES mean 54.71 std 30.99 min 54.71 max 54.71
+   -> 0 - mean 54.71 std 30.99 n_pixels 8712
+347467.nii.gz
+  1 PRIMARIES mean 75.92 std 23.90 min 75.92 max 75.92
+   -> 0 - mean 75.92 std 23.90 n_pixels 92358
+  1 METASTASES mean 53.37 std 27.31 min 53.37 max 53.37
+   -> 0 - mean 53.37 std 27.31 n_pixels 27389
+347469.nii.gz
+  3 PRIMARIES mean 66.83 std 10.34 min 59.61 max 78.00
+   -> 0 - mean 62.88 std 17.33 n_pixels 12163
+   -> 1 - mean 78.00 std 0.00 n_pixels 1
+   -> 2 - mean 59.61 std 13.68 n_pixels 3075
+  1 METASTASES mean 46.19 std 17.52 min 46.19 max 46.19
+   -> 0 - mean 46.19 std 17.52 n_pixels 38400
+347470.nii.gz
+  2 PRIMARIES mean 24.38 std 9.22 min 23.00 max 25.75
+   -> 0 - mean 25.75 std 18.45 n_pixels 672677
+   -> 1 - mean 23.00 std 0.00 n_pixels 1
+  1 METASTASES mean 29.43 std 16.05 min 29.43 max 29.43
+   -> 0 - mean 29.43 std 16.05 n_pixels 1999
+347471.nii.gz
+  2 PRIMARIES mean 58.95 std 24.47 min 43.15 max 74.75
+   -> 0 - mean 74.75 std 19.82 n_pixels 2903
+   -> 1 - mean 43.15 std 29.12 n_pixels 3878
+  1 METASTASES mean 33.09 std 25.73 min 33.09 max 33.09
+   -> 0 - mean 33.09 std 25.73 n_pixels 2864
+347473.nii.gz
+  1 PRIMARIES mean 17.87 std 18.97 min 17.87 max 17.87
+   -> 0 - mean 17.87 std 18.97 n_pixels 53063
+  1 METASTASES mean 15.20 std 28.66 min 15.20 max 15.20
+   -> 0 - mean 15.20 std 28.66 n_pixels 358
+347483.nii.gz
+  1 PRIMARIES mean 37.97 std 24.38 min 37.97 max 37.97
+   -> 0 - mean 37.97 std 24.38 n_pixels 679018
+  1 METASTASES mean 64.46 std 17.30 min 64.46 max 64.46
+   -> 0 - mean 64.46 std 17.30 n_pixels 906
+347485.nii.gz
+  1 PRIMARIES mean 74.50 std 32.52 min 74.50 max 74.50
+   -> 0 - mean 74.50 std 32.52 n_pixels 20704
+347490.nii.gz
+  2 PRIMARIES mean 48.64 std 25.13 min 43.75 max 53.54
+   -> 0 - mean 43.75 std 25.43 n_pixels 13501
+   -> 1 - mean 53.54 std 24.83 n_pixels 3463
+  1 METASTASES mean 65.65 std 30.80 min 65.65 max 65.65
+   -> 0 - mean 65.65 std 30.80 n_pixels 716
+347492.nii.gz
+  2 PRIMARIES mean 78.99 std 29.40 min 75.22 max 82.76
+   -> 0 - mean 75.22 std 31.04 n_pixels 15300
+   -> 1 - mean 82.76 std 27.75 n_pixels 6534
+  1 METASTASES mean 73.41 std 26.38 min 73.41 max 73.41
+   -> 0 - mean 73.41 std 26.38 n_pixels 28914
+347495.nii.gz
+  4 PRIMARIES mean 52.00 std 9.14 min 46.43 max 57.00
+   -> 0 - mean 46.43 std 18.68 n_pixels 12108
+   -> 1 - mean 53.55 std 13.90 n_pixels 27854
+   -> 2 - mean 57.00 std 4.00 n_pixels 2
+   -> 3 - mean 51.00 std 0.00 n_pixels 1
+347499.nii.gz
+  1 METASTASES mean 65.01 std 20.20 min 65.01 max 65.01
+   -> 0 - mean 65.01 std 20.20 n_pixels 3916
+347500.nii.gz
+  2 PRIMARIES mean 46.77 std 16.89 min 40.22 max 53.31
+   -> 0 - mean 53.31 std 16.53 n_pixels 1054
+   -> 1 - mean 40.22 std 17.25 n_pixels 3033
+  2 METASTASES mean 24.83 std 23.24 min 19.74 max 29.91
+   -> 0 - mean 29.91 std 22.47 n_pixels 2728
+   -> 1 - mean 19.74 std 24.01 n_pixels 697
+347501.nii.gz
+  1 PRIMARIES mean 73.09 std 26.86 min 73.09 max 73.09
+   -> 0 - mean 73.09 std 26.86 n_pixels 2542
+347503.nii.gz
+  1 METASTASES mean 44.10 std 18.43 min 44.10 max 44.10
+   -> 0 - mean 44.10 std 18.43 n_pixels 13410
+347504.nii.gz
+  2 PRIMARIES mean 35.96 std 15.04 min 34.87 max 37.05
+   -> 0 - mean 37.05 std 14.62 n_pixels 3063
+   -> 1 - mean 34.87 std 15.46 n_pixels 7635
+  2 METASTASES mean 40.96 std 21.58 min 31.60 max 50.33
+   -> 0 - mean 50.33 std 18.77 n_pixels 15144
+   -> 1 - mean 31.60 std 24.39 n_pixels 8959
+347505.nii.gz
+  1 METASTASES mean 51.54 std 17.02 min 51.54 max 51.54
+   -> 0 - mean 51.54 std 17.02 n_pixels 10820
+347506.nii.gz
+  2 PRIMARIES mean 50.04 std 27.91 min 49.71 max 50.37
+   -> 0 - mean 49.71 std 31.12 n_pixels 13600
+   -> 1 - mean 50.37 std 24.70 n_pixels 12524
+  32 METASTASES mean 35.48 std 34.42 min -63.25 max 303.00
+   -> 0 - mean 75.00 std 6.00 n_pixels 2
+   -> 1 - mean 81.29 std 10.10 n_pixels 28
+   -> 2 - mean 6.16 std 44.11 n_pixels 44
+   -> 3 - mean 19.50 std 38.53 n_pixels 177
+   -> 4 - mean 12.30 std 46.44 n_pixels 93928
+   -> 5 - mean 31.37 std 35.57 n_pixels 2141
+   -> 6 - mean 47.80 std 34.06 n_pixels 399
+   -> 7 - mean 44.50 std 33.55 n_pixels 12777
+   -> 8 - mean 50.40 std 37.53 n_pixels 2206
+   -> 9 - mean 24.47 std 51.53 n_pixels 1158
+   -> 10 - mean 10.76 std 53.29 n_pixels 640
+   -> 11 - mean 37.20 std 13.43 n_pixels 44
+   -> 12 - mean 46.14 std 48.88 n_pixels 170
+   -> 13 - mean 38.85 std 26.04 n_pixels 52
+   -> 14 - mean -63.25 std 25.83 n_pixels 4
+   -> 15 - mean 21.00 std 0.00 n_pixels 1
+   -> 16 - mean 69.86 std 33.47 n_pixels 484
+   -> 17 - mean 47.16 std 46.84 n_pixels 842
+   -> 18 - mean 32.39 std 32.05 n_pixels 2899
+   -> 19 - mean 30.44 std 45.21 n_pixels 2694
+   -> 20 - mean 30.93 std 45.15 n_pixels 44
+   -> 21 - mean 34.25 std 44.26 n_pixels 851
+   -> 22 - mean 11.85 std 32.40 n_pixels 268
+   -> 23 - mean 20.77 std 33.14 n_pixels 424
+   -> 24 - mean 7.01 std 30.30 n_pixels 317
+   -> 25 - mean 20.55 std 24.56 n_pixels 85
+   -> 26 - mean 10.22 std 37.12 n_pixels 786
+   -> 27 - mean 7.80 std 35.96 n_pixels 202
+   -> 28 - mean -4.62 std 50.36 n_pixels 58
+   -> 29 - mean -4.36 std 37.59 n_pixels 137
+   -> 30 - mean 34.66 std 31.69 n_pixels 659
+   -> 31 - mean 303.00 std 36.54 n_pixels 5
+347507.nii.gz
+  1 METASTASES mean 69.20 std 25.00 min 69.20 max 69.20
+   -> 0 - mean 69.20 std 25.00 n_pixels 5545
+347509.nii.gz
+  1 PRIMARIES mean 62.73 std 14.53 min 62.73 max 62.73
+   -> 0 - mean 62.73 std 14.53 n_pixels 180856
+  37 METASTASES mean 45.37 std 19.88 min -11.33 max 102.00
+   -> 0 - mean 31.97 std 36.95 n_pixels 1532
+   -> 1 - mean 60.17 std 22.66 n_pixels 5468
+   -> 2 - mean 38.42 std 26.64 n_pixels 278
+   -> 3 - mean 31.46 std 32.26 n_pixels 123
+   -> 4 - mean 38.56 std 40.57 n_pixels 324
+   -> 5 - mean 48.95 std 29.76 n_pixels 380
+   -> 6 - mean 22.86 std 12.68 n_pixels 37
+   -> 7 - mean 63.64 std 21.12 n_pixels 4543
+   -> 8 - mean 32.42 std 39.10 n_pixels 1853
+   -> 9 - mean 41.67 std 9.74 n_pixels 3
+   -> 10 - mean 52.52 std 30.02 n_pixels 10709
+   -> 11 - mean 65.70 std 9.71 n_pixels 10
+   -> 12 - mean 45.41 std 26.12 n_pixels 229
+   -> 13 - mean 102.00 std 0.00 n_pixels 1
+   -> 14 - mean 65.00 std 5.79 n_pixels 4
+   -> 15 - mean 75.35 std 23.35 n_pixels 34
+   -> 16 - mean 54.00 std 6.12 n_pixels 4
+   -> 17 - mean 62.00 std 0.00 n_pixels 1
+   -> 18 - mean 53.02 std 21.96 n_pixels 121
+   -> 19 - mean 52.24 std 23.68 n_pixels 447
+   -> 20 - mean 56.61 std 9.71 n_pixels 28
+   -> 21 - mean 60.01 std 28.05 n_pixels 1181
+   -> 22 - mean 42.68 std 30.74 n_pixels 149231
+   -> 23 - mean 42.73 std 18.05 n_pixels 246
+   -> 24 - mean 27.67 std 20.44 n_pixels 61
+   -> 25 - mean 66.00 std 0.00 n_pixels 1
+   -> 26 - mean 46.98 std 27.77 n_pixels 4884
+   -> 27 - mean 31.39 std 24.02 n_pixels 61
+   -> 28 - mean -9.00 std 0.00 n_pixels 1
+   -> 29 - mean 32.42 std 33.23 n_pixels 4663
+   -> 30 - mean 55.33 std 20.50 n_pixels 2008
+   -> 31 - mean 47.33 std 67.63 n_pixels 12
+   -> 32 - mean 3.00 std 0.00 n_pixels 1
+   -> 33 - mean -11.33 std 7.13 n_pixels 3
+   -> 34 - mean 31.67 std 8.26 n_pixels 3
+   -> 35 - mean 54.29 std 13.33 n_pixels 21
+   -> 36 - mean 63.50 std 8.62 n_pixels 4
+347510.nii.gz
+  6 PRIMARIES mean 43.05 std 9.81 min -58.00 max 85.00
+   -> 0 - mean 51.43 std 28.28 n_pixels 16828
+   -> 1 - mean -58.00 std 0.00 n_pixels 1
+   -> 2 - mean 54.00 std 0.00 n_pixels 1
+   -> 3 - mean 66.20 std 19.48 n_pixels 5
+   -> 4 - mean 85.00 std 0.00 n_pixels 1
+   -> 5 - mean 59.67 std 11.12 n_pixels 3
+  30 METASTASES mean -38.46 std 14.44 min -1006.46 max 80.40
+   -> 0 - mean 80.40 std 8.87 n_pixels 5
+   -> 1 - mean -13.05 std 34.64 n_pixels 22161
+   -> 2 - mean 8.13 std 32.50 n_pixels 198
+   -> 3 - mean 54.91 std 16.51 n_pixels 93
+   -> 4 - mean -1000.14 std 4.85 n_pixels 21
+   -> 5 - mean 46.89 std 17.78 n_pixels 844
+   -> 6 - mean 49.15 std 21.54 n_pixels 2998
+   -> 7 - mean 22.44 std 24.50 n_pixels 87
+   -> 8 - mean 50.29 std 20.93 n_pixels 6920
+   -> 9 - mean 5.12 std 35.22 n_pixels 43
+   -> 10 - mean 42.00 std 0.00 n_pixels 1
+   -> 11 - mean 65.00 std 2.16 n_pixels 3
+   -> 12 - mean 27.24 std 28.59 n_pixels 38
+   -> 13 - mean 31.00 std 16.40 n_pixels 4
+   -> 14 - mean 43.00 std 9.42 n_pixels 3
+   -> 15 - mean -16.67 std 18.91 n_pixels 3
+   -> 16 - mean -27.59 std 36.36 n_pixels 9999
+   -> 17 - mean 58.75 std 1.30 n_pixels 4
+   -> 18 - mean 72.00 std 0.00 n_pixels 1
+   -> 19 - mean 57.33 std 4.19 n_pixels 3
+   -> 20 - mean 60.00 std 0.00 n_pixels 1
+   -> 21 - mean 29.00 std 0.00 n_pixels 1
+   -> 22 - mean -1.00 std 0.00 n_pixels 1
+   -> 23 - mean 78.75 std 25.70 n_pixels 4
+   -> 24 - mean -12.00 std 0.00 n_pixels 1
+   -> 25 - mean -17.00 std 0.00 n_pixels 1
+   -> 26 - mean -4.06 std 23.82 n_pixels 18
+   -> 27 - mean 30.17 std 18.68 n_pixels 29
+   -> 28 - mean 32.56 std 23.72 n_pixels 423
+   -> 29 - mean -1006.46 std 6.74 n_pixels 13
+347511.nii.gz
+  1 PRIMARIES mean 34.83 std 22.72 min 34.83 max 34.83
+   -> 0 - mean 34.83 std 22.72 n_pixels 105555
+  59 METASTASES mean 1.45 std 19.92 min -74.00 max 63.00
+   -> 0 - mean 24.54 std 31.02 n_pixels 114669
+   -> 1 - mean 43.00 std 0.00 n_pixels 1
+   -> 2 - mean -10.76 std 34.09 n_pixels 143
+   -> 3 - mean 34.50 std 14.22 n_pixels 4
+   -> 4 - mean 8.74 std 30.47 n_pixels 478
+   -> 5 - mean 11.32 std 24.98 n_pixels 155
+   -> 6 - mean 15.87 std 28.38 n_pixels 373
+   -> 7 - mean -13.89 std 40.10 n_pixels 1210
+   -> 8 - mean 6.94 std 29.47 n_pixels 269
+   -> 9 - mean 41.30 std 29.09 n_pixels 53
+   -> 10 - mean 24.93 std 33.49 n_pixels 46
+   -> 11 - mean -35.50 std 2.50 n_pixels 2
+   -> 12 - mean 38.78 std 43.32 n_pixels 86
+   -> 13 - mean 21.63 std 14.00 n_pixels 38
+   -> 14 - mean 12.18 std 12.86 n_pixels 11
+   -> 15 - mean 12.50 std 16.96 n_pixels 8
+   -> 16 - mean 21.93 std 20.52 n_pixels 43
+   -> 17 - mean 63.00 std 12.61 n_pixels 8
+   -> 18 - mean 20.53 std 19.19 n_pixels 38
+   -> 19 - mean 6.90 std 23.04 n_pixels 21
+   -> 20 - mean 7.29 std 28.08 n_pixels 257
+   -> 21 - mean -21.20 std 30.87 n_pixels 200
+   -> 22 - mean 3.73 std 33.65 n_pixels 1620
+   -> 23 - mean 51.75 std 8.84 n_pixels 4
+   -> 24 - mean 59.00 std 0.00 n_pixels 1
+   -> 25 - mean 13.03 std 28.17 n_pixels 156
+   -> 26 - mean -27.00 std 11.00 n_pixels 2
+   -> 27 - mean 42.24 std 8.63 n_pixels 17
+   -> 28 - mean -21.69 std 36.14 n_pixels 110
+   -> 29 - mean -6.78 std 31.65 n_pixels 296
+   -> 30 - mean -16.33 std 34.34 n_pixels 488
+   -> 31 - mean -31.33 std 39.86 n_pixels 24693
+   -> 32 - mean -63.10 std 31.18 n_pixels 61
+   -> 33 - mean 23.93 std 17.60 n_pixels 14
+   -> 34 - mean -38.27 std 33.79 n_pixels 201
+   -> 35 - mean 5.12 std 25.60 n_pixels 76
+   -> 36 - mean 15.33 std 47.04 n_pixels 107
+   -> 37 - mean -15.31 std 18.64 n_pixels 36
+   -> 38 - mean 7.00 std 0.00 n_pixels 1
+   -> 39 - mean -28.15 std 36.28 n_pixels 94
+   -> 40 - mean 7.00 std 16.00 n_pixels 2
+   -> 41 - mean 21.71 std 13.55 n_pixels 17
+   -> 42 - mean 7.65 std 26.64 n_pixels 155
+   -> 43 - mean -3.34 std 16.51 n_pixels 61
+   -> 44 - mean -72.95 std 24.90 n_pixels 61
+   -> 45 - mean 8.00 std 0.00 n_pixels 1
+   -> 46 - mean -14.60 std 11.02 n_pixels 5
+   -> 47 - mean 31.71 std 25.10 n_pixels 31
+   -> 48 - mean 11.93 std 24.95 n_pixels 128
+   -> 49 - mean -74.00 std 0.00 n_pixels 1
+   -> 50 - mean -27.64 std 21.94 n_pixels 25
+   -> 51 - mean -25.00 std 8.31 n_pixels 6
+   -> 52 - mean -23.00 std 0.00 n_pixels 1
+   -> 53 - mean -23.00 std 0.00 n_pixels 1
+   -> 54 - mean -48.00 std 0.00 n_pixels 1
+   -> 55 - mean -46.00 std 0.00 n_pixels 1
+   -> 56 - mean 43.00 std 6.12 n_pixels 4
+   -> 57 - mean 7.41 std 18.53 n_pixels 105
+   -> 58 - mean -3.00 std 0.00 n_pixels 1
+347512.nii.gz
+  3 PRIMARIES mean 34.33 std 36.64 min 5.00 max 51.89
+   -> 0 - mean 46.09 std 43.30 n_pixels 4237
+   -> 1 - mean 5.00 std 24.00 n_pixels 2
+   -> 2 - mean 51.89 std 42.61 n_pixels 6336
+  64 METASTASES mean 4.81 std 35.28 min -124.00 max 97.00
+   -> 0 - mean 65.92 std 34.68 n_pixels 7123
+   -> 1 - mean 7.54 std 51.84 n_pixels 3213
+   -> 2 - mean 55.32 std 41.85 n_pixels 599
+   -> 3 - mean 14.70 std 20.47 n_pixels 46
+   -> 4 - mean 7.33 std 54.57 n_pixels 69223
+   -> 5 - mean -17.64 std 59.99 n_pixels 226
+   -> 6 - mean 48.80 std 60.75 n_pixels 44
+   -> 7 - mean 14.68 std 56.13 n_pixels 742
+   -> 8 - mean 46.80 std 40.56 n_pixels 44
+   -> 9 - mean 50.00 std 46.97 n_pixels 197
+   -> 10 - mean 29.61 std 53.24 n_pixels 486
+   -> 11 - mean 97.00 std 0.00 n_pixels 1
+   -> 12 - mean 67.67 std 10.37 n_pixels 3
+   -> 13 - mean -23.61 std 47.21 n_pixels 1137
+   -> 14 - mean -15.31 std 41.21 n_pixels 68
+   -> 15 - mean 8.45 std 47.60 n_pixels 273
+   -> 16 - mean 47.00 std 20.91 n_pixels 6
+   -> 17 - mean 58.68 std 33.14 n_pixels 7019
+   -> 18 - mean 75.54 std 18.62 n_pixels 35
+   -> 19 - mean 39.29 std 39.70 n_pixels 521
+   -> 20 - mean 59.54 std 38.47 n_pixels 146
+   -> 21 - mean 16.63 std 46.65 n_pixels 82
+   -> 22 - mean -58.00 std 8.49 n_pixels 3
+   -> 23 - mean 91.26 std 30.37 n_pixels 133
+   -> 24 - mean 23.20 std 15.69 n_pixels 5
+   -> 25 - mean -89.50 std 21.50 n_pixels 2
+   -> 26 - mean -72.80 std 20.89 n_pixels 10
+   -> 27 - mean 26.07 std 27.94 n_pixels 54
+   -> 28 - mean -22.00 std 0.00 n_pixels 1
+   -> 29 - mean -21.50 std 21.50 n_pixels 2
+   -> 30 - mean 20.44 std 57.16 n_pixels 1136
+   -> 31 - mean -20.00 std 0.00 n_pixels 1
+   -> 32 - mean 9.04 std 61.40 n_pixels 355
+   -> 33 - mean 61.52 std 30.95 n_pixels 209
+   -> 34 - mean -8.00 std 62.84 n_pixels 6
+   -> 35 - mean -30.00 std 0.00 n_pixels 1
+   -> 36 - mean 26.00 std 0.00 n_pixels 1
+   -> 37 - mean -8.59 std 49.63 n_pixels 34
+   -> 38 - mean 7.11 std 57.21 n_pixels 140
+   -> 39 - mean 29.56 std 39.00 n_pixels 32
+   -> 40 - mean 5.38 std 54.77 n_pixels 1646
+   -> 41 - mean -97.00 std 0.00 n_pixels 1
+   -> 42 - mean -19.62 std 49.62 n_pixels 347
+   -> 43 - mean 22.30 std 43.99 n_pixels 44
+   -> 44 - mean 47.00 std 16.67 n_pixels 5
+   -> 45 - mean -35.51 std 40.87 n_pixels 745
+   -> 46 - mean 12.56 std 48.79 n_pixels 16
+   -> 47 - mean -112.00 std 0.00 n_pixels 1
+   -> 48 - mean -46.24 std 52.67 n_pixels 55
+   -> 49 - mean -94.00 std 0.00 n_pixels 1
+   -> 50 - mean -8.46 std 49.54 n_pixels 89
+   -> 51 - mean -124.00 std 14.90 n_pixels 3
+   -> 52 - mean 6.00 std 12.96 n_pixels 12
+   -> 53 - mean -40.71 std 30.80 n_pixels 66
+   -> 54 - mean 32.81 std 54.47 n_pixels 16
+   -> 55 - mean -1.02 std 50.50 n_pixels 50
+   -> 56 - mean -1.15 std 45.66 n_pixels 136
+   -> 57 - mean -27.40 std 55.62 n_pixels 20
+   -> 58 - mean -12.92 std 45.17 n_pixels 66
+   -> 59 - mean 26.82 std 53.72 n_pixels 57
+   -> 60 - mean -25.25 std 25.49 n_pixels 12
+   -> 61 - mean 3.08 std 70.09 n_pixels 61
+   -> 62 - mean 32.18 std 29.55 n_pixels 74
+   -> 63 - mean 47.38 std 42.73 n_pixels 21
+347514.nii.gz
+  1 PRIMARIES mean 53.52 std 32.58 min 53.52 max 53.52
+   -> 0 - mean 53.52 std 32.58 n_pixels 435273
+  3 METASTASES mean 132.14 std 21.01 min 4.80 max 288.00
+   -> 0 - mean 103.62 std 34.39 n_pixels 12406
+   -> 1 - mean 288.00 std 0.00 n_pixels 1
+   -> 2 - mean 4.80 std 28.64 n_pixels 1301
+347515.nii.gz
+  2 PRIMARIES mean 44.72 std 19.44 min 36.67 max 52.77
+   -> 0 - mean 52.77 std 21.30 n_pixels 9909
+   -> 1 - mean 36.67 std 17.59 n_pixels 10147
+  1 METASTASES mean 43.02 std 21.11 min 43.02 max 43.02
+   -> 0 - mean 43.02 std 21.11 n_pixels 3350
+347516.nii.gz
+  2 PRIMARIES mean 67.27 std 30.32 min 66.19 max 68.34
+   -> 0 - mean 68.34 std 30.66 n_pixels 2398
+   -> 1 - mean 66.19 std 29.98 n_pixels 2154
+  15 METASTASES mean 59.75 std 22.78 min -4.21 max 103.50
+   -> 0 - mean 101.51 std 12.87 n_pixels 88
+   -> 1 - mean 92.00 std 16.69 n_pixels 12
+   -> 2 - mean 38.44 std 44.60 n_pixels 330
+   -> 3 - mean 90.00 std 1.87 n_pixels 4
+   -> 4 - mean 93.20 std 9.81 n_pixels 5
+   -> 5 - mean 25.71 std 40.08 n_pixels 27040
+   -> 6 - mean 78.24 std 34.55 n_pixels 274
+   -> 7 - mean 96.13 std 7.97 n_pixels 15
+   -> 8 - mean 103.50 std 8.50 n_pixels 2
+   -> 9 - mean 65.09 std 26.08 n_pixels 1083
+   -> 10 - mean 3.76 std 42.48 n_pixels 171
+   -> 11 - mean 60.47 std 39.31 n_pixels 973
+   -> 12 - mean 22.81 std 8.97 n_pixels 16
+   -> 13 - mean 29.67 std 19.19 n_pixels 45
+   -> 14 - mean -4.21 std 28.80 n_pixels 1009
+347519.nii.gz
+  2 PRIMARIES mean 31.33 std 25.97 min 30.09 max 32.56
+   -> 0 - mean 32.56 std 27.58 n_pixels 6958
+   -> 1 - mean 30.09 std 24.37 n_pixels 3956
+  36 METASTASES mean 24.14 std 13.63 min -70.50 max 74.44
+   -> 0 - mean 53.91 std 17.45 n_pixels 15827
+   -> 1 - mean 9.36 std 34.33 n_pixels 111345
+   -> 2 - mean 36.11 std 17.05 n_pixels 320
+   -> 3 - mean 51.50 std 8.20 n_pixels 4
+   -> 4 - mean 66.00 std 0.00 n_pixels 1
+   -> 5 - mean 58.71 std 18.85 n_pixels 2544
+   -> 6 - mean 64.77 std 8.19 n_pixels 188
+   -> 7 - mean 20.00 std 10.00 n_pixels 2
+   -> 8 - mean 15.07 std 17.67 n_pixels 15
+   -> 9 - mean 74.44 std 15.59 n_pixels 18
+   -> 10 - mean 45.11 std 29.00 n_pixels 541
+   -> 11 - mean 36.50 std 30.23 n_pixels 391
+   -> 12 - mean 25.39 std 17.34 n_pixels 70
+   -> 13 - mean 25.93 std 17.04 n_pixels 61
+   -> 14 - mean 50.12 std 22.94 n_pixels 720
+   -> 15 - mean 58.71 std 12.72 n_pixels 198
+   -> 16 - mean 51.00 std 0.00 n_pixels 1
+   -> 17 - mean 68.00 std 0.00 n_pixels 1
+   -> 18 - mean 44.89 std 31.02 n_pixels 2123
+   -> 19 - mean 41.35 std 13.99 n_pixels 651
+   -> 20 - mean 49.82 std 29.38 n_pixels 3901
+   -> 21 - mean 33.35 std 21.86 n_pixels 333
+   -> 22 - mean -26.73 std 12.47 n_pixels 30
+   -> 23 - mean 41.02 std 26.29 n_pixels 290
+   -> 24 - mean 48.79 std 28.26 n_pixels 299
+   -> 25 - mean -2.00 std 0.00 n_pixels 1
+   -> 26 - mean 74.00 std 0.00 n_pixels 1
+   -> 27 - mean 34.00 std 0.00 n_pixels 1
+   -> 28 - mean -45.33 std 7.59 n_pixels 3
+   -> 29 - mean 10.00 std 0.00 n_pixels 1
+   -> 30 - mean -28.00 std 0.00 n_pixels 1
+   -> 31 - mean -68.00 std 0.00 n_pixels 1
+   -> 32 - mean -70.50 std 19.50 n_pixels 2
+   -> 33 - mean -53.00 std 0.00 n_pixels 1
+   -> 34 - mean -52.00 std 0.00 n_pixels 1
+   -> 35 - mean 26.90 std 23.84 n_pixels 325
+347521.nii.gz
+  3 PRIMARIES mean 30.68 std 12.76 min 7.50 max 54.53
+   -> 0 - mean 54.53 std 25.79 n_pixels 89884
+   -> 1 - mean 7.50 std 1.50 n_pixels 2
+   -> 2 - mean 30.00 std 11.00 n_pixels 2
+  9 METASTASES mean 19.56 std 19.73 min -24.00 max 79.18
+   -> 0 - mean 79.18 std 15.51 n_pixels 11
+   -> 1 - mean 14.22 std 22.48 n_pixels 60
+   -> 2 - mean -0.60 std 17.68 n_pixels 5
+   -> 3 - mean 75.75 std 0.83 n_pixels 4
+   -> 4 - mean 13.78 std 26.47 n_pixels 402
+   -> 5 - mean 4.93 std 30.82 n_pixels 4259
+   -> 6 - mean 33.60 std 41.63 n_pixels 983
+   -> 7 - mean -20.84 std 22.13 n_pixels 1720
+   -> 8 - mean -24.00 std 0.00 n_pixels 1
+347523.nii.gz
+  1 PRIMARIES mean 71.62 std 34.05 min 71.62 max 71.62
+   -> 0 - mean 71.62 std 34.05 n_pixels 5429
+  2 METASTASES mean 52.28 std 22.42 min 50.17 max 54.38
+   -> 0 - mean 54.38 std 24.20 n_pixels 19018
+   -> 1 - mean 50.17 std 20.63 n_pixels 190
+347524.nii.gz
+  1 METASTASES mean 76.96 std 28.30 min 76.96 max 76.96
+   -> 0 - mean 76.96 std 28.30 n_pixels 6038
+347525.nii.gz
+  1 PRIMARIES mean 47.87 std 20.32 min 47.87 max 47.87
+   -> 0 - mean 47.87 std 20.32 n_pixels 25843
+  1 METASTASES mean 28.88 std 20.50 min 28.88 max 28.88
+   -> 0 - mean 28.88 std 20.50 n_pixels 3147
+347528.nii.gz
+  1 PRIMARIES mean 47.17 std 22.42 min 47.17 max 47.17
+   -> 0 - mean 47.17 std 22.42 n_pixels 13181
+  1 METASTASES mean -14.13 std 27.13 min -14.13 max -14.13
+   -> 0 - mean -14.13 std 27.13 n_pixels 14621
+347529.nii.gz
+  1 PRIMARIES mean 84.96 std 18.28 min 84.96 max 84.96
+   -> 0 - mean 84.96 std 18.28 n_pixels 2065
+  1 METASTASES mean 82.36 std 14.48 min 82.36 max 82.36
+   -> 0 - mean 82.36 std 14.48 n_pixels 12408
+347532.nii.gz
+  1 METASTASES mean 46.34 std 21.18 min 46.34 max 46.34
+   -> 0 - mean 46.34 std 21.18 n_pixels 9466
+347534.nii.gz
+  2 PRIMARIES mean 60.59 std 24.06 min 60.15 max 61.02
+   -> 0 - mean 61.02 std 24.73 n_pixels 1479
+   -> 1 - mean 60.15 std 23.38 n_pixels 5322
+  2 METASTASES mean 29.85 std 33.01 min 27.39 max 32.31
+   -> 0 - mean 27.39 std 35.14 n_pixels 20341
+   -> 1 - mean 32.31 std 30.88 n_pixels 5033
+347538.nii.gz
+  1 METASTASES mean -9.30 std 32.98 min -9.30 max -9.30
+   -> 0 - mean -9.30 std 32.98 n_pixels 28788
+347539.nii.gz
+  1 PRIMARIES mean 74.04 std 18.73 min 74.04 max 74.04
+   -> 0 - mean 74.04 std 18.73 n_pixels 1298
+  1 METASTASES mean 30.62 std 37.74 min 30.62 max 30.62
+   -> 0 - mean 30.62 std 37.74 n_pixels 35136
+347543.nii.gz
+  2 PRIMARIES mean 35.65 std 19.32 min 34.51 max 36.78
+   -> 0 - mean 34.51 std 19.71 n_pixels 4765
+   -> 1 - mean 36.78 std 18.94 n_pixels 11599
+  1 METASTASES mean 6.92 std 30.30 min 6.92 max 6.92
+   -> 0 - mean 6.92 std 30.30 n_pixels 42069
+347544.nii.gz
+  2 PRIMARIES mean 36.57 std 24.52 min 35.65 max 37.50
+   -> 0 - mean 37.50 std 24.01 n_pixels 14071
+   -> 1 - mean 35.65 std 25.04 n_pixels 44564
+  1 METASTASES mean 42.22 std 22.61 min 42.22 max 42.22
+   -> 0 - mean 42.22 std 22.61 n_pixels 42747
+347546.nii.gz
+  1 PRIMARIES mean 74.99 std 31.00 min 74.99 max 74.99
+   -> 0 - mean 74.99 std 31.00 n_pixels 14367
+  1 METASTASES mean 67.49 std 19.18 min 67.49 max 67.49
+   -> 0 - mean 67.49 std 19.18 n_pixels 86317
+347547.nii.gz
+  2 METASTASES mean 39.46 std 12.56 min 25.92 max 53.00
+   -> 0 - mean 25.92 std 25.13 n_pixels 8090
+   -> 1 - mean 53.00 std 0.00 n_pixels 1
+347549.nii.gz
+  2 PRIMARIES mean 83.18 std 45.39 min 80.96 max 85.40
+   -> 0 - mean 80.96 std 22.88 n_pixels 3998
+   -> 1 - mean 85.40 std 67.90 n_pixels 7865
+347550.nii.gz
+  1 METASTASES mean 64.63 std 18.63 min 64.63 max 64.63
+   -> 0 - mean 64.63 std 18.63 n_pixels 26998
+347551.nii.gz
+  1 PRIMARIES mean 63.28 std 23.67 min 63.28 max 63.28
+   -> 0 - mean 63.28 std 23.67 n_pixels 958
+  1 METASTASES mean 92.76 std 20.39 min 92.76 max 92.76
+   -> 0 - mean 92.76 std 20.39 n_pixels 24783
+347552.nii.gz
+  1 PRIMARIES mean 38.52 std 24.13 min 38.52 max 38.52
+   -> 0 - mean 38.52 std 24.13 n_pixels 40540
+  2 METASTASES mean 38.95 std 20.52 min 29.00 max 48.90
+   -> 0 - mean 48.90 std 20.99 n_pixels 2281
+   -> 1 - mean 29.00 std 20.04 n_pixels 4614
+347553.nii.gz
+  1 PRIMARIES mean 47.41 std 29.62 min 47.41 max 47.41
+   -> 0 - mean 47.41 std 29.62 n_pixels 93955
+  3 METASTASES mean 63.36 std 7.86 min 41.00 max 80.65
+   -> 0 - mean 80.65 std 16.24 n_pixels 24222
+   -> 1 - mean 41.00 std 0.00 n_pixels 1
+   -> 2 - mean 68.43 std 7.35 n_pixels 7
+347555.nii.gz
+  2 PRIMARIES mean 60.27 std 18.63 min 48.37 max 72.18
+   -> 0 - mean 72.18 std 16.59 n_pixels 9213
+   -> 1 - mean 48.37 std 20.67 n_pixels 56478
+  1 METASTASES mean 56.34 std 15.07 min 56.34 max 56.34
+   -> 0 - mean 56.34 std 15.07 n_pixels 16891
+347556.nii.gz
+  1 PRIMARIES mean 20.89 std 15.25 min 20.89 max 20.89
+   -> 0 - mean 20.89 std 15.25 n_pixels 67887
+  2 METASTASES mean 35.48 std 9.03 min 30.00 max 40.95
+   -> 0 - mean 40.95 std 18.06 n_pixels 54161
+   -> 1 - mean 30.00 std 0.00 n_pixels 1
+347558.nii.gz
+  1 PRIMARIES mean 53.97 std 25.93 min 53.97 max 53.97
+   -> 0 - mean 53.97 std 25.93 n_pixels 20709
+347559.nii.gz
+  1 PRIMARIES mean 63.23 std 28.16 min 63.23 max 63.23
+   -> 0 - mean 63.23 std 28.16 n_pixels 50027
+  3 METASTASES mean 61.98 std 16.66 min 55.10 max 70.69
+   -> 0 - mean 70.69 std 14.93 n_pixels 488
+   -> 1 - mean 60.14 std 17.08 n_pixels 888
+   -> 2 - mean 55.10 std 17.98 n_pixels 867
+347560.nii.gz
+  1 METASTASES mean 1.65 std 29.34 min 1.65 max 1.65
+   -> 0 - mean 1.65 std 29.34 n_pixels 12298
+347564.nii.gz
+  2 PRIMARIES mean 49.56 std 9.52 min 27.00 max 72.11
+   -> 0 - mean 72.11 std 19.04 n_pixels 1938
+   -> 1 - mean 27.00 std 0.00 n_pixels 1
+  2 METASTASES mean 60.16 std 21.12 min 57.06 max 63.25
+   -> 0 - mean 57.06 std 22.33 n_pixels 381
+   -> 1 - mean 63.25 std 19.91 n_pixels 1021
+347565.nii.gz
+  1 METASTASES mean 61.59 std 19.07 min 61.59 max 61.59
+   -> 0 - mean 61.59 std 19.07 n_pixels 29976
+347566.nii.gz
+  2 METASTASES mean 27.71 std 19.05 min 16.94 max 38.49
+   -> 0 - mean 38.49 std 17.82 n_pixels 1299
+   -> 1 - mean 16.94 std 20.27 n_pixels 156
+347567.nii.gz
+  1 PRIMARIES mean 75.27 std 23.85 min 75.27 max 75.27
+   -> 0 - mean 75.27 std 23.85 n_pixels 7577
+  2 METASTASES mean 78.25 std 21.60 min 74.28 max 82.22
+   -> 0 - mean 82.22 std 23.75 n_pixels 94028
+   -> 1 - mean 74.28 std 19.44 n_pixels 8480
+347569.nii.gz
+  3 METASTASES mean 21.92 std 18.76 min 11.93 max 36.46
+   -> 0 - mean 17.36 std 17.68 n_pixels 3322
+   -> 1 - mean 36.46 std 18.25 n_pixels 536
+   -> 2 - mean 11.93 std 20.34 n_pixels 3231
+347570.nii.gz
+  1 METASTASES mean 67.09 std 17.33 min 67.09 max 67.09
+   -> 0 - mean 67.09 std 17.33 n_pixels 29123
+347571.nii.gz
+  2 METASTASES mean 47.60 std 19.48 min 45.15 max 50.05
+   -> 0 - mean 50.05 std 21.91 n_pixels 8341
+   -> 1 - mean 45.15 std 17.04 n_pixels 10864
+347574.nii.gz
+  1 PRIMARIES mean 52.16 std 20.35 min 52.16 max 52.16
+   -> 0 - mean 52.16 std 20.35 n_pixels 6539
+347578.nii.gz
+  4 METASTASES mean 35.86 std 12.80 min 11.64 max 47.00
+   -> 0 - mean 38.04 std 19.73 n_pixels 2286
+   -> 1 - mean 46.77 std 19.76 n_pixels 3690
+   -> 2 - mean 47.00 std 0.00 n_pixels 1
+   -> 3 - mean 11.64 std 11.69 n_pixels 11
+347579.nii.gz
+  2 METASTASES mean 83.78 std 13.13 min 78.72 max 88.84
+   -> 0 - mean 88.84 std 13.57 n_pixels 30750
+   -> 1 - mean 78.72 std 12.70 n_pixels 11411
+347580.nii.gz
+  1 METASTASES mean 69.40 std 17.64 min 69.40 max 69.40
+   -> 0 - mean 69.40 std 17.64 n_pixels 36953
+347582.nii.gz
+  1 METASTASES mean 57.48 std 21.52 min 57.48 max 57.48
+   -> 0 - mean 57.48 std 21.52 n_pixels 50340
+347584.nii.gz
+  1 PRIMARIES mean 39.44 std 23.36 min 39.44 max 39.44
+   -> 0 - mean 39.44 std 23.36 n_pixels 540972
+  1 METASTASES mean 58.69 std 17.40 min 58.69 max 58.69
+   -> 0 - mean 58.69 std 17.40 n_pixels 35906
+347585.nii.gz
+  1 METASTASES mean 58.38 std 29.48 min 58.38 max 58.38
+   -> 0 - mean 58.38 std 29.48 n_pixels 3782
+347586.nii.gz
+  1 PRIMARIES mean 71.71 std 14.39 min 71.71 max 71.71
+   -> 0 - mean 71.71 std 14.39 n_pixels 23293
+  1 METASTASES mean 69.18 std 14.58 min 69.18 max 69.18
+   -> 0 - mean 69.18 std 14.58 n_pixels 146570
+347588.nii.gz
+  2 PRIMARIES mean 75.69 std 16.02 min 53.37 max 98.00
+   -> 0 - mean 53.37 std 32.03 n_pixels 256056
+   -> 1 - mean 98.00 std 0.00 n_pixels 1
+  1 METASTASES mean 94.86 std 24.18 min 94.86 max 94.86
+   -> 0 - mean 94.86 std 24.18 n_pixels 33069
+347589.nii.gz
+  2 PRIMARIES mean 52.48 std 18.06 min 46.48 max 58.49
+   -> 0 - mean 46.48 std 16.86 n_pixels 27455
+   -> 1 - mean 58.49 std 19.27 n_pixels 3951
+374142.nii.gz
+  2 PRIMARIES mean 60.43 std 25.31 min 60.11 max 60.75
+   -> 0 - mean 60.75 std 25.15 n_pixels 14237
+   -> 1 - mean 60.11 std 25.47 n_pixels 16071
+  1 METASTASES mean 76.36 std 23.56 min 76.36 max 76.36
+   -> 0 - mean 76.36 std 23.56 n_pixels 128680
+374143.nii.gz
+  2 PRIMARIES mean 52.80 std 27.37 min 49.22 max 56.37
+   -> 0 - mean 49.22 std 28.43 n_pixels 8890
+   -> 1 - mean 56.37 std 26.30 n_pixels 3190
+  1 METASTASES mean 63.05 std 23.16 min 63.05 max 63.05
+   -> 0 - mean 63.05 std 23.16 n_pixels 13398
+374149.nii.gz
+  1 PRIMARIES mean 71.24 std 25.84 min 71.24 max 71.24
+   -> 0 - mean 71.24 std 25.84 n_pixels 650
+374177.nii.gz
+  2 PRIMARIES mean 43.01 std 21.65 min 33.48 max 52.53
+   -> 0 - mean 33.48 std 23.02 n_pixels 18279
+   -> 1 - mean 52.53 std 20.28 n_pixels 5048
+  1 METASTASES mean 73.01 std 28.69 min 73.01 max 73.01
+   -> 0 - mean 73.01 std 28.69 n_pixels 11412
+374196.nii.gz
+  1 PRIMARIES mean 56.26 std 28.56 min 56.26 max 56.26
+   -> 0 - mean 56.26 std 28.56 n_pixels 58086
+  2 METASTASES mean 29.21 std 14.97 min -3.00 max 61.41
+   -> 0 - mean 61.41 std 29.94 n_pixels 13033
+   -> 1 - mean -3.00 std 0.00 n_pixels 1
+380926.nii.gz
+  2 PRIMARIES mean 92.92 std 24.04 min 87.37 max 98.47
+   -> 0 - mean 98.47 std 27.53 n_pixels 1482
+   -> 1 - mean 87.37 std 20.55 n_pixels 2017
+  1 METASTASES mean 70.50 std 25.84 min 70.50 max 70.50
+   -> 0 - mean 70.50 std 25.84 n_pixels 15624
+407886.nii.gz
+  1 PRIMARIES mean 27.41 std 25.85 min 27.41 max 27.41
+   -> 0 - mean 27.41 std 25.85 n_pixels 135199
+  1 METASTASES mean -17.09 std 33.58 min -17.09 max -17.09
+   -> 0 - mean -17.09 std 33.58 n_pixels 10383
+407887.nii.gz
+  2 PRIMARIES mean 95.51 std 15.94 min 74.03 max 117.00
+   -> 0 - mean 74.03 std 31.89 n_pixels 64409
+   -> 1 - mean 117.00 std 0.00 n_pixels 1
+  1 METASTASES mean 81.11 std 23.78 min 81.11 max 81.11
+   -> 0 - mean 81.11 std 23.78 n_pixels 4482
+407888.nii.gz
+  5 PRIMARIES mean 34.41 std 9.98 min 4.00 max 90.00
+   -> 0 - mean 56.80 std 34.02 n_pixels 138439
+   -> 1 - mean 4.00 std 0.00 n_pixels 1
+   -> 2 - mean 4.25 std 7.89 n_pixels 4
+   -> 3 - mean 17.00 std 0.00 n_pixels 1
+   -> 4 - mean 90.00 std 8.00 n_pixels 2
+  46 METASTASES mean 21.93 std 9.73 min -31.00 max 126.00
+   -> 0 - mean 64.33 std 12.05 n_pixels 12
+   -> 1 - mean 59.67 std 17.15 n_pixels 312
+   -> 2 - mean 79.00 std 0.00 n_pixels 1
+   -> 3 - mean 77.64 std 12.66 n_pixels 11
+   -> 4 - mean 103.00 std 0.00 n_pixels 1
+   -> 5 - mean 75.50 std 11.50 n_pixels 2
+   -> 6 - mean 95.00 std 0.00 n_pixels 1
+   -> 7 - mean 60.00 std 0.00 n_pixels 1
+   -> 8 - mean 63.00 std 0.00 n_pixels 1
+   -> 9 - mean 125.00 std 0.00 n_pixels 1
+   -> 10 - mean 39.00 std 0.00 n_pixels 1
+   -> 11 - mean 126.00 std 0.00 n_pixels 1
+   -> 12 - mean 39.33 std 7.36 n_pixels 3
+   -> 13 - mean 22.22 std 38.89 n_pixels 2449
+   -> 14 - mean 11.27 std 25.92 n_pixels 769
+   -> 15 - mean -6.25 std 24.77 n_pixels 727
+   -> 16 - mean 5.00 std 0.00 n_pixels 1
+   -> 17 - mean -8.24 std 14.37 n_pixels 67
+   -> 18 - mean -5.29 std 34.10 n_pixels 1625
+   -> 19 - mean -31.00 std 0.00 n_pixels 1
+   -> 20 - mean -15.00 std 1.00 n_pixels 2
+   -> 21 - mean 28.00 std 0.00 n_pixels 1
+   -> 22 - mean -14.00 std 0.00 n_pixels 1
+   -> 23 - mean -22.00 std 0.00 n_pixels 1
+   -> 24 - mean 6.00 std 0.00 n_pixels 1
+   -> 25 - mean 35.00 std 0.00 n_pixels 1
+   -> 26 - mean 20.00 std 0.00 n_pixels 1
+   -> 27 - mean 21.00 std 0.00 n_pixels 1
+   -> 28 - mean -9.46 std 34.19 n_pixels 962
+   -> 29 - mean 62.50 std 26.85 n_pixels 12
+   -> 30 - mean 18.71 std 14.84 n_pixels 7
+   -> 31 - mean -2.18 std 13.29 n_pixels 11
+   -> 32 - mean 0.19 std 13.76 n_pixels 16
+   -> 33 - mean -8.00 std 0.00 n_pixels 1
+   -> 34 - mean -13.00 std 0.00 n_pixels 1
+   -> 35 - mean -13.94 std 14.76 n_pixels 53
+   -> 36 - mean -8.17 std 30.39 n_pixels 3182
+   -> 37 - mean -3.00 std 0.00 n_pixels 1
+   -> 38 - mean -7.00 std 0.00 n_pixels 1
+   -> 39 - mean -19.00 std 0.00 n_pixels 1
+   -> 40 - mean -1.00 std 0.00 n_pixels 1
+   -> 41 - mean -28.00 std 0.00 n_pixels 1
+   -> 42 - mean -3.87 std 26.39 n_pixels 204
+   -> 43 - mean 9.66 std 27.72 n_pixels 91
+   -> 44 - mean -18.05 std 45.80 n_pixels 44
+   -> 45 - mean -1.00 std 0.00 n_pixels 1
+407890.nii.gz
+  14 PRIMARIES mean 50.07 std 6.20 min -6.00 max 71.00
+   -> 0 - mean 38.55 std 30.42 n_pixels 322072
+   -> 1 - mean 67.86 std 15.45 n_pixels 7
+   -> 2 - mean 71.00 std 0.00 n_pixels 1
+   -> 3 - mean 67.03 std 16.63 n_pixels 31
+   -> 4 - mean 71.00 std 0.00 n_pixels 1
+   -> 5 - mean 37.00 std 0.00 n_pixels 1
+   -> 6 - mean 61.00 std 0.00 n_pixels 1
+   -> 7 - mean 46.00 std 20.86 n_pixels 16
+   -> 8 - mean 33.00 std 0.00 n_pixels 1
+   -> 9 - mean -6.00 std 0.00 n_pixels 1
+   -> 10 - mean 38.00 std 0.00 n_pixels 1
+   -> 11 - mean 64.00 std 0.00 n_pixels 1
+   -> 12 - mean 60.50 std 3.50 n_pixels 2
+   -> 13 - mean 52.00 std 0.00 n_pixels 1
+  25 METASTASES mean 21.29 std 20.28 min -40.00 max 94.40
+   -> 0 - mean 36.62 std 31.36 n_pixels 611
+   -> 1 - mean 41.26 std 32.17 n_pixels 4434
+   -> 2 - mean 33.81 std 33.46 n_pixels 963
+   -> 3 - mean 22.26 std 31.65 n_pixels 834
+   -> 4 - mean 57.88 std 20.12 n_pixels 8
+   -> 5 - mean 4.82 std 29.30 n_pixels 3548
+   -> 6 - mean 94.40 std 9.52 n_pixels 10
+   -> 7 - mean 50.35 std 19.10 n_pixels 533
+   -> 8 - mean 38.44 std 11.31 n_pixels 9
+   -> 9 - mean 21.46 std 31.27 n_pixels 169
+   -> 10 - mean 28.00 std 0.00 n_pixels 1
+   -> 11 - mean 62.88 std 47.93 n_pixels 293
+   -> 12 - mean -2.48 std 38.02 n_pixels 58120
+   -> 13 - mean 3.50 std 4.50 n_pixels 2
+   -> 14 - mean -40.00 std 0.00 n_pixels 1
+   -> 15 - mean 66.43 std 34.74 n_pixels 7
+   -> 16 - mean -25.25 std 7.96 n_pixels 8
+   -> 17 - mean 26.05 std 19.61 n_pixels 43
+   -> 18 - mean 39.80 std 28.16 n_pixels 51
+   -> 19 - mean -38.00 std 0.00 n_pixels 1
+   -> 20 - mean -2.41 std 39.08 n_pixels 2326
+   -> 21 - mean 65.33 std 14.60 n_pixels 6
+   -> 22 - mean -16.00 std 23.00 n_pixels 2
+   -> 23 - mean -34.00 std 0.00 n_pixels 1
+   -> 24 - mean -3.00 std 0.00 n_pixels 1
+407891.nii.gz
+  12 PRIMARIES mean 58.19 std 12.05 min -28.50 max 104.00
+   -> 0 - mean 33.36 std 19.36 n_pixels 6256
+   -> 1 - mean 71.00 std 0.00 n_pixels 1
+   -> 2 - mean -13.92 std 21.07 n_pixels 13
+   -> 3 - mean -28.50 std 20.04 n_pixels 6
+   -> 4 - mean 83.00 std 0.00 n_pixels 1
+   -> 5 - mean 88.90 std 22.08 n_pixels 3678
+   -> 6 - mean 74.31 std 33.96 n_pixels 261
+   -> 7 - mean 104.00 std 0.00 n_pixels 1
+   -> 8 - mean 82.00 std 0.00 n_pixels 1
+   -> 9 - mean 61.00 std 0.00 n_pixels 1
+   -> 10 - mean 72.12 std 19.06 n_pixels 8
+   -> 11 - mean 71.00 std 9.00 n_pixels 2
+  23 METASTASES mean 114.68 std 22.68 min 49.00 max 470.38
+   -> 0 - mean 208.75 std 116.04 n_pixels 4
+   -> 1 - mean 126.00 std 3.00 n_pixels 2
+   -> 2 - mean 131.00 std 0.00 n_pixels 1
+   -> 3 - mean 71.49 std 17.32 n_pixels 63
+   -> 4 - mean 131.00 std 0.00 n_pixels 1
+   -> 5 - mean 146.00 std 0.00 n_pixels 1
+   -> 6 - mean 148.00 std 0.00 n_pixels 1
+   -> 7 - mean 67.00 std 16.20 n_pixels 22
+   -> 8 - mean 82.00 std 6.00 n_pixels 2
+   -> 9 - mean 82.06 std 28.29 n_pixels 41494
+   -> 10 - mean 51.89 std 27.80 n_pixels 44
+   -> 11 - mean 81.24 std 21.43 n_pixels 343
+   -> 12 - mean 470.38 std 162.47 n_pixels 76
+   -> 13 - mean 85.00 std 2.00 n_pixels 2
+   -> 14 - mean 98.83 std 17.90 n_pixels 42
+   -> 15 - mean 118.00 std 0.00 n_pixels 1
+   -> 16 - mean 75.53 std 34.99 n_pixels 2312
+   -> 17 - mean 49.00 std 0.00 n_pixels 1
+   -> 18 - mean 86.00 std 0.00 n_pixels 1
+   -> 19 - mean 58.46 std 28.29 n_pixels 9487
+   -> 20 - mean 121.00 std 0.00 n_pixels 1
+   -> 21 - mean 91.69 std 16.54 n_pixels 75
+   -> 22 - mean 57.24 std 23.31 n_pixels 1328
+407892.nii.gz
+  1 PRIMARIES mean 78.12 std 21.27 min 78.12 max 78.12
+   -> 0 - mean 78.12 std 21.27 n_pixels 24025
+  1 METASTASES mean 35.89 std 24.49 min 35.89 max 35.89
+   -> 0 - mean 35.89 std 24.49 n_pixels 21631
+407893.nii.gz
+  8 PRIMARIES mean -25.63 std 7.80 min -68.00 max 50.98
+   -> 0 - mean 50.98 std 28.36 n_pixels 34542
+   -> 1 - mean -26.50 std 4.50 n_pixels 2
+   -> 2 - mean -30.00 std 0.00 n_pixels 1
+   -> 3 - mean -33.00 std 0.00 n_pixels 1
+   -> 4 - mean -42.00 std 0.00 n_pixels 1
+   -> 5 - mean -68.00 std 0.00 n_pixels 1
+   -> 6 - mean -43.00 std 0.00 n_pixels 1
+   -> 7 - mean -13.50 std 29.50 n_pixels 2
+  35 METASTASES mean 38.59 std 12.33 min -47.90 max 87.50
+   -> 0 - mean 54.41 std 35.41 n_pixels 6775
+   -> 1 - mean 19.00 std 25.52 n_pixels 1006
+   -> 2 - mean 45.89 std 28.04 n_pixels 5824
+   -> 3 - mean 51.60 std 7.06 n_pixels 5
+   -> 4 - mean 47.00 std 0.00 n_pixels 1
+   -> 5 - mean 46.00 std 0.00 n_pixels 1
+   -> 6 - mean 50.60 std 6.68 n_pixels 5
+   -> 7 - mean 62.81 std 32.49 n_pixels 6191
+   -> 8 - mean 74.80 std 3.25 n_pixels 5
+   -> 9 - mean 55.75 std 5.36 n_pixels 4
+   -> 10 - mean 45.51 std 25.17 n_pixels 69395
+   -> 11 - mean 66.31 std 14.96 n_pixels 203
+   -> 12 - mean 59.52 std 9.62 n_pixels 145
+   -> 13 - mean 25.64 std 15.93 n_pixels 209
+   -> 14 - mean 32.41 std 22.95 n_pixels 16387
+   -> 15 - mean 15.00 std 0.00 n_pixels 1
+   -> 16 - mean 31.00 std 0.00 n_pixels 1
+   -> 17 - mean 11.00 std 0.00 n_pixels 1
+   -> 18 - mean 24.00 std 0.00 n_pixels 1
+   -> 19 - mean -47.90 std 26.07 n_pixels 10
+   -> 20 - mean 63.21 std 14.09 n_pixels 273
+   -> 21 - mean 84.00 std 0.00 n_pixels 2
+   -> 22 - mean 87.50 std 3.50 n_pixels 2
+   -> 23 - mean 63.68 std 9.84 n_pixels 38
+   -> 24 - mean 18.48 std 13.49 n_pixels 111
+   -> 25 - mean 8.21 std 25.15 n_pixels 206
+   -> 26 - mean 10.80 std 34.92 n_pixels 259
+   -> 27 - mean 24.73 std 18.19 n_pixels 214
+   -> 28 - mean 59.00 std 0.00 n_pixels 1
+   -> 29 - mean 45.89 std 30.53 n_pixels 1854
+   -> 30 - mean 32.00 std 0.00 n_pixels 1
+   -> 31 - mean 13.67 std 14.38 n_pixels 3
+   -> 32 - mean 32.00 std 0.00 n_pixels 1
+   -> 33 - mean -12.00 std 0.00 n_pixels 1
+   -> 34 - mean 49.06 std 9.03 n_pixels 191
+407894.nii.gz
+  16 PRIMARIES mean -6.08 std 5.20 min -78.00 max 54.57
+   -> 0 - mean 54.57 std 27.92 n_pixels 80596
+   -> 1 - mean 41.00 std 0.00 n_pixels 1
+   -> 2 - mean 27.00 std 0.00 n_pixels 1
+   -> 3 - mean 27.00 std 0.00 n_pixels 1
+   -> 4 - mean 11.00 std 12.00 n_pixels 2
+   -> 5 - mean 24.00 std 8.60 n_pixels 3
+   -> 6 - mean 13.00 std 0.00 n_pixels 1
+   -> 7 - mean 13.00 std 0.00 n_pixels 1
+   -> 8 - mean -38.00 std 0.00 n_pixels 1
+   -> 9 - mean -78.00 std 0.00 n_pixels 1
+   -> 10 - mean -49.00 std 14.31 n_pixels 3
+   -> 11 - mean -6.33 std 5.91 n_pixels 3
+   -> 12 - mean -31.00 std 0.00 n_pixels 1
+   -> 13 - mean -28.50 std 14.50 n_pixels 2
+   -> 14 - mean -50.00 std 0.00 n_pixels 1
+   -> 15 - mean -27.00 std 0.00 n_pixels 1
+  43 METASTASES mean 40.32 std 23.95 min -14.00 max 273.69
+   -> 0 - mean 57.94 std 12.45 n_pixels 362
+   -> 1 - mean 64.85 std 7.91 n_pixels 20
+   -> 2 - mean 50.75 std 11.32 n_pixels 116
+   -> 3 - mean 36.00 std 0.00 n_pixels 1
+   -> 4 - mean 54.42 std 15.16 n_pixels 162
+   -> 5 - mean 43.00 std 5.61 n_pixels 4
+   -> 6 - mean 58.67 std 9.41 n_pixels 6
+   -> 7 - mean 62.15 std 13.46 n_pixels 401
+   -> 8 - mean 53.54 std 22.90 n_pixels 2735
+   -> 9 - mean 40.00 std 5.48 n_pixels 6
+   -> 10 - mean 33.28 std 33.36 n_pixels 3099
+   -> 11 - mean 22.00 std 0.00 n_pixels 1
+   -> 12 - mean 13.10 std 33.40 n_pixels 2959
+   -> 13 - mean 30.80 std 33.04 n_pixels 603
+   -> 14 - mean 33.71 std 28.01 n_pixels 1860
+   -> 15 - mean 78.56 std 15.85 n_pixels 52
+   -> 16 - mean 42.42 std 21.01 n_pixels 4438
+   -> 17 - mean 56.66 std 16.39 n_pixels 65
+   -> 18 - mean 30.51 std 30.67 n_pixels 1694
+   -> 19 - mean 33.98 std 32.24 n_pixels 70329
+   -> 20 - mean 60.00 std 0.00 n_pixels 1
+   -> 21 - mean 88.00 std 0.00 n_pixels 1
+   -> 22 - mean -14.00 std 0.00 n_pixels 1
+   -> 23 - mean 273.69 std 250.52 n_pixels 89
+   -> 24 - mean 54.13 std 22.00 n_pixels 405
+   -> 25 - mean 24.65 std 23.80 n_pixels 184
+   -> 26 - mean 14.35 std 28.20 n_pixels 497
+   -> 27 - mean 51.70 std 40.00 n_pixels 44
+   -> 28 - mean -2.33 std 41.52 n_pixels 190
+   -> 29 - mean -4.00 std 0.00 n_pixels 1
+   -> 30 - mean 1.50 std 17.50 n_pixels 2
+   -> 31 - mean 21.76 std 29.63 n_pixels 2158
+   -> 32 - mean 33.76 std 27.27 n_pixels 484
+   -> 33 - mean 18.78 std 26.90 n_pixels 1406
+   -> 34 - mean 6.00 std 0.00 n_pixels 1
+   -> 35 - mean 10.22 std 43.59 n_pixels 138
+   -> 36 - mean 64.91 std 24.80 n_pixels 229
+   -> 37 - mean -8.00 std 0.00 n_pixels 1
+   -> 38 - mean 0.00 std 0.00 n_pixels 1
+   -> 39 - mean 35.86 std 32.42 n_pixels 1798
+   -> 40 - mean 36.15 std 24.66 n_pixels 506
+   -> 41 - mean 46.85 std 17.93 n_pixels 568
+   -> 42 - mean 23.62 std 31.60 n_pixels 96
+407896.nii.gz
+  7 PRIMARIES mean 40.26 std 11.57 min -14.14 max 59.50
+   -> 0 - mean 41.09 std 25.74 n_pixels 78181
+   -> 1 - mean 59.50 std 5.50 n_pixels 2
+   -> 2 - mean 56.00 std 11.22 n_pixels 3
+   -> 3 - mean 48.00 std 0.00 n_pixels 1
+   -> 4 - mean 37.40 std 15.05 n_pixels 5
+   -> 5 - mean -14.14 std 23.44 n_pixels 7
+   -> 6 - mean 54.00 std 0.00 n_pixels 1
+  19 METASTASES mean 33.37 std 23.86 min -27.91 max 73.63
+   -> 0 - mean 51.88 std 36.41 n_pixels 36430
+   -> 1 - mean 73.63 std 6.62 n_pixels 27
+   -> 2 - mean 28.87 std 30.63 n_pixels 21109
+   -> 3 - mean 46.61 std 21.15 n_pixels 699
+   -> 4 - mean 51.62 std 7.70 n_pixels 8
+   -> 5 - mean 47.99 std 27.41 n_pixels 361
+   -> 6 - mean 67.42 std 18.28 n_pixels 1887
+   -> 7 - mean 73.12 std 16.93 n_pixels 896
+   -> 8 - mean 26.00 std 33.35 n_pixels 39768
+   -> 9 - mean -2.61 std 42.05 n_pixels 1431
+   -> 10 - mean 11.39 std 39.35 n_pixels 854
+   -> 11 - mean 25.75 std 22.45 n_pixels 654
+   -> 12 - mean 18.85 std 21.99 n_pixels 714
+   -> 13 - mean -27.91 std 17.51 n_pixels 11
+   -> 14 - mean 58.38 std 39.84 n_pixels 229
+   -> 15 - mean 43.81 std 21.59 n_pixels 103
+   -> 16 - mean -8.00 std 8.75 n_pixels 4
+   -> 17 - mean 48.01 std 18.37 n_pixels 109
+   -> 18 - mean -0.82 std 22.90 n_pixels 76
+407897.nii.gz
+  1 PRIMARIES mean 49.56 std 21.27 min 49.56 max 49.56
+   -> 0 - mean 49.56 std 21.27 n_pixels 90497
+  71 METASTASES mean 19.92 std 18.09 min -27.00 max 78.68
+   -> 0 - mean 13.91 std 30.96 n_pixels 127
+   -> 1 - mean -14.04 std 46.09 n_pixels 6352
+   -> 2 - mean 15.00 std 3.27 n_pixels 3
+   -> 3 - mean 35.00 std 7.00 n_pixels 2
+   -> 4 - mean 0.24 std 30.77 n_pixels 29
+   -> 5 - mean 1.16 std 38.26 n_pixels 962
+   -> 6 - mean 39.56 std 41.60 n_pixels 71210
+   -> 7 - mean 38.00 std 5.10 n_pixels 5
+   -> 8 - mean 62.10 std 47.69 n_pixels 39
+   -> 9 - mean 43.59 std 27.69 n_pixels 153
+   -> 10 - mean 5.73 std 37.61 n_pixels 815
+   -> 11 - mean 68.90 std 16.62 n_pixels 1252
+   -> 12 - mean 9.50 std 0.50 n_pixels 2
+   -> 13 - mean -9.95 std 22.70 n_pixels 101
+   -> 14 - mean 71.00 std 0.00 n_pixels 1
+   -> 15 - mean -15.74 std 38.28 n_pixels 343
+   -> 16 - mean 72.50 std 3.50 n_pixels 2
+   -> 17 - mean -1.47 std 22.77 n_pixels 147
+   -> 18 - mean 4.81 std 33.40 n_pixels 410
+   -> 19 - mean 55.78 std 3.74 n_pixels 9
+   -> 20 - mean 46.59 std 29.36 n_pixels 98
+   -> 21 - mean 2.57 std 11.18 n_pixels 7
+   -> 22 - mean 12.00 std 0.00 n_pixels 1
+   -> 23 - mean 10.00 std 0.00 n_pixels 1
+   -> 24 - mean -14.00 std 42.86 n_pixels 61
+   -> 25 - mean 8.00 std 0.00 n_pixels 1
+   -> 26 - mean -7.78 std 36.78 n_pixels 37
+   -> 27 - mean 49.67 std 15.70 n_pixels 6
+   -> 28 - mean 21.83 std 6.62 n_pixels 6
+   -> 29 - mean 4.86 std 25.56 n_pixels 440
+   -> 30 - mean -4.98 std 49.34 n_pixels 672
+   -> 31 - mean -13.18 std 27.51 n_pixels 61
+   -> 32 - mean -9.67 std 40.35 n_pixels 195
+   -> 33 - mean -12.08 std 47.79 n_pixels 286
+   -> 34 - mean 33.46 std 35.63 n_pixels 1072
+   -> 35 - mean 76.55 std 18.62 n_pixels 707
+   -> 36 - mean 33.00 std 0.00 n_pixels 1
+   -> 37 - mean -3.00 std 0.00 n_pixels 1
+   -> 38 - mean 78.68 std 16.59 n_pixels 187
+   -> 39 - mean 42.61 std 19.88 n_pixels 325
+   -> 40 - mean 43.53 std 25.39 n_pixels 3998
+   -> 41 - mean 46.96 std 18.51 n_pixels 295
+   -> 42 - mean 54.47 std 6.30 n_pixels 15
+   -> 43 - mean 25.26 std 27.71 n_pixels 100
+   -> 44 - mean 61.36 std 10.56 n_pixels 39
+   -> 45 - mean -26.44 std 24.84 n_pixels 32
+   -> 46 - mean 12.71 std 31.81 n_pixels 34
+   -> 47 - mean 5.84 std 51.72 n_pixels 430
+   -> 48 - mean 64.43 std 10.64 n_pixels 101
+   -> 49 - mean 70.00 std 5.16 n_pixels 6
+   -> 50 - mean -14.71 std 40.34 n_pixels 512
+   -> 51 - mean 13.55 std 43.75 n_pixels 15739
+   -> 52 - mean 61.38 std 13.38 n_pixels 16
+   -> 53 - mean 35.82 std 25.84 n_pixels 352
+   -> 54 - mean 19.00 std 0.00 n_pixels 1
+   -> 55 - mean -0.07 std 11.93 n_pixels 29
+   -> 56 - mean 23.00 std 0.00 n_pixels 1
+   -> 57 - mean 7.00 std 0.00 n_pixels 1
+   -> 58 - mean 44.50 std 21.16 n_pixels 6
+   -> 59 - mean 37.00 std 5.05 n_pixels 4
+   -> 60 - mean 16.00 std 0.00 n_pixels 1
+   -> 61 - mean 18.00 std 0.00 n_pixels 1
+   -> 62 - mean -16.20 std 5.49 n_pixels 5
+   -> 63 - mean 27.70 std 8.30 n_pixels 20
+   -> 64 - mean -20.00 std 0.00 n_pixels 1
+   -> 65 - mean 1.20 std 9.09 n_pixels 5
+   -> 66 - mean 8.00 std 0.00 n_pixels 1
+   -> 67 - mean -13.00 std 6.00 n_pixels 2
+   -> 68 - mean -27.00 std 0.00 n_pixels 1
+   -> 69 - mean -21.00 std 0.00 n_pixels 1
+   -> 70 - mean 5.00 std 0.00 n_pixels 1
+407899.nii.gz
+  43 PRIMARIES mean 35.93 std 10.14 min -52.00 max 135.25
+   -> 0 - mean 30.82 std 25.85 n_pixels 375329
+   -> 1 - mean 8.00 std 0.00 n_pixels 1
+   -> 2 - mean -36.00 std 14.00 n_pixels 2
+   -> 3 - mean -19.00 std 0.00 n_pixels 1
+   -> 4 - mean -37.00 std 0.00 n_pixels 1
+   -> 5 - mean 67.00 std 0.00 n_pixels 1
+   -> 6 - mean 18.50 std 43.03 n_pixels 4
+   -> 7 - mean 113.00 std 0.00 n_pixels 1
+   -> 8 - mean 25.85 std 39.50 n_pixels 27
+   -> 9 - mean 106.00 std 0.00 n_pixels 2
+   -> 10 - mean 36.00 std 0.00 n_pixels 1
+   -> 11 - mean 47.75 std 32.96 n_pixels 4
+   -> 12 - mean -8.00 std 0.00 n_pixels 1
+   -> 13 - mean 32.50 std 33.50 n_pixels 2
+   -> 14 - mean -52.00 std 19.00 n_pixels 2
+   -> 15 - mean 24.00 std 0.00 n_pixels 1
+   -> 16 - mean 38.16 std 22.17 n_pixels 32
+   -> 17 - mean 26.00 std 0.00 n_pixels 1
+   -> 18 - mean 61.00 std 0.00 n_pixels 1
+   -> 19 - mean 2.00 std 0.00 n_pixels 1
+   -> 20 - mean 37.00 std 0.00 n_pixels 1
+   -> 21 - mean 20.00 std 0.00 n_pixels 1
+   -> 22 - mean 58.00 std 0.00 n_pixels 1
+   -> 23 - mean -6.48 std 37.45 n_pixels 61
+   -> 24 - mean 135.25 std 23.71 n_pixels 8
+   -> 25 - mean 48.00 std 0.00 n_pixels 1
+   -> 26 - mean -0.33 std 3.68 n_pixels 3
+   -> 27 - mean 33.60 std 49.47 n_pixels 5
+   -> 28 - mean 35.00 std 6.00 n_pixels 2
+   -> 29 - mean 70.80 std 21.53 n_pixels 10
+   -> 30 - mean 51.00 std 5.35 n_pixels 3
+   -> 31 - mean 65.00 std 0.00 n_pixels 1
+   -> 32 - mean 47.00 std 0.00 n_pixels 1
+   -> 33 - mean 41.00 std 0.00 n_pixels 1
+   -> 34 - mean 38.00 std 0.00 n_pixels 1
+   -> 35 - mean 50.00 std 0.00 n_pixels 1
+   -> 36 - mean 50.00 std 0.00 n_pixels 1
+   -> 37 - mean 80.00 std 0.00 n_pixels 1
+   -> 38 - mean 22.00 std 0.00 n_pixels 1
+   -> 39 - mean 48.54 std 46.97 n_pixels 52
+   -> 40 - mean 103.00 std 0.00 n_pixels 1
+   -> 41 - mean 37.00 std 0.00 n_pixels 1
+   -> 42 - mean -3.00 std 12.00 n_pixels 2
+  4 METASTASES mean 55.02 std 27.50 min 4.85 max 92.74
+   -> 0 - mean 92.74 std 11.35 n_pixels 53
+   -> 1 - mean 62.70 std 35.14 n_pixels 5722
+   -> 2 - mean 59.79 std 33.48 n_pixels 6095
+   -> 3 - mean 4.85 std 30.06 n_pixels 88
+407901.nii.gz
+  3 PRIMARIES mean 52.93 std 28.64 min 35.74 max 62.61
+   -> 0 - mean 62.61 std 30.94 n_pixels 2738
+   -> 1 - mean 60.43 std 30.50 n_pixels 3275
+   -> 2 - mean 35.74 std 24.47 n_pixels 517
+  2 METASTASES mean 30.10 std 28.71 min 22.00 max 38.20
+   -> 0 - mean 38.20 std 27.07 n_pixels 1342
+   -> 1 - mean 22.00 std 30.34 n_pixels 427
+407902.nii.gz
+  3 PRIMARIES mean 59.25 std 33.96 min 47.77 max 70.96
+   -> 0 - mean 59.01 std 37.61 n_pixels 30948
+   -> 1 - mean 70.96 std 24.60 n_pixels 69731
+   -> 2 - mean 47.77 std 39.68 n_pixels 13
+  21 METASTASES mean 41.70 std 19.12 min -4.72 max 90.33
+   -> 0 - mean 48.15 std 15.44 n_pixels 41
+   -> 1 - mean 54.90 std 27.60 n_pixels 1158
+   -> 2 - mean 55.77 std 13.71 n_pixels 71
+   -> 3 - mean 34.40 std 37.37 n_pixels 112807
+   -> 4 - mean 71.16 std 19.04 n_pixels 69
+   -> 5 - mean 84.75 std 11.70 n_pixels 8
+   -> 6 - mean 22.12 std 30.51 n_pixels 1304
+   -> 7 - mean 41.49 std 36.42 n_pixels 764
+   -> 8 - mean 55.00 std 0.00 n_pixels 1
+   -> 9 - mean 55.26 std 33.43 n_pixels 744
+   -> 10 - mean 20.25 std 6.46 n_pixels 4
+   -> 11 - mean 36.50 std 2.69 n_pixels 4
+   -> 12 - mean 41.00 std 0.00 n_pixels 1
+   -> 13 - mean 12.00 std 0.00 n_pixels 1
+   -> 14 - mean 10.51 std 54.46 n_pixels 771
+   -> 15 - mean 24.40 std 26.58 n_pixels 15
+   -> 16 - mean 38.57 std 9.39 n_pixels 7
+   -> 17 - mean 11.42 std 28.20 n_pixels 634
+   -> 18 - mean 72.50 std 13.55 n_pixels 8
+   -> 19 - mean 90.33 std 3.09 n_pixels 3
+   -> 20 - mean -4.72 std 31.81 n_pixels 100
+407903.nii.gz
+  2 PRIMARIES mean 43.10 std 39.77 min 38.42 max 47.78
+   -> 0 - mean 47.78 std 32.70 n_pixels 1839
+   -> 1 - mean 38.42 std 46.85 n_pixels 2659
+  7 METASTASES mean 40.98 std 14.80 min -34.06 max 77.49
+   -> 0 - mean 63.37 std 18.72 n_pixels 520
+   -> 1 - mean -34.06 std 35.42 n_pixels 70517
+   -> 2 - mean 77.49 std 13.17 n_pixels 121
+   -> 3 - mean 62.16 std 5.47 n_pixels 19
+   -> 4 - mean 77.43 std 10.75 n_pixels 35
+   -> 5 - mean 4.33 std 6.18 n_pixels 3
+   -> 6 - mean 36.14 std 13.86 n_pixels 14
+407904.nii.gz
+  2 PRIMARIES mean 58.95 std 37.90 min 51.83 max 66.07
+   -> 0 - mean 51.83 std 40.04 n_pixels 3310
+   -> 1 - mean 66.07 std 35.76 n_pixels 5075
+  30 METASTASES mean 53.98 std 24.92 min -33.00 max 120.00
+   -> 0 - mean 72.85 std 34.29 n_pixels 16907
+   -> 1 - mean 60.49 std 35.72 n_pixels 5630
+   -> 2 - mean 79.05 std 46.72 n_pixels 8088
+   -> 3 - mean 112.80 std 12.04 n_pixels 169
+   -> 4 - mean 32.50 std 38.16 n_pixels 60
+   -> 5 - mean 120.00 std 0.00 n_pixels 1
+   -> 6 - mean -33.00 std 0.00 n_pixels 1
+   -> 7 - mean 51.79 std 38.56 n_pixels 24
+   -> 8 - mean 26.28 std 25.64 n_pixels 29
+   -> 9 - mean 32.00 std 0.00 n_pixels 2
+   -> 10 - mean -15.00 std 0.00 n_pixels 1
+   -> 11 - mean 14.50 std 1.50 n_pixels 2
+   -> 12 - mean 18.30 std 27.83 n_pixels 70
+   -> 13 - mean 89.23 std 27.63 n_pixels 746
+   -> 14 - mean 99.75 std 5.31 n_pixels 4
+   -> 15 - mean 76.93 std 30.02 n_pixels 1209
+   -> 16 - mean 35.00 std 0.00 n_pixels 1
+   -> 17 - mean 63.62 std 28.05 n_pixels 69741
+   -> 18 - mean 11.40 std 31.77 n_pixels 88
+   -> 19 - mean 84.27 std 6.73 n_pixels 15
+   -> 20 - mean 34.58 std 14.00 n_pixels 12
+   -> 21 - mean 65.19 std 55.04 n_pixels 3466
+   -> 22 - mean 39.62 std 31.09 n_pixels 65
+   -> 23 - mean 75.82 std 44.81 n_pixels 1422
+   -> 24 - mean 54.45 std 21.45 n_pixels 900
+   -> 25 - mean 86.24 std 40.45 n_pixels 282
+   -> 26 - mean 38.63 std 37.04 n_pixels 305
+   -> 27 - mean 89.34 std 31.42 n_pixels 584
+   -> 28 - mean 66.26 std 27.79 n_pixels 480
+   -> 29 - mean 36.54 std 54.45 n_pixels 322
+407905.nii.gz
+  1 METASTASES mean 51.26 std 19.85 min 51.26 max 51.26
+   -> 0 - mean 51.26 std 19.85 n_pixels 9498
+407906.nii.gz
+  2 PRIMARIES mean 39.30 std 24.19 min 38.69 max 39.91
+   -> 0 - mean 38.69 std 24.01 n_pixels 3124
+   -> 1 - mean 39.91 std 24.37 n_pixels 2426
+  15 METASTASES mean 16.59 std 4.75 min -38.00 max 80.00
+   -> 0 - mean 60.00 std 0.00 n_pixels 1
+   -> 1 - mean 19.27 std 29.10 n_pixels 100414
+   -> 2 - mean 80.00 std 0.00 n_pixels 1
+   -> 3 - mean 74.00 std 0.00 n_pixels 2
+   -> 4 - mean 58.33 std 23.14 n_pixels 1808
+   -> 5 - mean 66.00 std 0.00 n_pixels 1
+   -> 6 - mean 64.25 std 6.98 n_pixels 4
+   -> 7 - mean -29.00 std 4.00 n_pixels 2
+   -> 8 - mean -11.00 std 0.00 n_pixels 1
+   -> 9 - mean 1.00 std 0.00 n_pixels 1
+   -> 10 - mean -28.00 std 0.00 n_pixels 1
+   -> 11 - mean -21.00 std 0.00 n_pixels 1
+   -> 12 - mean -20.50 std 0.50 n_pixels 2
+   -> 13 - mean -26.50 std 7.50 n_pixels 2
+   -> 14 - mean -38.00 std 0.00 n_pixels 1
+407907.nii.gz
+  3 PRIMARIES mean 24.32 std 16.49 min -15.00 max 49.56
+   -> 0 - mean 49.56 std 29.37 n_pixels 91018
+   -> 1 - mean -15.00 std 3.00 n_pixels 2
+   -> 2 - mean 38.40 std 17.10 n_pixels 40
+  21 METASTASES mean 49.62 std 14.03 min -33.60 max 100.00
+   -> 0 - mean 76.06 std 28.41 n_pixels 54898
+   -> 1 - mean 100.00 std 10.65 n_pixels 4
+   -> 2 - mean 92.00 std 6.00 n_pixels 2
+   -> 3 - mean 87.00 std 0.00 n_pixels 1
+   -> 4 - mean 76.47 std 10.09 n_pixels 1576
+   -> 5 - mean 79.00 std 0.00 n_pixels 1
+   -> 6 - mean 74.98 std 11.69 n_pixels 1047
+   -> 7 - mean 81.18 std 7.01 n_pixels 209
+   -> 8 - mean 62.60 std 27.29 n_pixels 4025
+   -> 9 - mean 49.22 std 37.66 n_pixels 16217
+   -> 10 - mean 73.00 std 0.00 n_pixels 1
+   -> 11 - mean 55.50 std 31.49 n_pixels 6659
+   -> 12 - mean 64.20 std 27.40 n_pixels 676
+   -> 13 - mean 58.59 std 30.96 n_pixels 1108
+   -> 14 - mean 3.48 std 31.61 n_pixels 9918
+   -> 15 - mean -33.60 std 25.17 n_pixels 430
+   -> 16 - mean 20.00 std 0.00 n_pixels 1
+   -> 17 - mean 11.00 std 0.00 n_pixels 1
+   -> 18 - mean 9.40 std 9.18 n_pixels 5
+   -> 19 - mean 28.00 std 0.00 n_pixels 1
+   -> 20 - mean -26.00 std 0.00 n_pixels 1
+407908.nii.gz
+  2 PRIMARIES mean 111.61 std 22.44 min 89.23 max 134.00
+   -> 0 - mean 89.23 std 36.88 n_pixels 23648
+   -> 1 - mean 134.00 std 8.00 n_pixels 2
+  21 METASTASES mean 46.66 std 30.44 min -4.83 max 97.00
+   -> 0 - mean 63.00 std 42.49 n_pixels 1007
+   -> 1 - mean 71.67 std 9.45 n_pixels 6
+   -> 2 - mean 42.43 std 59.56 n_pixels 228
+   -> 3 - mean 51.88 std 43.84 n_pixels 3401
+   -> 4 - mean 94.14 std 30.81 n_pixels 21
+   -> 5 - mean 75.98 std 50.25 n_pixels 950
+   -> 6 - mean 89.25 std 34.75 n_pixels 797
+   -> 7 - mean -3.33 std 37.56 n_pixels 129
+   -> 8 - mean 15.57 std 40.98 n_pixels 322
+   -> 9 - mean -4.83 std 14.54 n_pixels 12
+   -> 10 - mean 69.41 std 14.57 n_pixels 181
+   -> 11 - mean 43.53 std 28.25 n_pixels 64
+   -> 12 - mean 28.71 std 39.98 n_pixels 211
+   -> 13 - mean 97.00 std 0.00 n_pixels 1
+   -> 14 - mean 13.45 std 10.97 n_pixels 20
+   -> 15 - mean 30.64 std 20.78 n_pixels 36
+   -> 16 - mean 58.25 std 42.05 n_pixels 15446
+   -> 17 - mean 21.71 std 20.83 n_pixels 63
+   -> 18 - mean 22.68 std 45.48 n_pixels 846
+   -> 19 - mean 40.75 std 52.13 n_pixels 280
+   -> 20 - mean 58.00 std 0.00 n_pixels 1
+407909.nii.gz
+  2 PRIMARIES mean 75.17 std 25.46 min 57.48 max 92.86
+   -> 0 - mean 57.48 std 34.73 n_pixels 101491
+   -> 1 - mean 92.86 std 16.19 n_pixels 14
+  11 METASTASES mean 58.57 std 22.49 min 35.23 max 82.35
+   -> 0 - mean 75.16 std 16.29 n_pixels 128
+   -> 1 - mean 77.77 std 23.59 n_pixels 283
+   -> 2 - mean 40.46 std 34.18 n_pixels 6831
+   -> 3 - mean 50.00 std 8.60 n_pixels 4
+   -> 4 - mean 35.23 std 30.98 n_pixels 62150
+   -> 5 - mean 60.39 std 39.92 n_pixels 1885
+   -> 6 - mean 38.47 std 27.25 n_pixels 1060
+   -> 7 - mean 39.92 std 33.49 n_pixels 6584
+   -> 8 - mean 74.00 std 0.00 n_pixels 1
+   -> 9 - mean 70.50 std 3.50 n_pixels 2
+   -> 10 - mean 82.35 std 29.60 n_pixels 283
+407910.nii.gz
+  2 PRIMARIES mean 48.38 std 16.08 min 37.00 max 59.76
+   -> 0 - mean 59.76 std 32.16 n_pixels 104923
+   -> 1 - mean 37.00 std 0.00 n_pixels 1
+  59 METASTASES mean 36.55 std 18.34 min -42.00 max 123.00
+   -> 0 - mean 30.16 std 43.11 n_pixels 99629
+   -> 1 - mean 73.14 std 26.45 n_pixels 79
+   -> 2 - mean 65.97 std 27.11 n_pixels 88
+   -> 3 - mean 82.44 std 12.40 n_pixels 18
+   -> 4 - mean 49.64 std 23.82 n_pixels 174
+   -> 5 - mean 58.22 std 19.77 n_pixels 45
+   -> 6 - mean 59.15 std 23.05 n_pixels 6565
+   -> 7 - mean 41.08 std 26.74 n_pixels 272
+   -> 8 - mean 62.61 std 25.83 n_pixels 44
+   -> 9 - mean 51.21 std 24.78 n_pixels 253
+   -> 10 - mean 58.91 std 13.57 n_pixels 437
+   -> 11 - mean 76.61 std 14.63 n_pixels 38
+   -> 12 - mean 42.05 std 33.12 n_pixels 64
+   -> 13 - mean 34.83 std 38.72 n_pixels 1200
+   -> 14 - mean 20.00 std 33.79 n_pixels 306
+   -> 15 - mean 60.29 std 13.62 n_pixels 467
+   -> 16 - mean 66.13 std 16.20 n_pixels 119
+   -> 17 - mean 72.22 std 22.32 n_pixels 869
+   -> 18 - mean 65.59 std 24.38 n_pixels 3379
+   -> 19 - mean 29.11 std 37.32 n_pixels 369
+   -> 20 - mean 45.50 std 25.25 n_pixels 16
+   -> 21 - mean 63.00 std 0.00 n_pixels 1
+   -> 22 - mean 114.00 std 0.00 n_pixels 1
+   -> 23 - mean 123.00 std 0.00 n_pixels 1
+   -> 24 - mean 77.98 std 47.54 n_pixels 771
+   -> 25 - mean 67.00 std 9.29 n_pixels 6
+   -> 26 - mean 46.16 std 31.40 n_pixels 14441
+   -> 27 - mean 57.47 std 10.76 n_pixels 15
+   -> 28 - mean -33.20 std 13.01 n_pixels 5
+   -> 29 - mean -36.00 std 1.00 n_pixels 2
+   -> 30 - mean -42.00 std 0.00 n_pixels 1
+   -> 31 - mean -23.00 std 12.83 n_pixels 6
+   -> 32 - mean -4.00 std 11.78 n_pixels 3
+   -> 33 - mean -8.00 std 0.00 n_pixels 1
+   -> 34 - mean 5.00 std 0.00 n_pixels 1
+   -> 35 - mean -3.00 std 0.00 n_pixels 1
+   -> 36 - mean 23.14 std 9.67 n_pixels 7
+   -> 37 - mean 64.50 std 23.99 n_pixels 8
+   -> 38 - mean 76.00 std 0.00 n_pixels 1
+   -> 39 - mean 80.00 std 0.00 n_pixels 1
+   -> 40 - mean 62.00 std 0.00 n_pixels 1
+   -> 41 - mean 28.92 std 37.52 n_pixels 155
+   -> 42 - mean 16.00 std 0.00 n_pixels 1
+   -> 43 - mean -9.00 std 15.00 n_pixels 2
+   -> 44 - mean 68.61 std 34.67 n_pixels 6357
+   -> 45 - mean -3.24 std 48.12 n_pixels 46282
+   -> 46 - mean 61.67 std 27.42 n_pixels 3107
+   -> 47 - mean -7.00 std 0.00 n_pixels 1
+   -> 48 - mean -13.00 std 0.00 n_pixels 1
+   -> 49 - mean -8.00 std 0.00 n_pixels 1
+   -> 50 - mean -2.00 std 0.00 n_pixels 1
+   -> 51 - mean 23.00 std 0.00 n_pixels 1
+   -> 52 - mean 42.00 std 32.94 n_pixels 218
+   -> 53 - mean 22.00 std 0.00 n_pixels 1
+   -> 54 - mean 1.47 std 34.26 n_pixels 112
+   -> 55 - mean 24.78 std 53.60 n_pixels 169
+   -> 56 - mean 42.16 std 42.75 n_pixels 1886
+   -> 57 - mean 12.47 std 35.97 n_pixels 250
+   -> 58 - mean 0.46 std 22.58 n_pixels 48
+TCGA-09-0367.nii.gz
+  45 PRIMARIES mean 71.95 std 4.37 min -66.00 max 142.00
+   -> 0 - mean 39.76 std 28.19 n_pixels 132652
+   -> 1 - mean 122.00 std 0.00 n_pixels 1
+   -> 2 - mean 142.00 std 0.00 n_pixels 1
+   -> 3 - mean 36.00 std 0.00 n_pixels 1
+   -> 4 - mean 105.50 std 3.50 n_pixels 2
+   -> 5 - mean 72.00 std 0.00 n_pixels 1
+   -> 6 - mean 90.50 std 18.61 n_pixels 4
+   -> 7 - mean 100.00 std 0.00 n_pixels 1
+   -> 8 - mean 22.00 std 4.00 n_pixels 2
+   -> 9 - mean 67.00 std 0.00 n_pixels 1
+   -> 10 - mean 48.25 std 10.85 n_pixels 4
+   -> 11 - mean 107.00 std 0.00 n_pixels 1
+   -> 12 - mean 89.00 std 0.00 n_pixels 1
+   -> 13 - mean 102.00 std 0.00 n_pixels 1
+   -> 14 - mean 110.00 std 0.00 n_pixels 1
+   -> 15 - mean 85.00 std 0.00 n_pixels 1
+   -> 16 - mean 54.00 std 0.00 n_pixels 1
+   -> 17 - mean 102.00 std 0.00 n_pixels 1
+   -> 18 - mean 74.00 std 0.00 n_pixels 1
+   -> 19 - mean 126.00 std 0.00 n_pixels 1
+   -> 20 - mean 48.50 std 18.50 n_pixels 2
+   -> 21 - mean 96.00 std 0.00 n_pixels 1
+   -> 22 - mean 86.33 std 13.02 n_pixels 3
+   -> 23 - mean 79.00 std 0.00 n_pixels 1
+   -> 24 - mean 84.00 std 0.00 n_pixels 1
+   -> 25 - mean 65.00 std 0.00 n_pixels 1
+   -> 26 - mean 72.50 std 5.50 n_pixels 2
+   -> 27 - mean 92.00 std 0.00 n_pixels 1
+   -> 28 - mean 32.00 std 0.00 n_pixels 1
+   -> 29 - mean 56.00 std 0.00 n_pixels 1
+   -> 30 - mean 70.80 std 24.34 n_pixels 5
+   -> 31 - mean 90.00 std 0.00 n_pixels 1
+   -> 32 - mean 89.00 std 6.00 n_pixels 2
+   -> 33 - mean 91.33 std 4.19 n_pixels 3
+   -> 34 - mean 65.00 std 0.00 n_pixels 1
+   -> 35 - mean 69.50 std 5.50 n_pixels 2
+   -> 36 - mean 22.00 std 0.00 n_pixels 1
+   -> 37 - mean 78.02 std 18.28 n_pixels 54
+   -> 38 - mean -66.00 std 9.00 n_pixels 2
+   -> 39 - mean 81.00 std 0.00 n_pixels 1
+   -> 40 - mean 53.60 std 27.35 n_pixels 5
+   -> 41 - mean 50.00 std 0.00 n_pixels 1
+   -> 42 - mean 64.00 std 0.00 n_pixels 1
+   -> 43 - mean 31.00 std 0.00 n_pixels 1
+   -> 44 - mean 43.00 std 0.00 n_pixels 1
+  32 METASTASES mean 49.76 std 13.25 min -30.00 max 97.78
+   -> 0 - mean 81.95 std 27.57 n_pixels 7015
+   -> 1 - mean 62.11 std 34.75 n_pixels 57989
+   -> 2 - mean 87.00 std 0.00 n_pixels 1
+   -> 3 - mean 70.00 std 0.00 n_pixels 1
+   -> 4 - mean 54.50 std 8.30 n_pixels 6
+   -> 5 - mean 84.08 std 11.43 n_pixels 12
+   -> 6 - mean 66.86 std 40.25 n_pixels 2309
+   -> 7 - mean 74.82 std 32.11 n_pixels 41734
+   -> 8 - mean 97.78 std 19.82 n_pixels 1446
+   -> 9 - mean 71.75 std 2.95 n_pixels 4
+   -> 10 - mean 66.82 std 19.94 n_pixels 142
+   -> 11 - mean 53.14 std 49.23 n_pixels 21
+   -> 12 - mean 66.85 std 14.33 n_pixels 66
+   -> 13 - mean 73.50 std 17.51 n_pixels 48
+   -> 14 - mean 29.46 std 21.51 n_pixels 13
+   -> 15 - mean 79.00 std 0.00 n_pixels 1
+   -> 16 - mean 52.00 std 0.00 n_pixels 1
+   -> 17 - mean 44.00 std 8.72 n_pixels 5
+   -> 18 - mean 10.00 std 0.00 n_pixels 1
+   -> 19 - mean 27.50 std 1.50 n_pixels 2
+   -> 20 - mean -30.00 std 0.00 n_pixels 1
+   -> 21 - mean -20.50 std 2.50 n_pixels 2
+   -> 22 - mean 5.00 std 11.00 n_pixels 2
+   -> 23 - mean 55.61 std 15.37 n_pixels 44
+   -> 24 - mean -9.00 std 0.00 n_pixels 1
+   -> 25 - mean 49.16 std 25.96 n_pixels 170
+   -> 26 - mean 48.00 std 0.00 n_pixels 1
+   -> 27 - mean 56.00 std 0.00 n_pixels 1
+   -> 28 - mean 80.74 std 30.44 n_pixels 98
+   -> 29 - mean 70.23 std 28.83 n_pixels 124
+   -> 30 - mean 5.00 std 0.00 n_pixels 1
+   -> 31 - mean 29.00 std 0.00 n_pixels 1
+TCGA-09-1669.nii.gz
+  2 PRIMARIES mean 48.94 std 15.68 min 44.88 max 53.00
+   -> 0 - mean 44.88 std 31.37 n_pixels 142939
+   -> 1 - mean 53.00 std 0.00 n_pixels 1
+TCGA-09-1674.nii.gz
+  1 PRIMARIES mean 25.12 std 18.90 min 25.12 max 25.12
+   -> 0 - mean 25.12 std 18.90 n_pixels 397554
+  15 METASTASES mean 59.89 std 29.45 min -14.17 max 179.28
+   -> 0 - mean -14.17 std 39.64 n_pixels 12747
+   -> 1 - mean 179.28 std 88.93 n_pixels 39
+   -> 2 - mean -1.03 std 41.99 n_pixels 50837
+   -> 3 - mean 42.39 std 44.16 n_pixels 742
+   -> 4 - mean 58.86 std 26.45 n_pixels 85
+   -> 5 - mean -4.76 std 27.61 n_pixels 165
+   -> 6 - mean 11.84 std 23.45 n_pixels 172
+   -> 7 - mean 79.82 std 18.72 n_pixels 423
+   -> 8 - mean 66.74 std 18.31 n_pixels 246
+   -> 9 - mean 78.02 std 11.11 n_pixels 122
+   -> 10 - mean 42.31 std 45.38 n_pixels 284
+   -> 11 - mean 91.57 std 23.29 n_pixels 75
+   -> 12 - mean 82.67 std 14.86 n_pixels 6
+   -> 13 - mean 91.75 std 17.84 n_pixels 8
+   -> 14 - mean 93.00 std 0.00 n_pixels 1
+TCGA-09-2045.nii.gz
+  1 PRIMARIES mean 31.61 std 34.06 min 31.61 max 31.61
+   -> 0 - mean 31.61 std 34.06 n_pixels 54138
+  14 METASTASES mean 29.01 std 22.59 min -55.88 max 97.50
+   -> 0 - mean 27.03 std 46.47 n_pixels 7734
+   -> 1 - mean -55.88 std 17.92 n_pixels 136
+   -> 2 - mean 86.44 std 27.49 n_pixels 25
+   -> 3 - mean 49.82 std 19.51 n_pixels 96
+   -> 4 - mean -16.09 std 38.46 n_pixels 200
+   -> 5 - mean -12.81 std 37.00 n_pixels 449
+   -> 6 - mean -30.19 std 11.61 n_pixels 36
+   -> 7 - mean 80.97 std 18.22 n_pixels 423
+   -> 8 - mean 97.50 std 3.50 n_pixels 2
+   -> 9 - mean 29.08 std 33.62 n_pixels 607
+   -> 10 - mean 56.88 std 11.84 n_pixels 59
+   -> 11 - mean 30.67 std 3.40 n_pixels 3
+   -> 12 - mean 30.90 std 30.99 n_pixels 3172
+   -> 13 - mean 31.88 std 16.20 n_pixels 25
+TCGA-09-2051.nii.gz
+  2 PRIMARIES mean 26.82 std 14.41 min 6.00 max 47.64
+   -> 0 - mean 47.64 std 28.81 n_pixels 169457
+   -> 1 - mean 6.00 std 0.00 n_pixels 1
+  31 METASTASES mean 71.41 std 25.44 min 5.31 max 275.79
+   -> 0 - mean 74.36 std 28.51 n_pixels 296607
+   -> 1 - mean 78.89 std 17.96 n_pixels 150
+   -> 2 - mean 97.00 std 0.00 n_pixels 1
+   -> 3 - mean 95.00 std 0.00 n_pixels 1
+   -> 4 - mean 74.23 std 14.35 n_pixels 246
+   -> 5 - mean 52.49 std 32.10 n_pixels 289
+   -> 6 - mean 91.89 std 12.30 n_pixels 27
+   -> 7 - mean 63.25 std 34.24 n_pixels 432
+   -> 8 - mean 40.69 std 20.39 n_pixels 133
+   -> 9 - mean 34.23 std 17.63 n_pixels 142
+   -> 10 - mean 5.31 std 30.13 n_pixels 112
+   -> 11 - mean 58.77 std 21.82 n_pixels 95
+   -> 12 - mean 69.62 std 7.42 n_pixels 26
+   -> 13 - mean 59.89 std 12.76 n_pixels 27
+   -> 14 - mean 69.88 std 9.49 n_pixels 69
+   -> 15 - mean 74.90 std 19.41 n_pixels 2883
+   -> 16 - mean 78.12 std 19.18 n_pixels 74
+   -> 17 - mean 80.98 std 12.94 n_pixels 378
+   -> 18 - mean 85.25 std 15.96 n_pixels 1006
+   -> 19 - mean 275.79 std 271.91 n_pixels 76
+   -> 20 - mean 74.33 std 32.01 n_pixels 454
+   -> 21 - mean 80.11 std 6.08 n_pixels 9
+   -> 22 - mean 76.82 std 20.79 n_pixels 77
+   -> 23 - mean 44.64 std 19.85 n_pixels 132
+   -> 24 - mean 14.85 std 19.30 n_pixels 26
+   -> 25 - mean 81.80 std 6.79 n_pixels 5
+   -> 26 - mean 28.67 std 11.29 n_pixels 21
+   -> 27 - mean 38.59 std 28.34 n_pixels 78
+   -> 28 - mean 55.78 std 25.21 n_pixels 110
+   -> 29 - mean 72.22 std 7.70 n_pixels 9
+   -> 30 - mean 85.23 std 12.64 n_pixels 155
+TCGA-09-2053.nii.gz
+  1 PRIMARIES mean 55.67 std 28.69 min 55.67 max 55.67
+   -> 0 - mean 55.67 std 28.69 n_pixels 6719
+  1 METASTASES mean 30.20 std 22.02 min 30.20 max 30.20
+   -> 0 - mean 30.20 std 22.02 n_pixels 451
+TCGA-13-0724.nii.gz
+  1 METASTASES mean 80.09 std 23.32 min 80.09 max 80.09
+   -> 0 - mean 80.09 std 23.32 n_pixels 32512
+TCGA-13-0761.nii.gz
+  1 PRIMARIES mean 73.47 std 26.58 min 73.47 max 73.47
+   -> 0 - mean 73.47 std 26.58 n_pixels 82399
+  18 METASTASES mean 41.52 std 22.31 min -52.00 max 92.20
+   -> 0 - mean 60.05 std 14.35 n_pixels 217
+   -> 1 - mean 58.12 std 28.10 n_pixels 3706
+   -> 2 - mean 49.57 std 27.82 n_pixels 4035
+   -> 3 - mean 26.26 std 29.96 n_pixels 28927
+   -> 4 - mean 64.88 std 40.30 n_pixels 162
+   -> 5 - mean 58.45 std 27.39 n_pixels 288
+   -> 6 - mean 53.38 std 25.09 n_pixels 64
+   -> 7 - mean 61.80 std 31.34 n_pixels 5672
+   -> 8 - mean 69.81 std 17.16 n_pixels 74
+   -> 9 - mean 73.57 std 31.95 n_pixels 465
+   -> 10 - mean 92.20 std 17.23 n_pixels 30
+   -> 11 - mean 33.80 std 37.52 n_pixels 2835
+   -> 12 - mean 47.60 std 11.99 n_pixels 5
+   -> 13 - mean 26.75 std 29.67 n_pixels 387
+   -> 14 - mean 0.00 std 0.00 n_pixels 1
+   -> 15 - mean 26.04 std 31.74 n_pixels 4270
+   -> 16 - mean -3.00 std 0.00 n_pixels 1
+   -> 17 - mean -52.00 std 0.00 n_pixels 1
+TCGA-13-0768.nii.gz
+  2 PRIMARIES mean 38.68 std 34.63 min 36.53 max 40.82
+   -> 0 - mean 40.82 std 33.43 n_pixels 10268
+   -> 1 - mean 36.53 std 35.83 n_pixels 3278
+  46 METASTASES mean -35.10 std 31.36 min -485.99 max 78.00
+   -> 0 - mean 28.44 std 58.02 n_pixels 152486
+   -> 1 - mean 35.46 std 36.66 n_pixels 304
+   -> 2 - mean -36.55 std 92.72 n_pixels 87
+   -> 3 - mean -16.00 std 0.00 n_pixels 1
+   -> 4 - mean -0.33 std 13.42 n_pixels 6
+   -> 5 - mean 8.00 std 0.00 n_pixels 1
+   -> 6 - mean -63.50 std 16.11 n_pixels 6
+   -> 7 - mean -10.00 std 0.00 n_pixels 1
+   -> 8 - mean 13.00 std 0.00 n_pixels 1
+   -> 9 - mean 10.00 std 0.00 n_pixels 1
+   -> 10 - mean 10.00 std 0.00 n_pixels 1
+   -> 11 - mean -26.12 std 36.65 n_pixels 64
+   -> 12 - mean -70.00 std 0.00 n_pixels 1
+   -> 13 - mean -83.00 std 0.00 n_pixels 1
+   -> 14 - mean -54.00 std 0.00 n_pixels 1
+   -> 15 - mean -9.00 std 0.00 n_pixels 1
+   -> 16 - mean -51.00 std 0.00 n_pixels 1
+   -> 17 - mean -77.00 std 0.00 n_pixels 1
+   -> 18 - mean -68.00 std 0.00 n_pixels 1
+   -> 19 - mean -36.00 std 0.00 n_pixels 1
+   -> 20 - mean 10.16 std 35.86 n_pixels 211
+   -> 21 - mean 51.50 std 1.50 n_pixels 2
+   -> 22 - mean 9.77 std 136.49 n_pixels 137
+   -> 23 - mean -58.50 std 11.50 n_pixels 2
+   -> 24 - mean 36.83 std 10.25 n_pixels 6
+   -> 25 - mean 78.00 std 0.00 n_pixels 1
+   -> 26 - mean -36.22 std 12.45 n_pixels 9
+   -> 27 - mean -52.00 std 0.00 n_pixels 1
+   -> 28 - mean 37.71 std 40.05 n_pixels 3016
+   -> 29 - mean -49.25 std 14.36 n_pixels 4
+   -> 30 - mean -28.00 std 3.00 n_pixels 2
+   -> 31 - mean -42.00 std 0.00 n_pixels 1
+   -> 32 - mean 26.00 std 5.72 n_pixels 3
+   -> 33 - mean 49.00 std 3.27 n_pixels 3
+   -> 34 - mean -148.01 std 189.31 n_pixels 2417
+   -> 35 - mean -24.21 std 37.63 n_pixels 442
+   -> 36 - mean -30.57 std 17.23 n_pixels 44
+   -> 37 - mean -42.92 std 16.89 n_pixels 25
+   -> 38 - mean -21.33 std 12.76 n_pixels 3
+   -> 39 - mean -1.00 std 0.00 n_pixels 1
+   -> 40 - mean 65.42 std 35.26 n_pixels 4412
+   -> 41 - mean -310.52 std 239.33 n_pixels 5984
+   -> 42 - mean -279.00 std 257.52 n_pixels 416
+   -> 43 - mean -485.99 std 89.59 n_pixels 76
+   -> 44 - mean 72.00 std 2.45 n_pixels 3
+   -> 45 - mean 54.28 std 16.76 n_pixels 74
+TCGA-13-0793.nii.gz
+  2 METASTASES mean 66.50 std 24.40 min 39.92 max 93.08
+   -> 0 - mean 93.08 std 23.64 n_pixels 40613
+   -> 1 - mean 39.92 std 25.16 n_pixels 29940
+TCGA-13-0794.nii.gz
+  4 PRIMARIES mean 34.51 std 11.33 min -28.33 max 70.00
+   -> 0 - mean 48.55 std 24.90 n_pixels 454305
+   -> 1 - mean 47.83 std 15.65 n_pixels 18
+   -> 2 - mean -28.33 std 4.78 n_pixels 3
+   -> 3 - mean 70.00 std 0.00 n_pixels 1
+  34 METASTASES mean 47.19 std 20.56 min -3.94 max 76.00
+   -> 0 - mean -3.94 std 25.73 n_pixels 343
+   -> 1 - mean 63.29 std 9.38 n_pixels 41
+   -> 2 - mean 17.81 std 9.05 n_pixels 16
+   -> 3 - mean 62.23 std 40.86 n_pixels 7510
+   -> 4 - mean 63.90 std 27.25 n_pixels 71782
+   -> 5 - mean 29.04 std 26.12 n_pixels 489
+   -> 6 - mean 31.80 std 10.25 n_pixels 15
+   -> 7 - mean 66.21 std 26.80 n_pixels 821
+   -> 8 - mean 76.00 std 0.00 n_pixels 1
+   -> 9 - mean 40.87 std 36.94 n_pixels 872
+   -> 10 - mean 33.61 std 27.72 n_pixels 1034
+   -> 11 - mean 65.83 std 23.21 n_pixels 1421
+   -> 12 - mean 56.50 std 37.96 n_pixels 522
+   -> 13 - mean 36.08 std 42.77 n_pixels 333
+   -> 14 - mean 73.30 std 10.22 n_pixels 40
+   -> 15 - mean 30.93 std 26.29 n_pixels 2945
+   -> 16 - mean 60.35 std 25.69 n_pixels 2610
+   -> 17 - mean 72.30 std 10.50 n_pixels 37
+   -> 18 - mean 32.85 std 27.55 n_pixels 1537
+   -> 19 - mean 32.85 std 17.21 n_pixels 137
+   -> 20 - mean 18.26 std 25.74 n_pixels 227
+   -> 21 - mean 37.09 std 9.83 n_pixels 22
+   -> 22 - mean 48.50 std 6.24 n_pixels 6
+   -> 23 - mean 47.00 std 0.00 n_pixels 1
+   -> 24 - mean 36.00 std 0.00 n_pixels 1
+   -> 25 - mean 52.77 std 33.25 n_pixels 826
+   -> 26 - mean 29.36 std 21.17 n_pixels 77
+   -> 27 - mean 69.37 std 15.60 n_pixels 89
+   -> 28 - mean 38.14 std 7.81 n_pixels 7
+   -> 29 - mean 40.44 std 42.94 n_pixels 339
+   -> 30 - mean 70.95 std 46.86 n_pixels 1452
+   -> 31 - mean 59.04 std 11.37 n_pixels 228
+   -> 32 - mean 53.00 std 3.67 n_pixels 4
+   -> 33 - mean 62.89 std 12.99 n_pixels 741
+TCGA-13-0799.nii.gz
+  1 PRIMARIES mean 69.26 std 35.51 min 69.26 max 69.26
+   -> 0 - mean 69.26 std 35.51 n_pixels 106097
+TCGA-13-0883.nii.gz
+  1 PRIMARIES mean 28.63 std 23.25 min 28.63 max 28.63
+   -> 0 - mean 28.63 std 23.25 n_pixels 181308
+  1 METASTASES mean 60.88 std 25.17 min 60.88 max 60.88
+   -> 0 - mean 60.88 std 25.17 n_pixels 14008
+TCGA-13-0904.nii.gz
+  2 PRIMARIES mean 60.96 std 21.97 min 60.14 max 61.77
+   -> 0 - mean 60.14 std 21.59 n_pixels 11930
+   -> 1 - mean 61.77 std 22.35 n_pixels 12184
+  1 METASTASES mean 63.30 std 22.84 min 63.30 max 63.30
+   -> 0 - mean 63.30 std 22.84 n_pixels 61432
+TCGA-13-0911.nii.gz
+  1 PRIMARIES mean 75.32 std 28.89 min 75.32 max 75.32
+   -> 0 - mean 75.32 std 28.89 n_pixels 21177
+  1 METASTASES mean 60.98 std 30.34 min 60.98 max 60.98
+   -> 0 - mean 60.98 std 30.34 n_pixels 4238
+TCGA-13-0920.nii.gz
+  1 PRIMARIES mean 36.66 std 27.87 min 36.66 max 36.66
+   -> 0 - mean 36.66 std 27.87 n_pixels 206421
+  12 METASTASES mean 64.68 std 26.97 min 29.22 max 81.40
+   -> 0 - mean 73.11 std 10.41 n_pixels 27
+   -> 1 - mean 80.65 std 10.83 n_pixels 20
+   -> 2 - mean 62.23 std 34.09 n_pixels 3266
+   -> 3 - mean 76.38 std 14.03 n_pixels 596
+   -> 4 - mean 66.51 std 16.52 n_pixels 793
+   -> 5 - mean 81.40 std 14.81 n_pixels 89
+   -> 6 - mean 58.37 std 39.12 n_pixels 204
+   -> 7 - mean 29.22 std 28.96 n_pixels 81
+   -> 8 - mean 52.61 std 46.62 n_pixels 745
+   -> 9 - mean 61.84 std 51.28 n_pixels 201
+   -> 10 - mean 75.19 std 45.93 n_pixels 832
+   -> 11 - mean 58.62 std 11.09 n_pixels 34
+TCGA-13-0924.nii.gz
+  2 PRIMARIES mean 30.38 std 24.10 min 24.68 max 36.07
+   -> 0 - mean 36.07 std 24.58 n_pixels 7526
+   -> 1 - mean 24.68 std 23.61 n_pixels 12156
+  24 METASTASES mean 30.29 std 18.58 min 7.00 max 114.00
+   -> 0 - mean 12.18 std 25.94 n_pixels 6039
+   -> 1 - mean 15.00 std 0.00 n_pixels 1
+   -> 2 - mean 28.51 std 15.65 n_pixels 108
+   -> 3 - mean 17.30 std 24.08 n_pixels 8496
+   -> 4 - mean 28.50 std 16.94 n_pixels 94
+   -> 5 - mean 8.00 std 0.00 n_pixels 1
+   -> 6 - mean 17.49 std 56.73 n_pixels 13977
+   -> 7 - mean 13.69 std 25.34 n_pixels 558
+   -> 8 - mean 26.50 std 15.27 n_pixels 6
+   -> 9 - mean 34.59 std 42.35 n_pixels 40254
+   -> 10 - mean 27.02 std 21.35 n_pixels 2931
+   -> 11 - mean 7.00 std 0.00 n_pixels 1
+   -> 12 - mean 24.67 std 18.96 n_pixels 18
+   -> 13 - mean 19.00 std 17.70 n_pixels 7
+   -> 14 - mean 47.60 std 16.07 n_pixels 15
+   -> 15 - mean 26.47 std 54.12 n_pixels 1800
+   -> 16 - mean 41.62 std 20.12 n_pixels 16
+   -> 17 - mean 41.50 std 2.50 n_pixels 2
+   -> 18 - mean 13.53 std 12.14 n_pixels 102
+   -> 19 - mean 51.00 std 14.09 n_pixels 4
+   -> 20 - mean 114.00 std 0.00 n_pixels 1
+   -> 21 - mean 25.66 std 19.17 n_pixels 35
+   -> 22 - mean 35.40 std 18.74 n_pixels 10
+   -> 23 - mean 50.83 std 8.61 n_pixels 6
+TCGA-13-1405.nii.gz
+  2 PRIMARIES mean 71.67 std 26.11 min 64.56 max 78.77
+   -> 0 - mean 78.77 std 22.45 n_pixels 5463
+   -> 1 - mean 64.56 std 29.76 n_pixels 5737
+  1 METASTASES mean 76.05 std 22.72 min 76.05 max 76.05
+   -> 0 - mean 76.05 std 22.72 n_pixels 31919
+TCGA-13-1408.nii.gz
+  1 METASTASES mean 75.27 std 25.36 min 75.27 max 75.27
+   -> 0 - mean 75.27 std 25.36 n_pixels 18979
+TCGA-13-1411.nii.gz
+  2 PRIMARIES mean 25.61 std 14.94 min 24.71 max 26.50
+   -> 0 - mean 24.71 std 23.39 n_pixels 160106
+   -> 1 - mean 26.50 std 6.50 n_pixels 2
+  1 METASTASES mean 43.70 std 31.32 min 43.70 max 43.70
+   -> 0 - mean 43.70 std 31.32 n_pixels 40059
+TCGA-13-1412.nii.gz
+  2 PRIMARIES mean 41.17 std 21.05 min 33.26 max 49.07
+   -> 0 - mean 49.07 std 19.33 n_pixels 15363
+   -> 1 - mean 33.26 std 22.78 n_pixels 32427
+  1 METASTASES mean 62.18 std 15.52 min 62.18 max 62.18
+   -> 0 - mean 62.18 std 15.52 n_pixels 12719
+TCGA-13-1488.nii.gz
+  1 PRIMARIES mean 38.39 std 25.19 min 38.39 max 38.39
+   -> 0 - mean 38.39 std 25.19 n_pixels 77111
+  1 METASTASES mean 21.99 std 40.79 min 21.99 max 21.99
+   -> 0 - mean 21.99 std 40.79 n_pixels 1118
+TCGA-13-1499.nii.gz
+  1 METASTASES mean 30.78 std 37.27 min 30.78 max 30.78
+   -> 0 - mean 30.78 std 37.27 n_pixels 6062
+TCGA-13-1507.nii.gz
+  2 PRIMARIES mean 78.81 std 37.73 min 78.35 max 79.28
+   -> 0 - mean 78.35 std 40.21 n_pixels 6064
+   -> 1 - mean 79.28 std 35.25 n_pixels 4490
+  1 METASTASES mean 88.98 std 21.94 min 88.98 max 88.98
+   -> 0 - mean 88.98 std 21.94 n_pixels 37986
+TCGA-13-1509.nii.gz
+  2 PRIMARIES mean 59.16 std 24.93 min 50.90 max 67.41
+   -> 0 - mean 50.90 std 26.56 n_pixels 44176
+   -> 1 - mean 67.41 std 23.31 n_pixels 10845
+  1 METASTASES mean 57.61 std 22.19 min 57.61 max 57.61
+   -> 0 - mean 57.61 std 22.19 n_pixels 15401
+TCGA-13-1511.nii.gz
+  2 PRIMARIES mean 70.11 std 26.42 min 69.71 max 70.52
+   -> 0 - mean 70.52 std 26.17 n_pixels 31781
+   -> 1 - mean 69.71 std 26.68 n_pixels 19831
+  1 METASTASES mean 67.95 std 32.29 min 67.95 max 67.95
+   -> 0 - mean 67.95 std 32.29 n_pixels 54532
+TCGA-13-2060.nii.gz
+  2 PRIMARIES mean 49.29 std 28.80 min 43.34 max 55.24
+   -> 0 - mean 43.34 std 27.54 n_pixels 10817
+   -> 1 - mean 55.24 std 30.05 n_pixels 29542
+  2 METASTASES mean 48.45 std 30.47 min 38.41 max 58.48
+   -> 0 - mean 38.41 std 35.96 n_pixels 3504
+   -> 1 - mean 58.48 std 24.98 n_pixels 3547
+TCGA-24-1418.nii.gz
+  2 PRIMARIES mean 53.90 std 31.63 min 53.01 max 54.79
+   -> 0 - mean 54.79 std 31.68 n_pixels 2890
+   -> 1 - mean 53.01 std 31.58 n_pixels 5130
+  40 METASTASES mean 22.00 std 11.94 min -56.00 max 90.00
+   -> 0 - mean 49.13 std 44.08 n_pixels 9831
+   -> 1 - mean 81.67 std 15.42 n_pixels 12
+   -> 2 - mean 59.72 std 21.04 n_pixels 171
+   -> 3 - mean 81.38 std 6.04 n_pixels 16
+   -> 4 - mean 73.59 std 8.10 n_pixels 17
+   -> 5 - mean 30.68 std 27.18 n_pixels 120
+   -> 6 - mean 49.14 std 15.11 n_pixels 218
+   -> 7 - mean 40.64 std 11.75 n_pixels 11
+   -> 8 - mean 39.82 std 8.75 n_pixels 11
+   -> 9 - mean 37.07 std 26.85 n_pixels 248
+   -> 10 - mean 31.91 std 31.53 n_pixels 5164
+   -> 11 - mean 46.55 std 35.64 n_pixels 561
+   -> 12 - mean 14.84 std 47.93 n_pixels 153176
+   -> 13 - mean -6.63 std 29.47 n_pixels 405
+   -> 14 - mean 45.38 std 16.69 n_pixels 13
+   -> 15 - mean -41.00 std 0.00 n_pixels 1
+   -> 16 - mean 7.92 std 24.50 n_pixels 348
+   -> 17 - mean 90.00 std 0.00 n_pixels 1
+   -> 18 - mean 41.83 std 7.95 n_pixels 6
+   -> 19 - mean 71.67 std 3.86 n_pixels 3
+   -> 20 - mean 65.25 std 18.01 n_pixels 4
+   -> 21 - mean -23.00 std 0.00 n_pixels 1
+   -> 22 - mean -3.00 std 0.00 n_pixels 1
+   -> 23 - mean -56.00 std 0.00 n_pixels 1
+   -> 24 - mean -6.00 std 0.00 n_pixels 1
+   -> 25 - mean -6.00 std 0.00 n_pixels 1
+   -> 26 - mean 57.17 std 18.07 n_pixels 12
+   -> 27 - mean -7.40 std 12.90 n_pixels 10
+   -> 28 - mean -40.00 std 0.00 n_pixels 1
+   -> 29 - mean 39.00 std 0.00 n_pixels 1
+   -> 30 - mean 38.00 std 0.00 n_pixels 1
+   -> 31 - mean -2.75 std 40.11 n_pixels 225
+   -> 32 - mean -19.00 std 0.00 n_pixels 1
+   -> 33 - mean -19.67 std 4.50 n_pixels 3
+   -> 34 - mean -12.00 std 0.00 n_pixels 1
+   -> 35 - mean 37.00 std 0.00 n_pixels 1
+   -> 36 - mean 38.00 std 0.00 n_pixels 1
+   -> 37 - mean -32.00 std 0.00 n_pixels 1
+   -> 38 - mean -5.00 std 2.00 n_pixels 2
+   -> 39 - mean -8.00 std 0.00 n_pixels 1
+TCGA-24-1423.nii.gz
+  5 PRIMARIES mean 40.54 std 13.24 min -52.00 max 92.00
+   -> 0 - mean 46.99 std 21.82 n_pixels 14291
+   -> 1 - mean 82.47 std 15.39 n_pixels 40
+   -> 2 - mean 33.25 std 28.99 n_pixels 52091
+   -> 3 - mean 92.00 std 0.00 n_pixels 1
+   -> 4 - mean -52.00 std 0.00 n_pixels 1
+  7 METASTASES mean -96.34 std 16.78 min -1004.88 max 85.45
+   -> 0 - mean 85.45 std 7.51 n_pixels 22
+   -> 1 - mean 72.62 std 35.78 n_pixels 1664
+   -> 2 - mean 68.00 std 0.00 n_pixels 1
+   -> 3 - mean 30.41 std 23.86 n_pixels 198
+   -> 4 - mean 1.00 std 45.73 n_pixels 18758
+   -> 5 - mean 73.00 std 0.00 n_pixels 1
+   -> 6 - mean -1004.88 std 4.59 n_pixels 80
+TCGA-24-1427.nii.gz
+  2 PRIMARIES mean 47.82 std 21.98 min 44.03 max 51.61
+   -> 0 - mean 44.03 std 21.56 n_pixels 6248
+   -> 1 - mean 51.61 std 22.40 n_pixels 5682
+  31 METASTASES mean 27.59 std 16.22 min -43.03 max 80.33
+   -> 0 - mean 50.00 std 4.00 n_pixels 2
+   -> 1 - mean 51.00 std 0.00 n_pixels 1
+   -> 2 - mean 12.87 std 32.62 n_pixels 62
+   -> 3 - mean -8.94 std 20.31 n_pixels 82
+   -> 4 - mean 26.85 std 35.64 n_pixels 2491
+   -> 5 - mean 80.33 std 18.55 n_pixels 123
+   -> 6 - mean 59.94 std 14.13 n_pixels 432
+   -> 7 - mean 40.00 std 0.00 n_pixels 1
+   -> 8 - mean 50.06 std 11.59 n_pixels 17
+   -> 9 - mean 62.00 std 0.00 n_pixels 1
+   -> 10 - mean 50.50 std 10.13 n_pixels 10
+   -> 11 - mean 6.50 std 13.50 n_pixels 2
+   -> 12 - mean -5.06 std 21.36 n_pixels 32
+   -> 13 - mean 18.69 std 27.18 n_pixels 26
+   -> 14 - mean 17.89 std 32.20 n_pixels 100020
+   -> 15 - mean 46.00 std 32.28 n_pixels 7141
+   -> 16 - mean -11.00 std 0.00 n_pixels 1
+   -> 17 - mean 38.77 std 11.93 n_pixels 60
+   -> 18 - mean 5.00 std 4.74 n_pixels 9
+   -> 19 - mean 67.62 std 27.44 n_pixels 792
+   -> 20 - mean -28.04 std 32.05 n_pixels 69
+   -> 21 - mean 24.00 std 7.50 n_pixels 7
+   -> 22 - mean 7.60 std 18.12 n_pixels 684
+   -> 23 - mean 77.65 std 8.12 n_pixels 17
+   -> 24 - mean 19.95 std 6.26 n_pixels 20
+   -> 25 - mean 59.00 std 0.00 n_pixels 1
+   -> 26 - mean 15.00 std 0.00 n_pixels 1
+   -> 27 - mean 20.11 std 13.37 n_pixels 9
+   -> 28 - mean 57.00 std 8.60 n_pixels 3
+   -> 29 - mean -12.99 std 42.96 n_pixels 160
+   -> 30 - mean -43.03 std 48.14 n_pixels 120
+TCGA-24-1616.nii.gz
+  4 PRIMARIES mean 48.28 std 16.56 min 45.81 max 49.67
+   -> 0 - mean 49.64 std 30.67 n_pixels 10827
+   -> 1 - mean 45.81 std 31.54 n_pixels 3964
+   -> 2 - mean 49.67 std 4.03 n_pixels 3
+   -> 3 - mean 48.00 std 0.00 n_pixels 1
+  37 METASTASES mean 21.53 std 22.75 min -101.40 max 73.71
+   -> 0 - mean 43.59 std 48.18 n_pixels 243181
+   -> 1 - mean 24.00 std 0.00 n_pixels 1
+   -> 2 - mean 71.57 std 31.59 n_pixels 28
+   -> 3 - mean -5.00 std 0.00 n_pixels 1
+   -> 4 - mean 24.94 std 56.51 n_pixels 4134
+   -> 5 - mean -8.67 std 19.26 n_pixels 3
+   -> 6 - mean 59.36 std 19.91 n_pixels 56
+   -> 7 - mean 49.03 std 38.93 n_pixels 281
+   -> 8 - mean 45.00 std 0.00 n_pixels 1
+   -> 9 - mean 3.50 std 0.50 n_pixels 2
+   -> 10 - mean 29.00 std 20.00 n_pixels 2
+   -> 11 - mean -9.00 std 0.00 n_pixels 1
+   -> 12 - mean -34.70 std 60.95 n_pixels 44
+   -> 13 - mean 41.00 std 0.00 n_pixels 1
+   -> 14 - mean -17.15 std 48.27 n_pixels 128
+   -> 15 - mean 32.97 std 38.55 n_pixels 74
+   -> 16 - mean 64.31 std 46.47 n_pixels 532
+   -> 17 - mean 37.57 std 33.25 n_pixels 366
+   -> 18 - mean 62.02 std 26.18 n_pixels 282
+   -> 19 - mean 40.70 std 30.82 n_pixels 487
+   -> 20 - mean 34.59 std 39.90 n_pixels 37
+   -> 21 - mean 35.69 std 43.01 n_pixels 110
+   -> 22 - mean 52.46 std 26.19 n_pixels 3191
+   -> 23 - mean 36.81 std 9.59 n_pixels 26
+   -> 24 - mean 63.44 std 13.62 n_pixels 9
+   -> 25 - mean 61.50 std 24.07 n_pixels 10
+   -> 26 - mean -28.00 std 0.00 n_pixels 1
+   -> 27 - mean -32.33 std 22.28 n_pixels 6
+   -> 28 - mean 59.51 std 31.02 n_pixels 47
+   -> 29 - mean -62.50 std 18.50 n_pixels 2
+   -> 30 - mean -34.00 std 21.60 n_pixels 3
+   -> 31 - mean -5.00 std 0.00 n_pixels 1
+   -> 32 - mean -20.00 std 0.00 n_pixels 1
+   -> 33 - mean 64.60 std 2.80 n_pixels 5
+   -> 34 - mean 73.71 std 11.64 n_pixels 17
+   -> 35 - mean 43.37 std 27.23 n_pixels 136
+   -> 36 - mean -101.40 std 30.81 n_pixels 5
+TCGA-24-2254.nii.gz
+  7 PRIMARIES mean 57.12 std 12.66 min 40.00 max 77.15
+   -> 0 - mean 46.34 std 29.80 n_pixels 223834
+   -> 1 - mean 73.00 std 21.56 n_pixels 929
+   -> 2 - mean 57.00 std 0.00 n_pixels 1
+   -> 3 - mean 62.35 std 19.47 n_pixels 46
+   -> 4 - mean 77.15 std 17.82 n_pixels 20
+   -> 5 - mean 44.00 std 0.00 n_pixels 1
+   -> 6 - mean 40.00 std 0.00 n_pixels 1
+  61 METASTASES mean -3.72 std 31.18 min -109.30 max 69.50
+   -> 0 - mean -109.30 std 13.04 n_pixels 37
+   -> 1 - mean 7.63 std 55.87 n_pixels 98
+   -> 2 - mean 11.28 std 27.17 n_pixels 159
+   -> 3 - mean -39.89 std 32.30 n_pixels 505
+   -> 4 - mean 11.80 std 8.54 n_pixels 5
+   -> 5 - mean -23.31 std 26.01 n_pixels 166
+   -> 6 - mean 58.50 std 15.17 n_pixels 22
+   -> 7 - mean 60.69 std 18.86 n_pixels 550
+   -> 8 - mean -58.67 std 27.20 n_pixels 21
+   -> 9 - mean -55.12 std 37.18 n_pixels 88
+   -> 10 - mean -37.13 std 31.89 n_pixels 140
+   -> 11 - mean -43.43 std 24.80 n_pixels 21
+   -> 12 - mean -63.57 std 24.80 n_pixels 89
+   -> 13 - mean 22.35 std 46.26 n_pixels 1675
+   -> 14 - mean 60.89 std 18.67 n_pixels 140
+   -> 15 - mean -5.61 std 54.28 n_pixels 301
+   -> 16 - mean -16.92 std 26.74 n_pixels 199
+   -> 17 - mean 5.88 std 22.49 n_pixels 43
+   -> 18 - mean 36.00 std 34.06 n_pixels 72326
+   -> 19 - mean 4.57 std 39.97 n_pixels 2247
+   -> 20 - mean 36.73 std 32.57 n_pixels 7942
+   -> 21 - mean -7.26 std 37.92 n_pixels 119
+   -> 22 - mean 25.06 std 21.66 n_pixels 16
+   -> 23 - mean -4.00 std 37.11 n_pixels 1716
+   -> 24 - mean -19.04 std 39.42 n_pixels 334
+   -> 25 - mean 42.71 std 37.73 n_pixels 5359
+   -> 26 - mean -15.54 std 46.52 n_pixels 176
+   -> 27 - mean 18.04 std 45.20 n_pixels 4082
+   -> 28 - mean -9.34 std 45.21 n_pixels 70
+   -> 29 - mean 16.75 std 7.22 n_pixels 4
+   -> 30 - mean 69.50 std 18.23 n_pixels 12
+   -> 31 - mean 29.07 std 22.50 n_pixels 67
+   -> 32 - mean 37.75 std 21.04 n_pixels 199
+   -> 33 - mean -22.78 std 51.63 n_pixels 37
+   -> 34 - mean 10.47 std 17.85 n_pixels 17
+   -> 35 - mean 17.97 std 41.11 n_pixels 123
+   -> 36 - mean 19.69 std 26.55 n_pixels 272
+   -> 37 - mean 8.10 std 47.87 n_pixels 222
+   -> 38 - mean -29.42 std 53.03 n_pixels 92
+   -> 39 - mean -20.83 std 29.64 n_pixels 138
+   -> 40 - mean -19.40 std 54.07 n_pixels 100
+   -> 41 - mean 33.09 std 29.96 n_pixels 90
+   -> 42 - mean 13.05 std 39.63 n_pixels 359
+   -> 43 - mean 3.52 std 53.39 n_pixels 163
+   -> 44 - mean -8.43 std 23.49 n_pixels 44
+   -> 45 - mean -0.15 std 54.11 n_pixels 2475
+   -> 46 - mean 12.38 std 44.65 n_pixels 110
+   -> 47 - mean 53.96 std 12.04 n_pixels 25
+   -> 48 - mean -26.10 std 33.84 n_pixels 147
+   -> 49 - mean 40.06 std 41.41 n_pixels 3576
+   -> 50 - mean -6.54 std 55.56 n_pixels 236
+   -> 51 - mean 5.28 std 41.55 n_pixels 2334
+   -> 52 - mean 35.32 std 34.09 n_pixels 720
+   -> 53 - mean -9.19 std 35.00 n_pixels 922
+   -> 54 - mean -26.10 std 28.25 n_pixels 63
+   -> 55 - mean 31.00 std 27.74 n_pixels 17
+   -> 56 - mean -101.00 std 0.00 n_pixels 1
+   -> 57 - mean -104.00 std 0.00 n_pixels 1
+   -> 58 - mean -107.33 std 3.09 n_pixels 3
+   -> 59 - mean -94.00 std 0.00 n_pixels 1
+   -> 60 - mean 17.65 std 24.49 n_pixels 127
+TCGA-25-1313.nii.gz
+  4 PRIMARIES mean 41.72 std 20.63 min 22.29 max 55.67
+   -> 0 - mean 47.90 std 26.00 n_pixels 2731
+   -> 1 - mean 55.67 std 27.93 n_pixels 241
+   -> 2 - mean 22.29 std 0.00 n_pixels 1
+   -> 3 - mean 41.04 std 28.59 n_pixels 1016
+  14 METASTASES mean 18.55 std 29.24 min -55.02 max 94.00
+   -> 0 - mean 59.90 std 19.12 n_pixels 2279
+   -> 1 - mean 44.63 std 41.13 n_pixels 6159
+   -> 2 - mean 94.00 std 0.00 n_pixels 1
+   -> 3 - mean 14.09 std 33.29 n_pixels 554
+   -> 4 - mean 7.23 std 38.59 n_pixels 3926
+   -> 5 - mean 4.94 std 34.22 n_pixels 2308
+   -> 6 - mean 18.38 std 90.17 n_pixels 389
+   -> 7 - mean 10.96 std 48.30 n_pixels 55895
+   -> 8 - mean 24.93 std 13.01 n_pixels 4
+   -> 9 - mean 32.43 std 6.29 n_pixels 2
+   -> 10 - mean 27.77 std 17.60 n_pixels 20
+   -> 11 - mean 17.64 std 13.21 n_pixels 2
+   -> 12 - mean -42.22 std 33.98 n_pixels 1807
+   -> 13 - mean -55.02 std 20.47 n_pixels 69
+TCGA-25-1623.nii.gz
+  3 PRIMARIES mean 43.69 std 15.87 min 17.00 max 59.31
+   -> 0 - mean 59.31 std 24.54 n_pixels 1463
+   -> 1 - mean 54.75 std 23.06 n_pixels 2468
+   -> 2 - mean 17.00 std 0.00 n_pixels 1
+  22 METASTASES mean 82.24 std 10.81 min 5.77 max 121.27
+   -> 0 - mean 32.00 std 1.00 n_pixels 2
+   -> 1 - mean 69.37 std 21.67 n_pixels 3430
+   -> 2 - mean 59.00 std 0.00 n_pixels 1
+   -> 3 - mean 116.33 std 11.09 n_pixels 6
+   -> 4 - mean 105.55 std 9.18 n_pixels 20
+   -> 5 - mean 89.00 std 4.28 n_pixels 7
+   -> 6 - mean 5.77 std 37.36 n_pixels 135
+   -> 7 - mean 89.75 std 13.44 n_pixels 4
+   -> 8 - mean 85.00 std 0.00 n_pixels 1
+   -> 9 - mean 102.57 std 9.36 n_pixels 37
+   -> 10 - mean 99.00 std 0.00 n_pixels 1
+   -> 11 - mean 99.50 std 1.50 n_pixels 2
+   -> 12 - mean 79.00 std 0.00 n_pixels 1
+   -> 13 - mean 108.60 std 6.14 n_pixels 10
+   -> 14 - mean 64.62 std 27.42 n_pixels 1925
+   -> 15 - mean 121.27 std 5.29 n_pixels 11
+   -> 16 - mean 110.33 std 20.42 n_pixels 9
+   -> 17 - mean 57.78 std 36.55 n_pixels 8908
+   -> 18 - mean 91.45 std 9.53 n_pixels 11
+   -> 19 - mean 65.46 std 23.58 n_pixels 257
+   -> 20 - mean 80.00 std 0.00 n_pixels 1
+   -> 21 - mean 78.00 std 0.00 n_pixels 1
+TCGA-25-1631.nii.gz
+  1 PRIMARIES mean 62.87 std 21.66 min 62.87 max 62.87
+   -> 0 - mean 62.87 std 21.66 n_pixels 41407
+TCGA-25-1635.nii.gz
+  14 PRIMARIES mean 78.80 std 9.37 min 17.00 max 168.00
+   -> 0 - mean 91.52 std 33.49 n_pixels 12311
+   -> 1 - mean 93.00 std 6.00 n_pixels 2
+   -> 2 - mean 89.86 std 48.48 n_pixels 30032
+   -> 3 - mean 87.00 std 0.00 n_pixels 1
+   -> 4 - mean 123.33 std 9.81 n_pixels 3
+   -> 5 - mean 57.00 std 0.00 n_pixels 1
+   -> 6 - mean 30.67 std 4.71 n_pixels 3
+   -> 7 - mean 77.00 std 0.00 n_pixels 1
+   -> 8 - mean 105.80 std 16.65 n_pixels 5
+   -> 9 - mean 49.00 std 0.00 n_pixels 1
+   -> 10 - mean 64.00 std 0.00 n_pixels 1
+   -> 11 - mean 17.00 std 0.00 n_pixels 1
+   -> 12 - mean 50.00 std 0.00 n_pixels 1
+   -> 13 - mean 168.00 std 12.08 n_pixels 3
+  35 METASTASES mean 43.91 std 28.97 min -27.57 max 89.83
+   -> 0 - mean 3.92 std 34.19 n_pixels 53
+   -> 1 - mean 35.55 std 48.97 n_pixels 3393
+   -> 2 - mean 25.52 std 38.39 n_pixels 156
+   -> 3 - mean 36.17 std 41.97 n_pixels 8586
+   -> 4 - mean 24.47 std 40.93 n_pixels 282
+   -> 5 - mean -22.42 std 23.35 n_pixels 24
+   -> 6 - mean 66.01 std 31.34 n_pixels 5624
+   -> 7 - mean 64.61 std 20.19 n_pixels 31
+   -> 8 - mean 47.46 std 24.23 n_pixels 65
+   -> 9 - mean 58.98 std 35.65 n_pixels 60
+   -> 10 - mean 56.88 std 26.69 n_pixels 34
+   -> 11 - mean 4.29 std 27.04 n_pixels 24
+   -> 12 - mean 47.26 std 30.60 n_pixels 114
+   -> 13 - mean 15.51 std 42.60 n_pixels 70
+   -> 14 - mean 61.15 std 18.18 n_pixels 39
+   -> 15 - mean 19.29 std 40.74 n_pixels 521
+   -> 16 - mean 51.54 std 17.67 n_pixels 28
+   -> 17 - mean 78.37 std 32.86 n_pixels 10197
+   -> 18 - mean 13.24 std 36.77 n_pixels 76
+   -> 19 - mean 62.14 std 12.19 n_pixels 7
+   -> 20 - mean 33.00 std 0.00 n_pixels 1
+   -> 21 - mean -15.50 std 15.50 n_pixels 2
+   -> 22 - mean 51.05 std 26.85 n_pixels 64
+   -> 23 - mean 62.05 std 20.97 n_pixels 57
+   -> 24 - mean 62.50 std 4.50 n_pixels 2
+   -> 25 - mean 65.86 std 40.32 n_pixels 65763
+   -> 26 - mean 89.83 std 18.46 n_pixels 29
+   -> 27 - mean 61.27 std 35.31 n_pixels 92
+   -> 28 - mean 46.13 std 33.57 n_pixels 60
+   -> 29 - mean 62.38 std 33.39 n_pixels 73
+   -> 30 - mean 73.65 std 27.52 n_pixels 284
+   -> 31 - mean 81.51 std 28.27 n_pixels 1437
+   -> 32 - mean 68.81 std 17.97 n_pixels 832
+   -> 33 - mean 71.93 std 38.03 n_pixels 349
+   -> 34 - mean -27.57 std 48.59 n_pixels 37
+TCGA-30-1891.nii.gz
+  154 PRIMARIES mean 13.40 std 3.06 min -89.00 max 80.00
+   -> 0 - mean 42.43 std 25.68 n_pixels 7423
+   -> 1 - mean 21.00 std 0.00 n_pixels 1
+   -> 2 - mean 24.00 std 0.00 n_pixels 1
+   -> 3 - mean 6.00 std 0.00 n_pixels 1
+   -> 4 - mean 35.25 std 12.03 n_pixels 4
+   -> 5 - mean 25.80 std 6.79 n_pixels 5
+   -> 6 - mean 14.00 std 0.00 n_pixels 1
+   -> 7 - mean 15.00 std 0.00 n_pixels 1
+   -> 8 - mean 33.50 std 0.50 n_pixels 2
+   -> 9 - mean 19.50 std 9.34 n_pixels 4
+   -> 10 - mean 48.00 std 0.00 n_pixels 1
+   -> 11 - mean 53.00 std 0.00 n_pixels 1
+   -> 12 - mean 11.00 std 0.00 n_pixels 1
+   -> 13 - mean 10.00 std 0.00 n_pixels 1
+   -> 14 - mean 6.00 std 0.00 n_pixels 1
+   -> 15 - mean 7.00 std 6.00 n_pixels 2
+   -> 16 - mean 66.00 std 0.00 n_pixels 1
+   -> 17 - mean 46.00 std 2.00 n_pixels 2
+   -> 18 - mean 34.00 std 0.00 n_pixels 1
+   -> 19 - mean 27.00 std 1.63 n_pixels 3
+   -> 20 - mean 3.00 std 0.00 n_pixels 1
+   -> 21 - mean 12.00 std 0.00 n_pixels 1
+   -> 22 - mean 12.50 std 2.50 n_pixels 2
+   -> 23 - mean 8.00 std 0.00 n_pixels 1
+   -> 24 - mean 13.00 std 0.00 n_pixels 1
+   -> 25 - mean 14.00 std 0.00 n_pixels 1
+   -> 26 - mean 45.00 std 0.00 n_pixels 1
+   -> 27 - mean 26.00 std 0.00 n_pixels 1
+   -> 28 - mean 47.00 std 0.00 n_pixels 1
+   -> 29 - mean 42.00 std 0.00 n_pixels 1
+   -> 30 - mean 31.50 std 9.50 n_pixels 2
+   -> 31 - mean 29.00 std 0.00 n_pixels 1
+   -> 32 - mean 27.50 std 0.50 n_pixels 2
+   -> 33 - mean 40.00 std 0.00 n_pixels 1
+   -> 34 - mean 28.00 std 0.00 n_pixels 1
+   -> 35 - mean 2.00 std 4.32 n_pixels 3
+   -> 36 - mean 29.00 std 0.00 n_pixels 1
+   -> 37 - mean 7.00 std 0.00 n_pixels 1
+   -> 38 - mean 28.40 std 6.77 n_pixels 5
+   -> 39 - mean 10.00 std 4.00 n_pixels 2
+   -> 40 - mean 23.00 std 0.00 n_pixels 1
+   -> 41 - mean 44.00 std 0.00 n_pixels 1
+   -> 42 - mean 10.00 std 0.00 n_pixels 1
+   -> 43 - mean 43.25 std 3.56 n_pixels 4
+   -> 44 - mean 16.00 std 7.00 n_pixels 2
+   -> 45 - mean -5.00 std 0.00 n_pixels 1
+   -> 46 - mean 31.00 std 0.00 n_pixels 1
+   -> 47 - mean 17.75 std 11.43 n_pixels 4
+   -> 48 - mean 62.00 std 0.00 n_pixels 1
+   -> 49 - mean 16.00 std 0.00 n_pixels 1
+   -> 50 - mean 19.25 std 9.09 n_pixels 4
+   -> 51 - mean 15.53 std 12.07 n_pixels 15
+   -> 52 - mean 42.00 std 6.82 n_pixels 4
+   -> 53 - mean 5.25 std 7.56 n_pixels 4
+   -> 54 - mean -11.00 std 0.00 n_pixels 1
+   -> 55 - mean 14.00 std 0.00 n_pixels 1
+   -> 56 - mean 7.00 std 0.00 n_pixels 1
+   -> 57 - mean 20.00 std 0.00 n_pixels 1
+   -> 58 - mean 17.50 std 7.50 n_pixels 2
+   -> 59 - mean 49.00 std 0.00 n_pixels 1
+   -> 60 - mean 23.00 std 0.00 n_pixels 1
+   -> 61 - mean 64.00 std 0.00 n_pixels 1
+   -> 62 - mean 14.00 std 0.00 n_pixels 1
+   -> 63 - mean 25.00 std 0.00 n_pixels 1
+   -> 64 - mean 64.00 std 0.00 n_pixels 1
+   -> 65 - mean 34.00 std 0.00 n_pixels 1
+   -> 66 - mean 54.00 std 0.00 n_pixels 1
+   -> 67 - mean 29.00 std 0.00 n_pixels 1
+   -> 68 - mean 75.50 std 2.50 n_pixels 2
+   -> 69 - mean 30.00 std 2.16 n_pixels 3
+   -> 70 - mean 4.00 std 6.00 n_pixels 2
+   -> 71 - mean 27.00 std 0.00 n_pixels 1
+   -> 72 - mean 53.00 std 1.00 n_pixels 2
+   -> 73 - mean 58.00 std 0.00 n_pixels 1
+   -> 74 - mean 67.00 std 0.00 n_pixels 1
+   -> 75 - mean 71.00 std 0.00 n_pixels 1
+   -> 76 - mean 28.00 std 0.00 n_pixels 1
+   -> 77 - mean 34.00 std 0.00 n_pixels 1
+   -> 78 - mean -63.00 std 1.41 n_pixels 3
+   -> 79 - mean 22.00 std 0.00 n_pixels 1
+   -> 80 - mean 20.00 std 0.00 n_pixels 1
+   -> 81 - mean -33.00 std 0.00 n_pixels 1
+   -> 82 - mean -46.00 std 0.00 n_pixels 1
+   -> 83 - mean 35.00 std 0.00 n_pixels 1
+   -> 84 - mean 49.00 std 0.00 n_pixels 1
+   -> 85 - mean 72.00 std 0.00 n_pixels 1
+   -> 86 - mean -54.80 std 12.92 n_pixels 5
+   -> 87 - mean -82.00 std 0.00 n_pixels 1
+   -> 88 - mean 16.50 std 3.59 n_pixels 6
+   -> 89 - mean -81.00 std 0.00 n_pixels 1
+   -> 90 - mean -67.00 std 0.00 n_pixels 1
+   -> 91 - mean 63.00 std 0.00 n_pixels 1
+   -> 92 - mean 27.00 std 0.00 n_pixels 1
+   -> 93 - mean 43.00 std 3.00 n_pixels 2
+   -> 94 - mean 21.00 std 0.00 n_pixels 1
+   -> 95 - mean 28.00 std 0.00 n_pixels 1
+   -> 96 - mean -31.33 std 28.96 n_pixels 3
+   -> 97 - mean 15.00 std 0.00 n_pixels 1
+   -> 98 - mean 38.00 std 5.43 n_pixels 4
+   -> 99 - mean -11.00 std 0.00 n_pixels 1
+   -> 100 - mean 80.00 std 0.00 n_pixels 1
+   -> 101 - mean 50.00 std 0.00 n_pixels 1
+   -> 102 - mean 25.00 std 0.00 n_pixels 1
+   -> 103 - mean 48.77 std 25.29 n_pixels 4968
+   -> 104 - mean -2.00 std 4.00 n_pixels 2
+   -> 105 - mean 5.00 std 0.00 n_pixels 1
+   -> 106 - mean -21.00 std 0.00 n_pixels 1
+   -> 107 - mean -2.00 std 0.00 n_pixels 1
+   -> 108 - mean -11.78 std 22.11 n_pixels 9
+   -> 109 - mean 7.00 std 0.00 n_pixels 1
+   -> 110 - mean 1.00 std 4.00 n_pixels 2
+   -> 111 - mean 65.88 std 9.66 n_pixels 8
+   -> 112 - mean 49.00 std 0.00 n_pixels 1
+   -> 113 - mean 60.00 std 0.00 n_pixels 1
+   -> 114 - mean 23.00 std 0.00 n_pixels 1
+   -> 115 - mean 16.50 std 2.50 n_pixels 2
+   -> 116 - mean 6.33 std 6.65 n_pixels 3
+   -> 117 - mean 12.40 std 13.92 n_pixels 5
+   -> 118 - mean -2.00 std 0.00 n_pixels 1
+   -> 119 - mean -6.25 std 9.55 n_pixels 4
+   -> 120 - mean -17.00 std 0.00 n_pixels 1
+   -> 121 - mean 36.00 std 0.00 n_pixels 1
+   -> 122 - mean -28.00 std 0.00 n_pixels 1
+   -> 123 - mean -0.33 std 0.94 n_pixels 3
+   -> 124 - mean 7.00 std 0.00 n_pixels 1
+   -> 125 - mean 21.30 std 15.60 n_pixels 10
+   -> 126 - mean -48.00 std 0.00 n_pixels 1
+   -> 127 - mean 16.00 std 0.00 n_pixels 1
+   -> 128 - mean -47.00 std 0.00 n_pixels 1
+   -> 129 - mean 0.00 std 0.00 n_pixels 1
+   -> 130 - mean -51.00 std 0.00 n_pixels 1
+   -> 131 - mean -31.00 std 0.00 n_pixels 1
+   -> 132 - mean -36.83 std 9.15 n_pixels 6
+   -> 133 - mean -60.33 std 20.68 n_pixels 3
+   -> 134 - mean -39.00 std 0.00 n_pixels 1
+   -> 135 - mean -9.00 std 12.03 n_pixels 3
+   -> 136 - mean -2.25 std 20.78 n_pixels 4
+   -> 137 - mean -30.00 std 0.00 n_pixels 1
+   -> 138 - mean 3.86 std 20.57 n_pixels 7
+   -> 139 - mean -47.50 std 9.50 n_pixels 2
+   -> 140 - mean -1.00 std 0.00 n_pixels 1
+   -> 141 - mean -38.00 std 20.85 n_pixels 3
+   -> 142 - mean 45.00 std 0.00 n_pixels 1
+   -> 143 - mean 3.00 std 0.00 n_pixels 1
+   -> 144 - mean 1.62 std 12.98 n_pixels 8
+   -> 145 - mean -26.00 std 0.00 n_pixels 1
+   -> 146 - mean -26.00 std 0.00 n_pixels 1
+   -> 147 - mean -89.00 std 0.00 n_pixels 1
+   -> 148 - mean -13.00 std 0.00 n_pixels 1
+   -> 149 - mean 28.25 std 6.76 n_pixels 4
+   -> 150 - mean -16.00 std 0.00 n_pixels 1
+   -> 151 - mean 31.00 std 0.00 n_pixels 1
+   -> 152 - mean -50.00 std 0.00 n_pixels 1
+   -> 153 - mean 1.00 std 0.00 n_pixels 1
+  12 METASTASES mean 31.66 std 10.59 min -20.00 max 70.00
+   -> 0 - mean 56.83 std 22.55 n_pixels 255825
+   -> 1 - mean 70.00 std 0.00 n_pixels 1
+   -> 2 - mean 64.95 std 8.79 n_pixels 98
+   -> 3 - mean -3.00 std 0.00 n_pixels 1
+   -> 4 - mean -7.25 std 10.85 n_pixels 4
+   -> 5 - mean -12.00 std 0.00 n_pixels 1
+   -> 6 - mean -20.00 std 0.00 n_pixels 1
+   -> 7 - mean 41.88 std 28.00 n_pixels 24836
+   -> 8 - mean 49.62 std 26.44 n_pixels 1218
+   -> 9 - mean 33.00 std 0.00 n_pixels 1
+   -> 10 - mean 61.64 std 9.06 n_pixels 660
+   -> 11 - mean 44.26 std 21.38 n_pixels 4219
+TCGA-61-1900.nii.gz
+  1 PRIMARIES mean 49.01 std 28.93 min 49.01 max 49.01
+   -> 0 - mean 49.01 std 28.93 n_pixels 55062
+  1 METASTASES mean 28.36 std 29.38 min 28.36 max 28.36
+   -> 0 - mean 28.36 std 29.38 n_pixels 1757
+TCGA-61-1906.nii.gz
+  23 PRIMARIES mean 58.47 std 7.63 min 17.00 max 89.00
+   -> 0 - mean 20.23 std 17.15 n_pixels 483685
+   -> 1 - mean 29.14 std 6.73 n_pixels 7
+   -> 2 - mean 42.00 std 0.00 n_pixels 1
+   -> 3 - mean 17.00 std 0.00 n_pixels 1
+   -> 4 - mean 73.67 std 26.71 n_pixels 3
+   -> 5 - mean 84.00 std 28.28 n_pixels 5
+   -> 6 - mean 58.00 std 0.00 n_pixels 1
+   -> 7 - mean 88.00 std 0.00 n_pixels 1
+   -> 8 - mean 85.00 std 0.00 n_pixels 1
+   -> 9 - mean 21.50 std 28.50 n_pixels 2
+   -> 10 - mean 38.25 std 10.28 n_pixels 4
+   -> 11 - mean 47.60 std 8.36 n_pixels 5
+   -> 12 - mean 88.00 std 0.00 n_pixels 1
+   -> 13 - mean 68.50 std 9.50 n_pixels 2
+   -> 14 - mean 73.50 std 12.50 n_pixels 2
+   -> 15 - mean 41.00 std 9.00 n_pixels 2
+   -> 16 - mean 83.00 std 0.00 n_pixels 1
+   -> 17 - mean 33.00 std 0.00 n_pixels 1
+   -> 18 - mean 88.00 std 0.00 n_pixels 1
+   -> 19 - mean 64.50 std 17.50 n_pixels 2
+   -> 20 - mean 52.00 std 1.00 n_pixels 2
+   -> 21 - mean 89.00 std 0.00 n_pixels 1
+   -> 22 - mean 60.00 std 0.00 n_pixels 1
+  46 METASTASES mean 24.73 std 23.96 min -32.33 max 85.24
+   -> 0 - mean 53.14 std 36.15 n_pixels 7608
+   -> 1 - mean -3.62 std 37.02 n_pixels 34759
+   -> 2 - mean 2.86 std 40.37 n_pixels 70
+   -> 3 - mean -11.53 std 26.12 n_pixels 66
+   -> 4 - mean 49.49 std 25.39 n_pixels 90
+   -> 5 - mean 85.24 std 10.47 n_pixels 25
+   -> 6 - mean 81.18 std 36.88 n_pixels 51
+   -> 7 - mean 6.09 std 34.63 n_pixels 325
+   -> 8 - mean 36.70 std 45.29 n_pixels 122
+   -> 9 - mean 47.71 std 37.25 n_pixels 2994
+   -> 10 - mean 25.24 std 26.80 n_pixels 38
+   -> 11 - mean -13.56 std 30.87 n_pixels 72
+   -> 12 - mean 34.18 std 35.01 n_pixels 49
+   -> 13 - mean 58.15 std 26.02 n_pixels 59
+   -> 14 - mean 58.67 std 8.01 n_pixels 3
+   -> 15 - mean 42.37 std 37.30 n_pixels 43
+   -> 16 - mean 27.94 std 16.08 n_pixels 18
+   -> 17 - mean 57.00 std 0.00 n_pixels 1
+   -> 18 - mean -32.00 std 0.00 n_pixels 1
+   -> 19 - mean 68.89 std 30.31 n_pixels 1449
+   -> 20 - mean 1.00 std 14.68 n_pixels 8
+   -> 21 - mean 80.50 std 2.50 n_pixels 2
+   -> 22 - mean -32.33 std 8.49 n_pixels 9
+   -> 23 - mean 74.54 std 29.83 n_pixels 9633
+   -> 24 - mean 7.25 std 9.81 n_pixels 4
+   -> 25 - mean 3.62 std 23.26 n_pixels 2944
+   -> 26 - mean -13.69 std 22.22 n_pixels 16
+   -> 27 - mean 26.30 std 24.87 n_pixels 99
+   -> 28 - mean 1.02 std 90.94 n_pixels 44
+   -> 29 - mean 42.52 std 42.77 n_pixels 1228
+   -> 30 - mean -27.29 std 25.82 n_pixels 229
+   -> 31 - mean 50.33 std 20.77 n_pixels 45
+   -> 32 - mean -23.00 std 0.00 n_pixels 1
+   -> 33 - mean -11.00 std 0.00 n_pixels 1
+   -> 34 - mean 54.79 std 30.60 n_pixels 304
+   -> 35 - mean -2.80 std 27.43 n_pixels 160
+   -> 36 - mean 25.33 std 9.46 n_pixels 3
+   -> 37 - mean 17.45 std 33.53 n_pixels 445
+   -> 38 - mean -21.00 std 0.00 n_pixels 1
+   -> 39 - mean 22.80 std 16.16 n_pixels 10
+   -> 40 - mean 33.96 std 45.37 n_pixels 502
+   -> 41 - mean 36.00 std 5.00 n_pixels 2
+   -> 42 - mean 51.50 std 14.50 n_pixels 16
+   -> 43 - mean 16.88 std 32.11 n_pixels 96
+   -> 44 - mean 42.20 std 12.83 n_pixels 5
+   -> 45 - mean 6.75 std 19.37 n_pixels 12
+TCGA-61-1910.nii.gz
+  1 PRIMARIES mean 75.75 std 22.43 min 75.75 max 75.75
+   -> 0 - mean 75.75 std 22.43 n_pixels 10047
+TCGA-61-1911.nii.gz
+  1 PRIMARIES mean 54.12 std 25.60 min 54.12 max 54.12
+   -> 0 - mean 54.12 std 25.60 n_pixels 20098
+TCGA-61-2003.nii.gz
+  11 PRIMARIES mean 84.03 std 5.37 min 48.00 max 122.50
+   -> 0 - mean 65.72 std 20.30 n_pixels 29262
+   -> 1 - mean 82.08 std 13.31 n_pixels 12
+   -> 2 - mean 96.00 std 0.00 n_pixels 1
+   -> 3 - mean 122.50 std 7.50 n_pixels 2
+   -> 4 - mean 94.00 std 0.00 n_pixels 1
+   -> 5 - mean 111.00 std 0.00 n_pixels 1
+   -> 6 - mean 110.00 std 0.00 n_pixels 1
+   -> 7 - mean 68.01 std 17.91 n_pixels 18779
+   -> 8 - mean 63.00 std 0.00 n_pixels 1
+   -> 9 - mean 48.00 std 0.00 n_pixels 1
+   -> 10 - mean 64.00 std 0.00 n_pixels 1
+  22 METASTASES mean 46.81 std 15.60 min -41.49 max 96.62
+   -> 0 - mean -2.31 std 22.73 n_pixels 2945
+   -> 1 - mean 0.23 std 26.49 n_pixels 692
+   -> 2 - mean 96.00 std 1.00 n_pixels 2
+   -> 3 - mean 96.62 std 14.98 n_pixels 13
+   -> 4 - mean 17.62 std 22.05 n_pixels 109
+   -> 5 - mean 45.34 std 31.84 n_pixels 43254
+   -> 6 - mean 65.49 std 16.56 n_pixels 81
+   -> 7 - mean -41.49 std 26.99 n_pixels 45
+   -> 8 - mean -3.11 std 20.07 n_pixels 170
+   -> 9 - mean 32.00 std 0.00 n_pixels 1
+   -> 10 - mean 53.76 std 20.47 n_pixels 4510
+   -> 11 - mean 43.12 std 22.96 n_pixels 363
+   -> 12 - mean 21.52 std 22.34 n_pixels 160
+   -> 13 - mean 72.22 std 7.30 n_pixels 9
+   -> 14 - mean 36.00 std 0.00 n_pixels 1
+   -> 15 - mean 48.88 std 23.42 n_pixels 48
+   -> 16 - mean 54.00 std 0.00 n_pixels 1
+   -> 17 - mean 94.00 std 7.00 n_pixels 2
+   -> 18 - mean 72.30 std 18.86 n_pixels 854
+   -> 19 - mean 74.93 std 7.86 n_pixels 14
+   -> 20 - mean 82.67 std 8.96 n_pixels 3
+   -> 21 - mean 70.00 std 21.35 n_pixels 581
+TCGA-61-2009.nii.gz
+  6 PRIMARIES mean 7.58 std 15.31 min -36.00 max 63.22
+   -> 0 - mean 44.57 std 27.26 n_pixels 4282
+   -> 1 - mean -0.50 std 14.20 n_pixels 6
+   -> 2 - mean -36.00 std 0.00 n_pixels 1
+   -> 3 - mean -24.00 std 0.00 n_pixels 1
+   -> 4 - mean -1.80 std 25.00 n_pixels 10
+   -> 5 - mean 63.22 std 25.39 n_pixels 100582
+  58 METASTASES mean 21.24 std 11.53 min -31.00 max 80.12
+   -> 0 - mean 52.79 std 29.28 n_pixels 197463
+   -> 1 - mean 63.65 std 17.85 n_pixels 164
+   -> 2 - mean 56.01 std 10.89 n_pixels 141
+   -> 3 - mean 42.00 std 0.00 n_pixels 1
+   -> 4 - mean 40.25 std 7.15 n_pixels 4
+   -> 5 - mean 48.09 std 10.26 n_pixels 125
+   -> 6 - mean 53.74 std 15.06 n_pixels 1667
+   -> 7 - mean 0.00 std 9.92 n_pixels 4
+   -> 8 - mean 28.11 std 25.11 n_pixels 56
+   -> 9 - mean 51.94 std 27.38 n_pixels 1009
+   -> 10 - mean 10.29 std 12.57 n_pixels 7
+   -> 11 - mean -21.00 std 0.00 n_pixels 1
+   -> 12 - mean -3.00 std 0.00 n_pixels 1
+   -> 13 - mean -17.00 std 0.00 n_pixels 1
+   -> 14 - mean -3.67 std 5.31 n_pixels 3
+   -> 15 - mean -31.00 std 0.00 n_pixels 1
+   -> 16 - mean 5.00 std 9.00 n_pixels 2
+   -> 17 - mean 15.62 std 26.05 n_pixels 140
+   -> 18 - mean 45.70 std 26.13 n_pixels 92
+   -> 19 - mean 25.79 std 9.93 n_pixels 14
+   -> 20 - mean 56.58 std 34.51 n_pixels 345
+   -> 21 - mean 47.00 std 0.00 n_pixels 1
+   -> 22 - mean 41.86 std 23.97 n_pixels 270
+   -> 23 - mean 29.08 std 29.93 n_pixels 125
+   -> 24 - mean 60.07 std 24.84 n_pixels 9104
+   -> 25 - mean 33.04 std 26.73 n_pixels 343
+   -> 26 - mean 23.00 std 0.00 n_pixels 1
+   -> 27 - mean 45.00 std 0.00 n_pixels 1
+   -> 28 - mean 35.00 std 0.00 n_pixels 1
+   -> 29 - mean 48.48 std 23.32 n_pixels 162
+   -> 30 - mean -9.50 std 16.50 n_pixels 2
+   -> 31 - mean 63.74 std 17.13 n_pixels 180
+   -> 32 - mean 7.00 std 0.00 n_pixels 1
+   -> 33 - mean 8.25 std 9.73 n_pixels 4
+   -> 34 - mean 45.72 std 33.22 n_pixels 794
+   -> 35 - mean 45.85 std 24.21 n_pixels 288
+   -> 36 - mean -18.22 std 19.24 n_pixels 617
+   -> 37 - mean -14.33 std 7.13 n_pixels 3
+   -> 38 - mean -5.25 std 8.38 n_pixels 4
+   -> 39 - mean 50.00 std 7.09 n_pixels 6
+   -> 40 - mean -19.16 std 22.28 n_pixels 62
+   -> 41 - mean 15.30 std 14.26 n_pixels 23
+   -> 42 - mean 1.00 std 1.00 n_pixels 2
+   -> 43 - mean 0.00 std 0.00 n_pixels 1
+   -> 44 - mean -10.00 std 0.00 n_pixels 1
+   -> 45 - mean -2.00 std 0.00 n_pixels 1
+   -> 46 - mean -16.50 std 10.50 n_pixels 2
+   -> 47 - mean 2.00 std 4.00 n_pixels 2
+   -> 48 - mean 4.00 std 0.00 n_pixels 1
+   -> 49 - mean 0.00 std 0.00 n_pixels 1
+   -> 50 - mean 2.00 std 0.00 n_pixels 1
+   -> 51 - mean -6.60 std 8.09 n_pixels 5
+   -> 52 - mean 8.00 std 0.00 n_pixels 1
+   -> 53 - mean -14.38 std 17.34 n_pixels 108
+   -> 54 - mean 80.12 std 2.20 n_pixels 8
+   -> 55 - mean 32.75 std 6.42 n_pixels 4
+   -> 56 - mean 44.09 std 21.60 n_pixels 204
+   -> 57 - mean 55.37 std 13.33 n_pixels 43
+TCGA-61-2016.nii.gz
+  6 PRIMARIES mean 32.99 std 17.66 min -1.00 max 76.86
+   -> 0 - mean 70.76 std 28.48 n_pixels 8348
+   -> 1 - mean 0.00 std 3.00 n_pixels 2
+   -> 2 - mean 7.00 std 1.00 n_pixels 2
+   -> 3 - mean -1.00 std 0.00 n_pixels 1
+   -> 4 - mean 44.33 std 10.53 n_pixels 3
+   -> 5 - mean 76.86 std 62.98 n_pixels 6088
+  75 METASTASES mean 57.84 std 18.03 min -15.00 max 156.00
+   -> 0 - mean 45.23 std 42.19 n_pixels 2680
+   -> 1 - mean 45.34 std 31.95 n_pixels 1347
+   -> 2 - mean 38.60 std 10.13 n_pixels 5
+   -> 3 - mean 69.56 std 18.59 n_pixels 153
+   -> 4 - mean 35.04 std 38.67 n_pixels 2228
+   -> 5 - mean 40.57 std 28.53 n_pixels 61
+   -> 6 - mean 156.00 std 0.00 n_pixels 1
+   -> 7 - mean 89.11 std 37.82 n_pixels 175
+   -> 8 - mean 146.00 std 0.00 n_pixels 1
+   -> 9 - mean 135.50 std 4.50 n_pixels 2
+   -> 10 - mean 40.89 std 37.37 n_pixels 18524
+   -> 11 - mean 143.00 std 0.00 n_pixels 1
+   -> 12 - mean 37.19 std 23.61 n_pixels 67
+   -> 13 - mean 135.68 std 10.81 n_pixels 28
+   -> 14 - mean 77.80 std 29.84 n_pixels 789
+   -> 15 - mean 18.56 std 21.83 n_pixels 16
+   -> 16 - mean 113.88 std 14.68 n_pixels 1751
+   -> 17 - mean 44.12 std 16.16 n_pixels 120
+   -> 18 - mean 121.67 std 9.03 n_pixels 3
+   -> 19 - mean 10.00 std 0.00 n_pixels 1
+   -> 20 - mean 13.73 std 34.53 n_pixels 151
+   -> 21 - mean 80.35 std 25.94 n_pixels 1290
+   -> 22 - mean 45.00 std 0.00 n_pixels 1
+   -> 23 - mean 57.84 std 31.86 n_pixels 17032
+   -> 24 - mean 66.78 std 9.57 n_pixels 147
+   -> 25 - mean 60.36 std 26.52 n_pixels 210
+   -> 26 - mean 63.39 std 25.26 n_pixels 88
+   -> 27 - mean 67.91 std 17.93 n_pixels 23
+   -> 28 - mean 84.39 std 22.16 n_pixels 354
+   -> 29 - mean 84.47 std 25.54 n_pixels 3123
+   -> 30 - mean 65.00 std 29.44 n_pixels 2307
+   -> 31 - mean 65.80 std 7.49 n_pixels 15
+   -> 32 - mean 59.45 std 20.85 n_pixels 120
+   -> 33 - mean -4.00 std 0.00 n_pixels 1
+   -> 34 - mean 30.00 std 0.00 n_pixels 1
+   -> 35 - mean 101.03 std 12.96 n_pixels 31
+   -> 36 - mean 93.00 std 0.00 n_pixels 2
+   -> 37 - mean 38.70 std 28.19 n_pixels 120
+   -> 38 - mean 74.50 std 6.50 n_pixels 2
+   -> 39 - mean 22.42 std 15.69 n_pixels 12
+   -> 40 - mean 128.00 std 0.00 n_pixels 1
+   -> 41 - mean 58.36 std 42.67 n_pixels 156
+   -> 42 - mean 72.60 std 8.36 n_pixels 5
+   -> 43 - mean -7.60 std 11.51 n_pixels 10
+   -> 44 - mean 82.33 std 1.70 n_pixels 3
+   -> 45 - mean 94.28 std 26.40 n_pixels 1039
+   -> 46 - mean 63.47 std 28.46 n_pixels 2149
+   -> 47 - mean 68.22 std 15.91 n_pixels 76
+   -> 48 - mean 38.63 std 23.04 n_pixels 117
+   -> 49 - mean 30.43 std 30.29 n_pixels 155
+   -> 50 - mean -15.00 std 0.00 n_pixels 1
+   -> 51 - mean 17.00 std 0.00 n_pixels 1
+   -> 52 - mean 35.91 std 26.90 n_pixels 190
+   -> 53 - mean 58.59 std 17.07 n_pixels 41
+   -> 54 - mean 43.57 std 15.72 n_pixels 21
+   -> 55 - mean 46.28 std 13.03 n_pixels 75
+   -> 56 - mean 47.71 std 39.51 n_pixels 32799
+   -> 57 - mean 79.50 std 22.54 n_pixels 1568
+   -> 58 - mean 56.05 std 11.10 n_pixels 21
+   -> 59 - mean 49.00 std 0.00 n_pixels 1
+   -> 60 - mean 25.00 std 0.00 n_pixels 1
+   -> 61 - mean 30.00 std 5.00 n_pixels 2
+   -> 62 - mean -2.40 std 18.72 n_pixels 43
+   -> 63 - mean 63.74 std 20.28 n_pixels 2019
+   -> 64 - mean 48.70 std 33.64 n_pixels 470
+   -> 65 - mean 31.85 std 6.79 n_pixels 27
+   -> 66 - mean 92.53 std 16.01 n_pixels 55
+   -> 67 - mean 54.27 std 43.94 n_pixels 6628
+   -> 68 - mean 6.37 std 35.72 n_pixels 306
+   -> 69 - mean 14.27 std 37.11 n_pixels 73
+   -> 70 - mean 9.67 std 68.16 n_pixels 174
+   -> 71 - mean 72.00 std 0.00 n_pixels 1
+   -> 72 - mean 54.00 std 0.00 n_pixels 1
+   -> 73 - mean 27.00 std 0.00 n_pixels 1
+   -> 74 - mean 49.93 std 16.18 n_pixels 30
+TCGA-61-2018.nii.gz
+  2 PRIMARIES mean 51.30 std 21.12 min 27.06 max 75.54
+   -> 0 - mean 27.06 std 22.08 n_pixels 77768
+   -> 1 - mean 75.54 std 20.16 n_pixels 7262
+TCGA-61-2087.nii.gz
+  4 PRIMARIES mean 82.88 std 12.77 min 25.38 max 134.00
+   -> 0 - mean 25.38 std 29.35 n_pixels 13156
+   -> 1 - mean 134.00 std 0.00 n_pixels 1
+   -> 2 - mean 96.00 std 0.00 n_pixels 1
+   -> 3 - mean 76.13 std 21.72 n_pixels 75554
+  14 METASTASES mean 27.54 std 9.27 min -40.00 max 77.89
+   -> 0 - mean 33.83 std 28.47 n_pixels 18231
+   -> 1 - mean 22.39 std 29.34 n_pixels 57764
+   -> 2 - mean 48.67 std 6.02 n_pixels 3
+   -> 3 - mean 77.89 std 14.75 n_pixels 9
+   -> 4 - mean 52.24 std 18.41 n_pixels 334
+   -> 5 - mean 42.00 std 0.00 n_pixels 1
+   -> 6 - mean -40.00 std 0.00 n_pixels 1
+   -> 7 - mean -27.00 std 6.00 n_pixels 2
+   -> 8 - mean -10.00 std 0.00 n_pixels 1
+   -> 9 - mean 69.00 std 0.00 n_pixels 1
+   -> 10 - mean 13.92 std 9.63 n_pixels 38
+   -> 11 - mean 30.75 std 11.02 n_pixels 8
+   -> 12 - mean 51.86 std 6.10 n_pixels 7
+   -> 13 - mean 20.00 std 0.00 n_pixels 1
+
+PRIMARIES mean 53.47 std 21.88
+METASTASES mean 44.07 std 22.97

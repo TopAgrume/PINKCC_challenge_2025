@@ -181,7 +181,13 @@ class Dataset:
     Returns:
       None
     """
-    TO_EXCLUDE = ["TCGA-13-0762"]  # only need to exclude this one for 2D
+    TO_EXCLUDE = [
+      "TCGA-13-0762",
+      "TCGA-13-0793",
+      "TCGA-09-2054",
+      "TCGA-24-1614",
+      "TCGA-09-0364",
+    ]
 
     ct_to_fold_df = create_folds_dataframe(TO_EXCLUDE, n_folds, seed)
 
@@ -248,6 +254,180 @@ class Dataset:
     pd.DataFrame(rows, columns=["path", "fold_id", "has_labels"]).to_csv(  # pyright:ignore
       output_dir / "metadata.csv"
     )
+
+  def _iterative_scan_through_component(
+    self, start_i: int, start_j: int, start_k: int, scan: np.ndarray, seg: np.ndarray
+  ) -> list[float]:
+    original_value = seg[start_i, start_j, start_k]
+    if original_value == 0 or original_value == -1:
+      return []
+
+    res_values = []
+    stack = [(start_i, start_j, start_k)]
+
+    while stack:
+      i, j, k = stack.pop()
+
+      if not (
+        0 <= i < scan.shape[0]
+        and 0 <= j < scan.shape[1]
+        and 0 <= k < scan.shape[2]
+        and seg[i, j, k] == original_value
+      ):
+        continue
+
+      res_values.append(scan[i, j, k])
+      seg[i, j, k] = -1
+
+      if i < scan.shape[0] - 1 and seg[i + 1, j, k] == original_value:
+        stack.append((i + 1, j, k))
+      # (i-1, j, k)
+      if i > 0 and seg[i - 1, j, k] == original_value:
+        stack.append((i - 1, j, k))
+      # (i, j+1, k)
+      if j < scan.shape[1] - 1 and seg[i, j + 1, k] == original_value:
+        stack.append((i, j + 1, k))
+      # (i, j-1, k)
+      if j > 0 and seg[i, j - 1, k] == original_value:
+        stack.append((i, j - 1, k))
+      # (i, j, k+1)
+      if k < scan.shape[2] - 1 and seg[i, j, k + 1] == original_value:
+        stack.append((i, j, k + 1))
+      # (i, j, k-1)
+      if k > 0 and seg[i, j, k - 1] == original_value:
+        stack.append((i, j, k - 1))
+
+    return res_values
+
+  def _find_labels_and_get_stats(
+    self, scan: np.ndarray, seg: np.ndarray
+  ) -> tuple[list[tuple[float, float, int]], list[tuple[float, float, int]]]:
+    primaries = []
+    metastases = []
+    x, y, z = scan.shape
+
+    for i in range(x):
+      for j in range(y):
+        for k in range(z):
+          original_label_at_pixel = seg[i, j, k]
+
+          if original_label_at_pixel != 0 and original_label_at_pixel != -1:
+            values = self._iterative_scan_through_component(i, j, k, scan, seg)
+
+            if not values:
+              continue
+
+            values_np = np.array(values)
+            mean_val = values_np.mean()
+            std_val = values_np.std()
+            n_pixels = len(values_np)
+            stats_tuple = (mean_val, std_val, n_pixels)
+
+            if original_label_at_pixel == 1:
+              primaries.append(stats_tuple)
+            else:
+              metastases.append(stats_tuple)
+
+    return (primaries, metastases)
+
+  def get_labels_stats(self):
+    TO_EXCLUDE = [
+      "TCGA-13-0762",
+      "TCGA-09-2054",
+      "TCGA-24-1614",
+      "TCGA-09-0364",
+      "333076",
+    ]
+
+    scan_paths = []
+    seg_paths = []
+    for dataset in self.datasets:
+      scan_paths.extend(self.data[f"CT_{dataset}"])
+      seg_paths.extend(self.data[f"Segmentation_{dataset}"])
+
+    all_paths = zip(sorted(scan_paths), sorted(seg_paths), strict=False)
+
+    all_mean_primaries, all_mean_metastases = [], []
+    all_std_primaries, all_std_metastases = [], []
+    with open("labels_stats.txt", "w") as f:
+      for scan_path, seg_path in tqdm(all_paths):
+        if any(exclude in str(scan_path) for exclude in TO_EXCLUDE):
+          print(f"\nSkipped {scan_path}...")
+          continue
+
+        f.write(f"{scan_path.name}\n")
+        _, scan = SampleUtils.load_from_path(scan_path)
+        _, seg = SampleUtils.load_from_path(seg_path)
+        primaries, metastases = self._find_labels_and_get_stats(scan, seg)
+
+        # -- PRIMARY --
+
+        if len(primaries) != 0:
+          mean_primaries, std_primaries, pixel_primaries = zip(*primaries, strict=False)
+          mean_primaries, std_primaries, pixel_primaries = (
+            np.array(mean_primaries),
+            np.array(std_primaries),
+            np.array(pixel_primaries),
+          )
+          f.write(
+            f"  {len(primaries)} PRIMARIES mean {mean_primaries.mean():.2f}"
+            f" std {std_primaries.mean():.2f} min {mean_primaries.min():.2f}"
+            f" max {mean_primaries.max():.2f}\n"
+          )
+          [
+            f.write(
+              f"   -> {i} - mean {mean_primaries[i]:.2f} std {std_primaries[i]:.2f}"
+              f" n_pixels {pixel_primaries[i]}\n"
+            )
+            for i in range(len(primaries))
+          ]
+          all_mean_primaries.append(mean_primaries.mean())
+          all_std_primaries.append(std_primaries.mean())
+
+        # -- METASTASE --
+
+        if len(metastases) != 0:
+          mean_metastases, std_metastases, pixel_metastases = zip(
+            *metastases, strict=False
+          )
+          mean_metastases, std_metastases, pixel_metastases = (
+            np.array(mean_metastases),
+            np.array(std_metastases),
+            np.array(pixel_metastases),
+          )
+          f.write(
+            f"  {len(metastases)} METASTASES mean {mean_metastases.mean():.2f}"
+            f" std {std_metastases.mean():.2f} min {mean_metastases.min():.2f}"
+            f" max {mean_metastases.max():.2f}\n"
+          )
+          [
+            f.write(
+              f"   -> {i} - mean {mean_metastases[i]:.2f} std {std_metastases[i]:.2f}"
+              f" n_pixels {pixel_metastases[i]}\n"
+            )
+            for i in range(len(metastases))
+          ]
+          all_mean_metastases.append(mean_metastases.mean())
+          all_std_metastases.append(std_metastases.mean())
+
+      # -- Final stats --
+
+      all_mean_primaries, all_mean_metastases = (
+        np.array(all_mean_primaries),
+        np.array(all_mean_metastases),
+      )
+      all_std_primaries, all_std_metastases = (
+        np.array(all_std_primaries),
+        np.array(all_std_metastases),
+      )
+      f.write(
+        f"\nPRIMARIES mean {all_mean_primaries.mean():.2f}"
+        f" std {all_std_primaries.mean():.2f}\n"
+      )
+      f.write(
+        f"METASTASES mean {all_mean_metastases.mean():.2f}"
+        f" std {all_std_metastases.mean():.2f}\n"
+      )
 
   def _loading_dataset_paths(self, verify: bool = True) -> dict:
     """

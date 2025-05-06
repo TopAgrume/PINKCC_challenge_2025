@@ -47,4 +47,4 @@ def convert_2d_preds_to_nifti(preds_dir: Path, output_dir: Path = Path("nifti_pr
 
 
 if __name__ == "__main__":
-  convert_2d_preds_to_nifti(Path("outputs_04-05-25_05h19m32s") / "pred_tensors")
+  convert_2d_preds_to_nifti(Path("outputs_05-05-25_09h21m57s") / "pred_tensors")

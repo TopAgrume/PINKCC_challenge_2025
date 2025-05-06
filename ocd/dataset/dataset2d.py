@@ -108,6 +108,8 @@ class Dataset2D(Dataset):
       rows: pd.DataFrame = self.file_paths.iloc[indices[0]]
     else:
       rows: pd.DataFrame = self.file_paths.iloc[indices]
+    if type(rows) is pd.Series:
+      rows = pd.DataFrame(rows)
     batch = []
     for row in rows.iterrows():
       scan = np.load(self.dataset_path / "scan" / f"{row[1]['path']}.npy")
