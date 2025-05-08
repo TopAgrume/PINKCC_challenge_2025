@@ -301,8 +301,11 @@ def convert_dataset_to_nnunet_format(
 
 
 if __name__ == "__main__":
-  dataset_dir = Path("DatasetChallenge")
-  output_dir = Path("nnUNet_raw_data")
+  standardize_orientation(
+    str(Path("DatasetChallenge") / "CT" / "MSKCC" / "330684.nii.gz")
+  )
+  # dataset_dir = Path("DatasetChallenge")
+  # output_dir = Path("nnUNet_raw_data")
 
-  os.makedirs(output_dir, exist_ok=True)
-  convert_dataset_to_nnunet_format(dataset_dir, output_dir)
+  # os.makedirs(output_dir, exist_ok=True)
+  # convert_dataset_to_nnunet_format(dataset_dir, output_dir)
