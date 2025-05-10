@@ -259,7 +259,7 @@ class Dataset:
     self, start_i: int, start_j: int, start_k: int, scan: np.ndarray, seg: np.ndarray
   ) -> list[float]:
     original_value = seg[start_i, start_j, start_k]
-    if original_value == 0 or original_value == -1:
+    if original_value == 0:
       return []
 
     res_values = []
@@ -277,7 +277,7 @@ class Dataset:
         continue
 
       res_values.append(scan[i, j, k])
-      seg[i, j, k] = -1
+      seg[i, j, k] = 0
 
       if i < scan.shape[0] - 1 and seg[i + 1, j, k] == original_value:
         stack.append((i + 1, j, k))
@@ -300,18 +300,25 @@ class Dataset:
     return res_values
 
   def _find_labels_and_get_stats(
-    self, scan: np.ndarray, seg: np.ndarray
+    self,
+    scan: np.ndarray,
+    seg: np.ndarray,
+    file_seg: FileBasedImage,
+    seg_path: Path,
+    overwrite_shitty_labels: bool,
   ) -> tuple[list[tuple[float, float, int]], list[tuple[float, float, int]]]:
     primaries = []
     metastases = []
     x, y, z = scan.shape
 
+    if overwrite_shitty_labels:
+      clean_seg = np.copy(file_seg.get_fdata())  # pyright: ignore
     for i in range(x):
       for j in range(y):
         for k in range(z):
           original_label_at_pixel = seg[i, j, k]
 
-          if original_label_at_pixel != 0 and original_label_at_pixel != -1:
+          if original_label_at_pixel != 0:
             values = self._iterative_scan_through_component(i, j, k, scan, seg)
 
             if not values:
@@ -323,20 +330,27 @@ class Dataset:
             n_pixels = len(values_np)
             stats_tuple = (mean_val, std_val, n_pixels)
 
-            if original_label_at_pixel == 1:
-              primaries.append(stats_tuple)
+            if n_pixels <= 10 and overwrite_shitty_labels:
+              self._iterative_scan_through_component(i, j, k, scan, clean_seg)
             else:
-              metastases.append(stats_tuple)
+              if original_label_at_pixel == 1:
+                primaries.append(stats_tuple)
+              else:
+                metastases.append(stats_tuple)
+
+    if overwrite_shitty_labels:
+      new_seg = nib.nifti1.Nifti1Image(clean_seg, file_seg.affine, file_seg.header)  # pyright: ignore
+      nib.loadsave.save(new_seg, str(seg_path))
 
     return (primaries, metastases)
 
-  def get_labels_stats(self):
+  def get_labels_stats(self, overwrite_shitty_labels: bool = False):
     TO_EXCLUDE = [
-      "TCGA-13-0762",
-      "TCGA-09-2054",
-      "TCGA-24-1614",
-      "TCGA-09-0364",
-      "333076",
+      "TCGA-09-2054",  # huge breath
+      "TCGA-24-1614",  # 11 slices
+      "TCGA-09-0364",  # 26 slices
+      "TCGA-13-0768",  # shitty seg
+      "333076",  # weird
     ]
 
     scan_paths = []
@@ -356,9 +370,11 @@ class Dataset:
           continue
 
         f.write(f"{scan_path.name}\n")
-        _, scan = SampleUtils.load_from_path(scan_path)
-        _, seg = SampleUtils.load_from_path(seg_path)
-        primaries, metastases = self._find_labels_and_get_stats(scan, seg)
+        file_scan, scan = SampleUtils.load_from_path(scan_path)
+        file_seg, seg = SampleUtils.load_from_path(seg_path)
+        primaries, metastases = self._find_labels_and_get_stats(
+          scan, seg, file_seg, seg_path, overwrite_shitty_labels
+        )
 
         # -- PRIMARY --
 

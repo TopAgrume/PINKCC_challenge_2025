@@ -42,7 +42,13 @@ INVERTED_SCAN_IDS = [
   "TCGA-13-0724",
 ]
 
-SKIP_SCAN_IDS = ["TCGA-09-2054", "TCGA-24-1614", "TCGA-09-0364", "333076"]
+SKIP_SCAN_IDS = [
+  "TCGA-09-2054",
+  "TCGA-24-1614",
+  "TCGA-09-0364",
+  "333076",
+  "TCGA-13-0768",
+]
 
 CROP_SCAN_ID = "333020"
 CROP_START_Z = 43
@@ -301,11 +307,8 @@ def convert_dataset_to_nnunet_format(
 
 
 if __name__ == "__main__":
-  standardize_orientation(
-    str(Path("DatasetChallenge") / "CT" / "MSKCC" / "330684.nii.gz")
-  )
-  # dataset_dir = Path("DatasetChallenge")
-  # output_dir = Path("nnUNet_raw_data")
+  dataset_dir = Path("DatasetChallenge")
+  output_dir = Path("nnUNet_raw_data")
 
-  # os.makedirs(output_dir, exist_ok=True)
-  # convert_dataset_to_nnunet_format(dataset_dir, output_dir)
+  os.makedirs(output_dir, exist_ok=True)
+  convert_dataset_to_nnunet_format(dataset_dir, output_dir)

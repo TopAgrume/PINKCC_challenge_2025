@@ -1,5 +1,5 @@
 # Custom
-DatasetChallenge/
+DatasetChallenge*
 DatasetChallenge.zip
 .vscode
 2D_CT_SCANS
@@ -12,6 +12,7 @@ outputs_*/
 MedSAM
 images
 nifti_preds
+nnFormer*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
