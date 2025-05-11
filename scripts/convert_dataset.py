@@ -288,7 +288,7 @@ def convert_dataset_to_nnunet_format(
   # --------------- ADDING FOR TESTING --------------
   print("ON PASSE AU TEST SET C'EST PARTIIII C'EST PARTIIIIIIIIII")
   TEST_DIR = Path("../TEST_SET")
-  all_paths = os.listdir()
+  all_paths = os.listdir(TEST_DIR)
   for path in all_paths:
     case_id = f"{valid_case_count:03d}"
     valid_case_count += 1
