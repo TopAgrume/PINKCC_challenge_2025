@@ -302,9 +302,18 @@ def convert_dataset_to_nnunet_format(
     print(f"  Saving processed CT to: {ct_dest}")
     nib.save(std_ct_img, ct_dest)  # type: ignore
 
+    false_label = nib.nifti1.Nifti1Image(
+      np.zeros(std_ct_img.get_fdata().shape),  # pyright: ignore
+      std_ct_img.affine,  # pyright: ignore
+      std_ct_img.header,
+    )
+    seg_dest = labels_dir / f"{task_name}_{case_id}.nii.gz"
+    nib.save(false_label, seg_dest)  # type: ignore
+
     dataset_json["training"].append(
       {
         "image": f"./imagesTr/{task_name}_{case_id}_0000.nii.gz",
+        "label": f"./labelsTr/{task_name}_{case_id}.nii.gz",
       }
     )
 
