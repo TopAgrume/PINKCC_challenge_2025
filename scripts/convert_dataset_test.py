@@ -94,7 +94,9 @@ def convert_dataset_to_nnunet_format(
     print(f"\nProcessing Case {case_id}...")
     print(f"  Input CT: {path}")
     ct_dest = images_dir / f"{task_name}_{case_id}_0000.nii.gz"
-    std_ct_img, _ = standardize_orientation(path, ct_image=False, is_segmentation=False)
+    std_ct_img, _ = standardize_orientation(
+      str(dataset_dir / path), ct_image=False, is_segmentation=False
+    )
     print(f"  Saving processed CT to: {ct_dest}")
     nib.save(std_ct_img, ct_dest)  # type: ignore
 
