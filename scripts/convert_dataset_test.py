@@ -51,9 +51,7 @@ def standardize_orientation(
     return img, False
 
 
-def convert_dataset_to_nnunet_format(
-  dataset_dir: Path, output_dir: Path, val_split=0.2, test_split=0.15
-) -> Path:
+def convert_dataset_to_nnunet_format(dataset_dir: Path, output_dir: Path) -> Path:
   task_name = "Task001_MSKCC"
   task_dir = output_dir / task_name
   images_dir = task_dir / "imagesTr"
@@ -66,28 +64,6 @@ def convert_dataset_to_nnunet_format(
   print(f"Created nnUNet directory structure at: {task_dir}")
 
   all_paths = os.listdir(dataset_dir)
-
-  dataset_json = {
-    "name": task_name,
-    "description": "Ovarian cancer segmentation from CT scans",
-    "reference": "",
-    "licence": "",
-    "release": "1.0",
-    "modality": {
-      "0": "CT",
-    },
-    "labels": {
-      "0": "background",
-      "1": "primary_tumor",
-      "2": "metastasis",
-    },
-    "numTraining": 0,
-    "numTest": 0,
-    "file_ending": ".nii.gz",
-    "training": [],
-    "test": len(all_paths),
-  }
-
   for i, path in enumerate(all_paths):
     case_id = f"{i:03d}"
 

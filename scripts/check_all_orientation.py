@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from ocd.dataset.dataset import SampleUtils
 
 p = Path(
-  "\\wsl.localhost\\Ubuntu\\home\\maelr\\DATASET\\nnFormer_raw\\nnFormer_raw_data\\nnFormer_raw_data\\Task001_PINKCC\\imagesTr"
+  "\\wsl.localhost\\Ubuntu\\home\\maelr\\PINKCC_challenge_2025\\nnFormer_raw_data\\Task001_MSKCC\\imagesTr"
 )
 o = Path("imagesss")
 o.mkdir(exist_ok=True)

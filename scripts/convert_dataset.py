@@ -285,6 +285,29 @@ def convert_dataset_to_nnunet_format(
       }
     )
 
+  # --------------- ADDING FOR TESTING --------------
+  print("ON PASSE AU TEST SET C'EST PARTIIII C'EST PARTIIIIIIIIII")
+  TEST_DIR = Path("../TEST_SET")
+  all_paths = os.listdir()
+  for path in all_paths:
+    case_id = f"{valid_case_count:03d}"
+    valid_case_count += 1
+
+    print(f"\nProcessing Case {case_id}...")
+    print(f"  Input CT: {path}")
+    ct_dest = images_dir / f"{task_name}_{case_id}_0000.nii.gz"
+    std_ct_img, _ = standardize_orientation(
+      str(TEST_DIR / path), ct_image=False, is_segmentation=False
+    )
+    print(f"  Saving processed CT to: {ct_dest}")
+    nib.save(std_ct_img, ct_dest)  # type: ignore
+
+    dataset_json["training"].append(
+      {
+        "image": f"./imagesTr/{task_name}_{case_id}_0000.nii.gz",
+      }
+    )
+
   # --- Process Test Data ---
   # print(f"\nProcessing {len(test_pairs)} test cases...")
   # valid_test_count = 0
