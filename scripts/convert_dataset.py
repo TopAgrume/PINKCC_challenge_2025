@@ -47,11 +47,13 @@ SKIP_SCAN_IDS = [
   "TCGA-24-1614",
   "TCGA-09-0364",
   "333076",
-  "TCGA-13-0768",
+  # "TCGA-13-0768",
 ]
 
 CROP_SCAN_ID = "333020"
 CROP_START_Z = 43
+
+REMOVE_LAST_SLICE = "TCGA-13-0724"
 
 TEST = ["333020", "TCGA-13-0793"]
 
@@ -69,6 +71,10 @@ def is_inverted_scan(file_path):
 def needs_cropping(file_path):
   """Check if the scan needs z-axis cropping"""
   return CROP_SCAN_ID in str(file_path)
+
+
+def needs_remove_last_slice(file_path):
+  return REMOVE_LAST_SLICE in str(file_path)
 
 
 def should_skip_scan(file_path):
@@ -142,6 +148,10 @@ def standardize_orientation(
     print(
       f"  Original z-dimension: {original_z_size}, New z-dimension: {data.shape[2]}"
     )
+
+  if needs_remove_last_slice(nifti_file_path):
+    data = data[:, :, 1:]
+    modified = True
 
   if is_segmentation:
     print(f" Ensuring integer labels for segmentation: {nifti_file_path}")
