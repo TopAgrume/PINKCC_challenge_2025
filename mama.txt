@@ -1,0 +1,2828 @@
+=== Special Case Handling ===
+Inverted scans that will be flipped: 330684, 330697, 330699, 330718, 333015, 333017, 333020, 333021, 333022, 333036, 374142, 374143, 374149, 374177, 374196, TCGA-13-0799, TCGA-13-0904, TCGA-13-1405, TCGA-13-1488, TCGA-13-1499, TCGA-13-1507, TCGA-13-1511, TCGA-61-1906, TCGA-61-2016, TCGA-13-0724
+Scans that will be skipped: TCGA-09-2054, TCGA-24-1614, TCGA-09-0364, 333076
+Scan that will be cropped from z=43 to end: 333020
+===========================
+
+Created nnUNet directory structure at: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer
+CT_MSKCC: 200 files
+  Sample file: 347500.nii.gz
+CT_TCGA: 50 files
+  Sample file: TCGA-25-1631.nii.gz
+Segmentation_MSKCC: 200 files
+  Sample file: 347500.nii.gz
+Segmentation_TCGA: 50 files
+  Sample file: TCGA-25-1631.nii.gz
+Random seed: 42
+Dataset split MSKCC: Train=140, Val=30, Test=30
+Dataset split TCGA: Train=35, Val=7, Test=8
+
+Processing 250 training/validation cases...
+
+Processing Case 000...
+  Input CT: DatasetChallenge/CT/MSKCC/347585.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_000_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347585.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347585.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_000.nii.gz
+  Case 000: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 001...
+  Input CT: DatasetChallenge/CT/MSKCC/347446.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_001_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347446.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347446.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_001.nii.gz
+  Case 001: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 002...
+  Input CT: DatasetChallenge/CT/MSKCC/333008.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_002_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333008.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333008.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_002.nii.gz
+  Case 002: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 003...
+  Input CT: DatasetChallenge/CT/MSKCC/330696.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_003_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330696.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330696.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_003.nii.gz
+  Case 003: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 004...
+  Input CT: DatasetChallenge/CT/MSKCC/333012.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_004_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333012.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333012.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_004.nii.gz
+  Case 004: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 005...
+  Input CT: DatasetChallenge/CT/MSKCC/347503.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_005_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347503.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347503.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_005.nii.gz
+  Case 005: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 006...
+  Input CT: DatasetChallenge/CT/MSKCC/333026.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_006_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333026.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333026.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_006.nii.gz
+  Case 006: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 007...
+  Input CT: DatasetChallenge/CT/MSKCC/407899.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_007_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407899.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407899.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_007.nii.gz
+  Case 007: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 008...
+  Input CT: DatasetChallenge/CT/MSKCC/337204.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_008_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337204.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337204.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_008.nii.gz
+  Case 008: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 009...
+  Input CT: DatasetChallenge/CT/MSKCC/347528.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_009_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347528.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347528.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_009.nii.gz
+  Case 009: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 010...
+  Input CT: DatasetChallenge/CT/MSKCC/333041.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_010_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333041.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333041.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_010.nii.gz
+  Case 010: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 011...
+  Input CT: DatasetChallenge/CT/MSKCC/347512.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_011_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347512.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347512.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_011.nii.gz
+  Case 011: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 012...
+  Input CT: DatasetChallenge/CT/MSKCC/347571.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_012_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347571.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347571.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_012.nii.gz
+  Case 012: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 013...
+  Input CT: DatasetChallenge/CT/MSKCC/333022.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/333022.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_013_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333022.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/333022.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333022.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_013.nii.gz
+  Case 013: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 014...
+  Input CT: DatasetChallenge/CT/MSKCC/347501.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_014_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347501.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347501.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_014.nii.gz
+  Case 014: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 015...
+  Input CT: DatasetChallenge/CT/MSKCC/347490.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_015_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347490.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347490.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_015.nii.gz
+  Case 015: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 016...
+  Input CT: DatasetChallenge/CT/MSKCC/330717.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_016_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330717.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330717.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_016.nii.gz
+  Case 016: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 017...
+  Input CT: DatasetChallenge/CT/MSKCC/347534.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_017_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347534.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347534.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_017.nii.gz
+  Case 017: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 018...
+  Input CT: DatasetChallenge/CT/MSKCC/347451.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_018_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347451.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347451.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_018.nii.gz
+  Case 018: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 019...
+  Input CT: DatasetChallenge/CT/MSKCC/347483.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_019_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347483.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347483.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_019.nii.gz
+  Case 019: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 020...
+  Input CT: DatasetChallenge/CT/MSKCC/330682.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_020_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330682.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330682.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_020.nii.gz
+  Case 020: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 021...
+  Input CT: DatasetChallenge/CT/MSKCC/333482.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_021_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333482.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333482.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_021.nii.gz
+  Case 021: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 022...
+  Input CT: DatasetChallenge/CT/MSKCC/333033.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_022_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333033.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333033.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_022.nii.gz
+  Case 022: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 023...
+  Input CT: DatasetChallenge/CT/MSKCC/407896.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_023_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407896.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407896.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_023.nii.gz
+  Case 023: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 024...
+  Input CT: DatasetChallenge/CT/MSKCC/407902.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_024_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407902.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407902.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_024.nii.gz
+  Case 024: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 025...
+  Input CT: DatasetChallenge/CT/MSKCC/337197.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_025_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337197.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337197.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_025.nii.gz
+  Case 025: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 026...
+  Input CT: DatasetChallenge/CT/MSKCC/347570.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_026_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347570.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347570.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_026.nii.gz
+  Case 026: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 027...
+  Input CT: DatasetChallenge/CT/MSKCC/333013.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_027_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333013.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333013.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_027.nii.gz
+  Case 027: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 028...
+  Input CT: DatasetChallenge/CT/MSKCC/407901.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_028_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407901.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407901.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_028.nii.gz
+  Case 028: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 029...
+  Input CT: DatasetChallenge/CT/MSKCC/333060.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_029_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333060.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333060.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_029.nii.gz
+  Case 029: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 030...
+  Input CT: DatasetChallenge/CT/MSKCC/330708.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_030_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330708.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330708.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_030.nii.gz
+  Case 030: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 031...
+  Input CT: DatasetChallenge/CT/MSKCC/347539.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_031_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347539.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347539.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_031.nii.gz
+  Case 031: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 032...
+  Input CT: DatasetChallenge/CT/MSKCC/347452.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_032_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347452.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347452.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_032.nii.gz
+  Case 032: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 033...
+  Input CT: DatasetChallenge/CT/MSKCC/333010.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_033_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333010.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333010.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_033.nii.gz
+  Case 033: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 034...
+  Input CT: DatasetChallenge/CT/MSKCC/330693.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_034_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330693.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330693.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_034.nii.gz
+  Case 034: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 035...
+  Input CT: DatasetChallenge/CT/MSKCC/407905.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_035_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407905.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407905.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_035.nii.gz
+  Case 035: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 036...
+  Input CT: DatasetChallenge/CT/MSKCC/347567.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_036_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347567.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347567.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_036.nii.gz
+  Case 036: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 037...
+  Input CT: DatasetChallenge/CT/MSKCC/330686.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_037_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330686.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330686.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_037.nii.gz
+  Case 037: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 038...
+  Input CT: DatasetChallenge/CT/MSKCC/330718.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/330718.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_038_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330718.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/330718.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330718.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_038.nii.gz
+  Case 038: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 039...
+  Input CT: DatasetChallenge/CT/MSKCC/347504.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_039_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347504.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347504.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_039.nii.gz
+  Case 039: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 040...
+  Input CT: DatasetChallenge/CT/MSKCC/330684.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/330684.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_040_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330684.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/330684.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330684.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_040.nii.gz
+  Case 040: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 041...
+  Input CT: DatasetChallenge/CT/MSKCC/333009.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_041_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333009.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333009.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_041.nii.gz
+  Case 041: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 042...
+  Input CT: DatasetChallenge/CT/MSKCC/347543.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_042_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347543.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347543.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_042.nii.gz
+  Case 042: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 043...
+  Input CT: DatasetChallenge/CT/MSKCC/347547.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_043_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347547.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347547.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_043.nii.gz
+  Case 043: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 044...
+  Input CT: DatasetChallenge/CT/MSKCC/347471.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_044_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347471.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347471.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_044.nii.gz
+  Case 044: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 045...
+  Input CT: DatasetChallenge/CT/MSKCC/347546.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_045_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347546.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347546.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_045.nii.gz
+  Case 045: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 046...
+  Input CT: DatasetChallenge/CT/MSKCC/330690.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_046_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330690.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330690.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_046.nii.gz
+  Case 046: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 047...
+  Input CT: DatasetChallenge/CT/MSKCC/333063.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_047_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333063.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333063.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_047.nii.gz
+  Case 047: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 048...
+  Input CT: DatasetChallenge/CT/MSKCC/347485.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_048_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347485.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347485.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_048.nii.gz
+  Case 048: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 049...
+  Input CT: DatasetChallenge/CT/MSKCC/347549.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_049_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347549.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347549.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_049.nii.gz
+  Case 049: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 050...
+  Input CT: DatasetChallenge/CT/MSKCC/347580.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_050_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347580.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347580.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_050.nii.gz
+  Case 050: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 051...
+  Input CT: DatasetChallenge/CT/MSKCC/330680.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_051_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330680.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330680.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_051.nii.gz
+  Case 051: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 052...
+  Input CT: DatasetChallenge/CT/MSKCC/407909.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_052_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407909.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407909.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_052.nii.gz
+  Case 052: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 053...
+  Input CT: DatasetChallenge/CT/MSKCC/347558.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_053_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347558.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347558.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_053.nii.gz
+  Case 053: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 054...
+  Input CT: DatasetChallenge/CT/MSKCC/333075.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_054_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333075.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333075.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_054.nii.gz
+  Case 054: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 055...
+  Input CT: DatasetChallenge/CT/MSKCC/347507.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_055_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347507.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347507.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_055.nii.gz
+  Case 055: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 056...
+  Input CT: DatasetChallenge/CT/MSKCC/333065.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_056_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333065.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333065.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_056.nii.gz
+  Case 056: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 057...
+  Input CT: DatasetChallenge/CT/MSKCC/333028.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_057_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333028.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333028.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_057.nii.gz
+  Case 057: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 058...
+  Input CT: DatasetChallenge/CT/MSKCC/347574.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_058_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347574.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347574.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_058.nii.gz
+  Case 058: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 059...
+  Input CT: DatasetChallenge/CT/MSKCC/330719.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_059_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330719.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330719.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_059.nii.gz
+  Case 059: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 060...
+  Input CT: DatasetChallenge/CT/MSKCC/333021.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/333021.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_060_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333021.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/333021.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333021.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_060.nii.gz
+  Case 060: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 061...
+  Input CT: DatasetChallenge/CT/MSKCC/347470.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_061_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347470.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347470.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_061.nii.gz
+  Case 061: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 062...
+  Input CT: DatasetChallenge/CT/MSKCC/347560.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_062_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347560.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347560.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_062.nii.gz
+  Case 062: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 063...
+  Input CT: DatasetChallenge/CT/MSKCC/347564.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_063_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347564.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347564.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_063.nii.gz
+  Case 063: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 064...
+  Input CT: DatasetChallenge/CT/MSKCC/330713.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_064_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330713.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330713.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_064.nii.gz
+  Case 064: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 065...
+  Input CT: DatasetChallenge/CT/MSKCC/330710.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_065_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330710.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330710.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_065.nii.gz
+  Case 065: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 066...
+  Input CT: DatasetChallenge/CT/MSKCC/407892.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_066_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407892.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407892.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_066.nii.gz
+  Case 066: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 067...
+  Input CT: DatasetChallenge/CT/MSKCC/347550.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_067_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347550.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347550.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_067.nii.gz
+  Case 067: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 068...
+  Input CT: DatasetChallenge/CT/MSKCC/334940.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_068_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/334940.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/334940.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_068.nii.gz
+  Case 068: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 069...
+  Input CT: DatasetChallenge/CT/MSKCC/333020.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/333020.nii.gz
+Cropping scan along z-axis from index 43 to end: DatasetChallenge/CT/MSKCC/333020.nii.gz
+  Original z-dimension: 131, New z-dimension: 88
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_069_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333020.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/333020.nii.gz
+Cropping scan along z-axis from index 43 to end: DatasetChallenge/Segmentation/MSKCC/333020.nii.gz
+  Original z-dimension: 131, New z-dimension: 88
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333020.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_069.nii.gz
+  Case 069: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 070...
+  Input CT: DatasetChallenge/CT/MSKCC/347584.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_070_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347584.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347584.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_070.nii.gz
+  Case 070: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 071...
+  Input CT: DatasetChallenge/CT/MSKCC/333035.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_071_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333035.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333035.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_071.nii.gz
+  Case 071: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 072...
+  Input CT: DatasetChallenge/CT/MSKCC/347441.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_072_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347441.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347441.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_072.nii.gz
+  Case 072: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 073...
+  Input CT: DatasetChallenge/CT/MSKCC/347559.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_073_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347559.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347559.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_073.nii.gz
+  Case 073: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 074...
+  Input CT: DatasetChallenge/CT/MSKCC/333027.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_074_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333027.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333027.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_074.nii.gz
+  Case 074: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 075...
+  Input CT: DatasetChallenge/CT/MSKCC/347532.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_075_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347532.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347532.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_075.nii.gz
+  Case 075: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 076...
+  Input CT: DatasetChallenge/CT/MSKCC/330683.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_076_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330683.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330683.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_076.nii.gz
+  Case 076: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 077...
+  Input CT: DatasetChallenge/CT/MSKCC/347463.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_077_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347463.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347463.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_077.nii.gz
+  Case 077: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 078...
+  Input CT: DatasetChallenge/CT/MSKCC/333043.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_078_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333043.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333043.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_078.nii.gz
+  Case 078: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 079...
+  Input CT: DatasetChallenge/CT/MSKCC/347523.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_079_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347523.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347523.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_079.nii.gz
+  Case 079: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 080...
+  Input CT: DatasetChallenge/CT/MSKCC/407887.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_080_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407887.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407887.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_080.nii.gz
+  Case 080: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 081...
+  Input CT: DatasetChallenge/CT/MSKCC/380926.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_081_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/380926.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/380926.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_081.nii.gz
+  Case 081: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 082...
+  Input CT: DatasetChallenge/CT/MSKCC/407893.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_082_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407893.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407893.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_082.nii.gz
+  Case 082: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 083...
+  Input CT: DatasetChallenge/CT/MSKCC/333037.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_083_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333037.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333037.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_083.nii.gz
+  Case 083: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 084...
+  Input CT: DatasetChallenge/CT/MSKCC/334150.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_084_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/334150.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/334150.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_084.nii.gz
+  Case 084: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 085...
+  Input CT: DatasetChallenge/CT/MSKCC/333011.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_085_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333011.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333011.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_085.nii.gz
+  Case 085: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 086...
+  Input CT: DatasetChallenge/CT/MSKCC/330687.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_086_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330687.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330687.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_086.nii.gz
+  Case 086: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 087...
+  Input CT: DatasetChallenge/CT/MSKCC/347473.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_087_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347473.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347473.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_087.nii.gz
+  Case 087: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 088...
+  Input CT: DatasetChallenge/CT/MSKCC/337205.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_088_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337205.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337205.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_088.nii.gz
+  Case 088: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 089...
+  Input CT: DatasetChallenge/CT/MSKCC/337192.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_089_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337192.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337192.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_089.nii.gz
+  Case 089: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 090...
+  Input CT: DatasetChallenge/CT/MSKCC/374177.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/374177.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_090_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/374177.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/374177.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/374177.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_090.nii.gz
+  Case 090: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 091...
+  Input CT: DatasetChallenge/CT/MSKCC/407888.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_091_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407888.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407888.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_091.nii.gz
+  Case 091: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 092...
+  Input CT: DatasetChallenge/CT/MSKCC/337203.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_092_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337203.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337203.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_092.nii.gz
+  Case 092: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 093...
+  Input CT: DatasetChallenge/CT/MSKCC/330688.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_093_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330688.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330688.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_093.nii.gz
+  Case 093: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 094...
+  Input CT: DatasetChallenge/CT/MSKCC/330697.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/330697.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_094_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330697.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/330697.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330697.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_094.nii.gz
+  Case 094: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 095...
+  Input CT: DatasetChallenge/CT/MSKCC/333057.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_095_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333057.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333057.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_095.nii.gz
+  Case 095: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 096...
+  Input CT: DatasetChallenge/CT/MSKCC/347588.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_096_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347588.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347588.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_096.nii.gz
+  Case 096: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 097...
+  Input CT: DatasetChallenge/CT/MSKCC/347519.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_097_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347519.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347519.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_097.nii.gz
+  Case 097: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 098...
+  Input CT: DatasetChallenge/CT/MSKCC/330701.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_098_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330701.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330701.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_098.nii.gz
+  Case 098: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 099...
+  Input CT: DatasetChallenge/CT/MSKCC/333077.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_099_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333077.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333077.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_099.nii.gz
+  Case 099: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 100...
+  Input CT: DatasetChallenge/CT/MSKCC/374149.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/374149.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_100_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/374149.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/374149.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/374149.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_100.nii.gz
+  Case 100: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 101...
+  Input CT: DatasetChallenge/CT/MSKCC/347524.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_101_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347524.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347524.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_101.nii.gz
+  Case 101: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 102...
+  Input CT: DatasetChallenge/CT/MSKCC/347582.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_102_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347582.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347582.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_102.nii.gz
+  Case 102: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 103...
+  Input CT: DatasetChallenge/CT/MSKCC/407891.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_103_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407891.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407891.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_103.nii.gz
+  Case 103: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 104...
+  Input CT: DatasetChallenge/CT/MSKCC/333064.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_104_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333064.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333064.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_104.nii.gz
+  Case 104: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 105...
+  Input CT: DatasetChallenge/CT/MSKCC/333044.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_105_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333044.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333044.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_105.nii.gz
+  Case 105: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 106...
+  Input CT: DatasetChallenge/CT/MSKCC/347469.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_106_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347469.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347469.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_106.nii.gz
+  Case 106: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 107...
+  Input CT: DatasetChallenge/CT/MSKCC/333039.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_107_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333039.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333039.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_107.nii.gz
+  Case 107: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 108...
+  Input CT: DatasetChallenge/CT/MSKCC/407907.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_108_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407907.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407907.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_108.nii.gz
+  Case 108: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 109...
+  Input CT: DatasetChallenge/CT/MSKCC/333056.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_109_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333056.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333056.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_109.nii.gz
+  Case 109: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 110...
+  Input CT: DatasetChallenge/CT/MSKCC/333036.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/333036.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_110_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333036.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/333036.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333036.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_110.nii.gz
+  Case 110: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 111...
+  Input CT: DatasetChallenge/CT/MSKCC/337202.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_111_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337202.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337202.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_111.nii.gz
+  Case 111: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 112...
+  Input CT: DatasetChallenge/CT/MSKCC/330707.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_112_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330707.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330707.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_112.nii.gz
+  Case 112: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 113...
+  Input CT: DatasetChallenge/CT/MSKCC/333051.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_113_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333051.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333051.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_113.nii.gz
+  Case 113: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 114...
+  Input CT: DatasetChallenge/CT/MSKCC/347569.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_114_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347569.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347569.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_114.nii.gz
+  Case 114: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 115...
+  Input CT: DatasetChallenge/CT/MSKCC/407903.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_115_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407903.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407903.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_115.nii.gz
+  Case 115: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 116...
+  Input CT: DatasetChallenge/CT/MSKCC/347515.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_116_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347515.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347515.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_116.nii.gz
+  Case 116: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 117...
+  Input CT: DatasetChallenge/CT/MSKCC/333015.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/333015.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_117_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333015.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/333015.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333015.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_117.nii.gz
+  Case 117: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 118...
+  Input CT: DatasetChallenge/CT/MSKCC/347565.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_118_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347565.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347565.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_118.nii.gz
+  Case 118: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 119...
+  Input CT: DatasetChallenge/CT/MSKCC/407904.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_119_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407904.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407904.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_119.nii.gz
+  Case 119: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 120...
+  Input CT: DatasetChallenge/CT/MSKCC/330681.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_120_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330681.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330681.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_120.nii.gz
+  Case 120: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 121...
+  Input CT: DatasetChallenge/CT/MSKCC/333042.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_121_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333042.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333042.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_121.nii.gz
+  Case 121: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 122...
+  Input CT: DatasetChallenge/CT/MSKCC/347552.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_122_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347552.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347552.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_122.nii.gz
+  Case 122: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 123...
+  Input CT: DatasetChallenge/CT/MSKCC/347516.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_123_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347516.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347516.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_123.nii.gz
+  Case 123: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 124...
+  Input CT: DatasetChallenge/CT/MSKCC/347555.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_124_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347555.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347555.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_124.nii.gz
+  Case 124: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 125...
+  Input CT: DatasetChallenge/CT/MSKCC/347456.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_125_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347456.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347456.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_125.nii.gz
+  Case 125: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 126...
+  Input CT: DatasetChallenge/CT/MSKCC/347448.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_126_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347448.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347448.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_126.nii.gz
+  Case 126: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 127...
+  Input CT: DatasetChallenge/CT/MSKCC/347499.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_127_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347499.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347499.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_127.nii.gz
+  Case 127: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 128...
+  Input CT: DatasetChallenge/CT/MSKCC/337199.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_128_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337199.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337199.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_128.nii.gz
+  Case 128: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 129...
+  Input CT: DatasetChallenge/CT/MSKCC/333083.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_129_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333083.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333083.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_129.nii.gz
+  Case 129: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 130...
+  Input CT: DatasetChallenge/CT/MSKCC/347505.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_130_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347505.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347505.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_130.nii.gz
+  Case 130: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 131...
+  Input CT: DatasetChallenge/CT/MSKCC/407910.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_131_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407910.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407910.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_131.nii.gz
+  Case 131: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 132...
+  Input CT: DatasetChallenge/CT/MSKCC/330705.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_132_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330705.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330705.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_132.nii.gz
+  Case 132: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 133...
+  Input CT: DatasetChallenge/CT/MSKCC/407897.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_133_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407897.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407897.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_133.nii.gz
+  Case 133: Unique segmentation values after processing: [0. 1. 2.]
+
+Skipping Case 134: DatasetChallenge/CT/MSKCC/333076.nii.gz
+
+Processing Case 134...
+  Input CT: DatasetChallenge/CT/MSKCC/347467.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_134_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347467.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347467.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_134.nii.gz
+  Case 134: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 135...
+  Input CT: DatasetChallenge/CT/MSKCC/330698.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_135_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330698.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330698.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_135.nii.gz
+  Case 135: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 136...
+  Input CT: DatasetChallenge/CT/MSKCC/347439.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_136_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347439.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347439.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_136.nii.gz
+  Case 136: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 137...
+  Input CT: DatasetChallenge/CT/MSKCC/407886.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_137_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407886.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407886.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_137.nii.gz
+  Case 137: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 138...
+  Input CT: DatasetChallenge/CT/MSKCC/347455.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_138_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347455.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347455.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_138.nii.gz
+  Case 138: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 139...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-09-2053.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_139_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-09-2053.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-09-2053.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_139.nii.gz
+  Case 139: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 140...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-1900.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_140_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-1900.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-1900.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_140.nii.gz
+  Case 140: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 141...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-2009.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_141_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-2009.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-2009.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_141.nii.gz
+  Case 141: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 142...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-2016.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-61-2016.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_142_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-2016.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-61-2016.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-2016.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_142.nii.gz
+  Case 142: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 143...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0883.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_143_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0883.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0883.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_143.nii.gz
+  Case 143: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 144...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0761.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_144_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0761.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0761.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_144.nii.gz
+  Case 144: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 145...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0904.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-13-0904.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_145_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0904.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-13-0904.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0904.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_145.nii.gz
+  Case 145: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 146...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1488.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-13-1488.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_146_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1488.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-13-1488.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1488.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_146.nii.gz
+  Case 146: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 147...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-24-1616.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-24-1616.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_147_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-24-1616.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-24-1616.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-24-1616.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_147.nii.gz
+  Case 147: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 148...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-24-1423.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_148_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-24-1423.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-24-1423.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_148.nii.gz
+  Case 148: Unique segmentation values after processing: [0. 1. 2.]
+
+Skipping Case 150: DatasetChallenge/CT/TCGA/TCGA-09-0364.nii.gz
+
+Processing Case 149...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-1911.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_149_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-1911.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-1911.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_149.nii.gz
+  Case 149: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 150...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1509.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_150_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1509.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1509.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_150.nii.gz
+  Case 150: Unique segmentation values after processing: [0. 1. 2.]
+
+Skipping Case 153: DatasetChallenge/CT/TCGA/TCGA-24-1614.nii.gz
+
+Processing Case 151...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-09-2051.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-09-2051.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_151_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-09-2051.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-09-2051.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-09-2051.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_151.nii.gz
+  Case 151: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 152...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-2060.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_152_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-2060.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-2060.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_152.nii.gz
+  Case 152: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 153...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0768.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-13-0768.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_153_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0768.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-13-0768.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0768.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_153.nii.gz
+  Case 153: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 154...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-25-1313.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_154_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-25-1313.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-25-1313.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_154.nii.gz
+  Case 154: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 155...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-09-0367.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_155_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-09-0367.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-09-0367.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_155.nii.gz
+  Case 155: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 156...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1408.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_156_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1408.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1408.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_156.nii.gz
+  Case 156: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 157...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-09-1669.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_157_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-09-1669.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-09-1669.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_157.nii.gz
+  Case 157: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 158...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-1910.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_158_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-1910.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-1910.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_158.nii.gz
+  Case 158: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 159...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-24-2254.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-24-2254.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_159_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-24-2254.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-24-2254.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-24-2254.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_159.nii.gz
+  Case 159: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 160...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1412.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_160_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1412.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1412.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_160.nii.gz
+  Case 160: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 161...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-30-1891.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-30-1891.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_161_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-30-1891.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-30-1891.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-30-1891.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_161.nii.gz
+  Case 161: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 162...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0762.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-13-0762.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_162_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0762.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-13-0762.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0762.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_162.nii.gz
+  Case 162: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 163...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1411.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_163_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1411.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1411.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_163.nii.gz
+  Case 163: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 164...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0920.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-13-0920.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_164_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0920.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-13-0920.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0920.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_164.nii.gz
+  Case 164: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 165...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-2087.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_165_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-2087.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-2087.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_165.nii.gz
+  Case 165: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 166...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1405.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-13-1405.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_166_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1405.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-13-1405.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1405.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_166.nii.gz
+  Case 166: Unique segmentation values after processing: [0. 1. 2.]
+
+Skipping Case 170: DatasetChallenge/CT/TCGA/TCGA-09-2054.nii.gz
+
+Processing Case 167...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-1906.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-61-1906.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_167_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-1906.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-61-1906.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-1906.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_167.nii.gz
+  Case 167: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 168...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0799.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-13-0799.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_168_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0799.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-13-0799.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0799.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_168.nii.gz
+  Case 168: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 169...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1511.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-13-1511.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_169_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1511.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-13-1511.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1511.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_169.nii.gz
+  Case 169: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 170...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-25-1631.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_170_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-25-1631.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-25-1631.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_170.nii.gz
+  Case 170: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 171...
+  Input CT: DatasetChallenge/CT/MSKCC/337193.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_171_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337193.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337193.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_171.nii.gz
+  Case 171: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 172...
+  Input CT: DatasetChallenge/CT/MSKCC/333047.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_172_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333047.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333047.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_172.nii.gz
+  Case 172: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 173...
+  Input CT: DatasetChallenge/CT/MSKCC/333067.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_173_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333067.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333067.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_173.nii.gz
+  Case 173: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 174...
+  Input CT: DatasetChallenge/CT/MSKCC/333081.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_174_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333081.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333081.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_174.nii.gz
+  Case 174: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 175...
+  Input CT: DatasetChallenge/CT/MSKCC/407890.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_175_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407890.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407890.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_175.nii.gz
+  Case 175: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 176...
+  Input CT: DatasetChallenge/CT/MSKCC/333046.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_176_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333046.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333046.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_176.nii.gz
+  Case 176: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 177...
+  Input CT: DatasetChallenge/CT/MSKCC/347511.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_177_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347511.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347511.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_177.nii.gz
+  Case 177: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 178...
+  Input CT: DatasetChallenge/CT/MSKCC/407908.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_178_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407908.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407908.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_178.nii.gz
+  Case 178: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 179...
+  Input CT: DatasetChallenge/CT/MSKCC/347529.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_179_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347529.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347529.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_179.nii.gz
+  Case 179: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 180...
+  Input CT: DatasetChallenge/CT/MSKCC/347521.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_180_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347521.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347521.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_180.nii.gz
+  Case 180: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 181...
+  Input CT: DatasetChallenge/CT/MSKCC/347506.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_181_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347506.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347506.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_181.nii.gz
+  Case 181: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 182...
+  Input CT: DatasetChallenge/CT/MSKCC/330699.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/330699.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_182_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330699.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/330699.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330699.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_182.nii.gz
+  Case 182: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 183...
+  Input CT: DatasetChallenge/CT/MSKCC/330700.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_183_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330700.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330700.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_183.nii.gz
+  Case 183: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 184...
+  Input CT: DatasetChallenge/CT/MSKCC/333007.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_184_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333007.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333007.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_184.nii.gz
+  Case 184: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 185...
+  Input CT: DatasetChallenge/CT/MSKCC/330704.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_185_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330704.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330704.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_185.nii.gz
+  Case 185: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 186...
+  Input CT: DatasetChallenge/CT/MSKCC/333087.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_186_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333087.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333087.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_186.nii.gz
+  Case 186: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 187...
+  Input CT: DatasetChallenge/CT/MSKCC/347458.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_187_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347458.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347458.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_187.nii.gz
+  Case 187: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 188...
+  Input CT: DatasetChallenge/CT/MSKCC/347440.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_188_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347440.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347440.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_188.nii.gz
+  Case 188: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 189...
+  Input CT: DatasetChallenge/CT/MSKCC/337198.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_189_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337198.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337198.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_189.nii.gz
+  Case 189: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 190...
+  Input CT: DatasetChallenge/CT/MSKCC/333068.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_190_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333068.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333068.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_190.nii.gz
+  Case 190: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 191...
+  Input CT: DatasetChallenge/CT/MSKCC/347551.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_191_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347551.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347551.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_191.nii.gz
+  Case 191: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 192...
+  Input CT: DatasetChallenge/CT/MSKCC/337189.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_192_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/337189.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/337189.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_192.nii.gz
+  Case 192: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 193...
+  Input CT: DatasetChallenge/CT/MSKCC/347444.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_193_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347444.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347444.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_193.nii.gz
+  Case 193: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 194...
+  Input CT: DatasetChallenge/CT/MSKCC/347509.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_194_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347509.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347509.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_194.nii.gz
+  Case 194: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 195...
+  Input CT: DatasetChallenge/CT/MSKCC/347586.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_195_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347586.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347586.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_195.nii.gz
+  Case 195: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 196...
+  Input CT: DatasetChallenge/CT/MSKCC/333017.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/333017.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_196_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333017.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/333017.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333017.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_196.nii.gz
+  Case 196: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 197...
+  Input CT: DatasetChallenge/CT/MSKCC/407894.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_197_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407894.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407894.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_197.nii.gz
+  Case 197: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 198...
+  Input CT: DatasetChallenge/CT/MSKCC/347510.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_198_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347510.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347510.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_198.nii.gz
+  Case 198: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 199...
+  Input CT: DatasetChallenge/CT/MSKCC/374142.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/374142.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_199_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/374142.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/374142.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/374142.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_199.nii.gz
+  Case 199: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 200...
+  Input CT: DatasetChallenge/CT/MSKCC/347578.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_200_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347578.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347578.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_200.nii.gz
+  Case 200: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 201...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-09-1674.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-09-1674.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_201_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-09-1674.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-09-1674.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-09-1674.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_201.nii.gz
+  Case 201: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 202...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0911.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_202_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0911.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0911.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_202.nii.gz
+  Case 202: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 203...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1499.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-13-1499.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_203_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1499.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-13-1499.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1499.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_203.nii.gz
+  Case 203: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 204...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0793.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-13-0793.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_204_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0793.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-13-0793.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0793.nii.gz
+ Labels before: [0.         1.00001526 2.        ]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_204.nii.gz
+  Case 204: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 205...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-25-1623.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_205_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-25-1623.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-25-1623.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_205.nii.gz
+  Case 205: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 206...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-2003.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-61-2003.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_206_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-2003.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-61-2003.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-2003.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_206.nii.gz
+  Case 206: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 207...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-1507.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-13-1507.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_207_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-1507.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-13-1507.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-1507.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_207.nii.gz
+  Case 207: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 208...
+  Input CT: DatasetChallenge/CT/MSKCC/347443.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_208_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347443.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347443.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_208.nii.gz
+  Case 208: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 209...
+  Input CT: DatasetChallenge/CT/MSKCC/347495.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_209_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347495.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347495.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_209.nii.gz
+  Case 209: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 210...
+  Input CT: DatasetChallenge/CT/MSKCC/347525.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_210_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347525.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347525.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_210.nii.gz
+  Case 210: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 211...
+  Input CT: DatasetChallenge/CT/MSKCC/407906.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_211_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/407906.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/407906.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_211.nii.gz
+  Case 211: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 212...
+  Input CT: DatasetChallenge/CT/MSKCC/333483.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_212_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333483.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333483.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_212.nii.gz
+  Case 212: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 213...
+  Input CT: DatasetChallenge/CT/MSKCC/347500.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_213_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347500.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347500.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_213.nii.gz
+  Case 213: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 214...
+  Input CT: DatasetChallenge/CT/MSKCC/333084.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_214_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333084.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333084.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_214.nii.gz
+  Case 214: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 215...
+  Input CT: DatasetChallenge/CT/MSKCC/347544.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_215_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347544.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347544.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_215.nii.gz
+  Case 215: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 216...
+  Input CT: DatasetChallenge/CT/MSKCC/347579.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_216_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347579.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347579.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_216.nii.gz
+  Case 216: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 217...
+  Input CT: DatasetChallenge/CT/MSKCC/347447.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_217_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347447.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347447.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_217.nii.gz
+  Case 217: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 218...
+  Input CT: DatasetChallenge/CT/MSKCC/333005.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_218_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333005.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333005.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_218.nii.gz
+  Case 218: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 219...
+  Input CT: DatasetChallenge/CT/MSKCC/347492.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_219_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347492.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347492.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_219.nii.gz
+  Case 219: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 220...
+  Input CT: DatasetChallenge/CT/MSKCC/330702.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_220_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330702.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330702.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_220.nii.gz
+  Case 220: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 221...
+  Input CT: DatasetChallenge/CT/MSKCC/347566.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_221_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347566.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347566.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_221.nii.gz
+  Case 221: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 222...
+  Input CT: DatasetChallenge/CT/MSKCC/330685.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_222_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330685.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330685.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_222.nii.gz
+  Case 222: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 223...
+  Input CT: DatasetChallenge/CT/MSKCC/347556.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_223_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347556.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347556.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_223.nii.gz
+  Case 223: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 224...
+  Input CT: DatasetChallenge/CT/MSKCC/374143.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/374143.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_224_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/374143.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/374143.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/374143.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_224.nii.gz
+  Case 224: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 225...
+  Input CT: DatasetChallenge/CT/MSKCC/333073.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_225_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333073.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333073.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_225.nii.gz
+  Case 225: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 226...
+  Input CT: DatasetChallenge/CT/MSKCC/334149.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_226_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/334149.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/334149.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_226.nii.gz
+  Case 226: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 227...
+  Input CT: DatasetChallenge/CT/MSKCC/347514.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_227_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347514.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347514.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_227.nii.gz
+  Case 227: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 228...
+  Input CT: DatasetChallenge/CT/MSKCC/330711.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_228_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330711.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330711.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_228.nii.gz
+  Case 228: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 229...
+  Input CT: DatasetChallenge/CT/MSKCC/333070.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_229_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333070.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333070.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_229.nii.gz
+  Case 229: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 230...
+  Input CT: DatasetChallenge/CT/MSKCC/347553.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_230_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347553.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347553.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_230.nii.gz
+  Case 230: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 231...
+  Input CT: DatasetChallenge/CT/MSKCC/347589.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_231_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347589.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347589.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_231.nii.gz
+  Case 231: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 232...
+  Input CT: DatasetChallenge/CT/MSKCC/333058.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_232_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333058.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333058.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_232.nii.gz
+  Case 232: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 233...
+  Input CT: DatasetChallenge/CT/MSKCC/347538.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_233_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/347538.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/347538.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_233.nii.gz
+  Case 233: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 234...
+  Input CT: DatasetChallenge/CT/MSKCC/374196.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/MSKCC/374196.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_234_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/374196.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/MSKCC/374196.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/374196.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_234.nii.gz
+  Case 234: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 235...
+  Input CT: DatasetChallenge/CT/MSKCC/333069.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_235_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333069.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333069.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_235.nii.gz
+  Case 235: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 236...
+  Input CT: DatasetChallenge/CT/MSKCC/333031.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_236_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/333031.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/333031.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_236.nii.gz
+  Case 236: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 237...
+  Input CT: DatasetChallenge/CT/MSKCC/330689.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_237_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/MSKCC/330689.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/MSKCC/330689.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_237.nii.gz
+  Case 237: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 238...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0924.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-13-0924.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_238_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0924.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-13-0924.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0924.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_238.nii.gz
+  Case 238: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 239...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-09-2045.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-09-2045.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_239_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-09-2045.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-09-2045.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-09-2045.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_239.nii.gz
+  Case 239: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 240...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0794.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-13-0794.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_240_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0794.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-13-0794.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0794.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_240.nii.gz
+  Case 240: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 241...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-13-0724.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/CT/TCGA/TCGA-13-0724.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_241_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-13-0724.nii.gz
+Found inverted scan, flipping superior-inferior axis: DatasetChallenge/Segmentation/TCGA/TCGA-13-0724.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-13-0724.nii.gz
+ Labels before: [0. 2.]
+ Labels after:  [0 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_241.nii.gz
+  Case 241: Unique segmentation values after processing: [0. 2.]
+
+Processing Case 242...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-61-2018.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_242_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-61-2018.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-61-2018.nii.gz
+ Labels before: [0. 1.]
+ Labels after:  [0 1]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_242.nii.gz
+  Case 242: Unique segmentation values after processing: [0. 1.]
+
+Processing Case 243...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-24-1427.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_243_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-24-1427.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-24-1427.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_243.nii.gz
+  Case 243: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 244...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-24-1418.nii.gz
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_244_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-24-1418.nii.gz
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-24-1418.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_244.nii.gz
+  Case 244: Unique segmentation values after processing: [0. 1. 2.]
+
+Processing Case 245...
+  Input CT: DatasetChallenge/CT/TCGA/TCGA-25-1635.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/CT/TCGA/TCGA-25-1635.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_245_0000.nii.gz
+  Input Seg: DatasetChallenge/Segmentation/TCGA/TCGA-25-1635.nii.gz
+Non-compliant orientation ('R', 'A', 'S'), converting to LPS: DatasetChallenge/Segmentation/TCGA/TCGA-25-1635.nii.gz...
+ Ensuring integer labels for segmentation: DatasetChallenge/Segmentation/TCGA/TCGA-25-1635.nii.gz
+ Labels before: [0. 1. 2.]
+ Labels after:  [0 1 2]
+  Saving processed Seg to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/labelsTr/OvarianCancerDestroyer_245.nii.gz
+  Case 245: Unique segmentation values after processing: [0. 1. 2.]
+ON PASSE AU TEST SET C'EST PARTIIII C'EST PARTIIIIIIIIII
+
+Processing Case 246...
+  Input CT: 4.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/4.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_246_0000.nii.gz
+
+Processing Case 247...
+  Input CT: 41.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/41.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_247_0000.nii.gz
+
+Processing Case 248...
+  Input CT: 3.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/3.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_248_0000.nii.gz
+
+Processing Case 249...
+  Input CT: 6.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/6.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_249_0000.nii.gz
+
+Processing Case 250...
+  Input CT: 15.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/15.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_250_0000.nii.gz
+
+Processing Case 251...
+  Input CT: 32.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/32.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_251_0000.nii.gz
+
+Processing Case 252...
+  Input CT: 30.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/30.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_252_0000.nii.gz
+
+Processing Case 253...
+  Input CT: 37.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/37.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_253_0000.nii.gz
+
+Processing Case 254...
+  Input CT: 5.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/5.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_254_0000.nii.gz
+
+Processing Case 255...
+  Input CT: 35.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/35.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_255_0000.nii.gz
+
+Processing Case 256...
+  Input CT: 20.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/20.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_256_0000.nii.gz
+
+Processing Case 257...
+  Input CT: 27.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/27.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_257_0000.nii.gz
+
+Processing Case 258...
+  Input CT: 7.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/7.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_258_0000.nii.gz
+
+Processing Case 259...
+  Input CT: 45.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/45.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_259_0000.nii.gz
+
+Processing Case 260...
+  Input CT: 1.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/1.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_260_0000.nii.gz
+
+Processing Case 261...
+  Input CT: 36.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/36.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_261_0000.nii.gz
+
+Processing Case 262...
+  Input CT: 50.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/50.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_262_0000.nii.gz
+
+Processing Case 263...
+  Input CT: 39.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/39.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_263_0000.nii.gz
+
+Processing Case 264...
+  Input CT: 46.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/46.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_264_0000.nii.gz
+
+Processing Case 265...
+  Input CT: 24.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/24.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_265_0000.nii.gz
+
+Processing Case 266...
+  Input CT: 10.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/10.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_266_0000.nii.gz
+
+Processing Case 267...
+  Input CT: 13.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/13.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_267_0000.nii.gz
+
+Processing Case 268...
+  Input CT: 31.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/31.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_268_0000.nii.gz
+
+Processing Case 269...
+  Input CT: 18.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/18.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_269_0000.nii.gz
+
+Processing Case 270...
+  Input CT: 34.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/34.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_270_0000.nii.gz
+
+Processing Case 271...
+  Input CT: 14.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/14.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_271_0000.nii.gz
+
+Processing Case 272...
+  Input CT: 47.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/47.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_272_0000.nii.gz
+
+Processing Case 273...
+  Input CT: 22.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/22.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_273_0000.nii.gz
+
+Processing Case 274...
+  Input CT: 40.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/40.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_274_0000.nii.gz
+
+Processing Case 275...
+  Input CT: 19.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/19.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_275_0000.nii.gz
+
+Processing Case 276...
+  Input CT: 49.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/49.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_276_0000.nii.gz
+
+Processing Case 277...
+  Input CT: 38.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/38.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_277_0000.nii.gz
+
+Processing Case 278...
+  Input CT: 8.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/8.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_278_0000.nii.gz
+
+Processing Case 279...
+  Input CT: 28.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/28.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_279_0000.nii.gz
+
+Processing Case 280...
+  Input CT: 21.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/21.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_280_0000.nii.gz
+
+Processing Case 281...
+  Input CT: 33.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/33.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_281_0000.nii.gz
+
+Processing Case 282...
+  Input CT: 43.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/43.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_282_0000.nii.gz
+
+Processing Case 283...
+  Input CT: 9.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/9.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_283_0000.nii.gz
+
+Processing Case 284...
+  Input CT: 2.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/2.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_284_0000.nii.gz
+
+Processing Case 285...
+  Input CT: 26.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/26.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_285_0000.nii.gz
+
+Processing Case 286...
+  Input CT: 16.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/16.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_286_0000.nii.gz
+
+Processing Case 287...
+  Input CT: 12.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/12.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_287_0000.nii.gz
+
+Processing Case 288...
+  Input CT: 29.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/29.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_288_0000.nii.gz
+
+Processing Case 289...
+  Input CT: 44.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/44.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_289_0000.nii.gz
+
+Processing Case 290...
+  Input CT: 11.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/11.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_290_0000.nii.gz
+
+Processing Case 291...
+  Input CT: 48.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/48.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_291_0000.nii.gz
+
+Processing Case 292...
+  Input CT: 17.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/17.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_292_0000.nii.gz
+
+Processing Case 293...
+  Input CT: 42.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/42.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_293_0000.nii.gz
+
+Processing Case 294...
+  Input CT: 25.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/25.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_294_0000.nii.gz
+
+Processing Case 295...
+  Input CT: 23.nii.gz
+Non-compliant orientation ('R', 'A', 'I'), converting to LPS: ../TEST_SET/23.nii.gz...
+  Saving processed CT to: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer/imagesTr/OvarianCancerDestroyer_295_0000.nii.gz
+
+Writing dataset.json
+
+Dataset conversion complete.
+nnUNet Task Name: OvarianCancerDestroyer
+Task ID: 1
+Data location: nnUNet_raw_data/Dataset001_OvarianCancerDestroyer
