@@ -9,6 +9,7 @@ from nibabel.orientations import (
   inv_ornt_aff,
   ornt_transform,
 )
+from tqdm import tqdm
 
 test_set_path = Path("../TEST_SET")
 filenames = os.listdir(test_set_path)
@@ -25,7 +26,7 @@ preds_dir = Path(
   "../old_results/unetr_pp_results/unetr_pp/3d_fullres/Task001_PINKCC/unetr_pp_trainer_synapse__unetr_pp_Plansv2.1/fold_0/validation_raw"
 )
 
-for k, v in preds_name_to_id:
+for k, v in tqdm(preds_name_to_id):
   base_image_header = nib.loadsave.load(test_set_path / v).header
 
   img = nib.loadsave.load(preds_dir / k)
