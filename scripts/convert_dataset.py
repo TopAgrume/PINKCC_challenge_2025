@@ -244,49 +244,51 @@ def convert_dataset_to_nnunet_format(
     "test": [],
   }
 
-  # --- Process Training/Validation Data ---
-  print(f"\nProcessing {len(all_training_pairs)} training/validation cases...")
-  valid_case_count = 0
-  for i, (ct_path, seg_path) in enumerate(train_pairs + val_pairs + test_pairs):
-    if should_skip_scan(ct_path) or should_skip_scan(seg_path):
-      print(f"\nSkipping Case {i}: {ct_path}")
-      continue
+  if False:
+    # --- Process Training/Validation Data ---
+    print(f"\nProcessing {len(all_training_pairs)} training/validation cases...")
+    valid_case_count = 0
+    for i, (ct_path, seg_path) in enumerate(train_pairs + val_pairs + test_pairs):
+      if should_skip_scan(ct_path) or should_skip_scan(seg_path):
+        print(f"\nSkipping Case {i}: {ct_path}")
+        continue
 
-    case_id = f"{valid_case_count:03d}"
-    valid_case_count += 1
+      case_id = f"{valid_case_count:03d}"
+      valid_case_count += 1
 
-    print(f"\nProcessing Case {case_id}...")
-    print(f"  Input CT: {ct_path}")
-    ct_dest = images_dir / f"{task_name}_{case_id}_0000.nii.gz"
-    std_ct_img, modif = standardize_orientation(
-      ct_path, ct_image=False, is_segmentation=False
-    )
-    print(f"  Saving processed CT to: {ct_dest}")
-    nib.save(std_ct_img, ct_dest)  # type: ignore
+      print(f"\nProcessing Case {case_id}...")
+      print(f"  Input CT: {ct_path}")
+      ct_dest = images_dir / f"{task_name}_{case_id}_0000.nii.gz"
+      std_ct_img, modif = standardize_orientation(
+        ct_path, ct_image=False, is_segmentation=False
+      )
+      print(f"  Saving processed CT to: {ct_dest}")
+      nib.save(std_ct_img, ct_dest)  # type: ignore
 
-    print(f"  Input Seg: {seg_path}")
-    seg_dest = labels_dir / f"{task_name}_{case_id}.nii.gz"
-    std_seg_img, modif = standardize_orientation(
-      seg_path, ct_image=False, is_segmentation=True
-    )
-    print(f"  Saving processed Seg to: {seg_dest}")
-    nib.save(std_seg_img, seg_dest)  # type: ignore
+      print(f"  Input Seg: {seg_path}")
+      seg_dest = labels_dir / f"{task_name}_{case_id}.nii.gz"
+      std_seg_img, modif = standardize_orientation(
+        seg_path, ct_image=False, is_segmentation=True
+      )
+      print(f"  Saving processed Seg to: {seg_dest}")
+      nib.save(std_seg_img, seg_dest)  # type: ignore
 
-    seg_data = std_seg_img.get_fdata()  # type: ignore
-    unique_values = np.unique(seg_data)
-    print(
-      f"  Case {case_id}: Unique segmentation values after processing: {unique_values}"
-    )
+      seg_data = std_seg_img.get_fdata()  # type: ignore
+      unique_values = np.unique(seg_data)
+      print(
+        f"  Case {case_id}: Unique segmentation values after processing: {unique_values}"
+      )
 
-    dataset_json["training"].append(
-      {
-        "image": f"./imagesTr/{task_name}_{case_id}_0000.nii.gz",
-        "label": f"./labelsTr/{task_name}_{case_id}.nii.gz",
-      }
-    )
+      dataset_json["training"].append(
+        {
+          "image": f"./imagesTr/{task_name}_{case_id}_0000.nii.gz",
+          "label": f"./labelsTr/{task_name}_{case_id}.nii.gz",
+        }
+      )
 
   # --------------- ADDING FOR TESTING --------------
   print("ON PASSE AU TEST SET C'EST PARTIIII C'EST PARTIIIIIIIIII")
+  valid_case_count = 246
   TEST_DIR = Path("../TEST_SET")
   all_paths = os.listdir(TEST_DIR)
   for path in all_paths:
@@ -316,26 +318,6 @@ def convert_dataset_to_nnunet_format(
         "label": f"./labelsTr/{task_name}_{case_id}.nii.gz",
       }
     )
-
-  # --- Process Test Data ---
-  # print(f"\nProcessing {len(test_pairs)} test cases...")
-  # valid_test_count = 0
-  # for i, (ct_path, seg_path) in enumerate(test_pairs):
-  #    if should_skip_scan(ct_path) or should_skip_scan(seg_path):
-  #        print(f"\nSkipping Test Case {i}: {ct_path}")
-  #        continue
-
-  #    case_id = f"OCD_test_{valid_test_count:04d}"
-  #    valid_test_count += 1
-
-  #    print(f"\nProcessing Test Case {case_id}...")
-  #    print(f"  Input CT: {ct_path}")
-  #    ct_dest = images_test_dir / f"{task_name}_{case_id}_0000.nii.gz"
-  #    std_ct_img, modif = standardize_orientation(ct_path, ct_image=False, is_segmentation=False)
-  #    print(f"  Saving processed test CT to: {ct_dest}")
-  #    nib.save(std_ct_img, ct_dest) # type: ignore
-
-  #    dataset_json["test"].append(f"./imagesTs/{task_name}_{case_id}_0000.nii.gz")
 
   print("\nWriting dataset.json")
   with open(task_dir / "dataset.json", "w") as f:
