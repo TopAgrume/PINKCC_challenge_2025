@@ -16,7 +16,7 @@ filenames = os.listdir(test_set_path)
 
 preds_name_to_id = {
   f"OvarianCancerDestroyer_{k}_0000.nii.gz": v
-  for k, v in zip(range(246, 296), filenames, strict=False)
+  for k, v in zip(range(50), filenames, strict=False)
 }
 
 output_dir = Path("preds")
