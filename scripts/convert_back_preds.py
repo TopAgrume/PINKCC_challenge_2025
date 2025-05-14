@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 import nibabel as nib
@@ -11,8 +10,58 @@ from nibabel.orientations import (
 )
 from tqdm import tqdm
 
-test_set_path = Path("../TEST_SET")
-filenames = os.listdir(test_set_path)
+filenames = [
+  "4.nii.gz",
+  "41.nii.gz",
+  "3.nii.gz",
+  "6.nii.gz",
+  "15.nii.gz",
+  "32.nii.gz",
+  "30.nii.gz",
+  "37.nii.gz",
+  "5.nii.gz",
+  "35.nii.gz",
+  "20.nii.gz",
+  "27.nii.gz",
+  "7.nii.gz",
+  "45.nii.gz",
+  "1.nii.gz",
+  "36.nii.gz",
+  "50.nii.gz",
+  "39.nii.gz",
+  "46.nii.gz",
+  "24.nii.gz",
+  "10.nii.gz",
+  "13.nii.gz",
+  "31.nii.gz",
+  "18.nii.gz",
+  "34.nii.gz",
+  "14.nii.gz",
+  "47.nii.gz",
+  "22.nii.gz",
+  "40.nii.gz",
+  "19.nii.gz",
+  "49.nii.gz",
+  "38.nii.gz",
+  "8.nii.gz",
+  "28.nii.gz",
+  "21.nii.gz",
+  "33.nii.gz",
+  "43.nii.gz",
+  "9.nii.gz",
+  "2.nii.gz",
+  "26.nii.gz",
+  "16.nii.gz",
+  "12.nii.gz",
+  "29.nii.gz",
+  "44.nii.gz",
+  "11.nii.gz",
+  "48.nii.gz",
+  "17.nii.gz",
+  "42.nii.gz",
+  "25.nii.gz",
+  "23.nii.gz",
+]
 
 preds_name_to_id = {
   f"OvarianCancerDestroyer_{k}_0000.nii.gz": v
