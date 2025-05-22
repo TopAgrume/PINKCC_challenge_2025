@@ -88,6 +88,7 @@ def standardize_orientation(
   """Ensure RAS+ orientation (standard for nnU-Net)"""
   img = nib.load(nifti_file_path)  # type: ignore
   affine = img.affine  # type: ignore
+  __import__("ipdb").set_trace()
   data = img.get_fdata()  # type: ignore
   modified = False
 
@@ -102,13 +103,13 @@ def standardize_orientation(
 
   # nnUNet expects data in LPS orientation (Left, Posterior, Superior))
   # See doc: http://www.grahamwideman.com/gw/brain/orientation/orientterms.htm
-  if axcodes != ("L", "P", "S"):
+  if axcodes != ("R", "A", "I"):
     print(
-      f"Non-compliant orientation {axcodes}, converting to LPS: {nifti_file_path}..."
+      f"Non-compliant orientation {axcodes}, converting to RAI: {nifti_file_path}..."
     )
 
     current_ornt = axcodes2ornt(axcodes)
-    target_ornt = axcodes2ornt(("L", "P", "S"))
+    target_ornt = axcodes2ornt(("R", "A", "I"))
 
     transform = ornt_transform(current_ornt, target_ornt)
     reoriented_data = apply_orientation(data, transform)
@@ -165,7 +166,7 @@ def standardize_orientation(
 
   # Create the final image
   if modified:
-    new_img = nib.Nifti1Image(data, affine, img.header)  # type: ignore
+    new_img = nib.Nifti1Image(data, affine)  # type: ignore
     return new_img, modified
   else:
     return img, False
@@ -244,7 +245,7 @@ def convert_dataset_to_nnunet_format(
     "test": [],
   }
 
-  if False:
+  if True:
     # --- Process Training/Validation Data ---
     print(f"\nProcessing {len(all_training_pairs)} training/validation cases...")
     valid_case_count = 0
@@ -287,37 +288,38 @@ def convert_dataset_to_nnunet_format(
       )
 
   # --------------- ADDING FOR TESTING --------------
-  print("ON PASSE AU TEST SET C'EST PARTIIII C'EST PARTIIIIIIIIII")
-  valid_case_count = 246
-  TEST_DIR = Path("../TEST_SET")
-  all_paths = os.listdir(TEST_DIR)
-  for path in all_paths:
-    case_id = f"{valid_case_count:03d}"
-    valid_case_count += 1
+  if False:
+    print("ON PASSE AU TEST SET C'EST PARTIIII C'EST PARTIIIIIIIIII")
+    valid_case_count = 246
+    TEST_DIR = Path("../TEST_SET")
+    all_paths = os.listdir(TEST_DIR)
+    for path in all_paths:
+      case_id = f"{valid_case_count:03d}"
+      valid_case_count += 1
 
-    print(f"\nProcessing Case {case_id}...")
-    print(f"  Input CT: {path}")
-    ct_dest = images_dir / f"{task_name}_{case_id}_0000.nii.gz"
-    std_ct_img, _ = standardize_orientation(
-      str(TEST_DIR / path), ct_image=False, is_segmentation=False
-    )
-    print(f"  Saving processed CT to: {ct_dest}")
-    nib.save(std_ct_img, ct_dest)  # type: ignore
+      print(f"\nProcessing Case {case_id}...")
+      print(f"  Input CT: {path}")
+      ct_dest = images_dir / f"{task_name}_{case_id}_0000.nii.gz"
+      std_ct_img, _ = standardize_orientation(
+        str(TEST_DIR / path), ct_image=False, is_segmentation=False
+      )
+      print(f"  Saving processed CT to: {ct_dest}")
+      nib.save(std_ct_img, ct_dest)  # type: ignore
 
-    false_label = nib.nifti1.Nifti1Image(
-      np.zeros(std_ct_img.get_fdata().shape),  # pyright: ignore
-      std_ct_img.affine,  # pyright: ignore
-      std_ct_img.header,
-    )
-    seg_dest = labels_dir / f"{task_name}_{case_id}.nii.gz"
-    nib.save(false_label, seg_dest)  # type: ignore
+      false_label = nib.nifti1.Nifti1Image(
+        np.zeros(std_ct_img.get_fdata().shape),  # pyright: ignore
+        std_ct_img.affine,  # pyright: ignore
+        std_ct_img.header,
+      )
+      seg_dest = labels_dir / f"{task_name}_{case_id}.nii.gz"
+      nib.save(false_label, seg_dest)  # type: ignore
 
-    dataset_json["training"].append(
-      {
-        "image": f"./imagesTr/{task_name}_{case_id}_0000.nii.gz",
-        "label": f"./labelsTr/{task_name}_{case_id}.nii.gz",
-      }
-    )
+      dataset_json["training"].append(
+        {
+          "image": f"./imagesTr/{task_name}_{case_id}_0000.nii.gz",
+          "label": f"./labelsTr/{task_name}_{case_id}.nii.gz",
+        }
+      )
 
   print("\nWriting dataset.json")
   with open(task_dir / "dataset.json", "w") as f:

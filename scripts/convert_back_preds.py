@@ -10,6 +10,7 @@ from nibabel.orientations import (
 )
 from tqdm import tqdm
 
+test_set_path = Path("../TEST_SET")
 filenames = [
   "4.nii.gz",
   "41.nii.gz",
@@ -94,5 +95,5 @@ for k, v in tqdm(preds_name_to_id):
 
   data = reoriented_data
   affine = new_affine
-  new_img = nib.nifti1.Nifti1Image(data, affine, base_image_header)
+  new_img = nib.nifti1.Nifti1Image(data, affine)
   nib.loadsave.save(new_img, output_dir / v)
