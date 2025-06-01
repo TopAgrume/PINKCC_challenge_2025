@@ -12,7 +12,7 @@ from nibabel.orientations import (
   ornt_transform,
 )
 
-from ocd.dataset.dataset import Dataset, SampleUtils
+from ocd.dataset.dataset import SampleUtils
 
 INVERTED_SCAN_IDS = [
   "330684",
@@ -44,37 +44,15 @@ INVERTED_SCAN_IDS = [
 
 SKIP_SCAN_IDS = [
   "TCGA-09-2054",
-  "TCGA-24-1614",
   "TCGA-09-0364",
   "333076",
   # "TCGA-13-0768",
 ]
 
-CROP_SCAN_ID = "333020"
-CROP_START_Z = 43
-
-REMOVE_LAST_SLICE = "TCGA-13-0724"
-
-TEST = ["333020", "TCGA-13-0793"]
-
-
-def is_test_scan(file_path):
-  """Check if the scan is in the list of inverted scans"""
-  return any(scan_id in str(file_path) for scan_id in TEST)
-
 
 def is_inverted_scan(file_path):
   """Check if the scan is in the list of inverted scans"""
   return any(scan_id in str(file_path) for scan_id in INVERTED_SCAN_IDS)
-
-
-def needs_cropping(file_path):
-  """Check if the scan needs z-axis cropping"""
-  return CROP_SCAN_ID in str(file_path)
-
-
-def needs_remove_last_slice(file_path):
-  return REMOVE_LAST_SLICE in str(file_path)
 
 
 def should_skip_scan(file_path):
@@ -83,12 +61,11 @@ def should_skip_scan(file_path):
 
 
 def standardize_orientation(
-  nifti_file_path: str, ct_image: bool = False, is_segmentation: bool = False
+  nifti_file_path: Path, ct_image: bool = False, is_segmentation: bool = False
 ):
   """Ensure RAS+ orientation (standard for nnU-Net)"""
   img = nib.load(nifti_file_path)  # type: ignore
   affine = img.affine  # type: ignore
-  __import__("ipdb").set_trace()
   data = img.get_fdata()  # type: ignore
   modified = False
 
@@ -101,8 +78,6 @@ def standardize_orientation(
     modified = True
     print("Normalization complete.")
 
-  # nnUNet expects data in LPS orientation (Left, Posterior, Superior))
-  # See doc: http://www.grahamwideman.com/gw/brain/orientation/orientterms.htm
   if axcodes != ("R", "A", "I"):
     print(
       f"Non-compliant orientation {axcodes}, converting to RAI: {nifti_file_path}..."
@@ -120,39 +95,24 @@ def standardize_orientation(
     affine = new_affine
     modified = True
 
-  if is_inverted_scan(nifti_file_path):
-    print(f"Found inverted scan, flipping superior-inferior axis: {nifti_file_path}")
-
-    # Flip the data along the superior-inferior axis (typically axis 2 in LPS)
-    data = np.flip(data, axis=2)
-
-    # Update the affine to reflect the flip
-    # We need to negate the third column of the affine matrix and adjust the translation
-    flip_mat = np.eye(4)
-    flip_mat[2, 2] = -1
-    flip_mat[2, 3] = data.shape[2] - 1
-
-    affine = affine @ flip_mat
+  if "09-1313" in str(nifti_file_path) or "25-1631" in str(nifti_file_path):
+    data = data.clip(min=data.min() / 10, max=data.max() / 10)
     modified = True
 
-  # Check if this scan needs z-axis cropping
-  if needs_cropping(nifti_file_path):
-    print(
-      f"Cropping scan along z-axis from index {CROP_START_Z} to end: {nifti_file_path}"
-    )
+  # if is_inverted_scan(nifti_file_path):
+  # print(f"Found inverted scan, flipping superior-inferior axis: {nifti_file_path}")
 
-    # Crop the data along the z-axis (keep slices from CROP_START_Z to end)
-    original_z_size = data.shape[2]
-    data = data[:, :, :-CROP_START_Z]
-    modified = True
+  # # Flip the data along the superior-inferior axis (typically axis 2 in LPS)
+  # data = np.flip(data, axis=2)
 
-    print(
-      f"  Original z-dimension: {original_z_size}, New z-dimension: {data.shape[2]}"
-    )
+  # # Update the affine to reflect the flip
+  # # We need to negate the third column of the affine matrix and adjust the translation
+  # flip_mat = np.eye(4)
+  # flip_mat[2, 2] = -1
+  # flip_mat[2, 3] = data.shape[2] - 1
 
-  if needs_remove_last_slice(nifti_file_path):
-    data = data[:, :, 1:]
-    modified = True
+  # affine = affine @ flip_mat
+  # modified = True
 
   if is_segmentation:
     print(f" Ensuring integer labels for segmentation: {nifti_file_path}")
@@ -187,17 +147,11 @@ def convert_dataset_to_nnunet_format(
   print("\n=== Special Case Handling ===")
   print(f"Inverted scans that will be flipped: {', '.join(INVERTED_SCAN_IDS)}")
   print(f"Scans that will be skipped: {', '.join(SKIP_SCAN_IDS)}")
-  print(f"Scan that will be cropped from z={CROP_START_Z} to end: {CROP_SCAN_ID}")
   print("===========================\n")
 
   # --- nnUNet Directory Structure ---
   task_name = "OvarianCancerDestroyer"
-  nb_tasks = (
-    len([f for f in os.listdir(output_dir) if os.path.isdir(output_dir / f)])
-    if output_dir.exists()
-    else 0
-  )
-  task_id = nb_tasks + 1
+  task_id = 1
   task_dir = output_dir / f"Dataset{task_id:03d}_{task_name}"
   images_dir = task_dir / "imagesTr"
   labels_dir = task_dir / "labelsTr"
@@ -209,20 +163,10 @@ def convert_dataset_to_nnunet_format(
   print(f"Created nnUNet directory structure at: {task_dir}")
 
   # --- Load and Split Data ---
-  ds = Dataset(base_dir=dataset_dir, random_state=42)
-  train_pairs, val_pairs, test_pairs = ds.get_dataset_splits()
-  all_training_pairs = train_pairs + val_pairs + test_pairs
-
-  training_count = sum(
-    1
-    for pair in all_training_pairs
-    if not (should_skip_scan(pair[0]) or should_skip_scan(pair[1]))
-  )
-  test_count = sum(
-    1
-    for pair in test_pairs
-    if not (should_skip_scan(pair[0]) or should_skip_scan(pair[1]))
-  )
+  all_training_pairs = [
+    (dataset_dir / "CT" / f, dataset_dir / "Segmentation" / f)
+    for f in sorted(os.listdir(dataset_dir / "CT"))
+  ]
 
   dataset_json = {
     "name": task_name,
@@ -238,7 +182,7 @@ def convert_dataset_to_nnunet_format(
       "primary_tumor": 1,
       "metastasis": 2,
     },
-    "numTraining": training_count,
+    "numTraining": len(all_training_pairs) - len(SKIP_SCAN_IDS),
     "numTest": 0,
     "file_ending": ".nii.gz",
     "training": [],
@@ -249,7 +193,7 @@ def convert_dataset_to_nnunet_format(
     # --- Process Training/Validation Data ---
     print(f"\nProcessing {len(all_training_pairs)} training/validation cases...")
     valid_case_count = 0
-    for i, (ct_path, seg_path) in enumerate(train_pairs + val_pairs + test_pairs):
+    for i, (ct_path, seg_path) in enumerate(all_training_pairs):
       if should_skip_scan(ct_path) or should_skip_scan(seg_path):
         print(f"\nSkipping Case {i}: {ct_path}")
         continue
