@@ -51,7 +51,7 @@ Do not use postprocessing and keep raw model predictions for maximum sensitivity
 
 
 
-## Model rchitecture details
+## Pipeline architecture details
 
 - **Model**: ResEncUNetL (Large Residual Encoder U-Net)
 - **Configuration**: 3D full resolution
