@@ -18,9 +18,19 @@ export nnUNet_preprocessed="${nnUNet_raw_data_base}/nnUNet_preprocessed"
 export RESULTS_FOLDER="${nnUNet_raw_data_base}/RESULTS_FOLDER"
 ```
 
+## Directory structure
+
+```sh
+/root/DATA/
+├── nnUNet_preprocessed/      # Preprocessed data (requires large disk space)
+├── RESULTS_FOLDER/           # Training results and model checkpoints
+├── FINAL_CT_TESTS/           # Input test CT scans
+└── OUTPUT_FINAL_PREDICTIONS/ # Output segmentation predictions
+```
+
 ## Usage
 
-### Running the Complete Pipeline
+### Running the complete pipeline
 
 Simply execute the provided scripts:
 
@@ -37,33 +47,23 @@ This will automatically:
 
 Do not use postprocessing and keep raw model predictions for maximum sensitivity (and better dice score on predictions).
 
-## Directory Structure
-
-```sh
-/root/DATA/
-├── nnUNet_preprocessed/      # Preprocessed data (requires large disk space)
-├── RESULTS_FOLDER/           # Training results and model checkpoints
-├── FINAL_CT_TESTS/           # Input test CT scans
-└── OUTPUT_FINAL_PREDICTIONS/ # Output segmentation predictions
-```
-
-## Architecture Details
+## Architecture details
 
 - **Model**: MedNeXt Large (L)
-- **Base Kernel size**: 3x3x3
+- **Base kernel size**: 3x3x3
 - **Target spacing**: 1x1x1mm (high resolution)
 - **Configuration**: 3D full resolution
 - **Training strategy**: 5-fold cross-validation
 - **Ensemble method**: Probabilistic union of all 5 folds
 - **Epochs**: 450 (sufficient for convergence)
 
-## Hardware Requirements
+## Hardware requirements
 
 - **VRAM**: Minimum 16203 MiB (approximately 15.8 GB **with batch_size = 2**)
-- **Disk Space**: Large amount required for preprocessing (significantly more than standard nnUNet)
+- **Disk space**: Large amount required for preprocessing (significantly more than standard nnUNet)
 - **Recommended GPU**:  A100, L40S-48G (trained on this one), ...
 
-## Advanced Usage - UpKern Training (5x5x5 kernels)
+## To go further - UpKern Training (5x5x5 kernels)
 
 For potentially better results using, the script includes an untested training with larger kernels with transfer learning from the 3x3x3 models:
 

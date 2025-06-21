@@ -18,9 +18,21 @@ export nnUNet_preprocessed="${nnUNet_raw_data_base}/nnUNet_preprocessed"
 export nnUNet_results="${nnUNet_raw_data_base}/nnUNet_results"
 ```
 
+## Directory structure
+
+```sh
+/root/DATA/
+├── nnUNet_raw_data_base/
+│   ├── nnUNet_raw_data/
+│   ├── nnUNet_preprocessed/
+│   └── nnUNet_results/
+├── FINAL_CT_TESTS/           # Input test CT scans
+└── OUTPUT_FINAL_PREDICTIONS/ # Output segmentation predictions
+```
+
 ## Usage
 
-### Running the Complete Pipeline
+### Running the complete pipeline
 
 Simply execute the provided scripts:
 
@@ -37,19 +49,9 @@ This will automatically:
 
 Do not use postprocessing and keep raw model predictions for maximum sensitivity (and better dice score on predictions).
 
-## Directory Structure
 
-```sh
-/root/DATA/
-├── nnUNet_raw_data_base/
-│   ├── nnUNet_raw_data/
-│   ├── nnUNet_preprocessed/
-│   └── nnUNet_results/
-├── FINAL_CT_TESTS/           # Input test CT scans
-└── OUTPUT_FINAL_PREDICTIONS/ # Output segmentation predictions
-```
 
-## Architecture Details
+## Architecture details
 
 - **Model**: ResEncUNetL (Large Residual Encoder U-Net)
 - **Configuration**: 3D full resolution
@@ -57,12 +59,12 @@ Do not use postprocessing and keep raw model predictions for maximum sensitivity
 - **Ensemble method**: Probabilistic union of all 5 folds
 - **Epochs**: 450 (sufficient for convergence)
 
-## Hardware Requirements
+## Hardware requirements
 
 - **VRAM**: Minimum ~22943 MiB (approximately 22.4 GB **with batch_size = 2**)
 - **Recommended GPU**: A100, L40S-48G (trained on this one), ...
 
-## Advanced Usage - ResEncUNetXL model
+## To go further - ResEncUNetXL model
 
 For potentially better results, the script includes an untested ResEncUNetXL variant. You just have to replace nnUNetResEncUNetLPlans with nnUNetResEncUNetXLPlans in training commands
 
