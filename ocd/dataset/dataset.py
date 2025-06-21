@@ -1,12 +1,10 @@
 import os
-import shutil
-from pathlib import Path
-
-import matplotlib.pyplot as plt
 import nibabel as nib
 import numpy as np
 import pandas as pd
-from nibabel.filebasedimages import FileBasedImage
+
+from tqdm import tqdm
+from pathlib import Path
 from nibabel.orientations import (
   aff2axcodes,
   apply_orientation,
@@ -15,112 +13,9 @@ from nibabel.orientations import (
   ornt_transform,
 )
 from sklearn.model_selection import train_test_split
-from tqdm import tqdm
+from ocd.dataset.sample_utils import SampleUtils
 
 from ocd.utils import INVERSED, create_folds_dataframe
-
-
-class SampleUtils:
-  """
-  Usefull operation on CT and segmentation data
-  """
-
-  @classmethod
-  def load_from_path(cls, file_path: str | Path) -> tuple[FileBasedImage, np.ndarray]:
-    """
-    Load NIFTI file content
-
-    Args:
-        file_path: Path to the NIFTI file
-
-    Returns:
-        Tuple of (nib.Nifti1Image, numpy.ndarray)
-    """
-    img = nib.loadsave.load(file_path)
-    data = img.get_fdata()  # pyright: ignore
-    return img, data
-
-  @classmethod
-  def display_slice(
-    cls,
-    data: np.ndarray,
-    slice_idx=None,
-    axis=2,
-    figsize=(20, 16),
-    cmap="gray",
-    vmin=None,
-    vmax=None,
-    title=None,
-  ) -> None:
-    """
-    Display a single slice from a 3D volume
-
-    Args:
-        data: 3D numpy array
-        slice_idx: Index of the slice to display, defaults to middle slice
-        axis: Axis along which to take the slice (0, 1, or 2)
-        figsize: Figure size as (width, height)
-        cmap: Colormap for the display
-        vmin, vmax: Min and max values for color scaling
-        title: Title for the plot
-    """
-    if slice_idx is None:
-      slice_idx = data.shape[axis] // 2
-
-    if axis == 0:
-      slice_data = data[slice_idx, :, :]
-    elif axis == 1:
-      slice_data = data[:, slice_idx, :]
-    else:
-      slice_data = data[:, :, slice_idx]
-
-    plt.figure(figsize=figsize)
-    plt.imshow(slice_data, cmap=cmap, vmin=vmin, vmax=vmax)
-    plt.colorbar()
-
-    if title:
-      plt.title(title)
-    else:
-      plt.title(f"Slice {slice_idx} along axis {axis}")
-
-    plt.axis("on")
-    plt.tight_layout()
-    plt.show()
-
-  @classmethod
-  def normalize_ct(
-    cls,
-    ct_data: np.ndarray,
-    window_center: int = 40,
-    window_width: int = 400,
-    output_range: tuple[float, float] = (-1, 1),
-  ) -> np.ndarray:
-    """
-    Apply windowing and normalization to CT data
-
-    Args:
-        ct_data: Raw CT data in Hounsfield units
-        window_center: Center of the windowing operation (typically 40 for soft tissue)
-        window_width: Width of the window (typically 400 for soft tissue)
-        output_range: Desired output range for normalization
-
-    Returns:
-        Normalized CT data
-    """
-    # windowing
-    min_val = window_center - window_width / 2
-    max_val = window_center + window_width / 2
-
-    windowed_data = np.clip(ct_data, min_val, max_val)
-
-    # normalize
-    out_min, out_max = output_range
-    normalized = out_min + (windowed_data - min_val) * (out_max - out_min) / (
-      max_val - min_val
-    )
-
-    return normalized
-
 
 class Dataset:
   """
@@ -158,16 +53,15 @@ class Dataset:
     self.val_pairs = MSKCC_val + TCGA_val
     self.test_pairs = MSKCC_test + TCGA_test
 
-  def get_last_slice(self, data: np.ndarray, margin: int = 8) -> tuple[int, int]:
-    has_labels: np.ndarray = np.any(data != 0, axis=(0, 1))
+  def get_last_slice(self, data: np.ndarray, delete_last_n: int = 15) -> int:
+    has_labels: np.ndarray = np.any(data != 0, axis=(1, 2))
     last_index = min(
-      data.shape[2] - 1 - has_labels[::-1].argmax() + margin, data.shape[2] - 1
-    )
-    first_index = max(has_labels.argmax() - margin, 0)
-    return first_index, last_index  # pyright: ignore
+      data.shape[2] - 1 - has_labels[::-1].argmax() + 3, data.shape[2] - 1
+    )  # add 3 slice on top of last one as a margin
+    return max(last_index, data.shape[2] - delete_last_n - 1)
 
   def convert_CT_scans_to_images(
-    self, output_dir: Path, n_folds: int = 5, seed: int = 69
+    self, output_dir: Path, n_folds: int = 5, seed: int = 42
   ):
     """
     Convert the 3D CT scans from datasets to 2D images.
@@ -181,13 +75,7 @@ class Dataset:
     Returns:
       None
     """
-    TO_EXCLUDE = [
-      "TCGA-13-0762",
-      "TCGA-13-0793",
-      "TCGA-09-2054",
-      "TCGA-24-1614",
-      "TCGA-09-0364",
-    ]
+    TO_EXCLUDE = ["TCGA-13-0762"]  # only need to exclude this one for 2D
 
     ct_to_fold_df = create_folds_dataframe(TO_EXCLUDE, n_folds, seed)
 
@@ -199,9 +87,6 @@ class Dataset:
 
     all_paths = zip(sorted(scan_paths), sorted(seg_paths), strict=False)
 
-    if output_dir.exists():
-      shutil.rmtree(output_dir)
-
     os.mkdir(output_dir)
     os.mkdir(output_dir / "scan")
     os.mkdir(output_dir / "seg")
@@ -209,14 +94,14 @@ class Dataset:
     rows = []
     for scan_path, seg_path in tqdm(all_paths):
       if any(exclude in str(scan_path) for exclude in TO_EXCLUDE):
-        print(f"\nSkipped {scan_path}...")
+        print(f"Skipped {scan_path}...")
         continue
 
       for path, dir_name in [(seg_path, "seg"), (scan_path, "scan")]:
-        file, data = SampleUtils.load_from_path(path)
+        file, data = SampleUtils.load_from_path_nib(path)
 
         if dir_name == "seg":
-          limit_inf, limit_sup = self.get_last_slice(data)
+          limit = self.get_last_slice(data)
         affine = file.affine  # pyright: ignore
         axcodes = aff2axcodes(affine)
         if axcodes != ("L", "P", "S"):
@@ -233,7 +118,7 @@ class Dataset:
         assert data.shape[:2] == (512, 512)
         if file_name in INVERSED:
           data = data[:, :, ::-1]
-        for i in range(limit_inf, limit_sup + 1):  # pyright: ignore
+        for i in range(limit):  # pyright: ignore
           image = data[:, :, i]
           np.save(
             output_dir / dir_name / f"{file_name}_{i}",
@@ -254,196 +139,6 @@ class Dataset:
     pd.DataFrame(rows, columns=["path", "fold_id", "has_labels"]).to_csv(  # pyright:ignore
       output_dir / "metadata.csv"
     )
-
-  def _iterative_scan_through_component(
-    self, start_i: int, start_j: int, start_k: int, scan: np.ndarray, seg: np.ndarray
-  ) -> list[float]:
-    original_value = seg[start_i, start_j, start_k]
-    if original_value == 0:
-      return []
-
-    res_values = []
-    stack = [(start_i, start_j, start_k)]
-
-    while stack:
-      i, j, k = stack.pop()
-
-      if not (
-        0 <= i < scan.shape[0]
-        and 0 <= j < scan.shape[1]
-        and 0 <= k < scan.shape[2]
-        and seg[i, j, k] == original_value
-      ):
-        continue
-
-      res_values.append(scan[i, j, k])
-      seg[i, j, k] = 0
-
-      if i < scan.shape[0] - 1 and seg[i + 1, j, k] == original_value:
-        stack.append((i + 1, j, k))
-      # (i-1, j, k)
-      if i > 0 and seg[i - 1, j, k] == original_value:
-        stack.append((i - 1, j, k))
-      # (i, j+1, k)
-      if j < scan.shape[1] - 1 and seg[i, j + 1, k] == original_value:
-        stack.append((i, j + 1, k))
-      # (i, j-1, k)
-      if j > 0 and seg[i, j - 1, k] == original_value:
-        stack.append((i, j - 1, k))
-      # (i, j, k+1)
-      if k < scan.shape[2] - 1 and seg[i, j, k + 1] == original_value:
-        stack.append((i, j, k + 1))
-      # (i, j, k-1)
-      if k > 0 and seg[i, j, k - 1] == original_value:
-        stack.append((i, j, k - 1))
-
-    return res_values
-
-  def _find_labels_and_get_stats(
-    self,
-    scan: np.ndarray,
-    seg: np.ndarray,
-    file_seg: FileBasedImage,
-    seg_path: Path,
-    overwrite_shitty_labels: bool,
-  ) -> tuple[list[tuple[float, float, int]], list[tuple[float, float, int]]]:
-    primaries = []
-    metastases = []
-    x, y, z = scan.shape
-
-    if overwrite_shitty_labels:
-      clean_seg = np.copy(file_seg.get_fdata())  # pyright: ignore
-    for i in range(x):
-      for j in range(y):
-        for k in range(z):
-          original_label_at_pixel = seg[i, j, k]
-
-          if original_label_at_pixel != 0:
-            values = self._iterative_scan_through_component(i, j, k, scan, seg)
-
-            if not values:
-              continue
-
-            values_np = np.array(values)
-            mean_val = values_np.mean()
-            std_val = values_np.std()
-            n_pixels = len(values_np)
-            stats_tuple = (mean_val, std_val, n_pixels)
-
-            if n_pixels <= 10 and overwrite_shitty_labels:
-              self._iterative_scan_through_component(i, j, k, scan, clean_seg)
-            else:
-              if original_label_at_pixel == 1:
-                primaries.append(stats_tuple)
-              else:
-                metastases.append(stats_tuple)
-
-    if overwrite_shitty_labels:
-      new_seg = nib.nifti1.Nifti1Image(clean_seg, file_seg.affine, file_seg.header)  # pyright: ignore
-      nib.loadsave.save(new_seg, str(seg_path))
-
-    return (primaries, metastases)
-
-  def get_labels_stats(self, overwrite_shitty_labels: bool = False):
-    TO_EXCLUDE = [
-      "TCGA-09-2054",  # huge breath
-      "TCGA-24-1614",  # 11 slices
-      "TCGA-09-0364",  # 26 slices
-      "TCGA-13-0768",  # shitty seg
-      "333076",  # weird
-    ]
-
-    scan_paths = []
-    seg_paths = []
-    for dataset in self.datasets:
-      scan_paths.extend(self.data[f"CT_{dataset}"])
-      seg_paths.extend(self.data[f"Segmentation_{dataset}"])
-
-    all_paths = zip(sorted(scan_paths), sorted(seg_paths), strict=False)
-
-    all_mean_primaries, all_mean_metastases = [], []
-    all_std_primaries, all_std_metastases = [], []
-    with open("labels_stats.txt", "w") as f:
-      for scan_path, seg_path in tqdm(all_paths):
-        if any(exclude in str(scan_path) for exclude in TO_EXCLUDE):
-          print(f"\nSkipped {scan_path}...")
-          continue
-
-        f.write(f"{scan_path.name}\n")
-        file_scan, scan = SampleUtils.load_from_path(scan_path)
-        file_seg, seg = SampleUtils.load_from_path(seg_path)
-        primaries, metastases = self._find_labels_and_get_stats(
-          scan, seg, file_seg, seg_path, overwrite_shitty_labels
-        )
-
-        # -- PRIMARY --
-
-        if len(primaries) != 0:
-          mean_primaries, std_primaries, pixel_primaries = zip(*primaries, strict=False)
-          mean_primaries, std_primaries, pixel_primaries = (
-            np.array(mean_primaries),
-            np.array(std_primaries),
-            np.array(pixel_primaries),
-          )
-          f.write(
-            f"  {len(primaries)} PRIMARIES mean {mean_primaries.mean():.2f}"
-            f" std {std_primaries.mean():.2f} min {mean_primaries.min():.2f}"
-            f" max {mean_primaries.max():.2f}\n"
-          )
-          [
-            f.write(
-              f"   -> {i} - mean {mean_primaries[i]:.2f} std {std_primaries[i]:.2f}"
-              f" n_pixels {pixel_primaries[i]}\n"
-            )
-            for i in range(len(primaries))
-          ]
-          all_mean_primaries.append(mean_primaries.mean())
-          all_std_primaries.append(std_primaries.mean())
-
-        # -- METASTASE --
-
-        if len(metastases) != 0:
-          mean_metastases, std_metastases, pixel_metastases = zip(
-            *metastases, strict=False
-          )
-          mean_metastases, std_metastases, pixel_metastases = (
-            np.array(mean_metastases),
-            np.array(std_metastases),
-            np.array(pixel_metastases),
-          )
-          f.write(
-            f"  {len(metastases)} METASTASES mean {mean_metastases.mean():.2f}"
-            f" std {std_metastases.mean():.2f} min {mean_metastases.min():.2f}"
-            f" max {mean_metastases.max():.2f}\n"
-          )
-          [
-            f.write(
-              f"   -> {i} - mean {mean_metastases[i]:.2f} std {std_metastases[i]:.2f}"
-              f" n_pixels {pixel_metastases[i]}\n"
-            )
-            for i in range(len(metastases))
-          ]
-          all_mean_metastases.append(mean_metastases.mean())
-          all_std_metastases.append(std_metastases.mean())
-
-      # -- Final stats --
-
-      all_mean_primaries, all_mean_metastases = (
-        np.array(all_mean_primaries),
-        np.array(all_mean_metastases),
-      )
-      all_std_primaries, all_std_metastases = (
-        np.array(all_std_primaries),
-        np.array(all_std_metastases),
-      )
-      f.write(
-        f"\nPRIMARIES mean {all_mean_primaries.mean():.2f}"
-        f" std {all_std_primaries.mean():.2f}\n"
-      )
-      f.write(
-        f"METASTASES mean {all_mean_metastases.mean():.2f}"
-        f" std {all_std_metastases.mean():.2f}\n"
-      )
 
   def _loading_dataset_paths(self, verify: bool = True) -> dict:
     """
