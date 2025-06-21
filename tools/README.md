@@ -1,5 +1,3 @@
-# Overview
-
 ## `ocd/` – Ovarian Cancer Destroyer
 
 A custom Python library designed to **open, manipulate, visualize, and convert CT scans** into different formats and orientations. It leverages **NIfTI** and **NiBabel** to ensure compatibility with standard medical imaging workflows.
