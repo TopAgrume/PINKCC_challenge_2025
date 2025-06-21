@@ -47,7 +47,7 @@ This will automatically:
 
 Do not use postprocessing and keep raw model predictions for maximum sensitivity (and better dice score on predictions).
 
-## Architecture details
+## Pipeline architecture details
 
 - **Model**: MedNeXt Large (L)
 - **Base kernel size**: 3x3x3
@@ -63,7 +63,7 @@ Do not use postprocessing and keep raw model predictions for maximum sensitivity
 - **Disk space**: Large amount required for preprocessing (significantly more than standard nnUNet)
 - **Recommended GPU**:  A100, L40S-48G (trained on this one), ...
 
-## To go further - UpKern Training (5x5x5 kernels)
+## To go further - UpKern training (5x5x5 kernels)
 
 For potentially better results using, the script includes an untested training with larger kernels with transfer learning from the 3x3x3 models:
 
