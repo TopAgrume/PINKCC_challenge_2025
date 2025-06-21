@@ -1,0 +1,9 @@
+[submodule "mednext_pipeline/MedNeXt"]
+	path = mednext_pipeline/MedNeXt
+	url = https://github.com/MIC-DKFZ/MedNeXt
+[submodule "nnunet_pipeline/nnUNet"]
+	path = nnunet_pipeline/nnUNet
+	url = https://github.com/MIC-DKFZ/nnUNet
+[submodule "ovseg_pipeline/OVSeg"]
+	path = ovseg_pipeline/OVSeg
+	url = https://github.com/ThomasBudd/ovseg
