@@ -1,7 +1,6 @@
-export nnUNet_raw_data_base="/root/DATA/nnUNet_raw_data_base"
-export nnUNet_raw="${nnUNet_raw_data_base}/nnUNet_raw_data"
+export nnUNet_raw_data_base="/root/DATA/"
 export nnUNet_preprocessed="${nnUNet_raw_data_base}/nnUNet_preprocessed"
-export nnUNet_results="${nnUNet_raw_data_base}/nnUNet_results"
+export RESULTS_FOLDER="${nnUNet_raw_data_base}/RESULTS_FOLDER"
 
 
 # --- Custom MedNeXt Preprocessing (needs a lot of free disk space) ---
@@ -27,10 +26,3 @@ mednextv1_train 3d_fullres nnUNetTrainerV2_MedNeXt_L_kernel5 $DATASET_ID 4 -p nn
 
 # --- Final ensembling using the 5-fold cross-validation strategy ---
 mednextv1_find_best_configuration -m 3d_fullres -t $DATASET_ID -f 0 1 2 3 4 -pl MedNeXt_L_kernel3__nnUNetPlansv2.1_trgSp_1x1x1 --disable_postprocessing
-
-
-# --- Inference using ensemble predictions with a probabilistic union ---
-FINAL_CT_TESTS='/root/DATA/FINAL_CT_TESTS'
-OUTPUT_FINAL_PREDICTIONS='/root/DATA/OUTPUT_FINAL_PREDICTIONS'
-
-mednextv1_predict -i $FINAL_CT_TESTS -o $OUTPUT_FINAL_PREDICTIONS -tr nnUNetTrainerV2 -ctr nnUNetTrainerV2CascadeFullRes -m 3d_fullres -p MedNeXt_L_kernel3__nnUNetPlansv2.1_trgSp_1x1x1 -t $DATASET_ID -z
