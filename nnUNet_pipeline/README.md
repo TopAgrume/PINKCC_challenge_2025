@@ -4,8 +4,9 @@ This repository contains the complete pipeline for training and running inferenc
 
 ## Prerequisites
 
-- CUDA-compatible GPU with at least 22943 MiB VRAM
 - Dataset prepared in nnUNet raw format as `Dataset001_OvarianCancer`
+- **VRAM**: Minimum ~22943 MiB (approximately 22.4 GB **with batch_size = 2**)
+- **Recommended GPU**: A100, L40S-48G (trained on this one), ...
 
 ## Setup
 
@@ -30,6 +31,14 @@ export nnUNet_results="${nnUNet_raw_data_base}/nnUNet_results"
 └── OUTPUT_FINAL_PREDICTIONS/ # Output segmentation predictions
 ```
 
+## Pipeline architecture details
+
+- **Model**: ResEncUNetL (Large Residual Encoder U-Net)
+- **Configuration**: 3D full resolution
+- **Training strategy**: 5-fold cross-validation
+- **Ensemble method**: Probabilistic union of all 5 folds
+- **Epochs**: 450 (sufficient for convergence)
+
 ## Usage
 
 ### Running the complete pipeline
@@ -49,27 +58,40 @@ This will automatically:
 
 Do not use postprocessing and keep raw model predictions for maximum sensitivity (and better dice score on predictions).
 
+### (OR) Manual Step-by-Step Execution
 
+#### Preprocessing
+```sh
+nnUNetv2_plan_and_preprocess -d Dataset001_OvarianCancer -pl nnUNetPlannerResEncL --verify_dataset_integrity
+```
 
-## Pipeline architecture details
+#### Training (5-fold cross-validation)
+```sh
+# Train each fold separately (generated .npz files are required to find best configuration)
+nnUNetv2_train Dataset001_OvarianCancer 3d_fullres 0 -p nnUNetResEncUNetLPlans --npz
+nnUNetv2_train Dataset001_OvarianCancer 3d_fullres 1 -p nnUNetResEncUNetLPlans --npz
+nnUNetv2_train Dataset001_OvarianCancer 3d_fullres 2 -p nnUNetResEncUNetLPlans --npz
+nnUNetv2_train Dataset001_OvarianCancer 3d_fullres 3 -p nnUNetResEncUNetLPlans --npz
+nnUNetv2_train Dataset001_OvarianCancer 3d_fullres 4 -p nnUNetResEncUNetLPlans --npz
+```
 
-- **Model**: ResEncUNetL (Large Residual Encoder U-Net)
-- **Configuration**: 3D full resolution
-- **Training strategy**: 5-fold cross-validation
-- **Ensemble method**: Probabilistic union of all 5 folds
-- **Epochs**: 450 (sufficient for convergence)
+#### Find Best Configuration
+```sh
+nnUNetv2_find_best_configuration 1 -c 3d_fullres -p nnUNetResEncUNetLPlans
+```
 
-## Hardware requirements
+#### Inference
+```sh
+nnUNetv2_predict -d Dataset001_OvarianCancer -i /root/DATA/FINAL_CT_TESTS -o /root/DATA/OUTPUT_FINAL_PREDICTIONS -f 0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetResEncUNetLPlan --save_probabilities
+```
 
-- **VRAM**: Minimum ~22943 MiB (approximately 22.4 GB **with batch_size = 2**)
-- **Recommended GPU**: A100, L40S-48G (trained on this one), ...
 
 ## To go further - ResEncUNetXL model
 
 For potentially better results, the script includes an untested ResEncUNetXL variant. You just have to replace nnUNetResEncUNetLPlans with nnUNetResEncUNetXLPlans in training commands
 
-**Note**: This XL variant requires more computational resources and training time.
+**Note**: This *XL* variant requires more computational resources and training time.
 
 ## Output
 
-The final predictions will be saved in `/root/DATA/OUTPUT_FINAL_PREDICTIONS/` with compressed output format for efficient storage.
+The final predictions will be saved in `/root/DATA/OUTPUT_FINAL_PREDICTIONS/` (.nii.gz format).
