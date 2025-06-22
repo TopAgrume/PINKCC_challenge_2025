@@ -1,4 +1,4 @@
-# Medical Image Segmentation Ensemble Methods
+# Final cross-model ensemble methods
 
 This part of the repository contains the final cross-model ensemble method for combining predictions from the three different segmentation models: nnUNet, MedNeXt, and OVSeg. Each model trained using 5-fold cross-validation, resulting in three ensembles of 5 folds each.
 
@@ -8,7 +8,17 @@ This part of the repository contains the final cross-model ensemble method for c
 
 The goal of this hybrid strategy is to offer a balance between robustness - by leveraging consensus - and flexibility, by allowing strong outlier predictions to still be considered.
 
-## Files Description
+```
+5-fold nnUNet ──┐
+5-fold MedNeXt ─┼── Majority Vote ──┐
+5-fold OVSeg ───┘                   │
+                                    ├── Final Merge
+5-fold nnUNet ──┐                   │
+5-fold MedNeXt ─┼─── Prob Union ────┘
+5-fold OVSeg ───┘
+```
+
+## Files description
 
 ### `majority_vote.py`
 - The most frequent class across all models is selected for each voxel
@@ -41,18 +51,6 @@ nnUNetv2_ensemble -i INPUT_FOLDER_NNUNET INPUT_FOLDER_MEDNEXT INPUT_FOLDER_OVSEG
 nnUNetv2_ensemble -i INPUT_FOLDER_NNUNET INPUT_FOLDER_MEDNEXT INPUT_FOLDER_OVSEG -o OUTPUT_FOLDER_PROBABILITY_UNION -np 8
 ```
 
-### Step 3: Final Prediction Merge
+### Step 3: Final prediction merge
 
 After obtaining results from both ensemble strategies, use the provided `merge_final_predictions.py` script to combine the final predictions from both methods.
-
-## Expected Workflow
-
-```
-5-fold nnUNet ──┐
-5-fold MedNeXt ─┼── Majority Vote ──┐
-5-fold OVSeg ───┘                   │
-                                    ├── Final Merge
-5-fold nnUNet ──┐                   │
-5-fold MedNeXt ─┼─── Prob Union ────┘
-5-fold OVSeg ───┘
-```
